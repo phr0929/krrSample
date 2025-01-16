@@ -290,7 +290,7 @@ function Lulu() {
       </div> 
       {isHovering===1?
           <div className={scrollY<90 || scrollDown?'subMenu subMenuOn':'subMenu subMenuOff'}>
-                <div style={{minWidth:465}}/>
+                {/* <div style={{minWidth:465}}/> */}
                 
                 <div onClick={()=>handleStepChange(0,'../Lulu')}  className={step===0?'sm subMenuItemOn':'subMenuItemOff'}>
                   <img src={krrStepOn0} alt=''/>
@@ -300,13 +300,13 @@ function Lulu() {
                 </div>
              
 
-                <video  className='subMenuCharacter'  autoPlay muted loop style={{marginLeft:315}}>
+                {/* <video  className='subMenuCharacter'  autoPlay muted loop style={{marginLeft:315}}>
                   <source src={luluCharacter} type="video/mp4"></source>
-                </video>
+                </video> */}
           </div>
           :isHovering===2?
           <div className={scrollY<90 || scrollDown ?'subMenu subMenuOn':'subMenu subMenuOff'}>
-              <div style={{minWidth:355}}/>
+              {/* <div style={{minWidth:355}}/> */}
               
               <div onClick={()=>handleStepChange(1,'../Krr')}  className={step===1?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={krrStepOn1} alt=''/>
@@ -330,9 +330,9 @@ function Lulu() {
                 
               </div>
             
-               <video  className='subMenuCharacter'  autoPlay muted loop style={{marginLeft:205}}>
+               {/* <video  className='subMenuCharacter'  autoPlay muted loop style={{marginLeft:205}}>
                 <source src={character} type="video/mp4"></source>
-              </video>
+              </video> */}
 
           </div>
           :
@@ -478,30 +478,32 @@ function Lulu() {
                 <div className='listLayout'>
                   {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===3).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
-                    
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
-                        <img src={val.img} alt=''/> 
-                      </div>
-                    
-                      <div className='contentsTitle' style={{height:75}}>
-                        {val.title}
-                      </div>
-                      
-                      {/* <div className='contentsBtn'>
-                        {val.game!==''?
-                          <img src={gameOn} alt='' onClick={()=>handleGame(val.game)} style={{cursor:'pointer'}}/>
-                          :<img src={gameOff} alt='' />
-                        }
-                        {val.ppt!==''?
-                          <img src={pptOn} alt='' onClick={()=>handleGoVimeo(val.ppt)} style={{cursor:'pointer'}}/>
-                          :<img src={pptOff} alt='' />
-                        }
-                        {val.workbook!==''?
-                          <img src={workbookOn} alt='' onClick={()=>handleDialog(val.title,val.workbook)} style={{cursor:'pointer'}}/>
-                          :<img src={workbookOff} alt='' />
-                        }
-                      </div> */}
+                  
+                    <div className='contentsImgBox'> 
+                      <a href={`https://player.vimeo.com/video/${val.vimeo}`} target='_bank'>
+                        <img src={val.img} alt='' style={{width:190}}/>
+                      </a>
                     </div>
+                  
+                    <div className='contentsTitle' style={{height:75}}>
+                      {val.title}
+                    </div>
+                    
+                    {/* <div className='contentsBtn'>
+                      {val.game!==''?
+                        <img src={gameOn} alt='' onClick={()=>handleGame(val.game)} style={{cursor:'pointer'}}/>
+                        :<img src={gameOff} alt='' />
+                      }
+                      {val.ppt!==''?
+                        <img src={pptOn} alt='' onClick={()=>handleGoVimeo(val.ppt)} style={{cursor:'pointer'}}/>
+                        :<img src={pptOff} alt='' />
+                      }
+                      {val.workbook!==''?
+                        <img src={workbookOn} alt='' onClick={()=>handleDialog(val.title,val.workbook)} style={{cursor:'pointer'}}/>
+                        :<img src={workbookOff} alt='' />
+                      }
+                    </div> */}
+                  </div>
                   )}
                 </div>
                 <div className='listTitle colorPink'>
@@ -511,30 +513,32 @@ function Lulu() {
                 <div className='listLayout'>
                   {contentsList.filter((vval,vidx)=>vval.ctgr===step+ctgr && vval.week===4).map((val,idx)=>
                     <div key={idx} className={`contentsLayout ${val.css}`}> 
-                    
-                      <div className='contentsImgBox' onClick={()=>handleGoVimeo(val.vimeo)}> 
-                        <img src={val.img} alt=''/> 
-                      </div>
-                    
-                      <div className='contentsTitle' style={{height:75}}>
-                        {val.title}
-                      </div>
-                      
-                      {/* <div className='contentsBtn'>
-                        {val.game!==''?
-                          <img src={gameOn} alt='' onClick={()=>handleGame(val.game)} style={{cursor:'pointer'}}/>
-                          :<img src={gameOff} alt='' />
-                        }
-                        {val.ppt!==''?
-                          <img src={pptOn} alt='' onClick={()=>handleGoVimeo(val.ppt)} style={{cursor:'pointer'}}/>
-                          :<img src={pptOff} alt='' />
-                        }
-                        {val.workbook!==''?
-                          <img src={workbookOn} alt='' onClick={()=>handleDialog(val.title,val.workbook)} style={{cursor:'pointer'}}/>
-                          :<img src={workbookOff} alt='' />
-                        }
-                      </div> */}
+                  
+                    <div className='contentsImgBox'> 
+                      <a href={`https://player.vimeo.com/video/${val.vimeo}`} target='_bank'>
+                        <img src={val.img} alt='' style={{width:190}}/>
+                      </a>
                     </div>
+                  
+                    <div className='contentsTitle' style={{height:75}}>
+                      {val.title}
+                    </div>
+                    
+                    {/* <div className='contentsBtn'>
+                      {val.game!==''?
+                        <img src={gameOn} alt='' onClick={()=>handleGame(val.game)} style={{cursor:'pointer'}}/>
+                        :<img src={gameOff} alt='' />
+                      }
+                      {val.ppt!==''?
+                        <img src={pptOn} alt='' onClick={()=>handleGoVimeo(val.ppt)} style={{cursor:'pointer'}}/>
+                        :<img src={pptOff} alt='' />
+                      }
+                      {val.workbook!==''?
+                        <img src={workbookOn} alt='' onClick={()=>handleDialog(val.title,val.workbook)} style={{cursor:'pointer'}}/>
+                        :<img src={workbookOff} alt='' />
+                      }
+                    </div> */}
+                  </div>
                   )}
                 </div>
               </div>

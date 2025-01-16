@@ -5,6 +5,12 @@ import Main from './Main'
 import Krr from './Krr'
 import ElliIvy from './ElliIvy'
 import Lulu from './Lulu'
+import Download from './Download';
+import KrrPlan from './Plan/Krr';
+import ElliivyPlan from './Plan/Elliivy';
+import PpoglePlan from './Plan/Ppogle';
+import Plan from './Plan/index';
+
 
 
 function App() {
@@ -20,6 +26,15 @@ function App() {
             <Route path="/Krr" element={<Krr/>} />
             <Route path="/ElliIvy" element={<ElliIvy/>} />
             <Route path="/Lulu" element={<Lulu/>} />
+            <Route path="/Download" element={<Download/>} /> 
+            
+            <Route path="/Plan" element={<Plan/>} exact/>
+          
+            <Route path="/Plan/krr" element={<KrrPlan/>} /> 
+            
+            <Route path="/Plan/ppogle" element={<PpoglePlan/>} /> 
+            
+            <Route path="/Plan/elliivy" element={<ElliivyPlan/>} /> 
         </Routes>
       </Suspense>
     </div>

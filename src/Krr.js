@@ -350,7 +350,7 @@ function Krr() {
 
        // Step3 -> 4호
        {week:1,css:'pinkbox',ctgr:23,title:'한글 - 1주차 월요일',  img:t3411,vimeo:'998596882',game:'',ppt:'723666082',workbook:''},
-       {week:1,css:'yellowbox',ctgr:23,title:'수학 - 1주차 화요일',img:t3412,vimeo:'9986584867',game:'',ppt:'832148198',workbook:''},
+       {week:1,css:'yellowbox',ctgr:23,title:'수학 - 1주차 화요일',img:t3412,vimeo:'998658486',game:'',ppt:'832148198',workbook:''},
        {week:1,css:'pinkbox',ctgr:23,title:'한글 - 1주차 수요일',  img:t3413,vimeo:'998595907',game:'',ppt:'723666120',workbook:''},
        {week:1,css:'yellowbox',ctgr:23,title:'수학 - 1주차 목요일',img:t3414,vimeo:'998657833',game:'',ppt:'831804858',workbook:''},
        {week:1,css:'bluebox',ctgr:23,title:'한글 - 1주차 금요일',  img:t3415,vimeo:'998595907',game:'',ppt:'723666120',workbook:''}, 
@@ -500,7 +500,7 @@ function Krr() {
       </div> 
       {isHovering===1?
           <div className={scrollY<90 || scrollDown?'subMenu subMenuOn':'subMenu subMenuOff'}>
-                <div style={{minWidth:465}}/>
+                {/* <div style={{minWidth:465}}/> */}
                 
                 <div onClick={()=>handleStepChange(0,'../Lulu')}  className={step===0?'sm subMenuItemOn':'sm subMenuItemOff'}>
                   <img src={krrStepOn0} alt=''/>
@@ -509,13 +509,13 @@ function Krr() {
                   
                 </div>
              
-                <video  className='subMenuCharacter'  autoPlay muted loop style={{marginLeft:315}}>
+                {/* <video  className='subMenuCharacter'  autoPlay muted loop style={{marginLeft:315}}>
                   <source src={luluCharacter} type="video/mp4"></source>
-                </video>
+                </video> */}
           </div>
           :isHovering===2?
           <div className={scrollY<90 || scrollDown ?'subMenu subMenuOn':'subMenu subMenuOff'}>
-              <div style={{minWidth:355}}/>
+              {/* <div style={{minWidth:355}}/> */}
               
               <div onClick={()=>handleStepChange(1,'../Krr')} className={step===1?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={krrStepOn1} alt=''/>
@@ -539,9 +539,10 @@ function Krr() {
                 
               </div>
             
-              <video  className='subMenuCharacter' autoPlay muted loop style={{marginLeft:205}}>
+             
+              {/* <video  className='subMenuCharacter' autoPlay muted loop style={{marginLeft:205}}>
                 <source src={character} type="video/mp4"></source>
-              </video>
+              </video>  */}
 
           </div>
           :
