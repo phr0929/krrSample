@@ -9,8 +9,8 @@ import './contents.css'
 import instaLogo from './resource/instaLogo.svg';
 import youtubeLogo from './resource/youtubeLogo.svg';
 import elliivyAppIcon from './resource/elliivyAppIcon.svg';
-import krrAppIcon from './resource/krrAppIcon.svg';
-import elliivyApp from './resource/elliIvy-fiveminspeech-release_v2.apk'
+import krrAppIcon from './resource/krrAppIcon.svg'; 
+import app from './resource/appvideo.mp4'
 
 function Download() {
   
@@ -54,11 +54,11 @@ function Download() {
             <div className='navTitleKrr' onClick={()=>handleMenuMousOver(2)}>
               다운로드
             </div>
-            <div className='navMenu bgYellow' onClick={()=>setNavDialog(true)}>
+            {/* <div className='navMenu bgYellow' onClick={()=>setNavDialog(true)}>
               <div className='navLine'></div>
               <div className='navLine'></div>
               <div className='navLine'></div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div> 
@@ -69,20 +69,42 @@ function Download() {
         
       
          
-            <div className='downloadBtnBar'>
+            <div className='speechTitlt' >
+              <div>발표력 UP!</div>
+              <div>자신감 UP UP! </div>
 
-            <a href="/download/앱프로그램입니다.apk" type="application/vnd.android.package-archive" target="_blank" download>
-              <div className='downloadBtn'>
+            </div>            
+            <div className='speechContent' >
+              매달 제공되는 발성, 발음 수업 영상과 스피치 대본으로
+            </div>
+            <div className='speechContent' style={{marginBottom:50}}>
+              우리 아이의 스피치 레벨을 UP! 시켜보세요.
+            </div>
+            <div className='downloadBtnBar'>
+ 
+            <a href="https://www.1min3.kr/resources/apks/fiveminspeech-ellilvy-release.apk" style={{textDecorationLine: 'none'}}>
+              <div className='downloadBtn' >
                 <img src={elliivyAppIcon} alt=''/>
-                <div>ElliIvy<br/>스피치 APP<br/>다운로드</div>
+                <div>ElliIvy<br/>스피치 APP</div>
+                <div className='downloadBtnText' >다운로드</div>
               </div>
             </a> 
 
-              <div className='downloadBtn' style={{color:'#ccc'}}>
-                <img src={krrAppIcon} alt='' style={{filter:'opacity(0.5)'}}/>
-                <div>까르르<br/>스피치 APP<br/>준비중</div>
+            <a href="https://www.1min3.kr/resources/apks/fiveminspeech-kkarhan-release.apk" style={{textDecorationLine: 'none'}}>
+              <div className='downloadBtn'>
+                <img src={krrAppIcon} alt=''/>
+                <div>까르르<br/>스피치 APP</div>
+                <div className='downloadBtnText'>다운로드</div>
               </div>
+            </a> 
+ 
             </div> 
+
+              <div className='speechVideo'>
+                <video loop controls>
+                  <source src={app} type="video/mp4"></source>
+                </video>
+              </div>
             
                        
 

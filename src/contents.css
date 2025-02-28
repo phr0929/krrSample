@@ -43,8 +43,13 @@
       --mainBtnMarginBottom:50px;
       --mainBtnHeight:60px;
       --downloagBtnMarginTop:0px;
-      --downloagBtnMarginLeft:20px;
-    }
+      --downloagBtnMarginLeft:20px; 
+      --speechFontSize: 55px;
+      --speechFontSize2: 25px;
+      --speechTitleDirection: row;
+      --speechBtnMargin: 30px 0px 30px 0px;
+      --speechContentTextMargin: 15px;
+  }
 
     .contentsLayout:hover{
         margin:0px 15px 30px 15px;
@@ -101,6 +106,11 @@
       --mainBtnHeight:60px;
       --downloagBtnMarginTop:0px;
       --downloagBtnMarginLeft:20px;
+      --speechFontSize: 55px;
+      --speechFontSize2: 25px;
+      --speechTitleDirection: row;
+      --speechBtnMargin: 30px 0px 30px 0px;
+      --speechContentTextMargin: 15px;
     }
 
     .contentsLayout:hover{
@@ -159,6 +169,11 @@
       --mainBtnHeight:50px;
       --downloagBtnMarginTop:20px;
       --downloagBtnMarginLeft:0px;
+      --speechFontSize: 55px;
+      --speechFontSize2: 25px;
+      --speechTitleDirection: row;
+      --speechBtnMargin: 30px 0px 30px 0px;
+      --speechContentTextMargin: 15px;
     }
 
     
@@ -201,6 +216,11 @@
       --mainBtnHeight:50px;
       --downloagBtnMarginTop:20px;
       --downloagBtnMarginLeft:0px;
+      --speechFontSize: 40px;
+      --speechFontSize2: 20px;
+      --speechTitleDirection: row;
+      --speechBtnMargin: 20px 0px 20px 0px;
+      --speechContentTextMargin: 15px;
     }
 }
     
@@ -242,6 +262,11 @@
       --mainBtnHeight:50px;
       --downloagBtnMarginTop:20px;
       --downloagBtnMarginLeft:0px;
+      --speechFontSize: 35px;
+      --speechFontSize2: 20px;
+      --speechTitleDirection: column;
+      --speechBtnMargin: 0px 0px 0px 0px;
+      --speechContentTextMargin: 0px;
     }
 }
 
@@ -1359,17 +1384,87 @@
 }
 
 .downloadBtn{
-    margin-top: var(--downloagBtnMarginTop);
-    margin-left: var(--downloagBtnMarginLeft);
-    padding: 15px;
-    background-color: #fff; 
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 120px;    
     align-items: center;
-    font-size: 13px;
-    font-family: 'Noto Sans KR';
-    color:#5d5d5d; 
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 3px 10px 10px #eee;
+    color: #5d5d5d;
+    flex-direction: column;
+    font-family: Noto Sans KR;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: var(--downloagBtnMarginTop);
+    padding: 30px 50px;
+    width: 120px;
 }
+
+.downloadBtn img {
+    height: auto;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.downloadBtnText {
+    border: 1px solid #eee;
+    border-radius: 50px;
+    margin-top: 15px;
+    padding: 10px 15px;
+}
+
+.speechTitlt {
+    color: #323232;
+    flex-direction: var(--speechTitleDirection);
+    font-size: var(--speechFontSize);
+    justify-content: center;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    width: 100%;
+}
+.downloadBtn, .speechTitlt {
+    display: flex;
+    text-align: center;
+}
+
+.speechTitlt div:nth-child(1){
+    margin-right: var(--speechContentTextMargin);
+} 
+
+.speechContent {
+    color: #969696;
+    font-family: Note Sans KR;
+    font-size: var(--speechFontSize2);
+    font-weight: 500;
+    text-align: center;
+    width: 80%;
+}
+
+
+.downloadBtnBar {
+    align-items: center;
+    display: flex;
+    flex-direction: var(--speechTitleDirection);
+    height: 100%;
+    justify-content: center;
+    margin: var(--speechBtnMargin);
+    position: relative;
+    width: var(--width);
+    z-index: 120;
+}
+
+.speechVideo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.speechVideo video {
+    border-radius: 20px;
+    margin-top: 100px;
+    max-width: 90%;
+    width: 700px;
+    height: auto; 
+}
+ 
