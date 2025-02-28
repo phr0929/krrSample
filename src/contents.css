@@ -49,6 +49,8 @@
       --speechTitleDirection: row;
       --speechBtnMargin: 30px 0px 30px 0px;
       --speechContentTextMargin: 15px;
+      --speechMobileDisplay: none;
+      --speechPcDisplay: flex;
   }
 
     .contentsLayout:hover{
@@ -111,6 +113,8 @@
       --speechTitleDirection: row;
       --speechBtnMargin: 30px 0px 30px 0px;
       --speechContentTextMargin: 15px;
+      --speechMobileDisplay: none;
+      --speechPcDisplay: flex;
     }
 
     .contentsLayout:hover{
@@ -174,6 +178,8 @@
       --speechTitleDirection: row;
       --speechBtnMargin: 30px 0px 30px 0px;
       --speechContentTextMargin: 15px;
+      --speechMobileDisplay: none;
+      --speechPcDisplay: flex;
     }
 
     
@@ -221,6 +227,8 @@
       --speechTitleDirection: row;
       --speechBtnMargin: 20px 0px 20px 0px;
       --speechContentTextMargin: 15px;
+      --speechMobileDisplay: flex;
+      --speechPcDisplay: none;
     }
 }
     
@@ -263,10 +271,12 @@
       --downloagBtnMarginTop:20px;
       --downloagBtnMarginLeft:0px;
       --speechFontSize: 35px;
-      --speechFontSize2: 20px;
+      --speechFontSize2: 17px;
       --speechTitleDirection: column;
       --speechBtnMargin: 0px 0px 0px 0px;
       --speechContentTextMargin: 0px;
+      --speechMobileDisplay: flex;
+      --speechPcDisplay: none;
     }
 }
 
@@ -1374,7 +1384,7 @@
     display: flex;
     flex-direction: var(--bottomDirection);
     margin:30px 0px 30px 0px;
-    font-weight: ;
+    
 }
 
 .downloadBtn img{
@@ -1397,6 +1407,10 @@
     margin-top: var(--downloagBtnMarginTop);
     padding: 30px 50px;
     width: 120px;
+}
+
+.downloadBtn:hover{
+    filter: brightness(0.97);
 }
 
 .downloadBtn img {
@@ -1438,7 +1452,18 @@
     font-weight: 500;
     text-align: center;
     width: 80%;
+    display: flex;
+    justify-content: center;
 }
+
+.speechContentPc{
+    display: var(--speechPcDisplay);
+}
+
+.speechContentMobile{
+    display: var(--speechMobileDisplay);
+}
+
 
 
 .downloadBtnBar {

@@ -11,6 +11,8 @@ import youtubeLogo from './resource/youtubeLogo.svg';
 import elliivyAppIcon from './resource/elliivyAppIcon.svg';
 import krrAppIcon from './resource/krrAppIcon.svg'; 
 import app from './resource/appvideo.mp4'
+import stars from './resource/stars.svg';
+import circle from './resource/circle.svg';
 
 function Download() {
   
@@ -74,8 +76,14 @@ function Download() {
               <div>자신감 UP UP! </div>
 
             </div>            
-            <div className='speechContent' >
+            <div className='speechContent speechContentPc' >
               매달 제공되는 발성, 발음 수업 영상과 스피치 대본으로
+            </div> 
+            <div className='speechContent speechContentMobile' >
+              매달 제공되는
+            </div>
+            <div className='speechContent speechContentMobile' >
+              발성, 발음 수업 영상과 스피치 대본으로
             </div>
             <div className='speechContent' style={{marginBottom:50}}>
               우리 아이의 스피치 레벨을 UP! 시켜보세요.
@@ -129,6 +137,10 @@ function Download() {
       
           </div>        
            
+        <img src={stars} alt='' className='stars' />
+        <img src={circle} alt='' className='circle1'/>
+        <img src={circle} alt='' className='circle2'/>
+
           {navDialog===true?
       <div className={navDialog?'navDialog navDialogOn':'navDialog navDialogOff'}> 
         <div className='navDialogStatusBar'>
