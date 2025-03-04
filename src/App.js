@@ -26,7 +26,7 @@ function App() {
             <Route path="/Krr" element={<Krr/>} />
             <Route path="/ElliIvy" element={<ElliIvy/>} />
             <Route path="/Lulu" element={<Lulu/>} />
-            <Route path="/Download" element={<Download/>} /> 
+            <Route path="/download" element={<Download/>} /> 
             
             <Route path="/Plan" element={<Plan/>} exact/>
           

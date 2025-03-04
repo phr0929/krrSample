@@ -1204,7 +1204,7 @@ function ElliIvy() {
         </div>
         <div className='navDialogMenu'>  
           <div className='navDialogMenuLayout'>
-            <div className='navDialogMenuTitleOfff' onClick={()=>handleNavStepChange(0,'../Lulu')}>안녕! 룰루</div>
+            <div className='navDialogMenuTitleOff' onClick={()=>handleNavStepChange(0,'../Lulu')}>안녕! 룰루</div>
             <div className='navDialogMenuStep'>
               <div onClick={()=>handleNavStepChange(0,'../Lulu')}  className={step===0?'navDialogMenuStepOn navStepLuluOn':'navDialogMenuStepOff'}>LITTLES</div>
             </div>

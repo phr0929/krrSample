@@ -44,13 +44,14 @@
       --mainBtnHeight:60px;
       --downloagBtnMarginTop:0px;
       --downloagBtnMarginLeft:20px; 
-      --speechFontSize: 55px;
-      --speechFontSize2: 25px;
+      --speechFontSize: 45px;
+      --speechFontSize2: 22px;
       --speechTitleDirection: row;
-      --speechBtnMargin: 30px 0px 30px 0px;
+      --speechBtnMargin: 50px 0px 30px 0px;
       --speechContentTextMargin: 15px;
       --speechMobileDisplay: none;
       --speechPcDisplay: flex;
+      --speechMenuBarScale:1;
   }
 
     .contentsLayout:hover{
@@ -108,13 +109,14 @@
       --mainBtnHeight:60px;
       --downloagBtnMarginTop:0px;
       --downloagBtnMarginLeft:20px;
-      --speechFontSize: 55px;
-      --speechFontSize2: 25px;
+      --speechFontSize: 45px;
+      --speechFontSize2: 22px;
       --speechTitleDirection: row;
-      --speechBtnMargin: 30px 0px 30px 0px;
+      --speechBtnMargin: 50px 0px 30px 0px;
       --speechContentTextMargin: 15px;
       --speechMobileDisplay: none;
       --speechPcDisplay: flex;
+      --speechMenuBarScale:1;
     }
 
     .contentsLayout:hover{
@@ -173,13 +175,14 @@
       --mainBtnHeight:50px;
       --downloagBtnMarginTop:20px;
       --downloagBtnMarginLeft:0px;
-      --speechFontSize: 55px;
-      --speechFontSize2: 25px;
+      --speechFontSize: 45px;
+      --speechFontSize2: 22px;
       --speechTitleDirection: row;
-      --speechBtnMargin: 30px 0px 30px 0px;
+      --speechBtnMargin: 50px 0px 30px 0px;
       --speechContentTextMargin: 15px;
       --speechMobileDisplay: none;
       --speechPcDisplay: flex;
+      --speechMenuBarScale:1;
     }
 
     
@@ -223,12 +226,13 @@
       --downloagBtnMarginTop:20px;
       --downloagBtnMarginLeft:0px;
       --speechFontSize: 40px;
-      --speechFontSize2: 20px;
+      --speechFontSize2: 18px;
       --speechTitleDirection: row;
-      --speechBtnMargin: 20px 0px 20px 0px;
+      --speechBtnMargin: 50px 0px 20px 0px;
       --speechContentTextMargin: 15px;
       --speechMobileDisplay: flex;
       --speechPcDisplay: none;
+      --speechMenuBarScale:0.8;
     }
 }
     
@@ -270,13 +274,14 @@
       --mainBtnHeight:50px;
       --downloagBtnMarginTop:20px;
       --downloagBtnMarginLeft:0px;
-      --speechFontSize: 35px;
+      --speechFontSize: 30px;
       --speechFontSize2: 17px;
       --speechTitleDirection: column;
       --speechBtnMargin: 0px 0px 0px 0px;
       --speechContentTextMargin: 0px;
       --speechMobileDisplay: flex;
       --speechPcDisplay: none;
+      --speechMenuBarScale:0.8;
     }
 }
 
@@ -659,8 +664,10 @@
     height: 100%;
     align-items: center;
     justify-content: flex-start; 
-    background-color: #fbfbfb;
-    margin-top: 91px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 20;
+    font-family: Noto Sans KR;
 }
 
 .mainCenterLayout{
@@ -1352,7 +1359,7 @@
     right: 50px;
     z-index: 15;
 }
-
+ 
 
 
 @keyframes rotate{
@@ -1374,17 +1381,14 @@
 } 
 
 .downloadBtnBar{
-
     width: var(--width);
-    height: 100%;
     position: relative;
     z-index: 120;
     align-items: center;
     justify-content: center;
     display: flex;
-    flex-direction: var(--bottomDirection);
-    margin:30px 0px 30px 0px;
-    
+    flex-direction: var(--speechTitleDirection);
+    margin: var(--speechBtnMargin);
 }
 
 .downloadBtn img{
@@ -1396,11 +1400,11 @@
 .downloadBtn{
     align-items: center;
     background-color: #fff;
+    border:1px solid #f2f2f2;
     border-radius: 20px;
     box-shadow: 3px 10px 10px #eee;
     color: #5d5d5d;
-    flex-direction: column;
-    font-family: Noto Sans KR;
+    flex-direction: column; 
     font-size: 15px;
     margin-left: 10px;
     margin-right: 10px;
@@ -1412,6 +1416,57 @@
 .downloadBtn:hover{
     filter: brightness(0.97);
 }
+
+.downloadBtn:hover img{
+    animation: scaleReturn 0.5s forwards;
+} 
+ 
+@keyframes scaleReturn{
+    0% {
+        scale:1;
+    }
+    30%{
+        scale:1.1;
+    }
+    100%{        
+        scale:1;
+    }
+}
+.downloadBtn:hover .downloadBtnText{
+}
+
+.speechMenuBar{
+    scale:var(--speechMenuBarScale);
+    display: flex;
+    flex-direction: row;
+    background-color: #eee;
+    color:#c6c1b7;
+    border-radius: 50px;
+    margin-top: 50px;
+}
+
+.speechMenuBarOn{
+    width: 120px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #fff;
+    border:3px solid #fabe00;
+    color:#fabe00;
+}
+
+.speechMenuBarOff{
+    width: 120px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border:3px solid #eee;
+}
+
 
 .downloadBtn img {
     height: auto;
@@ -1435,6 +1490,7 @@
     margin-bottom: 30px;
     margin-top: 100px;
     width: 100%;
+    font-weight: 700;
 }
 .downloadBtn, .speechTitlt {
     display: flex;
@@ -1447,7 +1503,6 @@
 
 .speechContent {
     color: #969696;
-    font-family: Note Sans KR;
     font-size: var(--speechFontSize2);
     font-weight: 500;
     text-align: center;
@@ -1465,18 +1520,7 @@
 }
 
 
-
-.downloadBtnBar {
-    align-items: center;
-    display: flex;
-    flex-direction: var(--speechTitleDirection);
-    height: 100%;
-    justify-content: center;
-    margin: var(--speechBtnMargin);
-    position: relative;
-    width: var(--width);
-    z-index: 120;
-}
+ 
 
 .speechVideo {
     display: flex;
@@ -1493,3 +1537,45 @@
     height: auto; 
 }
  
+.speechDownload{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.downStep{
+    margin-top:40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.downLine{
+    width:80vw;
+    max-width: 550px;
+    margin-bottom:30px;
+    margin-top:20px;
+    height: 2px;
+    border-top:1px dotted #dcdcdc   
+}
+
+.downStepTitle{
+    height: 25px;
+    width: 50px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #fabe00;
+    color:#fff;
+    margin-bottom:10px;
+    font-weight: 500;
+    margin-top:10px;
+}
+
+.downStepContents{
+    margin-bottom:20px;
+    font-size: 17px;
+}
