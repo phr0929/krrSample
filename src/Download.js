@@ -114,7 +114,7 @@ function Download() {
             </div>
             <div className='speechMenuBar' style={{marginBottom:20,fontFamily: 'BMJUA' }}>
               <div className={downMenu===1?'speechMenuBarOn':'speechMenuBarOff'} onClick={()=>handleDownloadMenu(1)}>다운로드</div>
-              <div className={downMenu===2?'speechMenuBarOn':'speechMenuBarOff'} onClick={()=>handleDownloadMenu(2)}>회원가입</div>
+              <div className={downMenu===2?'speechMenuBarOn':'speechMenuBarOff'} onClick={()=>handleDownloadMenu(2)}>가입방법</div>
               <div className={downMenu===3?'speechMenuBarOn':'speechMenuBarOff'} onClick={()=>handleDownloadMenu(3)}>이용방법</div>
             </div>
             {downMenu===1?
@@ -147,7 +147,7 @@ function Download() {
 
                 <div className='downLine'/>
                 <div className='downStepTitle'>
-                  1단계
+                  01
                 </div>
                 <div className='downStepContents'>
                   파일 다운로드 창이 뜰 때마다 '다운로드' 버튼을 눌러주세요.
@@ -162,7 +162,7 @@ function Download() {
                 
                 <div className='downLine'/>
                 <div className='downStepTitle'>
-                  2단계
+                  02
                 </div>
                 <div className='downStepContents'>
                   다운로드 완료 된 설치파일을 열고 '설치하기' 버튼을 눌러 주세요.
@@ -175,7 +175,7 @@ function Download() {
 
                 <div className='downLine'/>
                 <div className='downStepTitle'>
-                  3단계
+                  03
                 </div>
                 <div className='downStepContents'>
                   '무시하고 설치' 버튼을 누르고 설치된 파일을 열어주세요.
@@ -187,7 +187,7 @@ function Download() {
               
                 <div className='downLine'/>
                 <div className='downStepTitle'>
-                  4단계
+                  04
                 </div>
                 <div className='downStepContents'>
                   권한 설정창이 열릴때마다 '앱 사용 중에는 허용'버튼을 눌러주세요.
@@ -199,7 +199,7 @@ function Download() {
                
                 <div className='downLine'/>
                 <div className='downStepTitle'>
-                  5단계
+                  05
                 </div>
                 <div className='downStepContents'>
                   필수 권한을 설정하기 위해 '설정하기'버튼을 누르고, 권한 허용을 체크해 주세요.
@@ -223,14 +223,14 @@ function Download() {
 
             
             <div className='downStepTitle'>
-                1단계
+                01
             </div>
-            <div className='downStepContents' style={{marginBottom:20}}>
+            <div className='downStepContents' style={{marginBottom:10}}>
                 회원가입 정보를 아래 설명에 맞게 입력해 주세요.
             </div>
               
             <div className='downStepLayout'>
-              <div className='downStepImgBox' style={{marginBottom:10}}>
+              <div className='downStepImgBox' style={{marginBottom:10,width:500}}>
                 <img src={joinImg1} alt='' style={{width:'100%',marginTop:10}}/>       
               </div>
 
@@ -246,7 +246,7 @@ function Download() {
 
                 <div className='joinContentsText'>
                   <div>3</div>
-                  <div>아이디 : 로그인 할 때 사용 할 아이디를 입력해 주세요.</div>
+                  <div>아이디 : 아이디를 입력해 주세요. 영어와 숫자만 사용 가능합니다.</div>
                 </div> 
 
                 <div className='joinContentsText'>
@@ -291,31 +291,31 @@ function Download() {
 
             <div className='downLine' style={{marginTop:0}}/>
             <div className='downStepTitle'>
-                2단계
+                02
             </div>
-            <div className='downStepContents' style={{marginBottom:20}}>
+            <div className='downStepContents' style={{marginBottom:10}}>
               등록 페이지가 열리면 아무 내용도 입력하지 마시고 등록완료 버튼을 눌러주세요.
             </div>
               
             
             
             <div className='downStepLayout' style={{marginBottom:50}}>
-              <div className='downStepImgBox' style={{marginBottom:10}}>
+              <div className='downStepImgBox' style={{marginBottom:10,width:500}}>
                 <img src={joinImg2} alt='' style={{width:'100%',marginTop:10}}/>       
               </div>
             </div>
 
             <div className='downLine' style={{marginTop:0}}/>
             <div className='downStepTitle'>
-                3단계
+                03
             </div>
             <div className='downStepContents' style={{marginBottom:20}}>
               회원가입 후 아래 연락처로 문자를 남겨주세요.<br/>
-              내용 : 과목(영어/한글), 아이디, 원아 수, 사용할 연령            
+              내용 : 과목(영어/한글), 아이디, 연령 별 원아 수            
             </div>
               
             
-            <a href="sms:01058202473?body=스피치 회원가입 승인 부탁드립니다. 과목 : 영어/한글, 아이디 : , 원아 수 : 명, 사용할 연령 : " style={{textDecorationLine: 'none'}}>
+            <a href="sms:01058202473?body=스피치 회원가입 승인 부탁드립니다. 과목 : 영어/한글, 아이디 : ,연령 별 원아 수 : 0세 0명" style={{textDecorationLine: 'none'}}>
               <div className='joinMsg'  style={{marginBottom:100,fontSize:17,color:'#5d5d5d',border:'1px solid #dcdcdc',width:500,maxWidth:'90vw',alignItems:'center',justifyContent:'center',display:'flex',borderRadius:10,padding:'20px 20px',boxShadow:'0px 3px 3px #dcdcdc',boxSizing:'border-box',textAlign:'center',}}>
                   {/* <img src={msg} alt='' style={{width:25,height:25,marginRight:10,marginTop:2, }}/>  */}
                   010-5820-2473

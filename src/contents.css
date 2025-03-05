@@ -44,8 +44,8 @@
       --mainBtnHeight:60px;
       --downloagBtnMarginTop:0px;
       --downloagBtnMarginLeft:20px; 
-      --speechFontSize: 45px;
-      --speechFontSize2: 22px;
+      --speechFontSize: 40px;
+      --speechFontSize2: 18px;
       --speechTitleDirection: row;
       --speechBtnMargin: 50px 0px 10px 0px;
       --speechContentTextMargin: 15px;
@@ -111,8 +111,8 @@
       --mainBtnHeight:60px;
       --downloagBtnMarginTop:0px;
       --downloagBtnMarginLeft:20px;
-      --speechFontSize: 45px;
-      --speechFontSize2: 22px;
+      --speechFontSize: 40px;
+      --speechFontSize2: 18px;
       --speechTitleDirection: row;
       --speechBtnMargin: 50px 0px 10px 0px;
       --speechContentTextMargin: 15px;
@@ -179,8 +179,8 @@
       --mainBtnHeight:50px;
       --downloagBtnMarginTop:20px;
       --downloagBtnMarginLeft:0px;
-      --speechFontSize: 45px;
-      --speechFontSize2: 22px;
+      --speechFontSize: 40px;
+      --speechFontSize2: 18px;
       --speechTitleDirection: row;
       --speechBtnMargin: 30px 0px 10px 0px;
       --speechContentTextMargin: 15px;
@@ -231,8 +231,8 @@
       --mainBtnHeight:50px;
       --downloagBtnMarginTop:20px;
       --downloagBtnMarginLeft:0px;
-      --speechFontSize: 40px;
-      --speechFontSize2: 18px;
+      --speechFontSize: 35px;
+      --speechFontSize2: 17px;
       --speechTitleDirection: row;
       --speechBtnMargin: 20px 0px 0px 0px;
       --speechContentTextMargin: 15px;
@@ -1567,7 +1567,7 @@
 
 .downStepTitle{
     height: 25px;
-    width: 50px;
+    width: 35px;
     font-size: 14px;
     display: flex;
     align-items: center;
@@ -1598,7 +1598,7 @@
     align-items: flex-end;
     justify-content: center;
     /* margin-bottom:50px; */
-    width:500px;
+    width:600px;
     max-width: calc(90vw - 20px);
     margin:0px 0px 50px 0px;
     height: auto;
@@ -1732,5 +1732,5 @@
 }
 
 .joinMsg{
-    
+
 }
