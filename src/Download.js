@@ -26,6 +26,9 @@ import downImg9 from './resource/download/9.png'
 import downImg10 from './resource/download/10.png'
 import downImg11 from './resource/download/11.png'
 
+import security1 from './resource/download/s1.png'
+import security2 from './resource/download/s2.png'
+
 
 import joinImg1 from './resource/download/j1.png'
 import joinImg1_2 from './resource/download/j1-2.png'
@@ -96,7 +99,167 @@ function Download() {
       
       <div  className='downloadCenterLayout'>
 
-            <div className='speechTitlt'>
+      <div className='speechTitlt'>
+              <div>발표력 UP!</div>
+              <div>자신감 UP UP! </div>
+            </div>            
+            <div className='speechContent speechContentPc' >
+              매달 제공되는 발성, 발음 수업 영상과 스피치 대본으로
+            </div> 
+            <div className='speechContent speechContentMobile' >
+              매달 제공되는
+            </div>
+            <div className='speechContent speechContentMobile' >
+              발성, 발음 수업 영상과 스피치 대본으로
+            </div>
+            <div className='speechContent'>
+              우리 아이의 스피치 레벨을 UP! 시켜보세요.
+            </div>
+            <div className='speechMenuBar' style={{marginBottom:20,fontFamily: 'BMJUA' }}>
+              <div className={downMenu===1?'speechMenuBarOn':'speechMenuBarOff'} onClick={()=>handleDownloadMenu(1)} style={{width:150,maxWidth:'35vw'}}>다운로드</div>
+              <div className={downMenu===2?'speechMenuBarOn':'speechMenuBarOff'} onClick={()=>handleDownloadMenu(2)} style={{width:150,maxWidth:'35vw'}}>이용방법</div>
+            </div>
+            {downMenu===1?
+            <div className='speechDownload'>
+
+              
+              <div className='downloadBtnBar'>
+
+                <a href="https://www.1min3.kr/resources/apks/fiveminspeech-ellilvy-release.apk" style={{textDecorationLine: 'none'}}>
+                  <div className='downloadBtn' >
+                    <img src={elliivyAppIcon} alt=''/>
+                    <div>ElliIvy 스피치 APP</div>
+                    <div className='downloadBtnText'>다운로드</div>
+                  </div> 
+                </a> 
+
+                <a href="https://www.1min3.kr/resources/apks/fiveminspeech-kkarhan-release.apk" style={{textDecorationLine: 'none'}}>
+                  <div className='downloadBtn'>
+                    <img src={krrAppIcon} alt=''/>
+                    <div>까르르 스피치 APP</div>
+                    <div className='downloadBtnText'>다운로드</div>
+                  </div>
+                </a> 
+  
+              </div> 
+
+          
+
+              <div className='downStep'> 
+
+                <div className='downLine'/>
+
+                <div className='downStepTitle'>
+                  01
+                </div>
+                <div className='downStepContents'>
+                  설정 - 보안 위험 자동 차단 메뉴에서<br/>
+                  보안 위험 자동 차단을 해제해 주세요.
+                </div>
+              
+                <div className='downStepImgBox'>
+                  <img src={security1} alt='' style={{width:350,maxWidth:'70%'}}/>       
+                </div>
+
+                <div className='downLine'/>
+
+                
+                <div className='downStepTitle'>
+                  02
+                </div>
+                <div className='downStepContents'>
+                 
+                  파일 다운로드 창이 뜰 때마다 '다운로드' 버튼을 눌러주세요.
+                </div>
+              
+                <div className='downStepImgBox'>
+                  <img src={downImg1} alt='' style={{width:'calc((100% + 240px) / 3)'}}/>      
+                  <img src={downImg2} alt='' style={{width:'calc((100% + 240px) / 3)',marginLeft:-120}}/> 
+                  <img src={downImg3} alt='' style={{width:'calc((100% + 240px) / 3)',marginLeft:-120}}/>
+                </div>
+                
+                
+                <div className='downLine'/>
+                <div className='downStepTitle'>
+                  03
+                </div>
+                <div className='downStepContents'>
+                  다운로드 완료 된 설치파일을 열고 '설치하기' 버튼을 눌러 주세요.
+                </div>
+                <div className='downStepImgBox'>
+                  <img src={downImg4} alt='' style={{width:'calc((100% - 10px) / 2)'}}/>
+                  <img src={downImg5} alt='' style={{width:'calc((100% - 10px) / 2)', marginLeft:10}}/>
+                </div>
+
+
+                <div className='downLine'/>
+                <div className='downStepTitle'>
+                  04
+                </div>
+                <div className='downStepContents'>
+                  '무시하고 설치' 버튼을 누르고 설치된 파일을 열어주세요.
+                </div>
+                <div className='downStepImgBox'>
+                  <img src={downImg6} alt='' style={{width:'calc((100% - 10px) / 2)'}}/>
+                  <img src={downImg7} alt='' style={{width:'calc((100% - 10px) / 2)', marginLeft:10}}/>
+                </div>
+              
+                <div className='downLine'/>
+                <div className='downStepTitle'>
+                  05
+                </div>
+                <div className='downStepContents'>
+                  권한 설정창이 열릴때마다 '앱 사용 중에는 허용'버튼을 눌러주세요.
+                </div>
+                <div className='downStepImgBox'>
+                  <img src={downImg8} alt='' style={{width:'calc((100% - 10px) / 2)'}}/>
+                  <img src={downImg9} alt='' style={{width:'calc((100% - 10px) / 2)', marginLeft:10}}/>
+                </div>
+               
+                <div className='downLine'/>
+                <div className='downStepTitle'>
+                  06
+                </div>
+                <div className='downStepContents'>
+                  필수 권한을 설정하기 위해 '설정하기'버튼을 누르고, 권한 허용을 체크해 주세요.
+                </div>
+                <div className='downStepImgBox'>
+                  <img src={downImg10} alt='' style={{width:'calc((100% - 10px) / 2)'}}/>
+                  <img src={downImg11} alt='' style={{width:'calc((100% - 10px) / 2)', marginLeft:10}}/>
+                </div>
+                 
+                <div className='downStepTitle'>
+                  07
+                </div>
+                <div className='downStepContents'>
+                  설정 - 보안 위험 자동 차단 메뉴에서<br/>
+                  보안 위험 자동 차단을 다시 켜주세요.
+                </div>
+              
+                <div className='downStepImgBox'>
+                  <img src={security2} alt='' style={{width:350,maxWidth:'70%'}}/>       
+                </div>
+
+ 
+              </div> 
+              
+            </div>
+            :
+            <div className='speechDownload'> 
+              <div className='downStepContents' style={{marginTop:15,marginBottom:0}}>
+              ※사이트에서 스피치앱을 주문해 주시면 지사로 아이디와 비밀번호를 전달해 드려요.
+              </div>
+                   
+              <div className='speechVideo'>
+                <video loop controls>
+                  <source src={app} type="video/mp4"></source>
+                </video>
+              </div>
+              
+            </div>
+            }
+
+            {/* <div className='speechTitlt'>
               <div>발표력 UP!</div>
               <div>자신감 UP UP! </div>
             </div>            
@@ -208,13 +371,7 @@ function Download() {
                   <img src={downImg10} alt='' style={{width:'calc((100% - 10px) / 2)'}}/>
                   <img src={downImg11} alt='' style={{width:'calc((100% - 10px) / 2)', marginLeft:10}}/>
                 </div>
-                
-
-
-                {/* <img src={downImg1} alt='' style={{height:200,width:'auto',borderRadius:20,border:'1px solid #dcdcdc'}}/>      
-                <img src={downImg2} alt='' style={{height:200,width:'auto',borderRadius:20,border:'1px solid #dcdcdc',}}/> 
-                <img src={downImg3} alt='' style={{height:200,width:'auto',borderRadius:20,border:'1px solid #dcdcdc'}}/>  */}
-                  {/* <img src={downImg1} alt='' style={{width:300,height:'auto',boxShadow:'3px 10px 10px #eee',borderRadius:20,border:'1px solid #f2f2f2'}}/>       */}
+                 
               </div> 
               
             </div>
@@ -316,105 +473,13 @@ function Download() {
               
             
             <a href="sms:01058202473?body=스피치 회원가입 승인 부탁드립니다. 과목 : 영어/한글, 아이디 : ,연령 별 원아 수 : 0세 0명" style={{textDecorationLine: 'none'}}>
-              <div className='joinMsg'  style={{marginBottom:100,fontSize:17,color:'#5d5d5d',border:'1px solid #dcdcdc',width:500,maxWidth:'90vw',alignItems:'center',justifyContent:'center',display:'flex',borderRadius:10,padding:'20px 20px',boxShadow:'0px 3px 3px #dcdcdc',boxSizing:'border-box',textAlign:'center',}}>
-                  {/* <img src={msg} alt='' style={{width:25,height:25,marginRight:10,marginTop:2, }}/>  */}
+              <div className='joinMsg'>
                   010-5820-2473
               </div>
             </a>
               
               
-          </div>
-            // <div className='speechDownload' style={{marginTop:20}}>
-
-            //   <div>
-                
-            //     010-5820-2473
-
-            //   </div>
-            //   <div className='downStepLayout'>
-            //     <div className='downStepImgBox' style={{marginBottom:10}}>
-            //       <img src={joinImg1} alt='' style={{width:'100%',marginTop:10}}/>       
-            //     </div>
-
-            //     <div className='joinContents'> 
-            //       <div className='joinContentsText'>
-            //         <div>1</div>
-            //         <div>기관명 : 원 이름을 입력해 주세요.</div>
-            //       </div> 
-            //       <div className='joinContentsText'>
-            //         <div>2</div>
-            //         <div>지사명 : 지사 이름을 입력해 주세요.</div>
-            //       </div> 
-
-            //       <div className='joinContentsText'>
-            //         <div>3</div>
-            //         <div>아이디 : 로그인 할 때 사용 할 아이디를 입력해 주세요.</div>
-            //       </div> 
-
-            //       <div className='joinContentsText'>
-            //         <div>4</div>
-            //         <div>휴대폰 : 전화번호를 (-) 없이 숫자만 입력해 주세요.</div>
-            //       </div> 
-
-            //       <div className='joinContentsText'>
-            //         <div>5</div>
-            //         <div>비밀번호 : 비밀번호를 입력해 주세요.</div>
-            //       </div> 
-                
-                
-            //       <div className='joinContentsText'>
-            //         <div>6</div>
-            //         <div>비밀번호확인 : 비밀번호를 한번 더 입력해 주세요.</div>
-            //       </div> 
-
-            //       <div className='joinContentsText'>
-            //         <div>7</div>
-            //         <div>이메일 : 이메일 주소를 입력해 주세요.</div>
-            //       </div> 
-
-            //       <div className='joinContentsText'>
-            //         <div>8</div>
-            //         <div>주소 : 원 주소를 입력해 주세요.</div>
-            //       </div> 
-
-                  
-            //       <div className='joinContentsText'>
-            //         <div>9</div>
-            //         <div>워터마크 : 저장되는 영상에 표시되는 내용입니다.</div>
-                    
-            //         <div className='watermarkImgPc' onClick={()=>setWatermark(true)}>미리보기</div>
-            //       </div>
-
-
-            //       <div className='watermarkImgMobile' onClick={()=>setWatermark(true)}>미리보기</div>
-
-            //     </div>
-            //   </div>
-              
-            //   <div className='downLine' style={{maxWidth:1200,width:'90vw',marginTop:10}}/>
-
-            //   <div className='downStepLayout' style={{marginBottom:50}}>
-            //     <div className='downStepImgBox' style={{marginBottom:10}}>
-            //       <img src={joinImg2} alt='' style={{width:'100%',marginTop:10}}/>       
-            //     </div>
-
-            //     <div className='joinContents'> 
-            //       <div className='joinContentsText'>
-            //         <div>1</div>
-            //         <div>아무 정보도 입력하지 마시고 등록완료 버튼을 눌러주세요.</div>
-            //       </div> 
-                 
-            //       <div className='joinContentsText' style={{color:'#fff',userSelect:'none'}}>
-            //         <div style={{backgroundColor:'#fff'}}>9</div>
-            //         <div>워터마크 : 저장되는 영상에 표시되는 내용입니다.</div>
-                    
-            //         <div className='watermarkImgPc' style={{color:'#fff',border:'1px solid #fff'}}>미리보기</div>
-            //       </div>
-
-            //     </div>
-            //   </div>
-                
-            // </div>
+            </div> 
             :
             <div className='speechDownload'>
              
@@ -426,7 +491,7 @@ function Download() {
                 </div>
               
             </div>
-            }
+            } */}
             
            
                        

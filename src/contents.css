@@ -1732,5 +1732,18 @@
 }
 
 .joinMsg{
-
+    margin-bottom: 100px;
+    font-size: 17px;
+    color: #5d5d5d;
+    border:1px solid #dcdcdc;
+    width: 500px;
+    max-width: 90vw;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+    padding: 20px 20px;
+    box-sizing: 0px 3px 3px #dcdcdc;
+    box-sizing: border-box;
+    text-align: center;
 }
