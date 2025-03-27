@@ -9,10 +9,14 @@ import Download from './Download';
 import KrrPlan from './Plan/Krr';
 import ElliivyPlan from './Plan/Elliivy';
 import PpoglePlan from './Plan/Ppogle';
-import Plan from './Plan/index';
-
-
-
+import Plan from './Plan/index'; 
+import Script2 from './Script2';
+import KrrScript2step1 from './KrrScript2step1';
+import KrrScript2step2 from './KrrScript2step2';
+import KrrScript2step3 from './KrrScript2step3';
+import ElliIvyScript2step1 from './ElliIvyScript2step1';
+import ElliIvyScript2step2 from './ElliIvyScript2step2';
+import ElliIvyScript2step3 from './ElliIvyScript2step3';
 function App() {
  
 
@@ -34,7 +38,22 @@ function App() {
             
             <Route path="/Plan/ppogle" element={<PpoglePlan/>} /> 
             
-            <Route path="/Plan/elliivy" element={<ElliivyPlan/>} /> 
+            <Route path="/Plan/elliivy" element={<ElliivyPlan/>} />  
+
+                 
+            <Route path="/Script2" element={<Script2/>} exact/>
+          
+            <Route path="/Script2/krrStep1" element={<KrrScript2step1/>} />             
+            <Route path="/Script2/krrStep2" element={<KrrScript2step2/>} /> 
+            <Route path="/Script2/krrStep3" element={<KrrScript2step3/>} /> 
+
+          
+            <Route path="/Script2/ElliIvyStep1" element={<ElliIvyScript2step1/>} />             
+            <Route path="/Script2/ElliIvyStep2" element={<ElliIvyScript2step2/>} /> 
+            <Route path="/Script2/ElliIvyStep3" element={<ElliIvyScript2step3/>} /> 
+
+            
+
         </Routes>
       </Suspense>
     </div>

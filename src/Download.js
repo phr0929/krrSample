@@ -83,7 +83,7 @@ function Download() {
             <div className='goSkBtn goSkKrr' onClick={()=>window.open('http://www.edujusk.kr')}>섬김 사이트</div>
           </div>
           <div className='navMenuBar'>
-            <div className='navTitleKrr' onClick={()=>handleMenuMousOver(2)}>
+            <div className='navTitleKrr' style={{marginRight:0}} onClick={()=>handleMenuMousOver(2)}>
               스피치앱
             </div>
             
