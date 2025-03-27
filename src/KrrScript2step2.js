@@ -42,7 +42,7 @@ function KrrScript2step2() {
   return (
     <div className='mainLayout'>
       
-    <div className='scrollMotionLayout' onTouchStart={()=>scrollMotionLayout.style.display="none"}>
+    <div className='scrollMotionLayout' onTouchStart={()=>scrollMotionLayout.style.display="none"} onClick={()=>scrollMotionLayout.style.display="none"}>
       <div className='scrollMotion'>
         <div className='scroll1'>{'>'}</div>
         <div className='scroll2'>{'>'}</div>
@@ -81,7 +81,7 @@ function KrrScript2step2() {
         onSwiper={setSwiper}
         modules={[Navigation, Pagination]} 
         className='scriptSwiperMain'
-        style={{zIndex:100,position:'relative',marginTop:50}}
+        style={{zIndex:100,position:'relative'}}
         slidesPerView={1}        
         spaceBetween={0} 
         centeredSlides={true} 
@@ -112,8 +112,8 @@ function KrrScript2step2() {
       </Swiper>
 
       <div style={{width:'100%',height:50,boxSizing:'border-box',display:'flex',alignItems:'center',justifyContent:'center',fontSize:14,position:'fixed',bottom:0,zIndex:999}}>
-              {pageNumber+1} / 3
-            </div>
+        {pageNumber+1} / 3
+      </div>
     </div>
 
   

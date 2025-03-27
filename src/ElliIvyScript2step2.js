@@ -42,7 +42,7 @@ function ElliIvyScript2step2() {
   return (
     <div className='mainLayout'>
       
-    <div className='scrollMotionLayout' onTouchStart={()=>scrollMotionLayout.style.display="none"}>
+    <div className='scrollMotionLayout' onTouchStart={()=>scrollMotionLayout.style.display="none"} onClick={()=>scrollMotionLayout.style.display="none"}>
       <div className='scrollMotion'>
         <div className='scroll1'>{'>'}</div>
         <div className='scroll2'>{'>'}</div>
@@ -67,7 +67,7 @@ function ElliIvyScript2step2() {
             <div className='navTitleKrr' style={{marginRight:0}}>
               까르르 스피치 2호 대본
             </div>
-            
+            다음장을 보실 수 있습니
             {/* <div className='navMenu bgYellow' onClick={()=>setNavDialog(true)}>
               <div className='navLine'></div>
               <div className='navLine'></div>
@@ -81,7 +81,7 @@ function ElliIvyScript2step2() {
         onSwiper={setSwiper}
         modules={[Navigation, Pagination]} 
         className='scriptSwiperMain'
-        style={{zIndex:100,position:'relative',marginTop:50}}
+        style={{zIndex:100,position:'relative'}}
         slidesPerView={1}        
         spaceBetween={0} 
         centeredSlides={true} 

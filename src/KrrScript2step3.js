@@ -42,7 +42,7 @@ function KrrScript2step3() {
   return (
     <div className='mainLayout'>
       
-    <div className='scrollMotionLayout' onTouchStart={()=>scrollMotionLayout.style.display="none"}>
+    <div className='scrollMotionLayout' onTouchStart={()=>scrollMotionLayout.style.display="none"} onClick={()=>scrollMotionLayout.style.display="none"}>
       <div className='scrollMotion'>
         <div className='scroll1'>{'>'}</div>
         <div className='scroll2'>{'>'}</div>
@@ -81,7 +81,7 @@ function KrrScript2step3() {
         onSwiper={setSwiper}
         modules={[Navigation, Pagination]} 
         className='scriptSwiperMain'
-        style={{zIndex:100,position:'relative',marginTop:50}}
+        style={{zIndex:100,position:'relative'}}
         slidesPerView={1}        
         spaceBetween={0} 
         centeredSlides={true} 
