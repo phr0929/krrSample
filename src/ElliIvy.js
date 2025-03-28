@@ -807,9 +807,11 @@ function ElliIvy() {
           </div>
         </div>
       </div> 
+
+      <div onMouseOver={()=>handleMouseOut(3)} className='centerLayout'>
       {isHovering===1?
-          <div className={scrollY<90 || scrollDown?'subMenu subMenuOn':'subMenu subMenuOff'}>
-                <div style={{minWidth:465}}/>
+           <div className='subMenu'>
+                {/* <div style={{minWidth:465}}/> */}
                 
                 <div onClick={()=>handleStepChange(0,'../Lulu')}  className={step===0?'sm subMenuItemOn':'subMenuItemOff'}>
                   <img src={krrStepOn0} alt='' />
@@ -819,13 +821,13 @@ function ElliIvy() {
                 </div>
              
 
-                <video  className='subMenuCharacter'   autoPlay muted loop style={{marginLeft:315}}>
+                {/* <video  className='subMenuCharacter'   autoPlay muted loop style={{marginLeft:315}}>
                   <source src={luluCharacter} type="video/mp4"></source>
-                </video>
+                </video> */}
           </div>
           :isHovering===2?
-          <div className={scrollY<90 || scrollDown ?'subMenu subMenuOn':'subMenu subMenuOff'}>
-              <div style={{minWidth:355}}/>
+          <div className='subMenu'>
+              {/* <div style={{minWidth:355}}/> */}
               
               <div onClick={()=>handleStepChange(1,'../Krr')}  className={step===1?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={krrStepOn1} alt=''/>
@@ -849,13 +851,13 @@ function ElliIvy() {
                 
               </div>
             
-               <video  className='subMenuCharacter'  autoPlay muted loop style={{marginLeft:205}}>
+               {/* <video  className='subMenuCharacter'  autoPlay muted loop style={{marginLeft:205}}>
                 <source src={character} type="video/mp4"></source>
-              </video>
+              </video> */}
 
           </div>
           :
-          <div className={scrollY<90 || scrollDown ?'subMenu subMenuOn':'subMenu subMenuOff'}>
+          <div className='subMenu'>
               {/* <div style={{minWidth:300}}/> */}
               
               <div onClick={()=>handleStepChange(4,'../ElliIvy')}  className={step===4?'sm subMenuItemOn':'sm subMenuItemOff'}>
@@ -894,7 +896,7 @@ function ElliIvy() {
       }
       
       
-      <div onMouseOver={()=>handleMouseOut(3)} className='centerLayout'>
+      
   
         
       

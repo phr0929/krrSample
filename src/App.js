@@ -22,7 +22,7 @@ function App() {
 
   return (
 
-    <div className='app'>
+    <div className='app warp'>
       
       <Suspense fallback="...loading">
         <Routes>

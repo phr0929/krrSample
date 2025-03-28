@@ -71,7 +71,7 @@ function Download() {
   }
 
   return (
-    <div className='mainLayout'>
+    <div className='mainLayout' style={{width:'100vw'}}>
       <div className='menuBar'>
         <div className='menuBarIn'>
 
@@ -496,7 +496,7 @@ function Download() {
            
                        
 
-              <div className='bottomLayout'>
+              <div className='bottomLayout' style={{paddingBottom:50}}>
                 <div className='bottomLayoutIn'>
                   <img src={skGray} alt=''/>
                   <div className='bottomText'>

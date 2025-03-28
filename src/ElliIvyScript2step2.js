@@ -37,10 +37,13 @@ function ElliIvyScript2step2() {
    
   const [swiper,setSwiper] = useState(false);
   const [pageNumber,setPageNumber] = useState(0);
+  
   const scrollMotionLayout = document.querySelector(".scrollMotionLayout");
 
-  return (
-    <div className='mainLayout'>
+
+
+  return ( 
+    <div className='mainLayout'  style={{width:'100vw'}}>
       
     <div className='scrollMotionLayout' onTouchStart={()=>scrollMotionLayout.style.display="none"} onClick={()=>scrollMotionLayout.style.display="none"}>
       <div className='scrollMotion'>
@@ -64,36 +67,32 @@ function ElliIvyScript2step2() {
 
         
           <div className='navMenuBar'>
-            <div className='navTitleKrr' style={{marginRight:0}}>
-              까르르 스피치 2호 대본
-            </div>
-            다음장을 보실 수 있습니
-            {/* <div className='navMenu bgYellow' onClick={()=>setNavDialog(true)}>
-              <div className='navLine'></div>
-              <div className='navLine'></div>
-              <div className='navLine'></div>
-            </div> */}
+            <div className='navTitleKrr' style={{marginRight:0,color:'#00a84e'}}>
+              엘리아이비 스피치 2호 대본
+            </div> 
           </div>
         </div>
       </div> 
 
-     <Swiper  
+    <Swiper  
         onSwiper={setSwiper}
         modules={[Navigation, Pagination]} 
         className='scriptSwiperMain'
-        style={{zIndex:100,position:'relative'}}
+        style={{zIndex:100,position:'fixed',}}
         slidesPerView={1}        
         spaceBetween={0} 
         centeredSlides={true} 
         initialSlide={pageNumber}        
         observer={true}
         observeParents={true}
+        touchRatio={1}
         onSlideChange={(e) =>  
           setPageNumber(e.realIndex)
       }> 
             
         <SwiperSlide>
           <div className='scriptPage'>
+            <div/>
             <img src={e21} className='scriptImg' alt=''/>
           
           </div>
@@ -111,10 +110,10 @@ function ElliIvyScript2step2() {
         </SwiperSlide>
       </Swiper>
 
-      <div style={{width:'100%',height:50,boxSizing:'border-box',display:'flex',alignItems:'center',justifyContent:'center',fontSize:14,position:'fixed',bottom:0,zIndex:999}}>
+      <div style={{width:'100%',height:50,boxSizing:'border-box',left:0,display:'flex',alignItems:'center',justifyContent:'center',fontSize:14,position:'fixed',bottom:0,zIndex:999}}>
               {pageNumber+1} / 3
             </div>
-    </div>
+    </div> 
 
   
   );

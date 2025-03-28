@@ -375,13 +375,13 @@ function Krr() {
       
     ]
 
+    // const [ctTop, setCtTop] = useState(document.querySelector("#ctLayout").offsetTop);
 
     useEffect(()=>{
       window.scrollTo(0,0)
     },[])
- 
+     
     
-
   window.addEventListener('scroll', (e) => {
      
   
@@ -464,7 +464,7 @@ function Krr() {
  
    
   return (
-    <div className='mainLayout'>
+    <div className='mainLayout' style={{overflow:'scroll'}}>
       <div className='menuBar'>
         <div className='menuBarIn'>
 
@@ -498,8 +498,11 @@ function Krr() {
           </div>
         </div>
       </div> 
+      
+      <div onMouseOver={()=>handleMouseOut(2)} className='centerLayout' id="ct">
       {isHovering===1?
-          <div className={scrollY<90 || scrollDown?'subMenu subMenuOn':'subMenu subMenuOff'}>
+          <div className='subMenu'>
+          {/* // className={scrollY<90 || scrollDown?'subMenu subMenuOn':'subMenu subMenuOff'}> */}
                 {/* <div style={{minWidth:465}}/> */}
                 
                 <div onClick={()=>handleStepChange(0,'../Lulu')}  className={step===0?'sm subMenuItemOn':'sm subMenuItemOff'}>
@@ -514,7 +517,7 @@ function Krr() {
                 </video> */}
           </div>
           :isHovering===2?
-          <div className={scrollY<90 || scrollDown ?'subMenu subMenuOn':'subMenu subMenuOff'}>
+            <div className='subMenu'>
               {/* <div style={{minWidth:355}}/> */}
               
               <div onClick={()=>handleStepChange(1,'../Krr')} className={step===1?'sm subMenuItemOn':'sm subMenuItemOff'}>
@@ -546,7 +549,8 @@ function Krr() {
 
           </div>
           :
-          <div className={scrollY<90 || scrollDown ?'subMenu subMenuOn':'subMenu subMenuOff'}>
+          <div className='subMenu'>
+          {/* className={scrollY<90 || scrollDown ?'subMenu subMenuOn':'subMenu subMenuOff'}> */}
               {/* <div style={{minWidth:300}}/> */}
               
               <div onClick={()=>handleStepChange(4,'../ElliIvy')}  className={step===4?'sm subMenuItemOn':'sm subMenuItemOff'}>
@@ -585,7 +589,6 @@ function Krr() {
       }
       
       
-      <div onMouseOver={()=>handleMouseOut(2)} className='centerLayout'>
   
         
       

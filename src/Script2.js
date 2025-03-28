@@ -23,7 +23,7 @@ function Script2() {
   const navigate = useNavigate();   
 
   return (
-    <div className='mainLayout'>
+    <div className='mainLayout' style={{width:'100vw'}}>
 
 
 
@@ -51,7 +51,7 @@ function Script2() {
         <div style={{width:'100%',height:'100%',textAlign:'center'}}>스피치 2호 대본</div> 
       </div> 
 
-      <div style={{display:'flex',flexDirection:'row',width:'100%',padding:'10px 20px',boxSizing:'border-box'}}>
+      <div style={{display:'flex',flexDirection:'row',width:'100%',padding:'10px 20px',boxSizing:'border-box',}}>
         <div onClick={()=>navigate('./krrStep1')} style={{display:'flex',flexDirection:'column',alignItems:'center',fontSize:14,flex:1,}}>
           <img src={krrStepOn1} alt='' style={{width:60,height:60,marginBottom:10}}/>
           <span>STPE1</span>

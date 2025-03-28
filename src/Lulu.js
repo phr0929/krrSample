@@ -288,8 +288,9 @@ function Lulu() {
           </div>
         </div>
       </div> 
+      <div onMouseOver={()=>handleMouseOut(1)} className='centerLayout'>
       {isHovering===1?
-          <div className={scrollY<90 || scrollDown?'subMenu subMenuOn':'subMenu subMenuOff'}>
+           <div className='subMenu'>
                 {/* <div style={{minWidth:465}}/> */}
                 
                 <div onClick={()=>handleStepChange(0,'../Lulu')}  className={step===0?'sm subMenuItemOn':'subMenuItemOff'}>
@@ -305,7 +306,7 @@ function Lulu() {
                 </video> */}
           </div>
           :isHovering===2?
-          <div className={scrollY<90 || scrollDown ?'subMenu subMenuOn':'subMenu subMenuOff'}>
+          <div className='subMenu'>
               {/* <div style={{minWidth:355}}/> */}
               
               <div onClick={()=>handleStepChange(1,'../Krr')}  className={step===1?'sm subMenuItemOn':'sm subMenuItemOff'}>
@@ -336,7 +337,7 @@ function Lulu() {
 
           </div>
           :
-          <div className={scrollY<90 || scrollDown ?'subMenu subMenuOn':'subMenu subMenuOff'}>
+          <div className='subMenu'>
               {/* <div style={{minWidth:300}}/> */}
               
               <div onClick={()=>handleStepChange(4,'../ElliIvy')}  className={step===4?'sm subMenuItemOn':'sm subMenuItemOff'}>
@@ -375,7 +376,7 @@ function Lulu() {
       }
       
       
-      <div onMouseOver={()=>handleMouseOut(1)} className='centerLayout'>
+      
   
         
       
