@@ -17,6 +17,7 @@ import KrrScript2step3 from './KrrScript2step3';
 import ElliIvyScript2step1 from './ElliIvyScript2step1';
 import ElliIvyScript2step2 from './ElliIvyScript2step2';
 import ElliIvyScript2step3 from './ElliIvyScript2step3';
+import KrrAppDownload from './KrrAppDownload';
 function App() {
  
 
@@ -30,8 +31,9 @@ function App() {
             <Route path="/Krr" element={<Krr/>} />
             <Route path="/ElliIvy" element={<ElliIvy/>} />
             <Route path="/Lulu" element={<Lulu/>} />
-            <Route path="/download" element={<Download/>} /> 
-            
+            <Route path="/download" element={<Download/>} />             
+            <Route path="/krrAppDownload" element={<KrrAppDownload/>} /> 
+
             <Route path="/Plan" element={<Plan/>} exact/>
           
             <Route path="/Plan/krr" element={<KrrPlan/>} /> 
@@ -51,6 +53,7 @@ function App() {
             <Route path="/Script2/ElliIvyStep1" element={<ElliIvyScript2step1/>} />             
             <Route path="/Script2/ElliIvyStep2" element={<ElliIvyScript2step2/>} /> 
             <Route path="/Script2/ElliIvyStep3" element={<ElliIvyScript2step3/>} /> 
+ 
 
             
 
