@@ -18,6 +18,7 @@ import ElliIvyScript2step1 from './ElliIvyScript2step1';
 import ElliIvyScript2step2 from './ElliIvyScript2step2';
 import ElliIvyScript2step3 from './ElliIvyScript2step3';
 import KrrAppDownload from './KrrAppDownload';
+import NextTime from './NextTime';
 function App() {
  
 
@@ -27,10 +28,12 @@ function App() {
       
       <Suspense fallback="...loading">
         <Routes>
-            <Route  path="/" element={<Main/>} />
-            <Route path="/Krr" element={<Krr/>} />
-            <Route path="/ElliIvy" element={<ElliIvy/>} />
-            <Route path="/Lulu" element={<Lulu/>} />
+          
+            <Route  path="/" element={<NextTime/>} />
+            <Route  path="/2025Sample" element={<Main/>} />
+            <Route path="/2025Sample/Krr" element={<Krr/>} />
+            <Route path="/2025Sample/ElliIvy" element={<ElliIvy/>} />
+            <Route path="/2025Sample/Lulu" element={<Lulu/>} />
             <Route path="/download" element={<Download/>} />             
             <Route path="/krrAppDownload" element={<KrrAppDownload/>} /> 
 

@@ -54,6 +54,8 @@
       --speechMenuBarScale:1;
       --downImgRadius:20px;
       --joinTextWidth:fit-content;
+      --comngsoonFontSize:40px;
+      --comngsoonFontSize2:17px;
   }
 
     .contentsLayout:hover{
@@ -121,6 +123,8 @@
       --speechMenuBarScale:1;
       --downImgRadius:20px;
       --joinTextWidth:fit-content;
+      --comngsoonFontSize:40px;
+      --comngsoonFontSize2:17px;
     }
 
     .contentsLayout:hover{
@@ -189,6 +193,8 @@
       --speechMenuBarScale:1;
       --downImgRadius:20px;
       --joinTextWidth:610px;
+      --comngsoonFontSize:40px;
+      --comngsoonFontSize2:17px;
     }
 
     
@@ -241,6 +247,8 @@
       --speechMenuBarScale:0.8;
       --downImgRadius:15px;
       --joinTextWidth:610px;
+      --comngsoonFontSize:30px;
+      --comngsoonFontSize2:15px;
     }
 }
     
@@ -292,6 +300,8 @@
       --speechMenuBarScale:0.8;
       --downImgRadius:10px;
       --joinTextWidth:610px;
+      --comngsoonFontSize:30px;
+      --comngsoonFontSize2:15px;
     }
 }
 
@@ -558,6 +568,7 @@
     height: auto;
 }
  
+
 
 .sm{    
     cursor: pointer;
@@ -1857,3 +1868,57 @@
     text-align: center;
 }
  
+
+.nexttimeLayout{
+    width: var(--mainWidth); 
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+    margin-top:var(--mainCenterMarginTop);
+    margin-bottom:calc(var(--mainCenterMarginBottom) - 50px);-webkit-touch-callout: none;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none; 
+} 
+
+.comingsoon{ 
+    font-family: GmarketSansMedium;
+    font-size: calc(var(--comngsoonFontSize) - 5px);
+    /* font-size: 40px; */
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 3px;
+}
+
+.comingsoonContents{
+    font-family: Arita-dotum-Medium;
+    font-weight: 400;
+    font-size: var(--comngsoonFontSize2);
+    color:#5d5d5d;
+    margin-top:30px;
+}
+
+.comngsoonSiteBtn{
+    font-family: Arita-dotum-Medium;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top:50px;
+    padding:12px 25px;
+    color:#fff;
+    background-color: #fabe00;
+}
+
+
+.comingsoonCharacter{
+    margin-left:12px;
+    /* margin-top:70px; */
+    margin-top: calc(var(--comngsoonFontSize) + 20px);
+    width: 300px;
+    max-width: 60%;
+    height: auto;
+    height: auto;
+}
