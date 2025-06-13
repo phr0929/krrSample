@@ -1,0 +1,472 @@
+
+@media only screen and (min-height: 701px){
+    /* pc */
+    :root{
+        --mainContentsJustifyContent26:center;
+  }
+
+}
+
+  
+@media only screen and (max-height: 700px){
+    /* pc */
+    :root{ 
+        --mainContentsJustifyContent26:flex-start;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 1250px){
+    /* pc */
+    :root{
+        --bgMotionDisplay26:flex;
+        --menuFlexDirection26:row;
+        --logoPadding26:0px 200px;
+        --logoBtnSize26:40px;
+        --mainMenuWidth26:300px;
+        --mainMenuHeight26:372px;
+        --mainMenuMaxWidth26:20vw;
+        --mainMenuMaxHeight26:25vw;
+        --mainMenuDirection26:column;
+        --mainMenuRadius26:50px; 
+        --menuArrowSize26:50px;
+        --arrowDisplay26:flex;
+        --menuText1FontSize26:28px;
+        
+        --menuTitle1FontSize26:40px;
+        --menuText2FontSize26:17px;
+        --menuMargin26:15px;
+        --menuLayoutPaddingTop26:100px;
+        --logoHeight26:100px;
+        --logoBtnMargin26:30px;
+        --mainMenuPadding26:25px;
+        --menuText1PaddingBottom26:8px;
+        --menuPaddingBottom26:0px;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1249px) {
+    /* pc */
+    :root{
+        --bgMotionDisplay26:none;
+        --menuFlexDirection26:column;
+        --mainContentsJustifyContent26:flex-start;
+        --logoPadding26:0px 50px;  
+        --logoBtnSize26:40px;
+        --mainMenuWidth26:300px;
+        --mainMenuHeight26::372px;
+        --mainMenuMaxWidth26:20vw;
+        --mainMenuMaxHeight26:25vw;
+        --mainMenuDirection26:column;
+        --mainMenuRadius26:50px;
+        
+        --menuArrowSize26:50px;
+        --arrowDisplay26:flex;
+        --menuText1FontSize26:28px;
+        --menuTitle1FontSize26:40px;
+        --menuText2FontSize26:17px;
+        --menuMargin26:15px;
+        --menuLayoutPaddingTop26:100px;
+        --logoHeight26:100px;
+        --logoBtnMargin26:30px;
+        --mainMenuPadding26:25px;
+        --menuText1PaddingBottom26:8px;
+        --menuPaddingBottom26:50px;
+    }
+ 
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* tablet */
+    :root{
+        --bgMotionDisplay26:none;
+        --menuFlexDirection26:column;
+        --mainContentsJustifyContent26:flex-start;
+        --logoPadding26:0px 50px;
+        --logoBtnSize26:40px;    
+        --mainMenuWidth26:500px;
+        --mainMenuHeight26::300px;
+        --mainMenuMaxWidth26:80vw;
+        --mainMenuMaxHeight26:48vw;
+        --mainMenuDirection26:row;
+        --mainMenuRadius26:50px;
+        
+        --menuArrowSize26:50px;
+        --arrowDisplay26:flex;
+        --menuText1FontSize26:28px;
+        --menuTitle1FontSize26:40px;
+        --menuText2FontSize26:17px;
+        --menuMargin26:15px;
+        --menuLayoutPaddingTop26:50px;
+        --logoHeight26:100px;
+        --logoBtnMargin26:30px;
+        --mainMenuPadding26:25px;
+        --menuText1PaddingBottom26:8px;
+        --menuPaddingBottom26:50px;
+    }
+
+    
+  }
+  
+  @media only screen and  (min-width: 550px) and (max-width: 767px) { 
+    :root{
+        --bgMotionDisplay26:none;
+        --menuFlexDirection26:column;
+        --mainContentsJustifyContent26:flex-start;
+        --logoPadding26:0px 50px;
+        --logoBtnSize26:40px;
+        --mainMenuWidth26:500px;
+        --mainMenuHeight26::300px;
+        --mainMenuMaxWidth26:80vw;
+        --mainMenuMaxHeight26:48vw;
+        --mainMenuDirection26:row;
+        
+        --mainMenuRadius26:50px;
+        --menuArrowSize26:50px;
+        --arrowDisplay26:flex;
+        --menuText1FontSize26:20px;
+        --menuTitle1FontSize26:32px;
+        --menuText2FontSize26:14px;
+        --menuMargin26:10px;
+        --menuLayoutPaddingTop26:50px;
+        --logoHeight26:80px;
+        --logoBtnMargin26:30px;
+        --mainMenuPadding26:25px;
+        --menuText1PaddingBottom26:8px;
+        
+        --menuPaddingBottom26:50px;
+    }
+}
+    
+
+@media only screen and (max-width: 549px) { 
+    :root{
+        --bgMotionDisplay26:none;
+        --menuFlexDirection26:column;
+        --mainContentsJustifyContent26:flex-start;
+        --logoPadding26:0px 20px;
+        --logoBtnSize26:35px;
+        --mainMenuWidth26:500px;
+        --mainMenuHeight26::300px;
+        --mainMenuMaxWidth26:80vw;
+        --mainMenuMaxHeight26:48vw;
+        --mainMenuDirection26:row;
+ 
+        --mainMenuRadius26:20px;
+        --menuArrowSize26:30px;
+        --arrowDisplay26:flex;
+        --menuText1FontSize26:18px;
+        --menuTitle1FontSize26:25px;
+        --menuText2FontSize26:14px;
+        --menuMargin26:10px;
+        --menuLayoutPaddingTop26:20px;
+        --logoHeight26:80px;
+        --logoBtnMargin26:20px;
+        --mainMenuPadding26:5px 15px 5px 15px;
+        --menuText1PaddingBottom26:4px;
+        
+        --menuPaddingBottom26:50px;
+    }
+}
+
+
+.mainCenterLayout26{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    scrollbar-width: none;
+    align-items: center;
+    justify-content: flex-start; 
+    position: relative;
+}
+
+.mainCenterLayout26::-webkit-scrollbar{
+    display: none;   
+}
+
+.mainLayout26{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;  
+    box-sizing: border-box;
+}
+
+.logoLayout26{
+    width: 100%;
+    height: var(--logoHeight26);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:var(--logoPadding26);
+    box-sizing: border-box;
+    position: relative;
+    z-index: 600;
+}
+
+.logoImg26{
+    width: 60px;
+}
+
+.logoBtnBar26{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.logoBtnBar26 img{
+    padding-top:10px;
+    width: var(--logoBtnSize26);
+    height: var(--logoBtnSize26);
+    margin-right: var(--logoBtnMargin26);
+}
+
+.mainContents26{  
+    width: 100%; 
+    height: calc(100vh - var(--logoHeight26) * 2);
+    display: flex;
+    flex-direction: column; 
+    z-index: 500;  
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: var(--mainContentsJustifyContent26); 
+ 
+}
+
+.mainContentsTitle26{
+    text-align: center;
+    font-size: var(--menuTitle1FontSize26);
+    padding:20px 10px 8px 10px;
+    box-sizing: border-box;
+    color:#323232;
+    display: flex;
+    flex-direction: var(--menuFlexDirection26);
+}
+
+.mainContentsText26{
+    padding:10px 10px 0px 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: NanumBarunGothic;
+    font-size: calc(var(--menuText2FontSize26) + 2px);
+    color:#666;
+    display: flex;
+    flex-direction: var(--menuFlexDirection26);
+}
+/* 여기 */
+.mainContentsMenuLayout26{
+    width: 100%;
+    display: flex;
+    flex-direction: var(--menuFlexDirection26);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top:var(--menuLayoutPaddingTop26);
+    box-sizing: border-box;
+}
+
+.mainMenuLayout26{
+    display: flex;
+    flex-direction: row;
+}
+.mainContentsTitleComma26{
+    margin-right:7px;
+    display: var(--bgMotionDisplay26);
+}
+/* 여기 */
+.mainMenu26{
+    /* box-shadow: 0px 10px 10px #dcdcdc50; */
+    background-color: #ffeef1;
+    border-radius: var(--mainMenuRadius26);
+    width: 300px;
+    height: auto;
+    padding-bottom:var(--mainMenuRadius26);
+    max-width:calc(50vw - 30px);
+    /* max-width: 20vw;
+    max-height: 25vw; */
+    flex-direction: column;
+   /* width:var(--mainMenuWidth26);
+   height:var(--mainMenuHeight26);
+   max-width: var(--mainMenuMaxWidth26);
+   max-height: var(--mainMenuMaxHeight26);
+   flex-direction: var(--mainMenuDirection26); */
+
+    margin:var(--menuMargin26);
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.mainMenuImgBar26{
+    
+    display: flex;
+    flex-direction: row;
+    padding:var(--mainMenuPadding26);
+    width: 100%; 
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+.chImgLayout26{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.chImg26{
+    /* margin-left:var(--menuArrowSize26); */
+    padding-top:calc(var(--mainMenuRadius26) / 2.5);
+    width: 60%;
+    max-width: 140px;
+    height: auto; 
+}
+
+.menuArrow26{
+    margin-top:calc(var(--menuArrowSize26) / 2.5);
+    max-width: var(--menuArrowSize26);
+    max-height: var(--menuArrowSize26);
+    width: var(--menuArrowSize26);
+    height: var(--menuArrowSize26);
+    display: var(--arrowDisplay26);
+    border-radius:250px;
+    box-shadow: 3px 10px 10px #eeeeee50;
+} 
+
+.menuTextLayout26{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+} 
+.menuTextLayout26 div:nth-child(1){
+    font-size: var(--menuText1FontSize26);
+    text-align: center;
+    padding-bottom:var(--menuText1PaddingBottom26);
+    color:#323232;
+}
+
+.menuTextLayout26 div:nth-child(2){
+    font-family: NanumBarunGothic;
+    font-size: var(--menuText2FontSize26);
+    text-align: center;
+    color:#666;
+}
+
+.bgMotion26{
+    width: 100vw;
+    height: calc(100% - 100px);
+    position: absolute;
+    left:0px;
+    display: var(--bgMotionDisplay26);
+    top:100px;
+    flex-direction: row;
+    z-index: 400;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgMotion26 div:nth-child(1){
+    display: flex;
+    flex:1;
+    box-sizing: border-box;
+}
+
+.bgMotion26 div:nth-child(2){
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.bgIcon1{
+  animation: spin 20s linear infinite;
+  margin-left:150px;
+  width: 100px;
+  height: 100px;
+}
+
+.bgIcon2{
+  animation: breathe 3s ease-in-out infinite;
+  width: 60px;
+  height: 60px;
+  margin:100px 30px 0px 0px;
+}
+
+.bgIcon3{
+  animation: spin2 20s linear infinite;
+  width: 100px;
+  height: 100px;
+  margin-right:150px;
+}
+
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+@keyframes spin2 {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+.bgImage26{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left:0px;
+    display: flex;
+    top:0px;
+    flex-direction: column;
+    z-index: 300;
+}
+
+.bgImage26 div:nth-child(1){
+    width: 100%;
+    display: flex;
+    flex:1;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.bgImage26 div:nth-child(1) img{
+    width: 30vw;
+    height: auto;
+    min-width: 250px;
+}
+
+.bgImage26 div:nth-child(2){
+    width: 100%;
+    display: flex;
+    flex:1;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.bgImage26 div:nth-child(2) img{
+    width: 25vw;
+    height: auto;
+    min-width: 250px;
+}
+
+.mainMenuPaddingBottom26{
+    padding-bottom:var(--menuPaddingBottom26);
+}

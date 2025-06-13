@@ -210,7 +210,7 @@ function Main() {
         > 
             
         <SwiperSlide>
-          <div className='mainContentsLayout' onClick={()=>navigate('../Lulu')} >
+          <div className='mainContentsLayout' onClick={()=>navigate('./Lulu')} >
             <img src={luluImg} alt=''/>
             <div className='mainContentsTitle'>안녕! 룰루</div>
             <div className='mainContents'>즐겁게 배우는<br/>4세 글놀이 수놀이</div>
@@ -221,7 +221,7 @@ function Main() {
         </SwiperSlide>
         <SwiperSlide>
         
-          <div className='mainContentsLayout'   onClick={()=>navigate('../Krr')}   >
+          <div className='mainContentsLayout'   onClick={()=>navigate('./Krr')}   >
             <img src={krrImg} alt=''/>
             <div className='mainContentsTitle'>까르르한글수</div>
             <div className='mainContents'>놀이하면서 습득해가는<br/>놀라운 한글 수학세상!</div>
@@ -231,7 +231,7 @@ function Main() {
           </div> 
         </SwiperSlide>
         <SwiperSlide>
-          <div className='mainContentsLayout'   onClick={()=>navigate('../ElliIvy')}>
+          <div className='mainContentsLayout'   onClick={()=>navigate('./ElliIvy')}>
             <img src={eliivyImg} alt=''/>
             <div className='mainContentsTitle'>ElliIvy English</div>
             <div className='mainContents'>즐기면서 익히는<br/>신나는 영어세상!</div>

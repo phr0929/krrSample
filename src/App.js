@@ -19,6 +19,8 @@ import ElliIvyScript2step2 from './ElliIvyScript2step2';
 import ElliIvyScript2step3 from './ElliIvyScript2step3';
 import KrrAppDownload from './KrrAppDownload';
 import NextTime from './NextTime';
+import Main2026 from './S2026/Main';
+
 function App() {
  
 
@@ -30,6 +32,9 @@ function App() {
         <Routes>
           
             <Route  path="/" element={<NextTime/>} />
+            
+            <Route path='/2026Sample' element={<Main2026/>}/>
+
             <Route  path="/2025Sample" element={<Main/>} />
             <Route path="/2025Sample/Krr" element={<Krr/>} />
             <Route path="/2025Sample/ElliIvy" element={<ElliIvy/>} />

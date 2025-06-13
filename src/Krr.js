@@ -468,20 +468,20 @@ function Krr() {
       <div className='menuBar'>
         <div className='menuBarIn'>
 
-          <img className='logoImg' onClick={()=>navigate('../')} src={sk} alt='' />
+          <img className='logoImg' onClick={()=>navigate('../2025sample/')} src={sk} alt='' />
 
           <div className='menuBarMenu'> 
             <div onMouseOver={()=>handleMenuMousOver(1)}
-              onClick={()=>handleStepChange(0,'../Lulu')}
+              onClick={()=>handleStepChange(0,'../2025sample/Lulu')}
                 className={isHovering===1?'titleMenuOnKrr':'titleMenuOff'}>룰루
             </div>
             <div onMouseOver={()=>handleMenuMousOver(2)}
                 className={isHovering===2?'titleMenuOnKrr':'titleMenuOff'}
-                onClick={()=>handleStepChange(step,'../Krr')}>까르르한글수
+                onClick={()=>handleStepChange(step,'../2025sample/Krr')}>까르르한글수
             </div>
             <div onMouseOver={()=>handleMenuMousOver(3)}
                 className={isHovering===3?'titleMenuOnKrr':'titleMenuOff'}
-                onClick={()=>handleStepChange(4,'../ElliIvy')}>ElliIvy
+                onClick={()=>handleStepChange(4,'../2025sample/ElliIvy')}>ElliIvy
             </div>
             
             <div className='goSkBtn goSkKrr' onClick={()=>window.open('http://www.edujusk.kr')}>섬김 사이트</div>
@@ -500,34 +500,18 @@ function Krr() {
       </div> 
       
       <div onMouseOver={()=>handleMouseOut(2)} className='centerLayout' id="ct">
-      {isHovering===1?
-          <div className='subMenu'>
-          {/* // className={scrollY<90 || scrollDown?'subMenu subMenuOn':'subMenu subMenuOff'}> */}
-                {/* <div style={{minWidth:465}}/> */}
-                
-                <div onClick={()=>handleStepChange(0,'../Lulu')}  className={step===0?'sm subMenuItemOn':'sm subMenuItemOff'}>
-                  <img src={krrStepOn0} alt=''/>
-                  <div className='menuText'>STEP1</div>
-                  <div className='menuLine lineOn1'/>
-                  
-                </div>
-             
-                {/* <video  className='subMenuCharacter'  autoPlay muted loop style={{marginLeft:315}}>
-                  <source src={luluCharacter} type="video/mp4"></source>
-                </video> */}
-          </div>
-          :isHovering===2?
-            <div className='subMenu'>
+
+         <div className='subMenu'>
               {/* <div style={{minWidth:355}}/> */}
               
-              <div onClick={()=>handleStepChange(1,'../Krr')} className={step===1?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(1,'../2025sample/Krr')} className={step===1?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={krrStepOn1} alt=''/>
                 <div className='menuText'>STEP1</div>
                 <div className='menuLine lineOn1'/>
               </div>
             
 
-              <div onClick={()=>handleStepChange(2,'../Krr')} className={step===2?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(2,'../2025sample/Krr')} className={step===2?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={krrStepOn2} alt=''/>
                 <div className='menuText'>STEP2</div>
                 <div className='menuLine lineOn1'/>
@@ -535,7 +519,7 @@ function Krr() {
               </div>
             
 
-              <div onClick={()=>handleStepChange(3,'../Krr')} className={step===3?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(3,'../2025sample/Krr')} className={step===3?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={krrStepOn3} alt=''/>
                 <div className='menuText'>STEP3</div>
                 <div className='menuLine lineOn1'/>
@@ -548,19 +532,66 @@ function Krr() {
               </video>  */}
 
           </div>
-          :
-          <div className='subMenu'>
-          {/* className={scrollY<90 || scrollDown ?'subMenu subMenuOn':'subMenu subMenuOff'}> */}
-              {/* <div style={{minWidth:300}}/> */}
+
+
+      {/* {isHovering===1?
+          <div className='subMenu' > 
+                
+                <div onClick={()=>handleStepChange(0,'../2025sample/Lulu')}  className={step===0?'sm subMenuItemOn':'sm subMenuItemOff'}>
+                  <img src={krrStepOn0} alt=''/>
+                  <div className='menuText'>LITTLES</div>
+                  <div className='menuLine lineOn1'/>
+                  
+                </div>
+             
+                <video  className='subMenuCharacter'  autoPlay muted loop style={{marginLeft:315}}>
+                  <source src={luluCharacter} type="video/mp4"></source>
+                </video>
+          </div>
+          :isHovering===2?
+            <div className='subMenu'>
+              <div style={{minWidth:355}}/>
               
-              <div onClick={()=>handleStepChange(4,'../ElliIvy')}  className={step===4?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(1,'../2025sample/Krr')} className={step===1?'sm subMenuItemOn':'sm subMenuItemOff'}>
+                <img src={krrStepOn1} alt=''/>
+                <div className='menuText'>STEP1</div>
+                <div className='menuLine lineOn1'/>
+              </div>
+            
+
+              <div onClick={()=>handleStepChange(2,'../2025sample/Krr')} className={step===2?'sm subMenuItemOn':'sm subMenuItemOff'}>
+                <img src={krrStepOn2} alt=''/>
+                <div className='menuText'>STEP2</div>
+                <div className='menuLine lineOn1'/>
+                
+              </div>
+            
+
+              <div onClick={()=>handleStepChange(3,'../2025sample/Krr')} className={step===3?'sm subMenuItemOn':'sm subMenuItemOff'}>
+                <img src={krrStepOn3} alt=''/>
+                <div className='menuText'>STEP3</div>
+                <div className='menuLine lineOn1'/>
+                
+              </div>
+            
+             
+              <video  className='subMenuCharacter' autoPlay muted loop style={{marginLeft:205}}>
+                <source src={character} type="video/mp4"></source>
+              </video> 
+
+          </div>
+          :
+          <div className='subMenu'> 
+              <div style={{minWidth:300}}/>
+              
+              <div onClick={()=>handleStepChange(4,'../2025sample/ElliIvy')}  className={step===4?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={eliivyStepOn0} alt=''/>
                 <div className='menuText'>LITTLES</div>
                 <div className='menuLine lineOn1'/>
               </div>
             
 
-              <div onClick={()=>handleStepChange(5,'../ElliIvy')}   className={step===5?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(5,'../2025sample/ElliIvy')}   className={step===5?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={eliivyStepOn1} alt=''/>
                 <div className='menuText'>STEP1</div>
                 <div className='menuLine lineOn1'/>
@@ -568,14 +599,14 @@ function Krr() {
               </div>
             
 
-              <div onClick={()=>handleStepChange(6,'../ElliIvy')}   className={step===6?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(6,'../2025sample/ElliIvy')}   className={step===6?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={eliivyStepOn2} alt=''/>
                 <div className='menuText'>STEP2</div>
                 <div className='menuLine lineOn1'/>
                 
               </div>
 
-              <div onClick={()=>handleStepChange(7,'../ElliIvy')}   className={step===7?'sm subMenuItemOn':'sm subMenuItemOff'}>
+              <div onClick={()=>handleStepChange(7,'../2025sample/ElliIvy')}   className={step===7?'sm subMenuItemOn':'sm subMenuItemOff'}>
                 <img src={eliivyStepOn3} alt=''/>
                 <div className='menuText'>STEP3</div>
                 <div className='menuLine lineOn1'/>
@@ -583,11 +614,11 @@ function Krr() {
               </div>
 
 
-              {/* <img className='subMenuCharacter' src={character} alt='' style={{marginLeft:150}}/> */}
+              <img className='subMenuCharacter' src={character} alt='' style={{marginLeft:150}}/>
           </div>
       
       }
-      
+       */}
       
   
         
@@ -870,7 +901,7 @@ function Krr() {
       <div className={navDialog?'navDialog navDialogOn':'navDialog navDialogOff'}> 
         <div className='navDialogStatusBar'>
           <div className='navDialogImgBar'>
-            <img className='logoImg' onClick={()=>navigate('../')} src={sk} alt='' />
+            <img className='logoImg' onClick={()=>navigate('../2025sample/')} src={sk} alt='' />
           </div>
 
           <div className='navDialogStatusCancel bgYellow' onClick={()=>setNavDialog(false)}>
@@ -881,26 +912,26 @@ function Krr() {
         </div>
         <div className='navDialogMenu'>  
           <div className='navDialogMenuLayout'>
-            <div className='navDialogMenuTitleOff' onClick={()=>handleNavStepChange(0,'../Lulu')}>안녕! 룰루</div>
+            <div className='navDialogMenuTitleOff' onClick={()=>handleNavStepChange(0,'../2025sample/Lulu')}>안녕! 룰루</div>
             <div className='navDialogMenuStep'>
-              <div onClick={()=>handleNavStepChange(0,'../Lulu')}  className={step===0?'navDialogMenuStepOn navStepLuluOn':'navDialogMenuStepOff'}>LITTLES</div>
+              <div onClick={()=>handleNavStepChange(0,'../2025sample/Lulu')}  className={step===0?'navDialogMenuStepOn navStepLuluOn':'navDialogMenuStepOff'}>LITTLES</div>
             </div>
           </div>
           <div className='navDialogMenuLayout'>
-            <div className='navDialogMenuTitle colorYellow' onClick={()=>handleNavStepChange(step,'../Krr')}>까르르한글수</div>
+            <div className='navDialogMenuTitle colorYellow' onClick={()=>handleNavStepChange(step,'../2025sample/Krr')}>까르르한글수</div>
             <div className='navDialogMenuStep'>
-              <div onClick={()=>handleNavStepChange(1,'../Krr')}   className={step===1?'navDialogMenuStepOn navStepKrrOn':'navDialogMenuStepOff'} >STEP1</div>
-              <div onClick={()=>handleNavStepChange(2,'../Krr')}   className={step===2?'navDialogMenuStepOn navStepKrrOn':'navDialogMenuStepOff'}>STEP2</div>
-              <div onClick={()=>handleNavStepChange(3,'../Krr')}   className={step===3?'navDialogMenuStepOn navStepKrrOn':'navDialogMenuStepOff'}>STEP3</div>
+              <div onClick={()=>handleNavStepChange(1,'../2025sample/Krr')}   className={step===1?'navDialogMenuStepOn navStepKrrOn':'navDialogMenuStepOff'} >STEP1</div>
+              <div onClick={()=>handleNavStepChange(2,'../2025sample/Krr')}   className={step===2?'navDialogMenuStepOn navStepKrrOn':'navDialogMenuStepOff'}>STEP2</div>
+              <div onClick={()=>handleNavStepChange(3,'../2025sample/Krr')}   className={step===3?'navDialogMenuStepOn navStepKrrOn':'navDialogMenuStepOff'}>STEP3</div>
             </div>
           </div>
           <div className='navDialogMenuLayout'>
-            <div className='navDialogMenuTitleOff' onClick={()=>handleNavStepChange(4,'../ElliIvy')}>ElliIvy English</div>
+            <div className='navDialogMenuTitleOff' onClick={()=>handleNavStepChange(4,'../2025sample/ElliIvy')}>ElliIvy English</div>
             <div className='navDialogMenuStep'>
-              <div onClick={()=>handleNavStepChange(4,'../ElliIvy')}  className={step===4?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>LITTLES</div>
-              <div onClick={()=>handleNavStepChange(5,'../ElliIvy')}  className={step===5?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP1</div>
-              <div onClick={()=>handleNavStepChange(6,'../ElliIvy')}  className={step===6?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP2</div>
-              <div onClick={()=>handleNavStepChange(7,'../ElliIvy')}  className={step===7?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP3</div>
+              <div onClick={()=>handleNavStepChange(4,'../2025sample/ElliIvy')}  className={step===4?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>LITTLES</div>
+              <div onClick={()=>handleNavStepChange(5,'../2025sample/ElliIvy')}  className={step===5?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP1</div>
+              <div onClick={()=>handleNavStepChange(6,'../2025sample/ElliIvy')}  className={step===6?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP2</div>
+              <div onClick={()=>handleNavStepChange(7,'../2025sample/ElliIvy')}  className={step===7?'navDialogMenuStepOn navStepEliivyOn':'navDialogMenuStepOff'}>STEP3</div>
             </div>
           </div>
        
