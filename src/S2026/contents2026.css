@@ -1,4 +1,13 @@
 
+@media (hover: none), (pointer: coarse){
+    .mainMenu26:hover {
+        transform: none !important;
+    }
+    .mainMenu26:hover img:nth-child(1) {
+        animation: none !important;
+    }
+}
+
 @media only screen and (min-height: 701px){
     /* pc */
     :root{
@@ -44,6 +53,13 @@
         --mainMenuPadding26:25px;
         --menuText1PaddingBottom26:8px;
         --menuPaddingBottom26:0px;
+        --bgIconMargin:50px;
+
+
+        
+        --ctgrTextFontSize26:25px;
+        --weekTitleSize26:70px;
+        --weekTitleRadius26:20px;
   }
 
 }
@@ -51,7 +67,7 @@
 @media only screen and (min-width: 1025px) and (max-width: 1249px) {
     /* pc */
     :root{
-        --bgMotionDisplay26:none;
+        --bgMotionDisplay26:flex;
         --menuFlexDirection26:column;
         --mainContentsJustifyContent26:flex-start;
         --logoPadding26:0px 50px;  
@@ -75,6 +91,11 @@
         --mainMenuPadding26:25px;
         --menuText1PaddingBottom26:8px;
         --menuPaddingBottom26:50px;
+        --bgIconMargin:50px;
+        --ctgrTextFontSize26:25px;
+        --weekTitleSize26:70px;
+        --weekTitleRadius26:20px;
+
     }
  
   }
@@ -82,7 +103,7 @@
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* tablet */
     :root{
-        --bgMotionDisplay26:none;
+        --bgMotionDisplay26:flex;
         --menuFlexDirection26:column;
         --mainContentsJustifyContent26:flex-start;
         --logoPadding26:0px 50px;
@@ -106,6 +127,11 @@
         --mainMenuPadding26:25px;
         --menuText1PaddingBottom26:8px;
         --menuPaddingBottom26:50px;
+        --bgIconMargin:30px;
+        --ctgrTextFontSize26:25px;
+        --weekTitleSize26:70px;
+        --weekTitleRadius26:20px;
+
     }
 
     
@@ -129,7 +155,7 @@
         --arrowDisplay26:flex;
         --menuText1FontSize26:20px;
         --menuTitle1FontSize26:32px;
-        --menuText2FontSize26:14px;
+        --menuText2FontSize26:13px;
         --menuMargin26:10px;
         --menuLayoutPaddingTop26:50px;
         --logoHeight26:80px;
@@ -137,7 +163,11 @@
         --mainMenuPadding26:25px;
         --menuText1PaddingBottom26:8px;
         
-        --menuPaddingBottom26:50px;
+        --menuPaddingBottom26:50px; 
+        --ctgrTextFontSize26:25px;
+        --weekTitleSize26:70px;
+        --weekTitleRadius26:20px;
+
     }
 }
     
@@ -160,15 +190,19 @@
         --arrowDisplay26:flex;
         --menuText1FontSize26:18px;
         --menuTitle1FontSize26:25px;
-        --menuText2FontSize26:14px;
-        --menuMargin26:10px;
+        --menuText2FontSize26:13px;
+        --menuMargin26:5px;
         --menuLayoutPaddingTop26:20px;
         --logoHeight26:80px;
         --logoBtnMargin26:20px;
-        --mainMenuPadding26:5px 15px 5px 15px;
+        --mainMenuPadding26:5px 15px 10px 15px;
         --menuText1PaddingBottom26:4px;
         
-        --menuPaddingBottom26:50px;
+        --menuPaddingBottom26:50px; 
+        --ctgrTextFontSize26:17px;
+        --weekTitleSize26:60px;
+        --weekTitleRadius26:15px;
+
     }
 }
 
@@ -200,14 +234,26 @@
 .logoLayout26{
     width: 100%;
     height: var(--logoHeight26);
+    min-height: var(--logoHeight26);
+    max-height: var(--logoHeight26);
     display: flex;
     flex-direction: row;
     align-items: center;
     padding:var(--logoPadding26);
     box-sizing: border-box;
-    position: relative;
+    position: fixed;
     z-index: 600;
 }
+
+.nullDiv{
+    width: 100%;
+    height: var(--logoHeight26);
+    min-height: var(--logoHeight26);
+    max-height: var(--logoHeight26);
+}
+
+
+ 
 
 .logoImg26{
     width: 60px;
@@ -274,11 +320,9 @@
 .mainMenuLayout26{
     display: flex;
     flex-direction: row;
-}
-.mainContentsTitleComma26{
-    margin-right:7px;
-    display: var(--bgMotionDisplay26);
-}
+    position: relative;
+    z-index: 500;
+} 
 /* 여기 */
 .mainMenu26{
     /* box-shadow: 0px 10px 10px #dcdcdc50; */
@@ -286,11 +330,13 @@
     border-radius: var(--mainMenuRadius26);
     width: 300px;
     height: auto;
-    padding-bottom:var(--mainMenuRadius26);
-    max-width:calc(50vw - 30px);
+    padding-bottom:calc(var(--mainMenuRadius26) / 1.5);
+    max-width:calc(50vw - 20px);
     /* max-width: 20vw;
     max-height: 25vw; */
     flex-direction: column;
+    
+    cursor: pointer;   
    /* width:var(--mainMenuWidth26);
    height:var(--mainMenuHeight26);
    max-width: var(--mainMenuMaxWidth26);
@@ -301,6 +347,21 @@
     position: relative;
     display: flex;
     align-items: center;
+}
+
+.mainMenu26:hover {
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.mainMenu26:hover img:nth-child(1) {
+  animation: wobble 0.5s ease-in-out;
+}
+
+@keyframes wobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(3deg); }
+  75% { transform: rotate(-3deg); }
 }
 
 .mainMenuImgBar26{
@@ -322,21 +383,22 @@
 
 .chImg26{
     /* margin-left:var(--menuArrowSize26); */
-    padding-top:calc(var(--mainMenuRadius26) / 2.5);
+    padding-top:calc(var(--mainMenuRadius26) / 3);
     width: 60%;
     max-width: 140px;
-    height: auto; 
+    height: auto;
+    cursor: pointer;   
 }
 
 .menuArrow26{
-    margin-top:calc(var(--menuArrowSize26) / 2.5);
+    margin-top:calc(var(--menuArrowSize26) / 3.5);
     max-width: var(--menuArrowSize26);
     max-height: var(--menuArrowSize26);
     width: var(--menuArrowSize26);
     height: var(--menuArrowSize26);
     display: var(--arrowDisplay26);
     border-radius:250px;
-    box-shadow: 3px 10px 10px #eeeeee50;
+    /* box-shadow: 3px 3px 3px #eeeeee50; */
 } 
 
 .menuTextLayout26{
@@ -362,8 +424,9 @@
 
 .bgMotion26{
     width: 100vw;
-    height: calc(100% - 100px);
+    height: 100%;
     position: absolute;
+    z-index: 500;
     left:0px;
     display: var(--bgMotionDisplay26);
     top:100px;
@@ -387,8 +450,8 @@
 }
 
 .bgIcon1{
-  animation: spin 20s linear infinite;
-  margin-left:150px;
+  animation: spin 15s linear infinite;
+  margin-left:calc(var(--bgIconMargin) * 3);
   width: 100px;
   height: 100px;
 }
@@ -401,10 +464,10 @@
 }
 
 .bgIcon3{
-  animation: spin2 20s linear infinite;
+  animation: spin2 15s linear infinite;
   width: 100px;
   height: 100px;
-  margin-right:150px;
+  margin-right:calc(var(--bgIconMargin) * 3);
 }
 
 
@@ -424,7 +487,7 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.15);
+    transform: scale(1.3);
   }
 }
 
@@ -469,4 +532,133 @@
 
 .mainMenuPaddingBottom26{
     padding-bottom:var(--menuPaddingBottom26);
+} 
+.ctgrBar26{
+    font-size: var(--ctgrTextFontSize26);
+    background-color: #fff;
+    border-radius: calc(var(--mainMenuRadius26) * 2);
+    padding:10px;
+    width: fit-content;
+    max-width: calc(100% - 30px);
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    z-index: 500;
+}
+
+.ctgrOn26{
+    width: 120px;
+    max-width: calc(100% / 4);
+    background-color: #323232;
+    border-radius: calc(var(--mainMenuRadius26) * 2);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    color:#fff;
+    cursor: pointer; 
+}
+
+.ctgrOff26{
+    width: 120px;
+    max-width: calc(100% / 4);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    color:#5d5d5d;
+    cursor: pointer; 
+}
+
+.ctgrBarImg26{
+    width: 40px;
+    height: 40px;
+    margin-top:-15px;
+}
+
+.contentBox26{
+    font-size: var(--ctgrTextFontSize26); 
+    width: fit-content;
+    max-width: calc(100% - 30px);
+    display: flex;
+    box-sizing: border-box;
+    color:#969696;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 30px;
+    padding:30px;
+    margin-top:20px;
+}
+
+.contentTitle26{
+    margin-bottom:10px;
+    width: 100%;
+}
+
+.weekBar26{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.week26{
+    box-sizing: border-box;
+    width: var(--weekTitleSize26);
+    min-width: var(--weekTitleSize26);
+    height: var(--weekTitleSize26);
+    text-align: center;
+    border:3px solid #feb5ab;
+    background-color: #feb5ab;
+    color:#fff;
+    margin: 10px;
+    border-radius: var(--weekTitleRadius26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentName26{
+    box-sizing: border-box;
+    width: 150px;
+    height: var(--weekTitleSize26);
+    text-align: center;
+    border: 3px solid #dcdcdc;
+    margin: 10px;
+    border-radius: var(--weekTitleRadius26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.weekBarTitle26{
+    box-sizing: border-box;
+    width: var(--weekTitleSize26);
+    min-width: var(--weekTitleSize26);
+    height: 40px;
+    border:3px solid #00000000;
+    margin:0px 10px 0px 10px;
+}
+
+.weekBarDay26{
+    box-sizing: border-box;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    border:3px solid #fff;
+    margin:0px 10px 0px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentBar26{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }

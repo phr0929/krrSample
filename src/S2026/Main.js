@@ -38,6 +38,8 @@ import chMath from './resource/chMath.svg';
 import chEn from './resource/chEn.svg';
 import arrowBtn from './resource/arrowBtn.svg';
 
+import parkBg from './resource/parkBg.svg'
+
 function Main() {
 
   const navigate = useNavigate()
@@ -57,20 +59,21 @@ function Main() {
             <img src={blogLogo} style={{marginRight:0}}  alt='' onClick={()=>window.open('https://blog.naver.com/juseomkim')}/>
           </div>
         </div>
+        <div className='nullDiv'/>
         <div className='mainContents26'>
             <div className='mainContentsTitle26'>
-              <div style={{margin:'0px 3px'}}>아이들이 먼저 찾는</div> 
-              <div style={{margin:'0px 3px'}}>학습 콘텐츠</div> 
+              <div style={{margin:'0px 3px 2px 3px'}}>아이들이 먼저 찾는</div> 
+              <div style={{margin:'0px 3px 2px 3px'}}>학습 콘텐츠</div> 
             </div>
-            <div className='mainContentsText26'>
-              <div style={{margin:'0px 2px'}}>룰루랄라 즐겁게 학습하고</div>
-              <div style={{margin:'0px 2px'}}>까르르 웃다 보면 엘리트로 성장하게 돼요.</div>
+            <div className='mainContentsText26' style={{marginTop:-4}}>
+              <div style={{margin:'0px 2px 2px 2px'}}>룰루랄라 즐겁게 학습하고</div>
+              <div style={{margin:'0px 2px 2px 2px'}}>까르르 웃다 보면 엘리트로 성장하게 돼요.</div>
             </div>
             
             <div className='mainContentsMenuLayout26'>
 
               <div className='mainMenuLayout26'>
-                <div className='mainMenu26'>
+                <div className='mainMenu26' onClick={()=>navigate('./Lulu')}>
                   <div className='mainMenuImgBar26'>
               
                     <div className='chImgLayout26'>
@@ -160,21 +163,21 @@ function Main() {
                 </div>
               </div>
 
- 
+              <div className='bgMotion26'>
+                <div>
+                  <img className='bgIcon1' src={bgic1} alt=''/>  
+                </div>
+                
+                <div>
+                  <img className='bgIcon2' src={bgic2} alt=''/>  
+                  <img className='bgIcon3' src={bgic3} alt=''/> 
+                </div>
+              </div>
                
             </div>
         </div>
         
-        <div className='bgMotion26'>
-          <div>
-            <img className='bgIcon1' src={bgic1} alt=''/>  
-          </div>
-           
-          <div>
-            <img className='bgIcon2' src={bgic2} alt=''/>  
-            <img className='bgIcon3' src={bgic3} alt=''/> 
-          </div>
-        </div>
+      
 
         <div className='bgImage26'>
           <div>
@@ -185,6 +188,7 @@ function Main() {
           </div>
         </div>
       </div>
+ 
 
 
 
