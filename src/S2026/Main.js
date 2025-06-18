@@ -54,26 +54,29 @@ function Main() {
         <div className='logoLayout26'>
           <img className='logoImg26' src={sk} alt=''/>
           <div className='logoBtnBar26'>
-            <img src={instaLogo}  alt='' onClick={()=>window.open('https://www.instagram.com/juseom_kim/')}/>
-            <img src={youtubeLogo}  alt='' onClick={()=>window.open('https://www.youtube.com/@edujusk')} />
-            <img src={blogLogo} style={{marginRight:0}}  alt='' onClick={()=>window.open('https://blog.naver.com/juseomkim')}/>
+            <img src={instaLogo} className='social-icon' alt='' onClick={()=>window.open('https://www.instagram.com/juseom_kim/')}/>
+            <img src={youtubeLogo} className='social-icon' alt='' onClick={()=>window.open('https://www.youtube.com/@edujusk')} />
+            <img src={blogLogo} className='social-icon' style={{marginRight:0}}  alt='' onClick={()=>window.open('https://blog.naver.com/juseomkim')}/>
           </div>
         </div>
         <div className='nullDiv'/>
         <div className='mainContents26'>
             <div className='mainContentsTitle26'>
-              <div style={{margin:'0px 3px 2px 3px'}}>아이들이 먼저 찾는</div> 
-              <div style={{margin:'0px 3px 2px 3px'}}>학습 콘텐츠</div> 
+              {/* <div style={{margin:'0px 3px 2px 3px'}}>아이들이 먼저 찾는</div> 
+              <div style={{margin:'0px 3px 2px 3px'}}>학습 콘텐츠</div>  */}
+              <div style={{margin:'0px 3px 2px 3px'}}>섬김의 콘텐츠를</div> 
+              <div style={{margin:'0px 3px 2px 3px'}}>직접 체험해보세요!</div> 
             </div>
             <div className='mainContentsText26' style={{marginTop:-4}}>
               <div style={{margin:'0px 2px 2px 2px'}}>룰루랄라 즐겁게 학습하고</div>
               <div style={{margin:'0px 2px 2px 2px'}}>까르르 웃다 보면 엘리트로 성장하게 돼요.</div>
+              {/* <div style={{margin:'0px 2px 2px 2px'}}>룰루랄라 즐겁게 학습하고</div>
+              <div style={{margin:'0px 2px 2px 2px'}}>까르르 웃다 보면 엘리트로 성장하게 돼요.</div> */}
             </div>
             
-            <div className='mainContentsMenuLayout26'>
-
+            <div className='mainContentsMenuLayout26'> 
               <div className='mainMenuLayout26'>
-                <div className='mainMenu26' onClick={()=>navigate('./Lulu')}>
+                <div className='mainMenu26' onClick={()=>navigate('./Contents', {state:{idx:0}})}>
                   <div className='mainMenuImgBar26'>
               
                     <div className='chImgLayout26'>
@@ -96,7 +99,7 @@ function Main() {
                   
                 </div>
 
-                <div className='mainMenu26'  style={{backgroundColor:'#fff4d9'}}>
+                <div className='mainMenu26'  style={{backgroundColor:'#fff4d9'}} onClick={()=>navigate('./Contents', {state:{idx:1}})}>
                   <div className='mainMenuImgBar26'>
               
                     <div className='chImgLayout26'>
@@ -120,7 +123,7 @@ function Main() {
               </div>
 
               <div className='mainMenuLayout26 mainMenuPaddingBottom26'>
-                <div className='mainMenu26'  style={{backgroundColor:'#e8f9e4'}}>
+                <div className='mainMenu26'  style={{backgroundColor:'#e8f9e4'}} onClick={()=>navigate('./Contents', {state:{idx:3}})}>
                   <div className='mainMenuImgBar26'>
               
                     <div className='chImgLayout26'>
@@ -142,7 +145,7 @@ function Main() {
                 </div>
 
 
-                <div className='mainMenu26'  style={{backgroundColor:'#e3fafc'}}>
+                <div className='mainMenu26'  style={{backgroundColor:'#e3fafc'}}onClick={()=>navigate('./Contents', {state:{idx:4}})}>
                   <div className='mainMenuImgBar26'>
               
                     <div className='chImgLayout26'>

@@ -5,7 +5,14 @@
     }
     .mainMenu26:hover img:nth-child(1) {
         animation: none !important;
-    }
+    } 
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .social-icon:hover {
+    opacity: 0.6;
+    transform: translateY(-5px);
+  }
 }
 
 @media only screen and (min-height: 701px){
@@ -164,7 +171,7 @@
         --menuText1PaddingBottom26:8px;
         
         --menuPaddingBottom26:50px; 
-        --ctgrTextFontSize26:25px;
+        --ctgrTextFontSize26:18px;
         --weekTitleSize26:70px;
         --weekTitleRadius26:20px;
 
@@ -199,7 +206,7 @@
         --menuText1PaddingBottom26:4px;
         
         --menuPaddingBottom26:50px; 
-        --ctgrTextFontSize26:17px;
+        --ctgrTextFontSize26:16px;
         --weekTitleSize26:60px;
         --weekTitleRadius26:15px;
 
@@ -252,6 +259,20 @@
     max-height: var(--logoHeight26);
 }
 
+
+.nullDiv2{
+    width: 100%;
+    height: calc(var(--logoHeight26) * 2.5);
+    min-height: calc(var(--logoHeight26) * 2.5);
+    max-height: calc(var(--logoHeight26) * 2.5);
+}
+
+.nullDiv3{
+    width: 100%;
+    height: calc(var(--logoHeight26) * 2.2);
+    min-height: calc(var(--logoHeight26) * 2.2);
+    max-height: calc(var(--logoHeight26) * 2.2);
+}
 
  
 
@@ -538,8 +559,8 @@
     background-color: #fff;
     border-radius: calc(var(--mainMenuRadius26) * 2);
     padding:10px;
-    width: fit-content;
-    max-width: calc(100% - 30px);
+    width: 500px;
+    max-width: 100%;
     display: flex;
     box-sizing: border-box;
     flex-direction: row;
@@ -577,8 +598,8 @@
 }
 
 .contentBox26{
-    font-size: var(--ctgrTextFontSize26); 
-    width: fit-content;
+    font-size: calc(var(--ctgrTextFontSize26) - 3px);
+    width: 500px;
     max-width: calc(100% - 30px);
     display: flex;
     box-sizing: border-box;
@@ -591,8 +612,9 @@
 }
 
 .contentTitle26{
-    margin-bottom:10px;
+    margin-bottom:20px;
     width: 100%;
+    font-size: var(--ctgrTextFontSize26);
 }
 
 .weekBar26{
@@ -601,54 +623,160 @@
     align-items: center;
     justify-content: center;
     margin-top: -20px;
+    width: 100%;
+    font-size: var(--ctgrTextFontSize26);
 }
 
 .week26{
     box-sizing: border-box;
     width: var(--weekTitleSize26);
-    min-width: var(--weekTitleSize26);
+    min-width:  var(--weekTitleSize26);
+    /* min-width:  calc(100% / 7); */
     height: var(--weekTitleSize26);
+    min-height: var(--weekTitleSize26);
     text-align: center;
     border:3px solid #feb5ab;
     background-color: #feb5ab;
     color:#fff;
-    margin: 10px;
-    border-radius: var(--weekTitleRadius26);
+    margin: 5px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: var(--ctgrTextFontSize26);
+    
+} 
+
+.week26En{
+    box-sizing: border-box;
+    width: var(--weekTitleSize26);
+    min-width: calc(100% / 7);
+    /* min-width:  calc(100% / 7); */
+    height: var(--weekTitleSize26);
+    min-height: var(--weekTitleSize26);
+    text-align: center;
+    border:3px solid #feb5ab;
+    background-color: #feb5ab;
+    color:#fff;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--ctgrTextFontSize26);
+    
 }
 
 .contentName26{
     box-sizing: border-box;
-    width: 150px;
+    max-width: 150px;
+    width:150px;
+    min-width:  calc(100% / 7);
     height: var(--weekTitleSize26);
+    min-height: var(--weekTitleSize26);
     text-align: center;
     border: 3px solid #dcdcdc;
-    margin: 10px;
-    border-radius: var(--weekTitleRadius26);
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+} 
+.contentName26En{
+        box-sizing: border-box;
+    max-width: 150px;
+    width:150px;
+    min-width:40px;
+    height: 50px;
+    min-height: var(--weekTitleSize26);
+    text-align: center;
+    border: 3px solid #dcdcdc;
+    margin: 2px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
 
+.contentName26Han{
+    box-sizing: border-box;
+    max-width: 150px;
+    width:150px;
+    min-width:  calc(100% / 4);
+    height: var(--weekTitleSize26);
+    min-height: var(--weekTitleSize26);
+    text-align: center;
+    border: 3px solid #dcdcdc;
+    margin: 2px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+} 
+
 .weekBarTitle26{
     box-sizing: border-box;
     width: var(--weekTitleSize26);
-    min-width: var(--weekTitleSize26);
+    /* min-width:  calc(100% / 7); */
+    min-width:  var(--weekTitleSize26);
     height: 40px;
     border:3px solid #00000000;
-    margin:0px 10px 0px 10px;
+    margin:0px 5px 0px 5px;
 }
+
+.weekBarTitle26En{
+    box-sizing: border-box;
+    width: var(--weekTitleSize26);
+    /* min-width:  calc(100% / 7); */
+    min-width:  calc(100% / 7);
+    height: 40px;
+    border:3px solid #00000000;
+    margin:0px 5px 0px 5px;
+}
+
 
 .weekBarDay26{
     box-sizing: border-box;
-    width: 150px;
+      max-width: 150px;
+    width:150px;
+    min-width:  calc(100% / 7);
     height: 40px;
     text-align: center;
-    border:3px solid #fff;
-    margin:0px 10px 0px 10px;
+    border:3px solid #00000000;
+    margin:0px 5px 0px 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weekBarDay26En{
+    box-sizing: border-box;
+      max-width: 150px;
+    width:150px;
+    min-width: 40px;
+    height: 40px;
+    text-align: center;
+    border:3px solid #00000000;
+    margin:2px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weekBarDay26Han{
+    box-sizing: border-box;
+    max-width: 150px;
+    width:150px;
+    min-width:  calc(100% / 4);
+    height: 40px;
+    text-align: center;
+    border:3px solid #00000000;
+    margin:2px;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -661,4 +789,114 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
+
+.contentPageBg26{
+    position: fixed;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    z-index: 200;
+    bottom:0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.contentPageBg26Ch{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    z-index: 202;
+    padding-bottom: calc(var(--weekTitleSize26) - 10px);
+}
+
+.contentPageBg26Ch img{
+    width: 100px;
+    height: auto;
+    margin:10px;
+    max-width: 16vw;
+}
+
+.contentPageBg26Park{
+    position: absolute;
+    z-index: 201;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: center;
+}
+
+.contentPageBg26Park img{
+    object-fit: cover;
+    min-width: 1000px;
+}
+
+.subjectContents26{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contentBgMotionFlex26{
+    display: flex;
+    flex:1;
+}
+
+.contentBgMotion26{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 210;
+    display: var(--bgMotionDisplay26);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgCloud1{
+    width: 120px;
+    height: auto;
+    margin-right: 50px;
+      animation: float 6s ease-in-out infinite;
+}
+
+.bgCloud2{
+    width: 150px;
+    height: auto;
+    margin-top:100px;
+    animation: float 8s ease-in-out infinite;
+}
+
+.bgCloud3{
+    width: 110px;
+    height: auto;
+    margin-top:70px;
+    animation: float 7s ease-in-out infinite;
+}
+
+.bgCloud4{
+    width: 150px;
+    height: auto;
+    margin-left:50px;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.social-icon {
+  opacity: 1;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+} 
+
+ 
