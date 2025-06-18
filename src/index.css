@@ -5,8 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow : hidden;
-  overscroll-behavior: none; 
+  /* overflow : hidden;
+  overscroll-behavior: none;  */
+  /* ios 바운스 스크롤 막기 */
  
 }
 

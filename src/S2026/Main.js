@@ -65,7 +65,7 @@ function Main() {
               {/* <div style={{margin:'0px 3px 2px 3px'}}>아이들이 먼저 찾는</div> 
               <div style={{margin:'0px 3px 2px 3px'}}>학습 콘텐츠</div>  */}
               <div style={{margin:'0px 3px 2px 3px'}}>섬김의 콘텐츠를</div> 
-              <div style={{margin:'0px 3px 2px 3px'}}>직접 체험해보세요!</div> 
+              <div style={{margin:'0px 3px 2px 3px'}}>직접 체험해 보세요!</div> 
             </div>
             <div className='mainContentsText26' style={{marginTop:-4}}>
               <div style={{margin:'0px 2px 2px 2px'}}>룰루랄라 즐겁게 학습하고</div>

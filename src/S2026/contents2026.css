@@ -13,6 +13,21 @@
     opacity: 0.6;
     transform: translateY(-5px);
   }
+  
+.contentName26:hover {
+  background-color: #f3f3f3; /* 연한 회색 */ 
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+.contentName26En:hover {
+  background-color: #f3f3f3; /* 연한 회색 */ 
+  transition: background-color 0.3s ease-in-out;
+}
+.contentName26Han:hover {
+  background-color: #f3f3f3; /* 연한 회색 */ 
+  transition: background-color 0.3s ease-in-out;
+}
 }
 
 @media only screen and (min-height: 701px){
@@ -218,7 +233,7 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     overflow: auto;
     scrollbar-width: none;
     align-items: center;
@@ -683,8 +698,9 @@
     justify-content: center;
     cursor: pointer;
 } 
+
 .contentName26En{
-        box-sizing: border-box;
+    box-sizing: border-box;
     max-width: 150px;
     width:150px;
     min-width:40px;
@@ -699,6 +715,7 @@
     justify-content: center;
     cursor: pointer;
 }
+
 
 .contentName26Han{
     box-sizing: border-box;
@@ -846,6 +863,8 @@
 .contentBgMotionFlex26{
     display: flex;
     flex:1;
+    padding:0px 10px 0px 10px;
+    box-sizing: border-box;
 }
 
 .contentBgMotion26{
