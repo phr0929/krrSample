@@ -269,7 +269,7 @@ function Contents() {
    }
   
   return (
-    <div className='mainCenterLayout26' style={{backgroundColor:'#CCEDFF',}}> 
+    <div className='mainCenterLayout26' > 
       <div className='mainLayout26' style={{alignItems:'center',position:'relative',zIndex:400}}>
         <div className='logoLayout26'>
           <img className='logoImg26' src={sk} alt='' onClick={()=>navigate('../2026sample')}/>
@@ -344,7 +344,7 @@ function Contents() {
                 <div className='weekBarTitle26' ></div>
                 <div className='weekBarDay26Han'>월·화</div>
                 <div className='weekBarDay26Han'>수·목</div>
-                <div className='weekBarDay26Han'>금</div>
+                <div className='weekBarDay26Han' style={{marginBottom:-3}}>금</div>
               </div>
               <div className='contentBar26'>
                 <div className='week26' style={{backgroundColor:'#FDCE56', borderColor:'#FDCE56'}}>1주</div>
@@ -378,7 +378,7 @@ function Contents() {
                 <div className='weekBarTitle26' ></div>
                 <div className='weekBarDay26Han'>월·화</div>
                 <div className='weekBarDay26Han'>수·목</div>
-                <div className='weekBarDay26Han'>금</div>
+                <div className='weekBarDay26Han' style={{marginBottom:-3}}>금</div>
               </div>
               <div className='contentBar26'>
                 <div className='week26' style={{backgroundColor:'#B6D86E', borderColor:'#B6D86E'}}>1주</div>
@@ -412,7 +412,7 @@ function Contents() {
                 <div className='weekBarTitle26' ></div>
                 <div className='weekBarDay26Han'>월·화</div>
                 <div className='weekBarDay26Han'>수·목</div>
-                <div className='weekBarDay26Han'>금</div>
+                <div className='weekBarDay26Han' style={{marginBottom:-3}}>금</div>
               </div>
               <div className='contentBar26'>
                 <div className='week26' style={{backgroundColor:'#8EBEE0', borderColor:'#8EBEE0'}}>1주</div>
@@ -738,7 +738,7 @@ function Contents() {
           <img src={chEn3} alt=''  />
        </div>
 
-       <div className='contentPageBg26Park'>
+       <div className='contentPageBg26Park' style={{backgroundColor:'#CCEDFF',}}>
 
          <img src={parkBg} alt=''/>
        </div>

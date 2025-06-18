@@ -123,7 +123,7 @@ function Main() {
               </div>
 
               <div className='mainMenuLayout26 mainMenuPaddingBottom26'>
-                <div className='mainMenu26'  style={{backgroundColor:'#e8f9e4'}} onClick={()=>navigate('./Contents', {state:{idx:3}})}>
+                <div className='mainMenu26'  style={{backgroundColor:'#e8f9e4'}} onClick={()=>navigate('./Contents', {state:{idx:2}})}>
                   <div className='mainMenuImgBar26'>
               
                     <div className='chImgLayout26'>
@@ -145,7 +145,7 @@ function Main() {
                 </div>
 
 
-                <div className='mainMenu26'  style={{backgroundColor:'#e3fafc'}}onClick={()=>navigate('./Contents', {state:{idx:4}})}>
+                <div className='mainMenu26'  style={{backgroundColor:'#e3fafc'}}onClick={()=>navigate('./Contents', {state:{idx:3}})}>
                   <div className='mainMenuImgBar26'>
               
                     <div className='chImgLayout26'>
