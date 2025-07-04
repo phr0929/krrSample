@@ -272,7 +272,7 @@ function Contents() {
     <div className='mainCenterLayout26' > 
       <div className='mainLayout26' style={{alignItems:'center',position:'relative',zIndex:400}}>
         <div className='logoLayout26'>
-          <img className='logoImg26' src={sk} alt='' onClick={()=>navigate('../2026sample')}/>
+          <img className='logoImg26' src={sk} alt='' onClick={()=>navigate('../')}/>
           <div className='logoBtnBar26'>
             <img src={instaLogo} className='social-icon' alt='' onClick={()=>window.open('https://www.instagram.com/juseom_kim/')}/>
             <img src={youtubeLogo} className='social-icon' alt='' onClick={()=>window.open('https://www.youtube.com/@edujusk')} />

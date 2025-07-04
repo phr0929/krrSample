@@ -21,7 +21,9 @@ import KrrAppDownload from './KrrAppDownload';
 import NextTime from './NextTime';
 import Main2026 from './S2026/Main';
 import Contents2026 from './S2026/Contents';
- 
+import AppStep1 from './AppStep1';
+import AppStep2 from './AppStep2';
+import AppStep3 from './AppStep3';
 
 function App() {
  
@@ -33,12 +35,14 @@ function App() {
       <Suspense fallback="...loading">
         <Routes>
           
-            <Route  path="/" element={<NextTime/>} />
+            {/* <Route  path="/" element={<NextTime/>} /> */}
             
-            <Route path='/2026Sample' element={<Main2026/>}/>
-            <Route path='/2026Sample/contents' element={<Contents2026/>}/> 
+            <Route path='/' element={<Main2026/>}/>
+            <Route path='/contents' element={<Contents2026/>}/> 
 
-
+            <Route path='/krrAppZ1' element={<AppStep1/>}/>
+            <Route path='/krrAppAES2' element={<AppStep2/>}/>
+            <Route path='/krrAppZEW3' element={<AppStep3/>}/>
 
 
             <Route  path="/2025Sample" element={<Main/>} />

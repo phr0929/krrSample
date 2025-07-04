@@ -82,6 +82,8 @@
         --ctgrTextFontSize26:25px;
         --weekTitleSize26:70px;
         --weekTitleRadius26:20px;
+
+        --krrAppCodeTextPadding:70px;
   }
 
 }
@@ -117,6 +119,7 @@
         --ctgrTextFontSize26:25px;
         --weekTitleSize26:70px;
         --weekTitleRadius26:20px;
+        --krrAppCodeTextPadding:70px;
 
     }
  
@@ -154,6 +157,7 @@
         --weekTitleSize26:70px;
         --weekTitleRadius26:20px;
 
+        --krrAppCodeTextPadding:70px;
     }
 
     
@@ -190,6 +194,7 @@
         --weekTitleSize26:70px;
         --weekTitleRadius26:20px;
 
+        --krrAppCodeTextPadding:50px;
     }
 }
     
@@ -225,6 +230,7 @@
         --weekTitleSize26:60px;
         --weekTitleRadius26:15px;
 
+        --krrAppCodeTextPadding:50px;
     }
 }
 
@@ -321,6 +327,40 @@
     justify-content: var(--mainContentsJustifyContent26); 
  
 }
+
+.appDownloadText1{
+    padding-top:var(--krrAppCodeTextPadding);
+    display: flex;
+   text-align: center;
+    font-size: var(--menuTitle1FontSize26);
+    color:#323232;
+    flex-direction: var(--menuFlexDirection26);
+}
+
+
+
+.appDownloadText2{ 
+    text-align: center;
+    font-family: NanumBarunGothic;
+    font-size: calc(var(--menuText2FontSize26) + 2px);
+    color:#666;
+    display: flex;
+    flex-direction: var(--menuFlexDirection26);
+}
+
+
+
+.appDownloadText1Ver2{
+    padding-top:var(--krrAppCodeTextPadding);
+    display: flex;
+   text-align: center;
+    font-size: var(--menuTitle1FontSize26);
+    color:#fff;
+    flex-direction: var(--menuFlexDirection26);
+}
+
+ 
+
 
 .mainContentsTitle26{
     text-align: center;
@@ -773,7 +813,7 @@
 
 .weekBarDay26En{
     box-sizing: border-box;
-      max-width: 150px;
+    max-width: 150px;
     width:150px;
     min-width: 40px;
     height: 40px;
@@ -834,10 +874,10 @@
 }
 
 .contentPageBg26Ch img{
-    width: 100px;
+    width: 130px;
     height: auto;
-    margin:10px;
-    max-width: 16vw;
+    margin-bottom:10px;
+    max-width: 20vw;
 }
 
 .contentPageBg26Park{
