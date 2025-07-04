@@ -46,9 +46,9 @@ function AppStep1() {
         <div className='krrAppCodeBoxVer2' style={{backgroundColor:'#ffc600',marginTop:20}}>
 
           <img src={skBlue} alt='' className='krrAppCodeLogo'/>
-          <div className='appDownloadText1Ver2'> 
-            <div style={{margin:'0px 3px 2px 3px'}}>쓰는한글 6호 입장코드</div> 
-            {/* <div style={{margin:'0px 3px 2px 3px'}}>6호 입장코드</div>  */}
+                   <div className='appDownloadText1Ver2'> 
+            <div style={{margin:'0px 3px 2px 3px'}}>쓰는한글 6호</div>
+            <div style={{margin:'0px 3px 2px 3px'}}>STEP1 입장코드</div> 
           </div> 
           <div className='codeBox' style={{paddingTop:20}}>
             <div>S</div> <div>D</div> <div>F</div> <div>4</div> <div>5</div> <div>6</div>
