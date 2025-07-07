@@ -18,12 +18,17 @@ import ElliIvyScript2step1 from './ElliIvyScript2step1';
 import ElliIvyScript2step2 from './ElliIvyScript2step2';
 import ElliIvyScript2step3 from './ElliIvyScript2step3';
 import KrrAppDownload from './KrrAppDownload';
+import KrrAppDownloadBackup from './KrrAppDownloadBackup';
 import NextTime from './NextTime';
 import Main2026 from './S2026/Main';
 import Contents2026 from './S2026/Contents';
 import AppStep1 from './AppStep1';
 import AppStep2 from './AppStep2';
 import AppStep3 from './AppStep3';
+
+import AppStep1Backup from './AppStep1Backup';
+import AppStep2Backup from './AppStep2Backup';
+import AppStep3Backup from './AppStep3Backup';
 
 function App() {
  
@@ -44,6 +49,12 @@ function App() {
             <Route path='/krrAppAES2' element={<AppStep2/>}/>
             <Route path='/krrAppZEW3' element={<AppStep3/>}/>
 
+            <Route path='/AppStep1Backup' element={<AppStep1Backup/>}/>
+            <Route path='/AppStep2Backup' element={<AppStep2Backup/>}/>
+            <Route path='/AppStep3Backup' element={<AppStep3Backup/>}/>
+
+ 
+
 
             <Route  path="/2025Sample" element={<Main/>} />
             <Route path="/2025Sample/Krr" element={<Krr/>} />
@@ -51,6 +62,7 @@ function App() {
             <Route path="/2025Sample/Lulu" element={<Lulu/>} />
             <Route path="/download" element={<Download/>} />             
             <Route path="/krrAppDownload" element={<KrrAppDownload/>} /> 
+            <Route path="/KrrAppDownloadBackup" element={<KrrAppDownloadBackup/>} /> 
 
             <Route path="/Plan" element={<Plan/>} exact/>
           
