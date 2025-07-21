@@ -1,0 +1,350 @@
+ 
+
+
+
+@media only screen and (min-width: 1250px){
+    /* pc */
+    :root{
+        --titleFontSize:55px;
+        --noteFontSize:15px;
+        --titleHomeMarginBottom:10px; 
+        --linkFontSize:25px;
+        --boxTitleFontSize:20px;
+        --videoImgSize:70px;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1249px) {
+    /* pc */
+    :root{ 
+        --titleFontSize:55px;
+        --noteFontSize:15px;
+        --titleHomeMarginBottom:10px; 
+        --linkFontSize:25px;
+        --boxTitleFontSize:20px;
+        --videoImgSize:70px;
+    }
+ 
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* tablet */
+    :root{ 
+        --titleFontSize:45px;
+        --noteFontSize:15px;
+        --titleHomeMarginBottom:10px;
+        --linkFontSize:20px; 
+        --boxTitleFontSize:20px;
+        --videoImgSize:70px;
+    }
+
+    
+  }
+  
+  @media only screen and  (min-width: 550px) and (max-width: 767px) { 
+    :root{ 
+        --titleFontSize:45px;
+        --noteFontSize:14px;
+        --titleHomeMarginBottom:10px; 
+        --linkFontSize:20px;
+        --boxTitleFontSize:17px;
+        --videoImgSize:50px;
+    }
+}
+    
+
+@media only screen and (max-width: 549px) { 
+    :root{ 
+        --titleFontSize:30px;
+        --noteFontSize:14px;
+        --titleHomeMarginBottom:10px; 
+        --linkFontSize:15px;
+        --boxTitleFontSize:17px;
+        --videoImgSize:50px;
+    }
+}
+
+
+.mainCenterLayoutHome{
+    width:100%; 
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgBoxHome{
+    position: relative;
+}
+
+.stepInfoHome{
+    position: absolute;
+    z-index: 500;
+    padding:10px 15px 10px 15px;
+    margin:15px;
+    background-color: #fff;
+    border-radius: 50px; 
+}
+
+.contentsLinkBtnHome{
+    position: absolute;
+    z-index: 500;
+    margin:25px;
+    right:0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contentsLinkTextHome{
+    width: 100%;
+    text-align: center;
+    margin-top:5px;
+    font-size: 14px;
+}
+
+.contentsLinkHome{
+    width:calc(var(--titleFontSize) + 10px);
+    height:calc(var(--titleFontSize) + 10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--linkFontSize);
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 50px; 
+}
+
+.mainImgHome{
+    width:100%;
+    max-width: 900px;
+    height: auto;
+}
+
+.contentsBoxHome{
+    width:100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    background-color: #7DCBF5;
+    margin-top:-10px;
+    padding:10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.titleHome{
+    font-size: var(--titleFontSize);
+    color:#fff;
+    text-align: center;
+    margin-top:10px;
+    /* margin-bottom:var(--titleHomeMarginBottom); */
+    line-height: 1.2;
+}
+
+.noteHome{
+    text-align: center;
+    margin-top:-15px; 
+    width:90%;
+    max-width: 500px;
+    font-family: NanumBarunGothic;
+    font-size: var(--noteFontSize);
+    background-color: #fff;
+    border-radius: 20px;
+    padding:30px 30px 20px 30px;
+    box-sizing: border-box;
+    line-height: 1.4; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zemboBoxHome{
+    margin-top:-15px;
+    width:90%;
+    max-width: 500px;
+    font-family: NanumBarunGothic;
+    font-size: var(--noteFontSize);
+    background-color: #fff;
+    border-radius: 20px;
+    padding:30px 30px 20px 30px;
+    box-sizing: border-box;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+
+.zemboBoxHome img{
+    width:80%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border:1px solid #dcdcdc;
+    box-shadow: 0px 4px 0px #dcdcdc;
+}
+
+.zemboBoxHome div{
+    text-align: center;
+}
+
+
+.boxTitleHome{
+    font-size: var(--boxTitleFontSize);
+    border-radius: 10px; 
+    color:#fff;
+    padding:7px 10px 7px 10px;
+    z-index: 500;
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.boxTitleHome div:nth-child(1){
+    width:5px;
+    height: 5px;
+    border-radius: 10px; 
+    background-color: #fff;
+}
+
+.boxTitleHome div:nth-child(2){
+    width:150px;
+    min-width: 150px;
+    max-width: 150px;
+    text-align: center;
+}
+
+.boxTitleHome div:nth-child(3){
+    width:5px;
+    height: 5px;
+    border-radius: 10px; 
+    background-color: #fff;
+}
+
+.writeHangeulHome{ 
+    margin-top:-15px;
+    width:90%;
+    max-width: 500px;
+    font-family: NanumBarunGothic;
+    font-size: var(--noteFontSize);
+    background-color: #fff;
+    border-radius: 20px;
+    padding:30px 30px 20px 30px;
+    box-sizing: border-box;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.downloadBarHome{
+    display: flex;
+    flex-direction: row;
+    margin-top:5px;
+}
+
+.downloadBtnHome{
+    display: flex;
+    flex-direction: row;
+    border:1px solid #dcdcdc;
+    box-shadow: 0px 4px 0px #dcdcdc;
+    border-radius: 10px;
+    padding:5px 15px 9px 15px;
+    align-items: center;
+    font-size: 12px;
+    margin:5px;
+    cursor: pointer;
+}
+
+.downloadBtnHome img{
+    width: 30px;
+    height: 33px;
+}
+
+.downloadBtnHome div{
+    margin-top:7px;
+    margin-left:5px;
+}
+
+.admissionCodeHome{
+    margin-top:20px;
+    padding-bottom:10px;
+}
+
+.admissionCodeTitleHome{ 
+    font-weight: 700;
+    margin-bottom:5px;
+    width: 100%;
+    text-align: center;
+}
+
+.admissionCodeTextHome{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.admissionCodeTextHome span{
+    border:1px solid #dcdcdc;
+    box-shadow: 0px 3px 0px #dcdcdc;
+    width: 35px;
+    height: 35px;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:2px;
+    border-radius: 5px; 
+}
+
+.downloadTitleHome{
+    font-weight: 700;
+    margin-top:5px;
+    width: 100%;
+    text-align: center;
+}
+
+.videoBoxHome{
+    margin-top:-15px;
+    width:90%;
+    max-width: 500px;
+    font-family: NanumBarunGothic;
+    font-size: var(--noteFontSize);
+    background-color: #fff;
+    border-radius: 20px;
+    padding:30px 30px 20px 30px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    margin-bottom:20px;  
+}
+
+.videoBoxImgHome{
+    margin:5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.videoBoxImgHome img{
+    width: var(--videoImgSize);
+    height: var(--videoImgSize);
+    border-radius: 100px;
+    border:1px solid #dcdcdc;
+    box-shadow: 0px 3px 0px #dcdcdc;
+    object-fit: cover;
+    margin-bottom:5px;
+}

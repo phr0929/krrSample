@@ -30,6 +30,15 @@ import AppStep1Backup from './AppStep1Backup';
 import AppStep2Backup from './AppStep2Backup';
 import AppStep3Backup from './AppStep3Backup';
 
+import H1_5 from './Home/H1_5';
+import H2_5 from './Home/H2_5';
+import H3_5 from './Home/H3_5';
+
+import M1_5 from './Home/M1_5';
+import M2_5 from './Home/M2_5';
+import M3_5 from './Home/M3_5';
+
+
 function App() {
  
 
@@ -53,7 +62,17 @@ function App() {
             <Route path='/AppStep2Backup' element={<AppStep2Backup/>}/>
             <Route path='/AppStep3Backup' element={<AppStep3Backup/>}/>
 
- 
+
+
+
+            <Route  path="/Home/H15abc" element={<H1_5/>} />
+            <Route  path="/Home/M15dsd" element={<M1_5/>} />
+            
+            <Route  path="/Home/H25sdf" element={<H2_5/>} />
+            <Route  path="/Home/M25qwe" element={<M2_5/>} />
+
+            <Route  path="/Home/H35zzz" element={<H3_5/>} />
+            <Route  path="/Home/M35csd" element={<M3_5/>} />
 
 
             <Route  path="/2025Sample" element={<Main/>} />
