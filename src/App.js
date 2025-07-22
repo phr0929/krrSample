@@ -30,6 +30,7 @@ import AppStep1Backup from './AppStep1Backup';
 import AppStep2Backup from './AppStep2Backup';
 import AppStep3Backup from './AppStep3Backup';
 
+import Home from './Home/index';
 import H1_5 from './Home/H1_5';
 import H2_5 from './Home/H2_5';
 import H3_5 from './Home/H3_5';
@@ -64,7 +65,7 @@ function App() {
 
 
 
-
+            <Route path="/Home" element={<Home/>}/>
             <Route  path="/Home/H15abc" element={<H1_5/>} />
             <Route  path="/Home/M15dsd" element={<M1_5/>} />
             

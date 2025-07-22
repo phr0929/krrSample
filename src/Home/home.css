@@ -11,6 +11,7 @@
         --linkFontSize:25px;
         --boxTitleFontSize:20px;
         --videoImgSize:70px;
+        --listTitleHeight:120px;
   }
 
 }
@@ -24,6 +25,7 @@
         --linkFontSize:25px;
         --boxTitleFontSize:20px;
         --videoImgSize:70px;
+        --listTitleHeight:120px;
     }
  
   }
@@ -37,6 +39,7 @@
         --linkFontSize:20px; 
         --boxTitleFontSize:20px;
         --videoImgSize:70px;
+        --listTitleHeight:120px;
     }
 
     
@@ -50,6 +53,7 @@
         --linkFontSize:20px;
         --boxTitleFontSize:17px;
         --videoImgSize:50px;
+        --listTitleHeight:80px;
     }
 }
     
@@ -62,6 +66,7 @@
         --linkFontSize:15px;
         --boxTitleFontSize:17px;
         --videoImgSize:50px;
+        --listTitleHeight:80px;
     }
 }
 
@@ -347,4 +352,40 @@
     box-shadow: 0px 3px 0px #dcdcdc;
     object-fit: cover;
     margin-bottom:5px;
+}
+
+.listLayoutHome{
+    background-color: #fafafa;
+    width:100%;
+    height:100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listTitleBarHome{
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: var(--listTitleHeight);
+}
+
+.listTitleBarHome img{
+    width:200px;
+    max-width: 40%;
+    height:auto;
+}
+
+.listTitleBarHome div{
+    width: fit-content;
+    display: flex; 
+    align-items: center;
+    margin-left:10px;
+    margin-top:5px;
 }

@@ -333,6 +333,17 @@
     padding-right:10px;
 }
 
+.navMenuBar2{
+    display: flex;
+    width: 100%; 
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right:10px;
+}
+
 .navTitleKrr{
     color: #fabe00;
     margin-right:20px;
