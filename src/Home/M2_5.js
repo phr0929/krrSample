@@ -15,8 +15,9 @@ import videoThumbnail6 from './resource/5/m5Step2_13p_1.png'
 function M2_5() {
  
    
-  const [issue,setIssue] = useState(5);
-  const [studyContetns,setStudyContetns] = useState('숫자에 색깔이나 사물을 연결하며 다양한 수 개념을 익히고, 구슬이나 블록을 이용해 수의 크기를 비교하고 세는 능력을 키웠어요.');
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/TecJLVF4UGY')
+  const [issue,setIssue] = useState(5)
+  const [studyContetns,setStudyContetns] = useState('숫자에 색깔이나 사물을 연결하며 다양한 수 개념을 익히고, 구슬이나 블록을 이용해 수의 크기를 비교하고 세는 능력을 키웠어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju7CtmfKnVbcHB67UAV-jn_y')
   const linkList = [
     {page:2,link:'https://youtu.be/TecJLVF4UGY',img:videoThumbnail1},
@@ -59,7 +60,7 @@ function M2_5() {
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
           <img src={book} alt=''style={{width:100,height:'fit-content',borderRadius:10,border:'1px solid #dcdcdc',}}/>
-          <img src={bookVideo} alt='' style={{width:140,height:'fit-content',borderRadius:10,marginLeft:-50,border:'1px solid #dcdcdc'}}/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' style={{cursor:'pointer',width:140,height:'fit-content',borderRadius:10,marginLeft:-50,border:'1px solid #dcdcdc'}}/>
         </div> 
         <div>
           {studyContetns}

@@ -20,7 +20,8 @@ import videoThumbnail7 from './resource/5/h5Step1_16p_1.png'
 function H1_5() {
  
    
-  const [issue,setIssue] = useState(5);
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/4d2FNXDvYro')
+  const [issue,setIssue] = useState(5)
   const [studyContetns,setStudyContetns] = useState('받침이 없는 글자 ‘가, 나, 다, 라’부터 ‘파, 하’까지가 만들어지는 과정을 영상으로 보고, 시작 낱말을 소리 내며 읽는 놀이로 글자에 익숙해졌어요.');
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju7sR_J2onqMTU8Cq38Jo6Ay')
   const linkList = [
@@ -42,7 +43,7 @@ function H1_5() {
     link:'https://youtu.be/Izkgi0EmBXc'
   }) 
 
-  const [code,setCode] = useState('kwk159');
+  const [code,setCode] = useState('kwk159')
 
   const handleGoLink=(link)=>{
     window.open(link)
@@ -72,7 +73,7 @@ function H1_5() {
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
           <img src={book} alt=''style={{width:100,height:'fit-content',borderRadius:10,border:'1px solid #dcdcdc',}}/>
-          <img src={bookVideo} alt='' style={{width:140,height:'fit-content',borderRadius:10,marginLeft:-50,border:'1px solid #dcdcdc'}}/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' style={{cursor:'pointer',width:140,height:'fit-content',borderRadius:10,marginLeft:-50,border:'1px solid #dcdcdc'}}/>
         </div> 
         <div>
           {studyContetns}

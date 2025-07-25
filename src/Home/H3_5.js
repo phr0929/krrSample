@@ -20,8 +20,9 @@ import videoThumbnail7 from './resource/5/h5Step3_15p_1.png'
 function H3_5() {
  
    
-  const [issue,setIssue] = useState(5);
-  const [studyContetns,setStudyContetns] = useState('‘타다’처럼 소리는 같지만 뜻이 다른 동음이의어를 다양한 문장으로 표현하며 어휘력과 표현력을 길렀어요. 움직임 낱말도 익히며 동사의 개념을 배웠답니다.');
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/c8ATFeHtDqQ')
+  const [issue,setIssue] = useState(5)
+  const [studyContetns,setStudyContetns] = useState('‘타다’처럼 소리는 같지만 뜻이 다른 동음이의어를 다양한 문장으로 표현하며 어휘력과 표현력을 길렀어요. 움직임 낱말도 익히며 동사의 개념을 배웠답니다.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju6Kvi2CMk5Z9Z9WIVABTbeZ')
   const linkList = [
     {page:2,link:'https://youtu.be/d-dIHC2ZMxc',img:videoThumbnail1},
@@ -42,7 +43,7 @@ function H3_5() {
     link:'https://youtu.be/ymXC0rjBCEc'
   }) 
 
-  const [code,setCode] = useState('bds978');
+  const [code,setCode] = useState('bds978')
 
   const handleGoLink=(link)=>{
     window.open(link)
@@ -72,7 +73,7 @@ function H3_5() {
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
           <img src={book} alt=''style={{width:100,height:'fit-content',borderRadius:10,border:'1px solid #dcdcdc',}}/>
-          <img src={bookVideo} alt='' style={{width:140,height:'fit-content',borderRadius:10,marginLeft:-50,border:'1px solid #dcdcdc'}}/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' style={{cursor:'pointer',width:140,height:'fit-content',borderRadius:10,marginLeft:-50,border:'1px solid #dcdcdc'}}/>
         </div> 
         <div>
           {studyContetns}    
