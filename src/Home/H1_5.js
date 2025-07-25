@@ -6,8 +6,8 @@ import { useLocation } from 'react-router-dom';
 import h5img from './resource/5/h5img.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
-import contents0 from './resource/5/h5Step1Thumbnail0.png'
-import contents1 from './resource/5/h5Step1Thumbnail1.png'
+import zemboImg from './resource/5/h5Step1Thumbnail0.png'
+import bookVideo from './resource/5/h5Step1Thumbnail1.png'
 import book from './resource/5/h5Step1Book.png'
 import videoThumbnail1 from './resource/5/h5Step1_2p_1.png'
 import videoThumbnail2 from './resource/5/h5Step1_2p_2.png'
@@ -20,13 +20,40 @@ import videoThumbnail7 from './resource/5/h5Step1_16p_1.png'
 function H1_5() {
  
    
-   
+  const [issue,setIssue] = useState(5);
+  const [studyContetns,setStudyContetns] = useState('받침이 없는 글자 ‘가, 나, 다, 라’부터 ‘파, 하’까지가 만들어지는 과정을 영상으로 보고, 시작 낱말을 소리 내며 읽는 놀이로 글자에 익숙해졌어요.');
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju7sR_J2onqMTU8Cq38Jo6Ay')
+  const linkList = [
+    {page:2,link:'https://youtu.be/iB9LLSlcGsA',img:videoThumbnail1},
+    {page:2,link:'https://youtu.be/xoHk7RKrmu8',img:videoThumbnail2},
+    {page:7,link:'https://youtu.be/3nR-ffrK-78',img:videoThumbnail3},
+    {page:7,link:'https://youtu.be/JclepawEj-8',img:videoThumbnail4},
+    {page:11,link:'https://youtu.be/4d2FNXDvYro',img:videoThumbnail5},
+    {page:11,link:'https://youtu.be/ivPv2XCV6Sw',img:videoThumbnail6},
+    {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:videoThumbnail7},
+    // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:videoThumbnail8}, 
+   ]
+
+  const [zembo, setZembo] = useState({
+    title:'나는 우리 집 왕',
+    title2:'',
+    contents:'『나는 우리 집 왕』은 가족의 사랑을 독차지하던 고양이가 새로운 가족 개를 맞이하면서 벌어지는 이야기입니다. 이 책은 우리 아이들에게 함께하는 즐거움과 나누는 기쁨의 가치를 알려줍니다.',
+    img:zemboImg,
+    link:'https://youtu.be/Izkgi0EmBXc'
+  }) 
+
+  const [code,setCode] = useState('kwk159');
+
+  const handleGoLink=(link)=>{
+    window.open(link)
+  }
+
    
   return (
   <div className='mainCenterLayoutHome'>
     <div className='imgBoxHome'>
       {/* <div className='stepInfoHome' style={{border:'3px solid #7DCBF5'}}>한글 1단계 5호</div> */}
-      <div className='contentsLinkBtnHome' style={{right:0}}>
+      <div className='contentsLinkBtnHome' style={{right:0}} onClick={()=>handleGoLink(playListLink)}>
         <div className='contentsLinkHome' style={{right:0}}>▶</div>
         <div className='contentsLinkTextHome'>영상 시청</div>
       </div>
@@ -35,7 +62,7 @@ function H1_5() {
     <div className='contentsBoxHome'>
       <div className='titleHome'>
         까르르한글 가정안내문<br/>
-        1단계 5호
+        1단계 {issue}호
       </div> 
       <div className='boxTitleHome' style={{backgroundColor:'#41A9D6'}}>
         <div></div>
@@ -45,10 +72,10 @@ function H1_5() {
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
           <img src={book} alt=''style={{width:100,height:'fit-content',borderRadius:10,border:'1px solid #dcdcdc',}}/>
-          <img src={contents1} alt='' style={{width:140,height:'fit-content',borderRadius:10,marginLeft:-50,border:'1px solid #dcdcdc'}}/>
+          <img src={bookVideo} alt='' style={{width:140,height:'fit-content',borderRadius:10,marginLeft:-50,border:'1px solid #dcdcdc'}}/>
         </div> 
         <div>
-            받침이 없는 글자 ‘가, 나, 다, 라’부터 ‘파, 하’까지가 만들어지는 과정을 영상으로 보고, 시작 낱말을 소리 내며 읽는 놀이로 글자에 익숙해졌어요.  
+          {studyContetns}
         </div>   
       
       
@@ -79,12 +106,12 @@ function H1_5() {
         <div className='admissionCodeHome'>
           <div className='admissionCodeTitleHome'>🔑 쓰는한글 STEP1 입장코드</div>
           <div className='admissionCodeTextHome'>
-            <span>k</span>
-            <span>w</span>            
-            <span>k</span>
-            <span>1</span>
-            <span>5</span>
-            <span>9</span>
+            <span>{code[0]}</span>
+            <span>{code[1]}</span>            
+            <span>{code[2]}</span>
+            <span>{code[3]}</span>
+            <span>{code[4]}</span>
+            <span>{code[5]}</span>
           </div>
         </div>
 
@@ -99,13 +126,12 @@ function H1_5() {
         <div></div>
       </div>
       <div className='zemboBoxHome'> 
-          
-        <img src={contents0} alt='' style={{cursor:'pointer'}}/>
-         <div>
-            <div style={{fontWeight:700,marginBottom:10,marginTop:5}}>📒 나는 우리 집 왕</div> 
-            <div>『나는 우리 집 왕』은 가족의 사랑을 독차지하던 고양이가 새로운 가족 개를 맞이하면서 벌어지는 이야기입니다.
-                이 책은 우리 아이들에게 함께하는 즐거움과 나누는 기쁨의 가치를 알려줍니다.</div>
-         </div>
+        <img src={zembo.img} alt='' style={{cursor:'pointer'}} onClick={()=>handleGoLink(zembo.link)}/>
+        <div>
+          <div style={{fontWeight:700,marginBottom:zembo.title2===''?10:0,marginTop:5}}>📗 {zembo.title}</div> 
+          {zembo.title2===''?<></>:<div style={{fontWeight:700,marginBottom:10,marginTop:0}}>{zembo.title2}</div>}
+          <div>{zembo.contents}</div>
+        </div>
       </div>
  
 
@@ -119,41 +145,48 @@ function H1_5() {
       <div className='videoBoxHome'> 
         <div style={{fontWeight:700}}>🎥 영상으로 이어지는 즐거운 학습</div>
         <div style={{marginTop:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
-          <div className='videoBoxImgHome'>
-            <img src={videoThumbnail1} alt=''/> 
-            <div>2p</div>
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[0].link)}>
+            <img src={linkList[0].img} alt=''/> 
+            <div>{linkList[0].page}p</div>
           </div>  
 
-          <div className='videoBoxImgHome'>
-            <img src={videoThumbnail2} alt=''/> 
-            <div>2p</div>
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[1].link)}>
+            <img src={linkList[1].img} alt=''/> 
+            <div>{linkList[1].page}p</div>
           </div>  
 
-          <div className='videoBoxImgHome'>
-            <img src={videoThumbnail3} alt=''/> 
-            <div>7p</div>
-          </div>
-          <div className='videoBoxImgHome'>
-            <img src={videoThumbnail4} alt=''/> 
-            <div>7p</div>
-          </div>
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[2].link)}>
+            <img src={linkList[2].img} alt=''/> 
+            <div>{linkList[2].page}p</div>
+          </div>  
+
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
+            <img src={linkList[3].img} alt=''/> 
+            <div>{linkList[3].page}p</div>
+          </div>  
+ 
         </div>
 
          <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
-          <div className='videoBoxImgHome'>
-            <img src={videoThumbnail5} alt=''/> 
-            <div>11p</div>
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
+            <img src={linkList[4].img} alt=''/> 
+            <div>{linkList[4].page}p</div>
           </div>  
 
-          <div className='videoBoxImgHome'>
-            <img src={videoThumbnail6} alt=''/> 
-            <div>11p</div>
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[5].link)}>
+            <img src={linkList[5].img} alt=''/> 
+            <div>{linkList[5].page}p</div>
           </div>  
 
-          <div className='videoBoxImgHome'>
-            <img src={videoThumbnail7} alt=''/> 
-            <div>16p</div>
-          </div> 
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
+            <img src={linkList[6].img} alt=''/> 
+            <div>{linkList[6].page}p</div>
+          </div>  
+
+          {/* <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
+            <img src={linkList[7].img} alt=''/> 
+            <div>{linkList[7].page}p</div>
+          </div>   */}
         </div>
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>
