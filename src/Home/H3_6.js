@@ -41,7 +41,7 @@ function H3_6() {
     title2:'',
     contents:'『시끄러운 도시는 정말 싫어!』는 도시로 간 아기 곰이 여러 사건을 겪으며 어른이 된 금발 소녀를 다시 만나게 되는 이야기입니다. 이 책은 아이들이 낯선 환경에 적응하는 용기와, 타인을 이해하고 배려하는 사회적 감수성을 배우도록 도와줍니다.',
     img:zemboImg,
-    link:'https://youtu.be/Izkgi0EmBXc'
+    link:''
   }) 
 
   const [code,setCode] = useState('kwk159')

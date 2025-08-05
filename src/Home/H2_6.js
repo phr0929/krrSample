@@ -39,7 +39,7 @@ function H2_6() {
     title2:'목욕은 정말 싫어요',
     contents:'『개구쟁이 해리, 목욕은 정말 싫어요』는 목욕이 싫어서 도망친 해리가 가족의 사랑으로 다시 목욕을 하게 되는 유쾌한 이야기입니다. 이 책은 아이들이 청결의 필요성을 자연스럽게 느끼고, 가족과의 정서적 교감을 통해 건강한 습관을 기르도록 도와줍니다.',
     img:zemboImg,
-    link:'https://youtu.be/Izkgi0EmBXc'
+    link:''
   }) 
 
   const [code,setCode] = useState('kwk159')

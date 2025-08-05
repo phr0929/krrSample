@@ -18,10 +18,10 @@ function M3_6() {
   const [boxColor,setBoxColor] = useState('#FFDA94')
   const [textColor,setTextColor] = useState('#323232')
    
-  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/6iB_T62GNyc')
+  const [bookVideoLink,setBookVideoLink] = useState('')
   const [issue,setIssue] = useState(6)
   const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 가르기·모으기 확장, 보수, 규칙 찾기, 조건 분류 활동을 통해 사고력과 연산력을 키웠어요.')
-  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5NfhuvgwxHP3zoJmGzSMxU')
+  const [playListLink,setPlayListLink] = useState('')
   const linkList = [
     {page:2,link:'',img:video1},
     {page:7,link:'',img:video2},

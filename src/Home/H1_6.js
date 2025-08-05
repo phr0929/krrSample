@@ -47,7 +47,7 @@ function H1_6() {
     title2:'꽃무늬 옷은 싫어요',
     contents:'',
     img:zemboImg,
-    link:'https://youtu.be/Izkgi0EmBXc'
+    link:''
   }) 
 
   const [code,setCode] = useState('kwk159')

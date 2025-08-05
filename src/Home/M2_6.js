@@ -20,10 +20,10 @@ function M2_6() {
   const [boxColor,setBoxColor] = useState('#FFDA94')
   const [textColor,setTextColor] = useState('#323232')
    
-  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/6iB_T62GNyc')
+  const [bookVideoLink,setBookVideoLink] = useState('')
   const [issue,setIssue] = useState(6)
   const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 길이 비교, 막대 대응, 수직선 숫자 연결을 통해 수의 순서, 비교, 보수 개념을 익혔어요.')
-  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5NfhuvgwxHP3zoJmGzSMxU')
+  const [playListLink,setPlayListLink] = useState('')
   const linkList = [
     {page:2,link:'',img:video1},
     {page:4,link:'',img:video2},
