@@ -3,33 +3,36 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import m5img from './resource/5/m5img.png'
-import bookVideo from './resource/5/m5Step3Thumbnail1.png'
-import book from './resource/5/m5Step3Book.png'
-import videoThumbnail1 from './resource/5/m5Step3_2p_1.png'
-import videoThumbnail2 from './resource/5/m5Step3_2p_2.png'
-import videoThumbnail3 from './resource/5/m5Step3_2p_3.png'
-import videoThumbnail4 from './resource/5/m5Step3_2p_4.png'
-import videoThumbnail5 from './resource/5/m5Step3_7p_1.png' 
-import videoThumbnail6 from './resource/5/m5Step3_13p_1.png'
+import mimg from './resource/5/mimg.png'
+import bookVideo from './resource/5/m3video.png'
+import book from './resource/5/m3book.png'
+import video1 from './resource/5/m3_1.png'
+import video2 from './resource/5/m3_2.png'
+import video3 from './resource/5/m3_3.png'
+import video4 from './resource/5/m3_4.png'
+import video5 from './resource/5/m3_5.png' 
+import video6 from './resource/5/m3_6.png'
 
 function M3_5() {
  
    
-   
+  const [bgColor,setBgColor] = useState('#B7EDEA')
+  const [boxColor,setBoxColor] = useState('#61C1BA')
+  const [textColor,setTextColor] = useState('#323232')
+
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/XYkWOPitymc')
   const [issue,setIssue] = useState(5)
   const [studyContetns,setStudyContetns] = useState('덧셈과 가르기·모으기 개념을 블록과 워크지 활동으로 익히고, 수의 구조와 뺄셈 개념까지 자연스럽게 연결해보았어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5EVR0ciDWBuXWJHxM-Z8Rk')
   const linkList = [
-    {page:2,link:'https://youtu.be/mUCvq4mDVRc',img:videoThumbnail1},
-    {page:2,link:'https://youtu.be/rztSBYHfOAw?si=0B-bMiM0KWyxTg22',img:videoThumbnail2},
-    {page:2,link:'https://youtu.be/YG9CrZ-vjVE',img:videoThumbnail3},
-    {page:2,link:'https://youtu.be/TAdJwaCFQZQ',img:videoThumbnail4},
-    {page:7,link:'https://youtu.be/XYkWOPitymc',img:videoThumbnail5},
-    {page:13,link:'https://youtu.be/9hmJ7bZKsbQ',img:videoThumbnail6},
-    // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:videoThumbnail7},
-    // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:videoThumbnail8}, 
+    {page:2,link:'https://youtu.be/mUCvq4mDVRc',img:video1},
+    {page:2,link:'https://youtu.be/rztSBYHfOAw?si=0B-bMiM0KWyxTg22',img:video2},
+    {page:2,link:'https://youtu.be/YG9CrZ-vjVE',img:video3},
+    {page:2,link:'https://youtu.be/TAdJwaCFQZQ',img:video4},
+    {page:7,link:'https://youtu.be/XYkWOPitymc',img:video5},
+    {page:13,link:'https://youtu.be/9hmJ7bZKsbQ',img:video6},
+    // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:video7},
+    // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:video8}, 
    ]
    
   const handleGoLink=(link)=>{
@@ -42,18 +45,18 @@ function M3_5() {
   <div className='mainCenterLayoutHome'>
     <div className='imgBoxHome'>
       {/* <div className='stepInfoHome' style={{border:'3px solid #7DCBF5'}}>한글 1단계 5호</div> */}
-      <div className='contentsLinkBtnHome' style={{right:0}}>
+      <div className='contentsLinkBtnHome' style={{right:0}} onClick={()=>handleGoLink(playListLink)}>
         <div className='contentsLinkHome' style={{right:0}}>▶</div>
         <div className='contentsLinkTextHome'>영상 시청</div>
       </div>
-      <img src={m5img} alt='' className='mainImgHome'/>
+      <img src={mimg} alt='' className='mainImgHome'/>
     </div>
-    <div className='contentsBoxHome' style={{backgroundColor:'#B7EDEA'}}>
-      <div className='titleHome' style={{color:'#323232'}}>
+    <div className='contentsBoxHome' style={{backgroundColor:bgColor}}>
+      <div className='titleHome' style={{color:textColor}}>
         까르르수학 가정안내문<br/>
         3단계 {issue}호
       </div> 
-      <div className='boxTitleHome' style={{backgroundColor:'#61C1BA'}}>
+      <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         <div></div>
         <div>학습 내용</div>
         <div></div>
@@ -69,7 +72,7 @@ function M3_5() {
       
       
       </div>
-       <div className='boxTitleHome' style={{backgroundColor:'#61C1BA'}}>
+       <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
         <div>교재 연계 영상</div>

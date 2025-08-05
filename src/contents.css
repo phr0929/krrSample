@@ -2071,3 +2071,25 @@
     margin-top:calc(var(--codeBoxVer2Padding) * 2);
     margin-bottom:calc(var(--codeBoxVer2Padding) * 2);
 }
+ 
+.testbtn:active {
+    filter: brightness(0.9);     
+}
+
+ 
+.testbtn1:active {    
+     transform: scale(0.9);       
+}
+ 
+.testbtn2:active {
+      transform: scale(1.1);    
+} 
+.testbtn3:active {    
+       transform: translateY(2px);     
+}
+
+.testbtn4:active {
+       filter: brightness(0.9);
+       transform: translateY(2px);
+    
+}

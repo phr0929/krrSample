@@ -3,36 +3,39 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import h5img from './resource/5/h5img.png'
+import himg from './resource/5/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
-import zemboImg from './resource/5/h5Step3Thumbnail0.png'
-import bookVideo from './resource/5/h5Step3Thumbnail1.png'
-import book from './resource/5/h5Step3Book.png'
-import videoThumbnail1 from './resource/5/h5Step3_2p_1.png'
-import videoThumbnail2 from './resource/5/h5Step3_2p_2.png'
-import videoThumbnail3 from './resource/5/h5Step3_6p_1.png'
-import videoThumbnail4 from './resource/5/h5Step3_6p_2.png'
-import videoThumbnail5 from './resource/5/h5Step3_6p_3.png'
-import videoThumbnail6 from './resource/5/h5Step3_12p_1.png'
-import videoThumbnail7 from './resource/5/h5Step3_15p_1.png'
+import zemboImg from './resource/5/zembo3.png'
+import bookVideo from './resource/5/h3video.png'
+import book from './resource/5/h3book.png'
+import video1 from './resource/5/h3_1.png'
+import video2 from './resource/5/h3_2.png'
+import video3 from './resource/5/h3_3.png'
+import video4 from './resource/5/h3_4.png'
+import video5 from './resource/5/h3_5.png'
+import video6 from './resource/5/h3_6.png'
+import video7 from './resource/5/h3_7.png'
 
 function H3_5() {
  
-   
+  const [bgColor,setBgColor] = useState('#7DCBF5')
+  const [boxColor,setBoxColor] = useState('#41A9D6')
+  const [textColor,setTextColor] = useState('#fff')
+
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/c8ATFeHtDqQ')
   const [issue,setIssue] = useState(5)
   const [studyContetns,setStudyContetns] = useState('‘타다’처럼 소리는 같지만 뜻이 다른 동음이의어를 다양한 문장으로 표현하며 어휘력과 표현력을 길렀어요. 움직임 낱말도 익히며 동사의 개념을 배웠답니다.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju6Kvi2CMk5Z9Z9WIVABTbeZ')
   const linkList = [
-    {page:2,link:'https://youtu.be/d-dIHC2ZMxc',img:videoThumbnail1},
-    {page:2,link:'https://youtu.be/Zx9_dbJfX5s',img:videoThumbnail2},
-    {page:6,link:'https://youtu.be/qWlV8FV1bWw',img:videoThumbnail3},
-    {page:6,link:'https://youtu.be/HpB_W_VJfK4',img:videoThumbnail4},
-    {page:6,link:'https://youtu.be/c8ATFeHtDqQ',img:videoThumbnail5},
-    {page:12,link:'https://youtu.be/hpibGfrC2Yw',img:videoThumbnail6},
-    {page:15,link:'https://youtu.be/Ehys4757e0M',img:videoThumbnail7},
-    // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:videoThumbnail8}, 
+    {page:2,link:'https://youtu.be/d-dIHC2ZMxc',img:video1},
+    {page:2,link:'https://youtu.be/Zx9_dbJfX5s',img:video2},
+    {page:6,link:'https://youtu.be/qWlV8FV1bWw',img:video3},
+    {page:6,link:'https://youtu.be/HpB_W_VJfK4',img:video4},
+    {page:6,link:'https://youtu.be/c8ATFeHtDqQ',img:video5},
+    {page:12,link:'https://youtu.be/hpibGfrC2Yw',img:video6},
+    {page:15,link:'https://youtu.be/Ehys4757e0M',img:video7},
+    // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:video8}, 
    ]
 
   const [zembo, setZembo] = useState({
@@ -47,8 +50,7 @@ function H3_5() {
 
   const handleGoLink=(link)=>{
     window.open(link)
-  }
-   
+  } 
    
   return (
   <div className='mainCenterLayoutHome'>
@@ -58,14 +60,14 @@ function H3_5() {
         <div className='contentsLinkHome' style={{right:0}}>▶</div>
         <div className='contentsLinkTextHome'>영상 시청</div>
       </div>
-      <img src={h5img} alt='' className='mainImgHome'/>
+      <img src={himg} alt='' className='mainImgHome'/>
     </div>
-    <div className='contentsBoxHome'>
-      <div className='titleHome'>
+    <div className='contentsBoxHome' style={{backgroundColor:bgColor}}>
+      <div className='titleHome' style={{color:textColor}}>
         까르르한글 가정안내문<br/>
         3단계 {issue}호
       </div> 
-      <div className='boxTitleHome' style={{backgroundColor:'#41A9D6'}}>
+      <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         <div></div>
         <div>학습 내용</div>
         <div></div>
@@ -81,7 +83,7 @@ function H3_5() {
       
       
       </div>
-      <div className='boxTitleHome' style={{backgroundColor:'#41A9D6'}}>
+      <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
         <div>쓰는한글 APP</div>
@@ -120,7 +122,7 @@ function H3_5() {
       </div>
 
 
-      <div className='boxTitleHome' style={{backgroundColor:'#41A9D6'}}>
+      <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
         <div>이달의 잼보 동화</div>
@@ -138,7 +140,7 @@ function H3_5() {
  
 
       
-      <div className='boxTitleHome' style={{backgroundColor:'#41A9D6'}}>
+      <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
         <div>교재 연계 영상</div>

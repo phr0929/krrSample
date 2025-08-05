@@ -34,10 +34,20 @@ import Home from './Home/index';
 import H1_5 from './Home/H1_5';
 import H2_5 from './Home/H2_5';
 import H3_5 from './Home/H3_5';
+import H1_6 from './Home/H1_6';
+import H2_6 from './Home/H2_6';
+import H3_6 from './Home/H3_6';
 
 import M1_5 from './Home/M1_5';
 import M2_5 from './Home/M2_5';
 import M3_5 from './Home/M3_5';
+
+
+import M1_6 from './Home/M1_6';
+import M2_6 from './Home/M2_6';
+import M3_6 from './Home/M3_6';
+
+import Test from './Test';
 
 
 function App() {
@@ -49,9 +59,11 @@ function App() {
       
       <Suspense fallback="...loading">
         <Routes>
+
+             
           
             {/* <Route  path="/" element={<NextTime/>} /> */}
-            
+            <Route path='/Test' element={<Test/>}/>
             <Route path='/' element={<Main2026/>}/>
             <Route path='/contents' element={<Contents2026/>}/> 
 
@@ -74,6 +86,16 @@ function App() {
 
             <Route  path="/Home/H35zzz" element={<H3_5/>} />
             <Route  path="/Home/M35csd" element={<M3_5/>} />
+
+            
+            <Route  path="/Home/H16eww" element={<H1_6/>} />
+            <Route  path="/Home/M16pwe" element={<M1_6/>} />
+
+            <Route  path="/Home/H26abd" element={<H2_6/>} />
+            <Route  path="/Home/M26wws" element={<M2_6/>} />
+
+            <Route  path="/Home/H36esd" element={<H3_6/>} />
+            <Route  path="/Home/M36zzv" element={<M3_6/>} />
 
 
             <Route  path="/2025Sample" element={<Main/>} />

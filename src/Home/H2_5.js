@@ -3,36 +3,38 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import h5img from './resource/5/h5img.png'
+import himg from './resource/5/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
-import zemboImg from './resource/5/h5Step2Thumbnail0.png'
-import bookVideo from './resource/5/h5Step2Thumbnail1.png'
-import book from './resource/5/h5Step2Book.png'
-import videoThumbnail1 from './resource/5/h5Step2_4p_1.png'
-import videoThumbnail2 from './resource/5/h5Step2_4p_2.png'
-import videoThumbnail3 from './resource/5/h5Step2_8p_1.png'
-import videoThumbnail4 from './resource/5/h5Step2_8p_2.png'
-import videoThumbnail5 from './resource/5/h5Step2_14p_1.png'
-import videoThumbnail6 from './resource/5/h5Step2_14p_2.png'
+import zemboImg from './resource/5/zembo2.png'
+import bookVideo from './resource/5/h2video.png'
+import book from './resource/5/h2book.png'
+import video1 from './resource/5/h2_1.png'
+import video2 from './resource/5/h2_2.png'
+import video3 from './resource/5/h2_3.png'
+import video4 from './resource/5/h2_4.png'
+import video5 from './resource/5/h2_5.png'
+import video6 from './resource/5/h2_6.png'
 
 function H2_5() {
  
-   
+  const [bgColor,setBgColor] = useState('#7DCBF5')
+  const [boxColor,setBoxColor] = useState('#41A9D6')
+  const [textColor,setTextColor] = useState('#fff')
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/TcmAzT_TEP8')
   const [issue,setIssue] = useState(5)
   const [studyContetns,setStudyContetns] = useState('자음과 모음이 만나 ‘라리’, ‘마미’, ‘바~비’가 되는 과정을 소리 내며 익히고, 노래와 챈트, 말놀이 동시로 글자의 구조를 재미있게 배웠어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju59LjW4eY7tNqfARKGGvi-q')
   const linkList = [
-    {page:4,link:'https://youtu.be/TcmAzT_TEP8',img:videoThumbnail1},
-    {page:4,link:'https://youtu.be/GP1y00_97Mc',img:videoThumbnail2},
-    {page:8,link:'https://youtu.be/LEdNtY2SsQQ',img:videoThumbnail3},
-    {page:8,link:'https://youtu.be/uYIAMCJCn4M',img:videoThumbnail4},
-    {page:14,link:'https://youtu.be/plqmzZ81shc',img:videoThumbnail5},
-    {page:14,link:'https://youtu.be/fPKnV2Jxfjs',img:videoThumbnail6},
-    // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:videoThumbnail7},
-    // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:videoThumbnail8}, 
+    {page:4,link:'https://youtu.be/TcmAzT_TEP8',img:video1},
+    {page:4,link:'https://youtu.be/GP1y00_97Mc',img:video2},
+    {page:8,link:'https://youtu.be/LEdNtY2SsQQ',img:video3},
+    {page:8,link:'https://youtu.be/uYIAMCJCn4M',img:video4},
+    {page:14,link:'https://youtu.be/plqmzZ81shc',img:video5},
+    {page:14,link:'https://youtu.be/fPKnV2Jxfjs',img:video6},
+    // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:video7},
+    // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:video8}, 
    ]
 
   const [zembo, setZembo] = useState({
@@ -47,9 +49,7 @@ function H2_5() {
 
   const handleGoLink=(link)=>{
     window.open(link)
-  }
-
-   
+  } 
    
   return (
   <div className='mainCenterLayoutHome'>
@@ -59,14 +59,14 @@ function H2_5() {
         <div className='contentsLinkHome' style={{right:0}}>▶</div>
         <div className='contentsLinkTextHome'>영상 시청</div>
       </div>
-      <img src={h5img} alt='' className='mainImgHome'/>
+      <img src={himg} alt='' className='mainImgHome'/>
     </div>
-    <div className='contentsBoxHome'>
-      <div className='titleHome'>
+    <div className='contentsBoxHome' style={{backgroundColor:bgColor}}>
+      <div className='titleHome' style={{color:textColor}}>
         까르르한글 가정안내문<br/>
         2단계 {issue}호
       </div> 
-      <div className='boxTitleHome' style={{backgroundColor:'#41A9D6'}}>
+      <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         <div></div>
         <div>학습 내용</div>
         <div></div>
@@ -82,7 +82,7 @@ function H2_5() {
       
       
       </div>
-      <div className='boxTitleHome' style={{backgroundColor:'#41A9D6'}}>
+      <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
         <div>쓰는한글 APP</div>
@@ -121,7 +121,7 @@ function H2_5() {
       </div>
 
 
-      <div className='boxTitleHome' style={{backgroundColor:'#41A9D6'}}>
+      <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
         <div>이달의 잼보 동화</div>
@@ -139,7 +139,7 @@ function H2_5() {
  
 
       
-      <div className='boxTitleHome' style={{backgroundColor:'#41A9D6'}}>
+      <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
         <div>교재 연계 영상</div>
