@@ -21,17 +21,17 @@ function H2_6() {
   const [boxColor,setBoxColor] = useState('#FFDA94')
   const [textColor,setTextColor] = useState('#3A3023')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/2iPPmpuJJRM')
   const [issue,setIssue] = useState(6)
   const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 구성 글자와 그림을 조합하여 문장을 완성하고, 문장 안에서 낱말의 순서를 익히며 글쓰기 기초를 다졌어요.');
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju7JsyB2uaYai2fUlYAz9REK')
   const linkList = [
-    {page:4,link:'',img:video1},
-    {page:4,link:'',img:video2},
-    {page:9,link:'',img:video3},
-    {page:9,link:'',img:video4},
-    {page:14,link:'',img:video5},
-    {page:14,link:'',img:video6},
+    {page:4,link:'https://youtu.be/8fjAlgW1Mos',img:video2},
+    {page:4,link:'https://youtu.be/2iPPmpuJJRM',img:video1},
+    {page:9,link:'https://youtu.be/kbElVaIcWoM',img:video4},
+    {page:9,link:'https://youtu.be/bo4llkYyKH8',img:video3},
+    {page:14,link:'https://youtu.be/aQOrtJWuZZY',img:video6},
+    {page:14,link:'https://youtu.be/eeBa8km2DeU',img:video5},
    ]
 
   const [zembo, setZembo] = useState({
@@ -39,7 +39,7 @@ function H2_6() {
     title2:'목욕은 정말 싫어요',
     contents:'『개구쟁이 해리, 목욕은 정말 싫어요』는 목욕이 싫어서 도망친 해리가 가족의 사랑으로 다시 목욕을 하게 되는 유쾌한 이야기입니다. 이 책은 아이들이 청결의 필요성을 자연스럽게 느끼고, 가족과의 정서적 교감을 통해 건강한 습관을 기르도록 도와줍니다.',
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/5lrFe19r8L8'
   }) 
 
   const [code,setCode] = useState('kwk159')
@@ -64,7 +64,7 @@ function H2_6() {
     <div className='contentsBoxHome'style={{backgroundColor:bgColor}}>
       <div className='titleHome' style={{color:textColor}}>
         까르르한글 가정안내문<br/>
-        1단계 {issue}호
+        2단계 {issue}호
       </div> 
       <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         <div></div>
@@ -73,12 +73,8 @@ function H2_6() {
       </div>
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
-          <img src={book} alt=''style={{width:100,height:'fit-content',borderRadius:10,
-            // border:'1px solid #dcdcdc',
-            }}/>
-          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' style={{cursor:'pointer',width:140,height:'fit-content',borderRadius:10,marginLeft:-50,
-            // border:'1px solid #dcdcdc'
-            }}/>
+          <img src={book} alt='' className='bookImgHome' style={{border:0}}/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome' style={{border:0}}/>
         </div> 
         <div>
           {studyContetns}

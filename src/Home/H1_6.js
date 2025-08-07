@@ -19,35 +19,37 @@ import video7 from './resource/6/h1_7.png'
 import video8 from './resource/6/h1_8.png'
 import video9 from './resource/6/h1_9.png'
 import video10 from './resource/6/h1_10.png'
+import video11 from './resource/6/h1_11.png'
 
 function H1_6() {
   const [bgColor,setBgColor] = useState('#FFEBB4')
   const [boxColor,setBoxColor] = useState('#FFDA94')
   const [textColor,setTextColor] = useState('#3A3023')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/UzZHp3BjovM')
   const [issue,setIssue] = useState(6)
   const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 ‘거~허’ 글자를 활용해 단어 만들기를 하고, 문장과 문장의 끝맺음 표현을 익히며 말놀이로 문해력을 키웠어요.');
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju7aMHzcMGXue-crMNwYaA1I')
   const linkList = [
-    {page:2,link:'',img:video1},
-    {page:5,link:'',img:video2},
-    {page:5,link:'',img:video3},
-    {page:5,link:'',img:video4},
-    {page:10,link:'',img:video5},
-    {page:10,link:'',img:video6},
-    {page:10,link:'',img:video7},
-    {page:10,link:'',img:video8}, 
-    {page:14,link:'',img:video9}, 
-    {page:14,link:'',img:video10}, 
+    {page:2,link:'https://youtu.be/J40_E12Ki_8',img:video1},
+    {page:5,link:'https://youtu.be/dm_LDkLmTyQ',img:video2},
+    {page:5,link:'https://youtu.be/16sJv0tZg0M',img:video3},
+    {page:5,link:'https://youtu.be/IwCbZb43UP4',img:video4},
+    {page:10,link:'https://youtu.be/194HSeACVb8',img:video5},
+    {page:10,link:'https://youtu.be/vxYyVuVBUwk',img:video6},
+    {page:10,link:'https://youtu.be/cQUtuubXdv0',img:video7},
+    {page:10,link:'https://youtu.be/pxNQWkzISHM',img:video8}, 
+    {page:14,link:'https://youtu.be/UzZHp3BjovM',img:video9}, 
+    {page:14,link:'https://youtu.be/zsY-61bBKGY',img:video10}, 
+    {page:14,link:'https://youtu.be/HUi6L8tTXaI',img:video11}, 
    ]
 
   const [zembo, setZembo] = useState({
     title:'개구쟁이 해리',
     title2:'꽃무늬 옷은 싫어요',
-    contents:'',
+    contents:'『개구쟁이 해리, 꽃무늬 옷은 싫어요』는 해리가 할머니에게 받은 생일 선물이 마음에 들지 않아 몰래 버리려다 새로운 옷을 발견하게 되는 이야기입니다. 이 책은 아이들이 마음에 들지 않는 물건도 누군가에게는 소중할 수 있음을 알고, 존중하고 배려하는 태도를 배우게 해줍니다.',
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/G94CUD-fxLw'
   }) 
 
   const [code,setCode] = useState('kwk159')
@@ -81,12 +83,8 @@ function H1_6() {
       </div>
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
-          <img src={book} alt=''style={{width:100,height:'fit-content',borderRadius:10,
-            // border:'1px solid #dcdcdc',
-            }}/>
-          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' style={{cursor:'pointer',width:140,height:'fit-content',borderRadius:10,marginLeft:-50,
-            // border:'1px solid #dcdcdc'
-            }}/>
+          <img src={book} alt='' className='bookImgHome' style={{border:0}}/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome' style={{border:0}}/>
         </div> 
         <div>
           {studyContetns}
@@ -181,7 +179,7 @@ function H1_6() {
  
         </div>
 
-         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+         <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
             <img src={linkList[4].img} alt=''/> 
             <div>{linkList[4].page}p</div>
@@ -197,10 +195,28 @@ function H1_6() {
             <div>{linkList[6].page}p</div>
           </div>  
 
-          {/* <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
             <img src={linkList[7].img} alt=''/> 
             <div>{linkList[7].page}p</div>
-          </div>   */}
+          </div>  
+        </div>
+
+         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[8].link)}>
+            <img src={linkList[8].img} alt=''/> 
+            <div>{linkList[8].page}p</div>
+          </div>  
+
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[9].link)}>
+            <img src={linkList[9].img} alt=''/> 
+            <div>{linkList[9].page}p</div>
+          </div>  
+
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[10].link)}>
+            <img src={linkList[10].img} alt=''/> 
+            <div>{linkList[10].page}p</div>
+          </div>  
+ 
         </div>
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>

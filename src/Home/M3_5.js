@@ -22,7 +22,7 @@ function M3_5() {
 
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/XYkWOPitymc')
   const [issue,setIssue] = useState(5)
-  const [studyContetns,setStudyContetns] = useState('덧셈과 가르기·모으기 개념을 블록과 워크지 활동으로 익히고, 수의 구조와 뺄셈 개념까지 자연스럽게 연결해보았어요.')
+  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 덧셈과 가르기·모으기 개념을 블록과 워크지 활동으로 익히고, 수의 구조와 뺄셈 개념까지 자연스럽게 연결해보았어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5EVR0ciDWBuXWJHxM-Z8Rk')
   const linkList = [
     {page:2,link:'https://youtu.be/mUCvq4mDVRc',img:video1},
@@ -63,8 +63,8 @@ function M3_5() {
       </div>
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
-          <img src={book} alt=''style={{width:100,height:'fit-content',borderRadius:10,border:'1px solid #dcdcdc',}}/>
-          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' style={{cursor:'pointer',width:140,height:'fit-content',borderRadius:10,marginLeft:-50,border:'1px solid #dcdcdc'}}/>
+          <img src={book} alt=''className='bookImgHome'/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome'/>
         </div> 
         <div>  
           {studyContetns}

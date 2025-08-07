@@ -18,15 +18,15 @@ function M1_6() {
   const [boxColor,setBoxColor] = useState('#FFDA94')
   const [textColor,setTextColor] = useState('#323232')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/xRhCr_5E_dY')
   const [issue,setIssue] = useState(6)
   const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 도형을 결합하고 나누며 도형의 구성 원리를 익히고, 대응놀이와 눈금자 활동으로 수와 공간 개념을 확장했어요.')
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju42SDxhqpJjdKlwgzZrCC4q')
   const linkList = [
-    {page:2,link:'',img:video1},
-    {page:4,link:'',img:video2},
-    {page:14,link:'',img:video3},
-    {page:16,link:'',img:video4},
+    {page:2,link:'https://youtu.be/xRhCr_5E_dY',img:video1},
+    {page:4,link:'https://youtu.be/niaWp1m6GxM',img:video2},
+    {page:14,link:'https://youtu.be/gwc0dJ3xObk',img:video3},
+    {page:16,link:'https://youtu.be/Jb0HeU6IDok',img:video4},
    ]
    
   const handleGoLink=(link)=>{
@@ -56,12 +56,8 @@ function M1_6() {
       </div>
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
-          <img src={book} alt=''style={{width:100,height:'fit-content',borderRadius:10,
-            // border:'1px solid #dcdcdc',
-            }}/>
-          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' style={{cursor:'pointer',width:140,height:'fit-content',borderRadius:10,marginLeft:-50,
-            // border:'1px solid #dcdcdc'
-            }}/>
+          <img src={book} alt=''className='bookImgHome' style={{border:0}}/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome' style={{border:0}}/>
         </div> 
         <div>
             {studyContetns}

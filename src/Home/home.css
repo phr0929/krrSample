@@ -181,6 +181,21 @@
     align-items: center;    
 }
 
+.bookImgHome{
+    width: 100px;
+    height: 129px;
+    border-radius: 10px;
+    border:1px solid #dcdcdc;
+}
+
+.bookVideoImgHome{
+    cursor: pointer;
+    width: 140px;
+    height: 79px;
+    border-radius: 10px;
+    margin-left: -50px;
+    border:1px solid #dcdcdc;
+}
 
 .zemboBoxHome img{
     width:80%;

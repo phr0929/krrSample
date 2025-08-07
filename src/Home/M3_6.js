@@ -18,15 +18,15 @@ function M3_6() {
   const [boxColor,setBoxColor] = useState('#FFDA94')
   const [textColor,setTextColor] = useState('#323232')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/84uG2-7ocjs')
   const [issue,setIssue] = useState(6)
   const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 가르기·모으기 확장, 보수, 규칙 찾기, 조건 분류 활동을 통해 사고력과 연산력을 키웠어요.')
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju49EHojfPbrfG7n_aqzpxc3')
   const linkList = [
-    {page:2,link:'',img:video1},
-    {page:7,link:'',img:video2},
-    {page:11,link:'',img:video3},
-    {page:15,link:'',img:video4},
+    {page:2,link:'https://youtu.be/bKHcB2Jmgok',img:video1},
+    {page:7,link:'https://youtu.be/BHkMS8pA8J8',img:video2},
+    {page:11,link:'https://youtu.be/84uG2-7ocjs',img:video3},
+    {page:15,link:'https://youtu.be/HTyeyTjYonU',img:video4},
     // {page:13,link:'https://youtu.be/kDh2NaJSzRE',img:video5},
     // {page:16,link:'https://youtu.be/AjF_sRd3Q2I',img:video6},
     // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:video7},
@@ -60,12 +60,8 @@ function M3_6() {
       </div>
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
-          <img src={book} alt=''style={{width:100,height:'fit-content',borderRadius:10,
-            // border:'1px solid #dcdcdc',
-            }}/>
-          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' style={{cursor:'pointer',width:140,height:'fit-content',borderRadius:10,marginLeft:-50,
-            border:'1px solid #dcdcdc'
-            }}/>
+          <img src={book} alt=''className='bookImgHome'/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome'/>
         </div> 
         <div>
             {studyContetns}

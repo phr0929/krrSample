@@ -20,17 +20,17 @@ function M2_6() {
   const [boxColor,setBoxColor] = useState('#FFDA94')
   const [textColor,setTextColor] = useState('#323232')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/7FIyCqWMV-A')
   const [issue,setIssue] = useState(6)
   const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 길이 비교, 막대 대응, 수직선 숫자 연결을 통해 수의 순서, 비교, 보수 개념을 익혔어요.')
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju700OCjY0xGA98vM3tU-IJ4')
   const linkList = [
-    {page:2,link:'',img:video1},
-    {page:4,link:'',img:video2},
-    {page:4,link:'',img:video3},
-    {page:8,link:'',img:video4},
-    {page:8,link:'',img:video5},
-    {page:15,link:'',img:video6},
+    {page:2,link:'https://youtu.be/Vkb6o4PKF3M',img:video1},
+    {page:4,link:'https://youtu.be/0NwHuwXAdqs',img:video2},
+    {page:4,link:'https://youtu.be/WO6rLFrQmTU',img:video3},
+    {page:8,link:'https://youtu.be/Ne1w8_wRFV8',img:video4},
+    {page:8,link:'https://youtu.be/7FIyCqWMV-A',img:video5},
+    {page:15,link:'https://youtu.be/9cVWJvnI4Zw',img:video6},
     // {page:13,link:'https://youtu.be/kDh2NaJSzRE',img:video5},
     // {page:16,link:'https://youtu.be/AjF_sRd3Q2I',img:video6},
     // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:video7},
@@ -64,12 +64,8 @@ function M2_6() {
       </div>
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
-          <img src={book} alt=''style={{width:100,height:'fit-content',borderRadius:10,
-            // border:'1px solid #dcdcdc',
-            }}/>
-          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' style={{cursor:'pointer',width:140,height:'fit-content',borderRadius:10,marginLeft:-50,
-            border:'1px solid #dcdcdc'
-            }}/>
+          <img src={book} alt=''className='bookImgHome'/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome'/>
         </div> 
         <div>
             {studyContetns}

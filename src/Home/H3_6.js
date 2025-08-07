@@ -22,26 +22,26 @@ function H3_6() {
   const [boxColor,setBoxColor] = useState('#FFDA94')
   const [textColor,setTextColor] = useState('#3A3023')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/b8uWZMAa2bM')
   const [issue,setIssue] = useState(6)
   const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 관형어, 주어, 동사 등을 활용해 문장을 구성하고, 비슷한 뜻/반대말로 표현력을 풍부하게 했어요.');
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5bCFBODsfAIbVsgDDO9KkG')
   const linkList = [
-    {page:7,link:'',img:video1},
-    {page:9,link:'',img:video2},
-    {page:9,link:'',img:video3},
-    {page:11,link:'',img:video4},
-    {page:14,link:'',img:video5},
-    {page:14,link:'',img:video6},
-    {page:14,link:'',img:video7},
+    {page:7,link:'https://youtu.be/b8uWZMAa2bM',img:video1},
+    {page:9,link:'https://youtu.be/JHbagV6fw54',img:video2},
+    {page:9,link:'https://youtu.be/OEtawdl-hEg',img:video3},
+    {page:11,link:'https://youtu.be/nYOie_HOgKw',img:video4},
+    {page:14,link:'https://youtu.be/ENnfTLuMqHo',img:video5},
+    {page:14,link:'https://youtu.be/5WhZbSUVSos',img:video6},
+    {page:14,link:'https://youtu.be/yuJ12o8maTg',img:video7},
   ]
 
   const [zembo, setZembo] = useState({
     title:'시끄러운 도시는 정말 싫어!',
     title2:'',
-    contents:'『시끄러운 도시는 정말 싫어!』는 도시로 간 아기 곰이 여러 사건을 겪으며 어른이 된 금발 소녀를 다시 만나게 되는 이야기입니다. 이 책은 아이들이 낯선 환경에 적응하는 용기와, 타인을 이해하고 배려하는 사회적 감수성을 배우도록 도와줍니다.',
+    contents:'『시끄러운 도시는 정말 싫어!』는  곰세마리 이야기를 각색한 동화입니다. 곰세마리의 주인공인 아기 곰이 도시로 가 여러 사건을 겪으며 어른이 된 금발 소녀를 다시 만나게 되는 이야기입니다. 이 책은 아이들이 낯선 환경에 적응하는 용기와, 타인을 이해하고 배려하는 사회적 감수성을 배우도록 도와줍니다.',
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/TFgytSWgVuM'
   }) 
 
   const [code,setCode] = useState('kwk159')
@@ -66,7 +66,7 @@ function H3_6() {
     <div className='contentsBoxHome'style={{backgroundColor:bgColor}}>
       <div className='titleHome' style={{color:textColor}}>
         까르르한글 가정안내문<br/>
-        1단계 {issue}호
+        3단계 {issue}호
       </div> 
       <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         <div></div>
@@ -75,12 +75,8 @@ function H3_6() {
       </div>
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
-          <img src={book} alt=''style={{width:100,height:'fit-content',borderRadius:10,
-            // border:'1px solid #dcdcdc',
-            }}/>
-          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' style={{cursor:'pointer',width:140,height:'fit-content',borderRadius:10,marginLeft:-50,
-            // border:'1px solid #dcdcdc'
-            }}/>
+          <img src={book} alt='' className='bookImgHome' style={{border:0}}/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome' style={{border:0}}/>
         </div> 
         <div>
           {studyContetns}

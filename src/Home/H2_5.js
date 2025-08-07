@@ -24,7 +24,7 @@ function H2_5() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/TcmAzT_TEP8')
   const [issue,setIssue] = useState(5)
-  const [studyContetns,setStudyContetns] = useState('자음과 모음이 만나 ‘라리’, ‘마미’, ‘바~비’가 되는 과정을 소리 내며 익히고, 노래와 챈트, 말놀이 동시로 글자의 구조를 재미있게 배웠어요.')
+  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 자음과 모음이 만나 ‘라리’, ‘마미’, ‘바~비’가 되는 과정을 소리 내며 익히고, 노래와 챈트, 말놀이 동시로 글자의 구조를 재미있게 배웠어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju59LjW4eY7tNqfARKGGvi-q')
   const linkList = [
     {page:4,link:'https://youtu.be/TcmAzT_TEP8',img:video1},
@@ -73,8 +73,8 @@ function H2_5() {
       </div>
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
-          <img src={book} alt=''style={{width:100,height:'fit-content',borderRadius:10,border:'1px solid #dcdcdc',}}/>
-          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' style={{cursor:'pointer',width:140,height:'fit-content',borderRadius:10,marginLeft:-50,border:'1px solid #dcdcdc'}}/>
+          <img src={book} alt='' className='bookImgHome' style={{border:0}}/>
+          <img src={bookVideo}  className='bookVideoImgHome' onClick={()=>handleGoLink(bookVideoLink)} alt='' style={{border:0}}/>
         </div> 
         <div>
             {studyContetns}

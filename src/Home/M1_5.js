@@ -22,7 +22,7 @@ function M1_5() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/6iB_T62GNyc')
   const [issue,setIssue] = useState(5)
-  const [studyContetns,setStudyContetns] = useState('1부터 10까지 숫자를 동물 캐릭터로 기억하고, 블록과 숫자를 짝지으며 수량과 순서를 놀이로 익혔답니다.')
+  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 1부터 10까지 숫자를 동물 캐릭터로 기억하고, 블록과 숫자를 짝지으며 수량과 순서를 놀이로 익혔답니다.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5NfhuvgwxHP3zoJmGzSMxU')
   const linkList = [
     {page:2,link:'https://youtu.be/5kHUUnilIhw',img:video1},
@@ -62,8 +62,8 @@ function M1_5() {
       </div>
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
-          <img src={book} alt=''style={{width:100,height:'fit-content',borderRadius:10,border:'1px solid #dcdcdc',}}/>
-          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' style={{cursor:'pointer',width:140,height:'fit-content',borderRadius:10,marginLeft:-50,border:'1px solid #dcdcdc'}}/>
+          <img src={book} alt=''className='bookImgHome' style={{border:0}}/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome' style={{border:0}}/>
         </div> 
         <div>
             {studyContetns}
