@@ -163,6 +163,13 @@ function H1_7() {
             <div>{linkList[1].page}p</div>
           </div>  
 
+
+ 
+        </div>
+
+         <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
+    
+    
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[2].link)}>
             <img src={linkList[2].img} alt=''/> 
             <div>{linkList[2].page}p</div>
@@ -176,16 +183,13 @@ function H1_7() {
             <img src={linkList[4].img} alt=''/> 
             <div>{linkList[4].page}p</div>
           </div>  
-
- 
-        </div>
-
-         <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
-    
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[5].link)}>
             <img src={linkList[5].img} alt=''/> 
             <div>{linkList[5].page}p</div>
-          </div>  
+          </div>   
+        </div>
+        <div style={{display:'flex',flexDirection:'row',justifyItems:'center',marginBottom:10}}>
+     
 
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
             <img src={linkList[6].img} alt=''/> 
@@ -195,13 +199,12 @@ function H1_7() {
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
             <img src={linkList[7].img} alt=''/> 
             <div>{linkList[7].page}p</div>
-          </div> 
+          </div>  
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[8].link)}>
             <img src={linkList[8].img} alt=''/> 
             <div>{linkList[8].page}p</div>
           </div>   
         </div>
-
          
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>
