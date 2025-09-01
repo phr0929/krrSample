@@ -8,7 +8,7 @@ import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
 import zemboImg from './resource/5/zembo2.png'
 import bookVideo from './resource/5/h2video.png'
-import book from './resource/5/h2book.png'
+import book from './resource/step2book.png'
 import video1 from './resource/5/h2_1.png'
 import video2 from './resource/5/h2_2.png'
 import video3 from './resource/5/h2_3.png'
@@ -24,7 +24,7 @@ function H2_5() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/TcmAzT_TEP8')
   const [issue,setIssue] = useState(5)
-  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 자음과 모음이 만나 ‘라리’, ‘마미’, ‘바~비’가 되는 과정을 소리 내며 익히고, 노래와 챈트, 말놀이 동시로 글자의 구조를 재미있게 배웠어요.')
+  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 ‘라리’, ‘마미’, ‘바~비’ 글자를 자·모음 합성 원리로 익히고, 노래·리듬 읽기·빠진 글자 쓰기·말놀이 동시로 읽기와 쓰기를 연습했어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju59LjW4eY7tNqfARKGGvi-q')
   const linkList = [
     {page:4,link:'https://youtu.be/TcmAzT_TEP8',img:video1},
@@ -40,7 +40,7 @@ function H2_5() {
   const [zembo, setZembo] = useState({
     title:'개구쟁이 해리',
     title2:'바다 괴물이 되었어요',
-    contents:'『개구쟁이 해리, 바다 괴물이 되었어요』는 강아지 해리가 우연한 사건으로 바닷가 사람들에게 바다 괴물로 오해받게 되는 이야기입니다. 이 책은 아이들이 겉모습으로 판단하지 않고 마음의 진심을 바라보는 눈을 기를 수 있도록 도와줍니다.',
+    contents:'『개구쟁이 해리, 바다 괴물이 되었어요』는 해리가 바닷말을 뒤집어써 사람들에게 바다 괴물로 오해받는 소동을 그린 이야기입니다. 외모만 보고 판단해서는 안 된다는 것을 깨닫고, 가족과 이웃에게 따뜻하게 배려하는 법을 배우게 합니다.',
     img:zemboImg,
     link:'https://youtu.be/9_gXvGLtcC0'
   }) 

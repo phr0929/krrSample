@@ -8,7 +8,7 @@ import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
 import zemboImg from './resource/6/zembo1.png'
 import bookVideo from './resource/6/h1video.png'
-import book from './resource/6/h1book.png'
+import book from './resource/step1book.png'
 import video1 from './resource/6/h1_1.png'
 import video2 from './resource/6/h1_2.png'
 import video3 from './resource/6/h1_3.png'
@@ -28,7 +28,7 @@ function H1_6() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/UzZHp3BjovM')
   const [issue,setIssue] = useState(6)
-  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 ‘거~허’ 글자를 활용해 단어 만들기를 하고, 문장과 문장의 끝맺음 표현을 익히며 말놀이로 문해력을 키웠어요.');
+  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 ‘거, 너, 더, 러’, ‘저, 처, 커, 터’, ‘머, 버, 서, 어’, ‘퍼, 허’ 받침 없는 낱자를 노래와 동영상, 질문법으로 배우고, 시작 낱말을 길게 발음하며 읽기 연습을 했어요.');
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju7aMHzcMGXue-crMNwYaA1I')
   const linkList = [
     {page:2,link:'https://youtu.be/J40_E12Ki_8',img:video1},
@@ -47,7 +47,7 @@ function H1_6() {
   const [zembo, setZembo] = useState({
     title:'개구쟁이 해리',
     title2:'꽃무늬 옷은 싫어요',
-    contents:'『개구쟁이 해리, 꽃무늬 옷은 싫어요』는 해리가 할머니에게 받은 생일 선물이 마음에 들지 않아 몰래 버리려다 새로운 옷을 발견하게 되는 이야기입니다. 이 책은 아이들이 마음에 들지 않는 물건도 누군가에게는 소중할 수 있음을 알고, 존중하고 배려하는 태도를 배우게 해줍니다.',
+    contents:'『개구쟁이 해리, 꽃무늬 옷은 싫어요』는 할머니가 준 장미 꽃무늬 스웨터가 마음에 들지 않아 버리려던 해리가, 스웨터가 다른 용도로 변신하는 것을 보고 기뻐하는 이야기입니다. 마음에 들지 않는 선물도 누군가에게는 소중할 수 있음을 깨닫고, 재사용의 가치를 배웁니다.',
     img:zemboImg,
     link:'https://youtu.be/G94CUD-fxLw'
   }) 

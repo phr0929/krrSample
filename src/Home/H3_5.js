@@ -8,7 +8,7 @@ import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
 import zemboImg from './resource/5/zembo3.png'
 import bookVideo from './resource/5/h3video.png'
-import book from './resource/5/h3book.png'
+import book from './resource/step3book.png'
 import video1 from './resource/5/h3_1.png'
 import video2 from './resource/5/h3_2.png'
 import video3 from './resource/5/h3_3.png'
@@ -25,7 +25,7 @@ function H3_5() {
 
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/c8ATFeHtDqQ')
   const [issue,setIssue] = useState(5)
-  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 ‘타다’처럼 소리는 같지만 뜻이 다른 동음이의어를 다양한 문장으로 표현하며 어휘력과 표현력을 길렀어요. 움직임 낱말도 익히며 동사의 개념을 배웠답니다.')
+  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 움직임 낱말, 동사, 동음이의어를 그림·영상과 함께 배우고, 문장 속에 넣어 표현하며 어휘력을 키웠어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju6Kvi2CMk5Z9Z9WIVABTbeZ')
   const linkList = [
     {page:2,link:'https://youtu.be/d-dIHC2ZMxc',img:video1},
@@ -41,7 +41,7 @@ function H3_5() {
   const [zembo, setZembo] = useState({
     title:'내 친구는 절대로 유니콘이 아냐!',
     title2:'',
-    contents:'『내 친구는 절대로 유니콘이 아냐!』는 유니콘처럼 보이지만 유니콘이 아닌 다양한 모습의 친구를 통해 펼쳐지는 상상 가득한 이야기입니다. 이 책은 우리 아이들이 다양한 모습 속에 담긴 특별함을 발견하고, 나와 다른 친구를 인정하는 마음을 배우게 해줍니다.',
+    contents:'『내 친구는 절대로 유니콘이 아냐!』는 유니콘이지만 유니콘처럼 보이지 않는 다양한 모습을 통해 숨겨진 면모를 찾아보는 상상력 가득한 이야기입니다. 한 가지 대상도 여러 각도에서 바라보는 창의적 사고와 누구에게나 특별한 점이 있음을 깨닫게 해 줍니다.',
     img:zemboImg,
     link:'https://youtu.be/ymXC0rjBCEc'
   }) 

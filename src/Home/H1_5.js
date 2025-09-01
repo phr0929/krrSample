@@ -8,7 +8,7 @@ import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
 import zemboImg from './resource/5/zembo1.png'
 import bookVideo from './resource/5/h1video.png'
-import book from './resource/5/h1book.png'
+import book from './resource/step1book.png'
 import video1 from './resource/5/h1_1.png'
 import video2 from './resource/5/h1_2.png'
 import video3 from './resource/5/h1_3.png'
@@ -25,7 +25,7 @@ function H1_5() {
 
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/4d2FNXDvYro')
   const [issue,setIssue] = useState(5)
-  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 받침이 없는 글자 ‘가, 나, 다, 라’부터 ‘파, 하’까지가 만들어지는 과정을 영상으로 보고, 시작 낱말을 소리 내며 읽는 놀이로 글자에 익숙해졌어요.');
+  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 ‘가, 나, 다, 라’, ‘마, 바, 사, 아’, ‘자, 차, 카, 타’, ‘파, 하’ 받침 없는 낱자를 동영상과 질문법으로 배우고, 시작 낱말을 길게 발음하며 읽기 연습을 했어요.');
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju7sR_J2onqMTU8Cq38Jo6Ay')
   const linkList = [
     {page:2,link:'https://youtu.be/iB9LLSlcGsA',img:video1},
@@ -41,7 +41,7 @@ function H1_5() {
   const [zembo, setZembo] = useState({
     title:'나는 우리 집 왕',
     title2:'',
-    contents:'『나는 우리 집 왕』은 가족의 사랑을 독차지하던 고양이가 새로운 가족 개를 맞이하면서 벌어지는 이야기입니다. 이 책은 우리 아이들에게 함께하는 즐거움과 나누는 기쁨의 가치를 알려줍니다.',
+    contents:'『나는 우리 집 왕』은 가족의 사랑과 집안의 모든 물건을 독차지하던 고양이가 새로 온 강아지와의 갈등을 겪으면서 함께 살아가는 기쁨을 배우는 이야기입니다. 새로운 가족이나 친구를 맞이하며 나눔과 배려의 가치를 익히게 합니다.',
     img:zemboImg,
     link:'https://youtu.be/Izkgi0EmBXc'
   }) 

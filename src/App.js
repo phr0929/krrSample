@@ -39,14 +39,23 @@ import H1_6 from './Home/H1_6';
 import H2_6 from './Home/H2_6';
 import H3_6 from './Home/H3_6';
 
+import H1_7 from './Home/H1_7';
+import H2_7 from './Home/H2_7';
+import H3_7 from './Home/H3_7';
+
 import M1_5 from './Home/M1_5';
 import M2_5 from './Home/M2_5';
 import M3_5 from './Home/M3_5';
-
-
 import M1_6 from './Home/M1_6';
 import M2_6 from './Home/M2_6';
 import M3_6 from './Home/M3_6';
+
+import M1_7 from './Home/M1_7';
+import M2_7 from './Home/M2_7';
+import M3_7 from './Home/M3_7';
+
+
+import L_7 from './Home/L_7';
 
 import Test from './Test';
 
@@ -83,24 +92,29 @@ function App() {
             <Route path="/Home/Math6" element={<Home6/>}/>
 
             <Route  path="/Home/H15abc" element={<H1_5/>} />
-            <Route  path="/Home/M15dsd" element={<M1_5/>} />
-            
+            <Route  path="/Home/M15dsd" element={<M1_5/>} />            
             <Route  path="/Home/H25sdf" element={<H2_5/>} />
             <Route  path="/Home/M25qwe" element={<M2_5/>} />
-
             <Route  path="/Home/H35zzz" element={<H3_5/>} />
             <Route  path="/Home/M35csd" element={<M3_5/>} />
 
             
             <Route  path="/Home/H16eww" element={<H1_6/>} />
             <Route  path="/Home/M16pwe" element={<M1_6/>} />
-
             <Route  path="/Home/H26abd" element={<H2_6/>} />
             <Route  path="/Home/M26wws" element={<M2_6/>} />
-
             <Route  path="/Home/H36esd" element={<H3_6/>} />
             <Route  path="/Home/M36zzv" element={<M3_6/>} />
 
+            <Route  path="/Home/H17a" element={<H1_7/>} />
+            <Route  path="/Home/M17a" element={<M1_7/>} />
+            <Route  path="/Home/H27b" element={<H2_7/>} />
+            <Route  path="/Home/M27b" element={<M2_7/>} />
+            <Route  path="/Home/H37c" element={<H3_7/>} />
+            <Route  path="/Home/M37c" element={<M3_7/>} />
+
+            <Route  path="/Home/L7a" element={<L_7/>} />
+            
 
             <Route  path="/2025Sample" element={<Main/>} />
             <Route path="/2025Sample/Krr" element={<Krr/>} />

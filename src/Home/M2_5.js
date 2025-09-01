@@ -5,7 +5,7 @@ import './home.css'
 import { useLocation } from 'react-router-dom';  
 import mimg from './resource/5/mimg.png'
 import bookVideo from './resource/5/m2video.png'
-import book from './resource/5/m2book.png'
+import book from './resource/step2mbook.png'
 import video1 from './resource/5/m2_1.png'
 import video2 from './resource/5/m2_2.png'
 import video3 from './resource/5/m2_3.png'
@@ -20,7 +20,7 @@ function M2_5() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/TecJLVF4UGY')
   const [issue,setIssue] = useState(5)
-  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 숫자에 색깔이나 사물을 연결하며 다양한 수 개념을 익히고, 구슬이나 블록을 이용해 수의 크기를 비교하고 세는 능력을 키웠어요.')
+  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 숫자와 블록을 색·크기·모양별로 연결하고, 순서대로 배열하며 1씩 커지는 수를 익혔어요. 또한, 같은 개수로 만든 모양을 찾고 만들어 수량 인식력을 높였어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju7CtmfKnVbcHB67UAV-jn_y')
   const linkList = [
     {page:2,link:'https://youtu.be/TecJLVF4UGY',img:video1},

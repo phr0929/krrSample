@@ -8,7 +8,7 @@ import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
 import zemboImg from './resource/6/zembo3.png'
 import bookVideo from './resource/6/h3video.png'
-import book from './resource/6/h3book.png'
+import book from './resource/step3book.png'
 import video1 from './resource/6/h3_1.png'
 import video2 from './resource/6/h3_2.png'
 import video3 from './resource/6/h3_3.png'
@@ -24,7 +24,7 @@ function H3_6() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/b8uWZMAa2bM')
   const [issue,setIssue] = useState(6)
-  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 관형어, 주어, 동사 등을 활용해 문장을 구성하고, 비슷한 뜻/반대말로 표현력을 풍부하게 했어요.');
+  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 형용사를 찾아 쓰고, 노래 가사 바꾸기와 질문법으로 문장을 확장하며 표현력을 기르며, 동화·영상 속 형용사·의성어·의태어를 익혔어요.');
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5bCFBODsfAIbVsgDDO9KkG')
   const linkList = [
     {page:7,link:'https://youtu.be/b8uWZMAa2bM',img:video1},
@@ -39,7 +39,7 @@ function H3_6() {
   const [zembo, setZembo] = useState({
     title:'시끄러운 도시는 정말 싫어!',
     title2:'',
-    contents:'『시끄러운 도시는 정말 싫어!』는  곰세마리 이야기를 각색한 동화입니다. 곰세마리의 주인공인 아기 곰이 도시로 가 여러 사건을 겪으며 어른이 된 금발 소녀를 다시 만나게 되는 이야기입니다. 이 책은 아이들이 낯선 환경에 적응하는 용기와, 타인을 이해하고 배려하는 사회적 감수성을 배우도록 도와줍니다.',
+    contents:'『시끄러운 도시는 정말 싫어!』는 금발 소녀와 곰 세 마리 후속 이야기로, 커다란 아기 곰이 시끄러운 도시에서 겪는 좌충우돌을 그립니다. 낯선 환경에서 느끼는 두려움을 이해하고, 남의 집을 방문할 때 지켜야 할 예절과 배려를 배웁니다.',
     img:zemboImg,
     link:'https://youtu.be/TFgytSWgVuM'
   }) 

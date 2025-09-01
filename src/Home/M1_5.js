@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 import mimg from './resource/5/mimg.png'
 
 import bookVideo from './resource/5/m1video.png'
-import book from './resource/5/m1book.png'
+import book from './resource/step1mbook.png'
 import video1 from './resource/5/m1_1.png'
 import video2 from './resource/5/m1_2.png'
 import video3 from './resource/5/m1_3.png'
@@ -22,7 +22,7 @@ function M1_5() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/6iB_T62GNyc')
   const [issue,setIssue] = useState(5)
-  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 1부터 10까지 숫자를 동물 캐릭터로 기억하고, 블록과 숫자를 짝지으며 수량과 순서를 놀이로 익혔답니다.')
+  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 숫자 1~10을 동물·숫자 캐릭터와 연결해 기억하고, 블록 계단 밟기·짝꿍 찾기 놀이로 숫자와 양을 대응하며 수량과 서열 개념을 익혔어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5NfhuvgwxHP3zoJmGzSMxU')
   const linkList = [
     {page:2,link:'https://youtu.be/5kHUUnilIhw',img:video1},

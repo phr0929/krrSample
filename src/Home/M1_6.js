@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 import mimg from './resource/6/mimg.png'
 
 import bookVideo from './resource/6/m1video.png'
-import book from './resource/6/m1book.png'
+import book from './resource/step1mbook.png'
 import video1 from './resource/6/m1_1.png'
 import video2 from './resource/6/m1_2.png'
 import video3 from './resource/6/m1_3.png'
@@ -20,7 +20,7 @@ function M1_6() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/xRhCr_5E_dY')
   const [issue,setIssue] = useState(6)
-  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 도형을 결합하고 나누며 도형의 구성 원리를 익히고, 대응놀이와 눈금자 활동으로 수와 공간 개념을 확장했어요.')
+  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 1~10 블록의 특징을 익히고, 블록 계단·짝꿍 찾기·칩 모으기 놀이로 숫자와 양을 대응하며 수량 개념을 익혔어요. 또한, 그림자·부분 변별 훈련으로 시각 변별력도 길렀어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju42SDxhqpJjdKlwgzZrCC4q')
   const linkList = [
     {page:2,link:'https://youtu.be/xRhCr_5E_dY',img:video1},

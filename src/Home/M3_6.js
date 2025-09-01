@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 import mimg from './resource/6/mimg.png'
 
 import bookVideo from './resource/6/m3video.png'
-import book from './resource/6/m3book.png'
+import book from './resource/step3mbook.png'
 import video1 from './resource/6/m3_1.png'
 import video2 from './resource/6/m3_2.png'
 import video3 from './resource/6/m3_3.png'
@@ -20,7 +20,7 @@ function M3_6() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/84uG2-7ocjs')
   const [issue,setIssue] = useState(6)
-  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 가르기·모으기 확장, 보수, 규칙 찾기, 조건 분류 활동을 통해 사고력과 연산력을 키웠어요.')
+  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 보수챈트를 노래하며 손가락으로 산수를 연습하고, 도형을 활용하여 뺄셈의 이해를 더했어요. 또한, 전체 그림을 보고 부분을 추론하는 사고력 훈련을 했어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju49EHojfPbrfG7n_aqzpxc3')
   const linkList = [
     {page:2,link:'https://youtu.be/bKHcB2Jmgok',img:video1},

@@ -5,7 +5,7 @@ import './home.css'
 import { useLocation } from 'react-router-dom';  
 import mimg from './resource/5/mimg.png'
 import bookVideo from './resource/5/m3video.png'
-import book from './resource/5/m3book.png'
+import book from './resource/step3mbook.png'
 import video1 from './resource/5/m3_1.png'
 import video2 from './resource/5/m3_2.png'
 import video3 from './resource/5/m3_3.png'
@@ -22,7 +22,7 @@ function M3_5() {
 
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/XYkWOPitymc')
   const [issue,setIssue] = useState(5)
-  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 덧셈과 가르기·모으기 개념을 블록과 워크지 활동으로 익히고, 수의 구조와 뺄셈 개념까지 자연스럽게 연결해보았어요.')
+  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 숫자 쓰기, 수량 대응 게임, 순간 변별 그림 찾기 활동을 하며 연산력과 시각 변별력을 강화했어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5EVR0ciDWBuXWJHxM-Z8Rk')
   const linkList = [
     {page:2,link:'https://youtu.be/mUCvq4mDVRc',img:video1},

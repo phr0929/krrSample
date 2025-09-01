@@ -8,7 +8,7 @@ import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
 import zemboImg from './resource/6/zembo2.png'
 import bookVideo from './resource/6/h2video.png'
-import book from './resource/6/h2book.png'
+import book from './resource/step2book.png'
 import video1 from './resource/6/h2_1.png'
 import video2 from './resource/6/h2_2.png'
 import video3 from './resource/6/h2_3.png'
@@ -23,7 +23,7 @@ function H2_6() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/2iPPmpuJJRM')
   const [issue,setIssue] = useState(6)
-  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 구성 글자와 그림을 조합하여 문장을 완성하고, 문장 안에서 낱말의 순서를 익히며 글쓰기 기초를 다졌어요.');
+  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 ‘사시’, ‘아이’, ‘자~지’ 글자를 자·모음 합성 원리로 배우고, 노래·리듬 읽기·빠진 글자 쓰기·말놀이 동시로 읽기와 쓰기를 연습했어요.');
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju7JsyB2uaYai2fUlYAz9REK')
   const linkList = [
     {page:4,link:'https://youtu.be/8fjAlgW1Mos',img:video2},
@@ -37,7 +37,7 @@ function H2_6() {
   const [zembo, setZembo] = useState({
     title:'개구쟁이 해리',
     title2:'목욕은 정말 싫어요',
-    contents:'『개구쟁이 해리, 목욕은 정말 싫어요』는 목욕이 싫어서 도망친 해리가 가족의 사랑으로 다시 목욕을 하게 되는 유쾌한 이야기입니다. 이 책은 아이들이 청결의 필요성을 자연스럽게 느끼고, 가족과의 정서적 교감을 통해 건강한 습관을 기르도록 도와줍니다.',
+    contents:'『개구쟁이 해리, 목욕은 정말 싫어요』는 목욕을 싫어해 집을 뛰쳐나간 해리가 온몸이 더러워져 결국 목욕을 하게 되는 이야기입니다. 아이들은 청결의 중요성과 가족의 관심과 사랑을 느끼며 건강한 생활 습관을 익힙니다.',
     img:zemboImg,
     link:'https://youtu.be/5lrFe19r8L8'
   }) 

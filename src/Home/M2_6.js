@@ -6,7 +6,7 @@ import { useLocation } from 'react-router-dom';
 import mimg from './resource/6/mimg.png'
 
 import bookVideo from './resource/6/m2video.png'
-import book from './resource/6/m2book.png'
+import book from './resource/step2mbook.png'
 import video1 from './resource/6/m2_1.png'
 import video2 from './resource/6/m2_2.png'
 import video3 from './resource/6/m2_3.png'
@@ -22,7 +22,7 @@ function M2_6() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/7FIyCqWMV-A')
   const [issue,setIssue] = useState(6)
-  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 길이 비교, 막대 대응, 수직선 숫자 연결을 통해 수의 순서, 비교, 보수 개념을 익혔어요.')
+  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 손가락을 이용하여 숫자를 세고, 산가지 플래시카드를 보며 리듬 수세기 활동을 했어요. 또한, 같은 모양의 도형을 찾으며 많고 적음을 비교하는 훈련을 했어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju700OCjY0xGA98vM3tU-IJ4')
   const linkList = [
     {page:2,link:'https://youtu.be/Vkb6o4PKF3M',img:video1},
