@@ -24,20 +24,20 @@ function H1_7() {
   const [boxColor,setBoxColor] = useState('#ab6432')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/Gam63kkxilI')
   const [issue,setIssue] = useState(7)
   const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 ‘고~호’로 시작하는 낱말을 노래로 배우고,\n글자의 자·모음 결합 원리를 익혔어요.`);
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5iTdoqbV6Jnj79goH4vzri')
   const linkList = [
-    {page:2, link:'',img:video1},
-    {page:5, link:'',img:video2},
-    {page:7, link:'',img:video3},
-    {page:7, link:'',img:video4},
-    {page:7, link:'',img:video5},
-    {page:7, link:'',img:video6},
-    {page:10,link:'',img:video7},
-    {page:10,link:'',img:video8}, 
-    {page:10,link:'',img:video9},  
+    {page:2, link:'https://youtu.be/Gam63kkxilI',img:video1},
+    {page:5, link:'https://youtu.be/vJLhjc2Siyc',img:video2},
+    {page:7, link:'https://youtu.be/guLDtZdOG2E',img:video3},
+    {page:7, link:'https://youtu.be/LI22EpGrUws',img:video4},
+    {page:7, link:'https://youtu.be/nUgjgxisfmc',img:video5},
+    {page:7, link:'https://youtu.be/lOxhThSKc0g',img:video6},
+    {page:10,link:'https://youtu.be/APgpM3BqnXc',img:video7},
+    {page:10,link:'https://youtu.be/bff0Xgkkzao',img:video8}, 
+    {page:10,link:'https://youtu.be/YH0hPbAFB3Y',img:video9},  
    ]
 
   const [zembo, setZembo] = useState({
@@ -45,7 +45,7 @@ function H1_7() {
     title2:'',
     contents:'『넌 우리 동물원에 어울리지 않아!』는 오리너구리가 동물원에서 다른 동물들에게 “너는 우리 동물원에 어울리지 않아!”라는 말을 듣고 속상해하는 이야기입니다. 타인의 장점을 찾고 배려하는 마음을 키우며, 서로 다른 존재를 존중해야 한다는 메시지를 전합니다.',
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/ipEzZS13D_0'
   }) 
 
   const [code,setCode] = useState('kwk159')

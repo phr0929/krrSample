@@ -20,17 +20,17 @@ function M1_7() {
   const [boxColor,setBoxColor] = useState('#ec6a1c')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/dvptNJsH8vk')
   const [issue,setIssue] = useState(7)
   const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 높이·크기·양을 비교하며 서열을 정하고, 1씩 많아지거나 적어지는 순서를 따라가며 양의 서열 개념을 익혔어요. 또한, 숨은 그림 찾기와 달라진 곳 찾기로 정교한 변별력도 길렀어요.')
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5eiong6f_224rJ7D-Ppfk6')
   const linkList = [
-    {page:5, link:'',img:video1},
-    {page:5, link:'',img:video2},
-    {page:12,link:'',img:video3},
-    {page:13,link:'',img:video4},
-    {page:13,link:'',img:video5},
-    {page:15,link:'',img:video6},
+    {page:5, link:'https://youtu.be/ZG3onRU0eRQ',img:video1},
+    {page:5, link:'https://youtu.be/dvptNJsH8vk',img:video2},
+    {page:12,link:'https://youtu.be/vMLdbhGHsPo',img:video3},
+    {page:13,link:'https://youtu.be/NsD_TDaaO4Q',img:video4},
+    {page:13,link:'https://youtu.be/6uoGyh9dZeg',img:video5},
+    {page:15,link:'https://youtu.be/wIM8rwhv9NQ',img:video6},
    ]
    
   const handleGoLink=(link)=>{

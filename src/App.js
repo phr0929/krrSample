@@ -59,6 +59,8 @@ import L_7 from './Home/L_7';
 
 import Test from './Test';
 
+import SeomkimHome from './Home/SeomkimHome';
+
 
 function App() {
  
@@ -114,6 +116,9 @@ function App() {
             <Route  path="/Home/M37c" element={<M3_7/>} />
 
             <Route  path="/Home/L7a" element={<L_7/>} />
+
+            <Route  path="/Home/seomkim" element={<SeomkimHome/>} />
+
             
 
             <Route  path="/2025Sample" element={<Main/>} />

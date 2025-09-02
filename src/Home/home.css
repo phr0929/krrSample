@@ -402,3 +402,51 @@
     margin-left:10px;
     margin-top:5px;
 }
+
+.seomkimHomeBtnNull{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    max-width: calc(15vw - 10px);
+    height: 45px;
+    min-height: 45px;
+    max-height: 45px;
+    text-align: center;
+    border-radius: 10px;
+    margin:4px;
+    background-color: #fafafa;
+    color:#96969630;
+}
+
+.seomkimHomeBtnOn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    max-width: calc(15vw - 10px);
+    height: 45px;
+    min-height: 45px;
+    max-height: 45px;
+    text-align: center; 
+    border-radius: 10px;
+    margin:4px;
+    background-color: #323232;
+    color:#fff;
+}
+
+.seomkimHomeBtnOff{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    max-width: calc(15vw - 10px);
+    height: 45px;
+    min-height: 45px;
+    max-height: 45px;
+    text-align: center; 
+    border-radius: 10px;
+    margin:4px;
+    background-color: #f3f3f3;
+    color:#5d5d5d;
+}

@@ -22,18 +22,18 @@ function M3_7() {
   const [boxColor,setBoxColor] = useState('#ec6a1c')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/V0JP9F8fbJQ')
   const [issue,setIssue] = useState(7)
   const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 빼기, 수직선 빼기, 숫자·그림 뺄셈 활동으로 연산 능력을 기르고, 사진·그림 속 공통점과 관계를 찾아 추리하는 활동으로 사고력을 높였어요.')
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju6011gLm_9htk4J9LaSCF_h')
   const linkList = [
-    {page:2,link:'',img:video1},
-    {page:7,link:'',img:video2},
-    {page:10,link:'',img:video3},
-    {page:12,link:'',img:video4},
-    {page:12,link:'',img:video5},
-    {page:'노래',link:'',img:video6},
-    {page:'노래',link:'',img:video7},
+    {page:2,link:'https://youtu.be/0J_18JZlYoQ',img:video1},
+    {page:7,link:'https://youtu.be/V0JP9F8fbJQ',img:video2},
+    {page:10,link:'https://youtu.be/4BAY_L3iY0w',img:video3},
+    {page:12,link:'https://youtu.be/eA9IKkfgy90',img:video4},
+    {page:12,link:'https://youtu.be/vLmAnJNK8tg',img:video5},
+    {page:'노래',link:'https://youtu.be/NMK7MsBq0qs',img:video6},
+    {page:'노래',link:'https://youtu.be/PaTVZWKAHmc',img:video7},
     // {page:13,link:'https://youtu.be/kDh2NaJSzRE',img:video5},
     // {page:16,link:'https://youtu.be/AjF_sRd3Q2I',img:video6},
     // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:video7},

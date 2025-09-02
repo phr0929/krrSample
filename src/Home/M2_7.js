@@ -21,18 +21,18 @@ function M2_7() {
   const [boxColor,setBoxColor] = useState('#ec6a1c')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/iTex1N9C1fk')
   const [issue,setIssue] = useState(7)
   const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 사물의 크기·양·순서를 비교하는 서열 활동을 하고, 1씩 증감하는 숫자 순서를 익혔어요. 또한, 숨은 그림 찾기와 동작 변별 활동으로 세밀하게 보는 힘을 키웠어요.')
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju4q4jMLi4om2YDLzuQcOb-m')
   const linkList = [
-    {page:2,link:'',img:video1},
-    {page:2,link:'',img:video2},
-    {page:7,link:'',img:video3},
-    {page:7,link:'',img:video4},
-    {page:11,link:'',img:video5},
-    {page:14,link:'',img:video6},
-    {page:14,link:'',img:video7},
+    {page:2,link:'https://youtu.be/iTex1N9C1fk',img:video1},
+    {page:2,link:'https://youtu.be/9w0GiqgN3A0',img:video2},
+    {page:7,link:'https://youtu.be/PWE6GI9fsGs',img:video3},
+    {page:7,link:'https://youtu.be/tYiGiBjohSQ',img:video4},
+    {page:11,link:'https://youtu.be/LOHWBDQOUH8',img:video5},
+    {page:14,link:'https://youtu.be/rHuSWVjDxgU',img:video6},
+    {page:14,link:'https://youtu.be/7s7gbpbUYfU',img:video7},
     // {page:13,link:'https://youtu.be/kDh2NaJSzRE',img:video5},
     // {page:16,link:'https://youtu.be/AjF_sRd3Q2I',img:video6},
     // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:video7},

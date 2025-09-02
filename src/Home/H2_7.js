@@ -21,17 +21,17 @@ function H2_7() {
   const [boxColor,setBoxColor] = useState('#ab6432')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/6xUGCe4xcTs')
   const [issue,setIssue] = useState(7)
   const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 ‘차채’, ‘카캐’, ‘타~태’ 받침 없는 낱자를 자·모음 합성표와 노래로 익히고, 빈칸 쓰기와 말놀이 읽기로 쓰기·읽기 능력을 키웠어요.');
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju4--iPOwLhWiVpm5OEx3Ko1')
   const linkList = [
-    {page:4, link:'',img:video1},
-    {page:4, link:'',img:video2},
-    {page:9, link:'',img:video3},
-    {page:9, link:'',img:video4},
-    {page:14,link:'',img:video5},
-    {page:14,link:'',img:video6},
+    {page:4, link:'https://youtu.be/TGX1yp9xKSU',img:video1},
+    {page:4, link:'https://youtu.be/FihEXlgV4P0',img:video2},
+    {page:9, link:'https://youtu.be/6xUGCe4xcTs',img:video3},
+    {page:9, link:'https://youtu.be/nxBEmqQoEYw',img:video4},
+    {page:14,link:'https://youtu.be/EVYiFuuM0UU',img:video5},
+    {page:14,link:'https://youtu.be/C3MN95xf-L0',img:video6},
    ]
 
   const [zembo, setZembo] = useState({
@@ -39,7 +39,7 @@ function H2_7() {
     title2:'',
     contents:'『어떤 것도 무섭지 않아!』는 아기 곰이 밤중에 들은 소리를 괴물로 착각하자 가족이 함께 숲에 가서 괴물이 없음을 확인해 주는 이야기입니다. 아직 경험하지 못한 것에 대한 두려움을 가족의 사랑과 도움으로 극복하는 과정을 통해 용기를 배웁니다.',
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/Kt9ZejavEg0'
   }) 
 
   const [code,setCode] = useState('kwk159')

@@ -22,18 +22,18 @@ function H3_7() {
   const [boxColor,setBoxColor] = useState('#ab6432')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/zIV75q_zUOo')
   const [issue,setIssue] = useState(7)
   const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 의성어·의태어 챈트, 창의 말놀이, ‘깨롱’ 말놀이를 하며 어휘력을 넓히고 창의적 언어 표현을 배웠어요.');
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju74ZkcHl0MC-3gcYiRkrFSg')
   const linkList = [
-    {page:2, link:'',img:video1},
-    {page:4, link:'',img:video2},
-    {page:6, link:'',img:video3},
-    {page:6, link:'',img:video4},
-    {page:8, link:'',img:video5},
-    {page:13,link:'',img:video6},
-    {page:13,link:'',img:video7},
+    {page:2, link:'https://youtu.be/K2DTLV6OBG0',img:video1},
+    {page:4, link:'https://youtu.be/FBB73KlUS6Y',img:video2},
+    {page:6, link:'https://youtu.be/kjpSFM1XGt0',img:video3},
+    {page:6, link:'https://youtu.be/ZPKVCp9ImdI',img:video4},
+    {page:8, link:'https://youtu.be/EXIoq2_GqzA',img:video5},
+    {page:13,link:'https://youtu.be/zIV75q_zUOo',img:video6},
+    {page:13,link:'https://youtu.be/P417UDTj3YM',img:video7},
   ]
 
   const [zembo, setZembo] = useState({
@@ -41,7 +41,7 @@ function H3_7() {
     title2:'',
     contents:'『지저분하고 냄새 지독한 구리구리 선장의 생일 파티』는 더럽고 냄새나는 구리구리 선장과 반대로 깨끗한 손님들을 대비시키며 올바른 청결 습관을 알려주는 이야기입니다. 몸과 주변을 깨끗이 하는 것이 공동체 생활에 꼭 필요하다는 생활 습관을 자연스럽게 익힐 수 있습니다.',
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/lR5O_x-tzaQ'
   }) 
 
   const [code,setCode] = useState('kwk159')
