@@ -180,11 +180,12 @@
     background-color: #fafafa;
     width:100vw; 
     height:100vh;
+    flex-direction: column;
     top:0;
     left:0; 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     position: relative; 
     overflow: hidden;
     overflow-y: scroll;

@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import '../script.css' 
 import './lesson.css' 
+import '../contents.css'
 
 import bgimg from './resource/bgimg.png';
 import m1 from './resource/m1.png';
@@ -12,7 +13,9 @@ import m3 from './resource/m3.png';
 import h1 from './resource/h1.png';
 import h2 from './resource/h2.png';
 import h3 from './resource/h3.png';
-
+import skGray from '../resource/sk_gray.svg';
+import instaLogo from '../resource/instaLogo.svg';
+import youtubeLogo from '../resource/youtubeLogo.svg';
  
 function Lesson() {
 
@@ -175,9 +178,27 @@ const [issue, setIssue] = useState(7)
   
 
 
+ 
+  <div className='bottomLayout'>
+        <div className='bottomLayoutIn'>
+          <img src={skGray} alt=''/>
+          <div className='bottomText'>
+            <div>(주)섬김</div>
+            <div>대표 : 임영수  │  사업자등록번호 : 886-86-00204</div>
+            <div>대표번호 1533-2473</div>
+            <div>©2023 by (주)섬김 All Rights Reserved.</div>
+          </div>
+          <div className='bottomBtn'>
+            <img src={instaLogo} alt='' onClick={()=>window.open('https://www.instagram.com/krr_edu_official/')}/>
+            <img src={youtubeLogo} alt='' onClick={()=>window.open('https://www.youtube.com/@edujusk')} />
+            {/* <img src={blogLogo} alt='' /> */}
+          </div>
+        </div>
+        
+      </div>
       </div> 
      
- 
+
     </div>
 
   

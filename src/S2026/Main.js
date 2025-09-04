@@ -54,7 +54,7 @@ function Main() {
         <div className='logoLayout26'>
           <img className='logoImg26' src={sk} alt=''/>
           <div className='logoBtnBar26'>
-            <img src={instaLogo} className='social-icon' alt='' onClick={()=>window.open('https://www.instagram.com/juseom_kim/')}/>
+            <img src={instaLogo} className='social-icon' alt='' onClick={()=>window.open('https://www.instagram.com/krr_edu_official/')}/>
             <img src={youtubeLogo} className='social-icon' alt='' onClick={()=>window.open('https://www.youtube.com/@edujusk')} />
             <img src={blogLogo} className='social-icon' style={{marginRight:0}}  alt='' onClick={()=>window.open('https://blog.naver.com/juseomkim')}/>
           </div>
