@@ -42,7 +42,7 @@ function H2_7() {
     link:'https://youtu.be/Kt9ZejavEg0'
   }) 
 
-  const [code,setCode] = useState('kwk159')
+  const [code,setCode] = useState('jus649')
 
   const handleGoLink=(link)=>{
     window.open(link)
@@ -106,7 +106,7 @@ function H2_7() {
           </div>
         </div> 
         <div className='admissionCodeHome'>
-          <div className='admissionCodeTitleHome'>🔑 쓰는한글 STEP1 입장코드</div>
+          <div className='admissionCodeTitleHome'>🔑 쓰는한글 STEP2 입장코드</div>
           <div className='admissionCodeTextHome'>
             <span>{code[0]}</span>
             <span>{code[1]}</span>            

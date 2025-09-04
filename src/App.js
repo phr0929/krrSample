@@ -60,7 +60,7 @@ import L_7 from './Home/L_7';
 import Test from './Test';
 
 import SeomkimHome from './Home/SeomkimHome';
-
+import Lesson from './Lesson/index';
 
 function App() {
  
@@ -87,7 +87,7 @@ function App() {
             <Route path='/AppStep2Backup' element={<AppStep2Backup/>}/>
             <Route path='/AppStep3Backup' element={<AppStep3Backup/>}/>
 
-
+            <Route path='/Lesson' element={<Lesson/>}/> 
 
             <Route path="/Home" element={<Home/>}/>
             

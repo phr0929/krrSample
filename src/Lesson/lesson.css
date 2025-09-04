@@ -1,0 +1,456 @@
+ 
+
+@media only screen and (min-width: 1250px){
+    /* pc */
+    :root{
+        --lessonLayoutDirection:row; 
+        --titleHeightLesson:160px;
+        --issueBarDisplay:flex;
+        --subTitleDirection:row;
+        --tipListGrid:3; 
+        --tipItemWidth:408px;
+        --subtitleFontSizeLesson:30px;
+        --titleBarLessonPadding:50px 0px 30px 0px;
+        --issueBarLessonPadding:70px 0px 40px 0px;
+        --lessonBgImgSize:700px;
+        --lessonBgImgPadding:70px;
+        --lessonBgHeight:430px;
+        --lessonIssueBtnHeight:45px;
+        --lessonIssueBtnFontSize:18px;
+        --tipListTitleFontSize:25px;
+        --tipListTitlePadding:10px 0px 45px 0px;
+        --tipListContentsMargin:-30px 0px 40px 0px;
+        --tipListLessonPaddingBottom:25px;
+  }
+
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1249px) {
+    /* pc */
+    :root{
+
+        --lessonLayoutDirection:row; 
+        --titleHeightLesson:160px;
+        --issueBarDisplay:flex;
+        --subTitleDirection:row;
+        --tipListGrid:3; 
+        --tipItemWidth:310px;
+        --subtitleFontSizeLesson:30px;
+        --titleBarLessonPadding:50px 0px 30px 0px;
+        --issueBarLessonPadding:70px 0px 40px 0px;
+        --lessonBgImgSize:700px;
+        --lessonBgImgPadding:70px;
+        --lessonBgHeight:430px;
+        --lessonIssueBtnHeight:45px;
+        --lessonIssueBtnFontSize:18px;
+        --tipListTitleFontSize:25px;
+        --tipListTitlePadding:10px 0px 45px 0px;
+        --tipListContentsMargin:-30px 0px 40px 0px;
+        --tipListLessonPaddingBottom:25px;
+  }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* tablet */
+    :root{
+
+        --lessonLayoutDirection:row; 
+        --titleHeightLesson:160px;
+        --issueBarDisplay:grid;
+        --subTitleDirection:column;
+        --tipListGrid:1; 
+        --tipItemWidth:408px;
+        --subtitleFontSizeLesson:30px;
+        --titleBarLessonPadding:30px 0px 30px 0px;
+        --issueBarLessonPadding:60px 0px 30px 0px;
+        --lessonBgImgSize:600px;
+        --lessonBgImgPadding:70px;
+        --lessonBgHeight:370px;
+        --lessonIssueBtnHeight:35px;
+        --lessonIssueBtnFontSize:16px;
+
+        --tipListTitleFontSize:25px;
+        --tipListTitlePadding:10px 0px 40px 0px;
+        --tipListContentsMargin:-30px 0px 20px 0px;
+        --tipListLessonPaddingBottom:10px;
+  }
+
+    
+  }
+ 
+  
+  @media only screen and (min-width: 501px) and (max-width: 767px) { 
+    :root{ 
+        --lessonLayoutDirection:column;
+        --titleHeightLesson:100px;
+        --issueBarDisplay:grid;
+        --subTitleDirection:column;
+        --tipListGrid:1;
+        --tipItemWidth:408px;
+        --subtitleFontSizeLesson:20px;
+        --titleBarLessonPadding:30px 0px 30px 0px;
+        --issueBarLessonPadding:50px 0px 30px 0px;
+        --lessonBgImgSize:400px;
+        --lessonBgImgPadding:50px;
+        --lessonBgHeight:250px;
+        --lessonIssueBtnHeight:35px;
+        --lessonIssueBtnFontSize:16px;
+        --tipListTitleFontSize:23px;
+        --tipListTitlePadding:15px 0px 35px 0px;
+        --tipListContentsMargin:-20px 0px 20px 0px;
+        --tipListLessonPaddingBottom:10px;
+    }
+}
+
+@media only screen and (max-width: 500px) { 
+    :root{ 
+         --lessonLayoutDirection:column;
+        --titleHeightLesson:100px;
+        --issueBarDisplay:grid;
+        --subTitleDirection:column;
+        --tipListGrid:1;
+        --tipItemWidth:408px;
+        --subtitleFontSizeLesson:20px;
+        --titleBarLessonPadding:30px 0px 30px 0px;
+        --issueBarLessonPadding:40px 0px 20px 0px;
+        --lessonBgImgSize:330px;
+        --lessonBgImgPadding:40px;
+        --lessonBgHeight:210px;
+        --lessonIssueBtnHeight:35px;
+        --lessonIssueBtnFontSize:14px;
+        --tipListTitleFontSize:20px;
+        --tipListTitlePadding:15px 0px 35px 0px;
+        --tipListContentsMargin:-20px 0px 20px 0px;
+        --tipListLessonPaddingBottom:10px;
+    }
+
+}
+
+  /* @media only screen and (min-width: 421px) and (max-width: 500px) { 
+    :root{ 
+         --lessonLayoutDirection:column;
+        --titleHeightLesson:100px;
+        --issueBarDisplay:grid;
+        --subTitleDirection:column;
+        --tipListGrid:1;
+        --tipItemWidth:408px;
+        --subtitleFontSizeLesson:20px;
+        --titleBarLessonPadding:30px 0px 30px 0px;
+        --issueBarLessonPadding:40px 0px 20px 0px;
+        --lessonBgImgSize:330px;
+        --lessonBgImgPadding:40px;
+        --lessonBgHeight:210px;
+        --lessonIssueBtnHeight:35px;
+        --lessonIssueBtnFontSize:14px;
+        --tipListTitleFontSize:20px;
+        --tipListTitlePadding:15px 0px 35px 0px;
+        --tipListContentsMargin:-20px 0px 20px 0px;
+        --tipListLessonPaddingBottom:10px;
+    }
+
+}
+
+ @media only screen and (max-width: 420px) { 
+    :root{ 
+         --lessonLayoutDirection:column;
+        --titleHeightLesson:100px;
+        --issueBarDisplay:grid;
+        --subTitleDirection:column;
+        --tipListGrid:1;
+        --tipItemWidth:290px;
+        --subtitleFontSizeLesson:20px;
+        --titleBarLessonPadding:30px 0px 30px 0px;
+        --issueBarLessonPadding:40px 0px 20px 0px;
+        --lessonBgImgSize:330px;
+        --lessonBgImgPadding:40px;
+        --lessonBgHeight:210px;
+        --lessonIssueBtnHeight:35px;
+        --lessonIssueBtnFontSize:14px;
+        --tipListTitleFontSize:20px;
+        --tipListTitlePadding:15px 0px 35px 0px;
+        --tipListContentsMargin:-20px 0px 20px 0px;
+        --tipListLessonPaddingBottom:10px;
+    }
+
+} */
+    
+    
+
+.lessonLayoutBox{ 
+    background-color: #fafafa;
+    width:100vw; 
+    height:100vh;
+    top:0;
+    left:0; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.lessonLayoutBox::-webkit-scrollbar{
+    display: none;
+
+}
+
+.lessonLayout{
+    
+     
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    top:calc(var(--lessonBgImgPadding) + (var(--lessonBgImgSize) * 0.57));
+    left:0;
+}
+
+
+
+
+.titleBarLesson{
+    display: flex;
+    width:100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding:var(--titleBarLessonPadding); 
+}
+
+ 
+
+.titleBarLesson img{
+    width:400px;
+    max-width: 60%;
+    height:auto;
+} 
+
+.lessonIssueBtnNull{
+    font-size: var(--lessonIssueBtnFontSize);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    max-width: calc(15vw - 10px);
+    height: var(--lessonIssueBtnHeight);
+    min-height: var(--lessonIssueBtnHeight);
+    max-height: var(--lessonIssueBtnHeight);
+    text-align: center;
+    border-radius: 10px;
+    margin:4px;
+    background-color: #f0f0f0;
+    color:#96969630;
+    border:1px solid #dcdcdc50;
+    box-shadow: 2px 2px 0px #fff;
+}
+
+.lessonIssueBtnOn{
+    font-size: var(--lessonIssueBtnFontSize);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    max-width: calc(15vw - 10px);
+    height: var(--lessonIssueBtnHeight);
+    min-height: var(--lessonIssueBtnHeight);
+    max-height: var(--lessonIssueBtnHeight);
+    text-align: center; 
+    border-radius: 10px;
+    margin:4px;
+    background-color: #323232;
+    color:#fff;
+    border:1px solid #000;
+    box-shadow: 2px 2px 0px #323232;
+}
+
+.lessonIssuetnOff{
+    font-size: var(--lessonIssueBtnFontSize);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    max-width: calc(15vw - 10px);
+    height: var(--lessonIssueBtnHeight);
+    min-height: var(--lessonIssueBtnHeight);
+    max-height: var(--lessonIssueBtnHeight);
+    text-align: center; 
+    border-radius: 10px;
+    margin:4px;
+    background-color: #fff;
+    color:#5d5d5d;
+    border:1px solid #dcdcdc;
+    box-shadow: 2px 2px 0px #dcdcdc;
+}
+
+.lessonIssuetnOff:hover{
+
+    animation: bg 0.5s forwards;;
+}
+
+
+@keyframes bg{
+    from {
+        background-color: #f3f3f3;
+    }
+    to{
+        background-color: #32323220; 
+    }
+}
+
+.subTitleLesson{
+    font-size: var(--subtitleFontSizeLesson);
+    box-sizing: border-box;
+    /* padding-bottom:50px; */ 
+    color:#323232;
+    display: flex;
+    flex-direction: var(--subTitleDirection);
+    align-items: center;
+    justify-content: center;
+}
+
+.subTitleLesson div{
+    text-align: center;
+}
+
+.issueBarLesson{
+    display: var(--issueBarDisplay);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    flex-direction: row;
+    max-width:calc(100% - 10px);
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding:var(--issueBarLessonPadding); 
+}
+ 
+.tipListLesson{ 
+    display: grid;
+    grid-template-columns: repeat(var(--tipListGrid), minmax(var(--tipItemWidth), 1fr));
+    /* grid-template-columns: var(--tipListGrid); */
+    place-items: center;
+    flex-direction: row;
+    max-width:calc(100% - 10px);
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    justify-content: center; 
+    padding-bottom:var(--tipListLessonPaddingBottom);
+    
+} 
+
+
+.tipItemLesson{
+    margin:10px;
+    width:calc(var(--tipItemWidth) - 10px);
+    max-width:calc(100vw - 40px);
+    aspect-ratio: auto 1 / 0.6;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    cursor: pointer;
+}
+ 
+.tipItemLesson img{
+    
+    width:calc(var(--tipItemWidth) - 10px);
+    max-width: calc(100% - 40px);
+    
+    aspect-ratio: auto 1 / 0.6;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 20;
+}
+ 
+
+.tipItemLessonBtn{
+    position: absolute;
+    z-index: 30;
+    background-color: #ffffff;
+
+    width:calc(var(--tipItemWidth) * 0.12);
+    height:calc(var(--tipItemWidth) * 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 250px;
+    color:#323232;
+    font-size: 20px;
+    margin-left:calc(var(--tipItemWidth) * 0.04);
+    margin-top:calc(var(--tipItemWidth) * 0.04);
+}
+
+.tipItemLessonIssue{
+    text-align: right;
+    
+    width:calc(var(--tipItemWidth) - 10px);
+    max-width:calc(100vw - 40px);
+
+    aspect-ratio: auto 1 / 0.6;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 25; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-right:calc(var(--tipItemWidth) * 0.06);
+    padding-bottom:calc(var(--tipItemWidth) * 0.06);
+    font-size: calc(var(--tipListTitleFontSize) + 8px);
+    color:#fff;
+    text-shadow: 1px 1px 0px #00000090;
+}
+
+
+.lessonBgLayout{
+    width:100vw;
+    max-width: 100vw;
+    height: var(--lessonBgHeight);
+    background-color: #fffad9;
+    position: absolute;
+    z-index: 10;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    padding-top:var(--lessonBgImgPadding);
+}
+
+.lessonBgBottomColor{
+    width:100%;
+    height:calc(var(--lessonBgHeight) * 0.4);
+    background-color: #ffecb2;
+    position: absolute;
+    bottom:0px;
+    z-index: 101;
+} 
+.lessonBgLayout img{
+    position: relative;
+    z-index: 150;
+    width:var(--lessonBgImgSize);
+    height:calc(var(--lessonBgImgSize) * 0.57);
+    /* max-width: 80%; */
+     /* object-fit: cover; */
+}
+
+.tipListTitleLesson{
+    font-size: var(--tipListTitleFontSize);
+    padding: var(--tipListTitlePadding);
+}
+
+.tipListContentsLesson{
+    font-size: calc(var(--tipListTitleFontSize) - 7px);
+    margin: var(--tipListContentsMargin); 
+    font-family: Noto Sans KR;
+    color:#5d5d5d;
+    text-align: center;
+    
+}
