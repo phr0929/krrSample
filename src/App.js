@@ -61,6 +61,7 @@ import Test from './Test';
 
 import SeomkimHome from './Home/SeomkimHome';
 import Lesson from './Lesson/index';
+import PromotionalVideo from './S2026/PromotionalVideo';
 
 function App() {
  
@@ -78,6 +79,7 @@ function App() {
             <Route path='/Test' element={<Test/>}/>
             <Route path='/' element={<Main2026/>}/>
             <Route path='/contents' element={<Contents2026/>}/> 
+            <Route path='/PromotionalVideo' element={<PromotionalVideo/>}/> 
 
             <Route path='/krrAppZ1' element={<AppStep1/>}/>
             <Route path='/krrAppAES2' element={<AppStep2/>}/>
