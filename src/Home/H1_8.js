@@ -43,7 +43,7 @@ function H1_8() {
   const [zembo, setZembo] = useState({
     title:'따라쟁이 친구들',
     title2:'',
-    contents:'『따라쟁이 친구들』은 ',
+    contents:'『따라쟁이 친구들』은 친구가 하는 일을 그대로 따라 하며 생기는 갈등과 화해를 담은 이야기입니다. 이 책은 아이들이 친구 관계 속에서 서로를 이해하고 배려하는 법을 배우도록 도와줍니다.',
     img:zemboImg,
     link:''
   }) 
