@@ -43,6 +43,10 @@ import H1_7 from './Home/H1_7';
 import H2_7 from './Home/H2_7';
 import H3_7 from './Home/H3_7';
 
+import H1_8 from './Home/H1_8';
+import H2_8 from './Home/H2_8';
+import H3_8 from './Home/H3_8';
+
 import M1_5 from './Home/M1_5';
 import M2_5 from './Home/M2_5';
 import M3_5 from './Home/M3_5';
@@ -54,6 +58,9 @@ import M1_7 from './Home/M1_7';
 import M2_7 from './Home/M2_7';
 import M3_7 from './Home/M3_7';
 
+import M1_8 from './Home/M1_8';
+import M2_8 from './Home/M2_8';
+import M3_8 from './Home/M3_8';
 
 import L_7 from './Home/L_7';
 
@@ -116,6 +123,14 @@ function App() {
             <Route  path="/Home/M27b" element={<M2_7/>} />
             <Route  path="/Home/H37c" element={<H3_7/>} />
             <Route  path="/Home/M37c" element={<M3_7/>} />
+
+            <Route  path="/Home/H1z8" element={<H1_8/>} />
+            <Route  path="/Home/H2a8" element={<H2_8/>} />
+            <Route  path="/Home/H3w8" element={<H3_8/>} />
+            
+            <Route  path="/Home/M1a8" element={<M1_8/>} />
+            <Route  path="/Home/M2e8" element={<M2_8/>} />
+            <Route  path="/Home/M3t8" element={<M3_8/>} />
 
             <Route  path="/Home/L7a" element={<L_7/>} />
 
