@@ -23,6 +23,15 @@
  display: none;   
 }
 
+.noselect {
+  user-select: none;              /* 표준 */
+  -webkit-user-select: none;      /* Safari, iOS */
+  -moz-user-select: none;         /* Firefox */
+  -ms-user-select: none;          /* 옛 Edge/IE */
+  -webkit-touch-callout: none;    /* iOS 길게 눌러서 메뉴 차단 */
+}
+
+
 @font-face {
     font-family: 'BMJUA';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');

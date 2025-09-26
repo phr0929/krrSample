@@ -346,6 +346,23 @@
     padding-bottom:var(--tipListLessonPaddingBottom);
     
 } 
+.tipListLessonLulu{ 
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-columns: var(--tipListGrid); */
+    place-items: center;
+    flex-direction: row;
+    max-width:calc(100% - 10px);
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    justify-content: center; 
+    padding-bottom:var(--tipListLessonPaddingBottom);
+    
+} 
+
+
+
 
 
 .tipItemLesson{

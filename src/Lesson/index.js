@@ -13,6 +13,7 @@ import m3 from './resource/m3.png';
 import h1 from './resource/h1.png';
 import h2 from './resource/h2.png';
 import h3 from './resource/h3.png';
+import lulu from './resource/lulu.png';
 import skGray from '../resource/sk_gray.svg';
 import instaLogo from '../resource/instaLogo.svg';
 import youtubeLogo from '../resource/youtubeLogo.svg';
@@ -23,33 +24,45 @@ function Lesson() {
 //   return localStorage.getItem('nowIssue') ?? 7;
 // });
 
-const [issue, setIssue] = useState(7)
+const [issue, setIssue] = useState(8)
  
   
   const lessonList = [
-    {issue:1, step1Img:'',step1Link:'1115722318',setp2Img:'',step2Link:'1115722625',step3Img:'',step3Link:'1115722891',
+    {issue:1, luluImg:'',luluLink:'1122123659',
+              step1Img:'',step1Link:'1115722318',setp2Img:'',step2Link:'1115722625',step3Img:'',step3Link:'1115722891',
               mStep1Img:'',mStep1Link:'1115722209',mSetp2Img:'',mStep2Link:'1115722558',mStep3Img:'',mStep3Link:'1115722842',},
-    {issue:2, step1Img:'',step1Link:'1115723080',setp2Img:'',step2Link:'1115723169',step3Img:'',step3Link:'1115723197',
+    {issue:2, luluImg:'',luluLink:'1122123890',
+              step1Img:'',step1Link:'1115723080',setp2Img:'',step2Link:'1115723169',step3Img:'',step3Link:'1115723197',
               mStep1Img:'',mStep1Link:'1115723049',mSetp2Img:'',mStep2Link:'1115723134',mStep3Img:'',mStep3Link:'1115723134',},
-    {issue:3, step1Img:'',step1Link:'1115723273',setp2Img:'',step2Link:'1115723338',step3Img:'',step3Link:'1115723399',
+    {issue:3, luluImg:'',luluLink:'1122124001',
+              step1Img:'',step1Link:'1115723273',setp2Img:'',step2Link:'1115723338',step3Img:'',step3Link:'1115723399',
               mStep1Img:'',mStep1Link:'1115723246',mSetp2Img:'',mStep2Link:'1115723312',mStep3Img:'',mStep3Link:'1115723380',},
-    {issue:4, step1Img:'',step1Link:'1115723458',setp2Img:'',step2Link:'1115723519',step3Img:'',step3Link:'1115723616',
+    {issue:4, luluImg:'',luluLink:'1122124172',
+              step1Img:'',step1Link:'1115723458',setp2Img:'',step2Link:'1115723519',step3Img:'',step3Link:'1115723616',
               mStep1Img:'',mStep1Link:'1115723435',mSetp2Img:'',mStep2Link:'1115723798',mStep3Img:'',mStep3Link:'1115723890',},
-    {issue:5, step1Img:'',step1Link:'1115727113',setp2Img:'',step2Link:'1115727182',step3Img:'',step3Link:'1115727260',
+    {issue:5, luluImg:'',luluLink:'1122124207',
+              step1Img:'',step1Link:'1115727113',setp2Img:'',step2Link:'1115727182',step3Img:'',step3Link:'1115727260',
               mStep1Img:'',mStep1Link:'1115727290',mSetp2Img:'',mStep2Link:'1115727156',mStep3Img:'',mStep3Link:'1115727235',},
-    {issue:6, step1Img:'',step1Link:'1115727358',setp2Img:'',step2Link:'1115727429',step3Img:'',step3Link:'1115727472',
+    {issue:6, luluImg:'',luluLink:'1122124240',
+              step1Img:'',step1Link:'1115727358',setp2Img:'',step2Link:'1115727429',step3Img:'',step3Link:'1115727472',
               mStep1Img:'',mStep1Link:'1115727327',mSetp2Img:'',mStep2Link:'1115727387',mStep3Img:'',mStep3Link:'1115727454',},
-    {issue:7, step1Img:'',step1Link:'1115727544',setp2Img:'',step2Link:'1115727640',step3Img:'',step3Link:'1115727712',
+    {issue:7, luluImg:'',luluLink:'1122124280',
+              step1Img:'',step1Link:'1115727544',setp2Img:'',step2Link:'1115727640',step3Img:'',step3Link:'1115727712',
               mStep1Img:'',mStep1Link:'1115727494',mSetp2Img:'',mStep2Link:'1115727594',mStep3Img:'',mStep3Link:'1115727681',},
-    {issue:8, step1Img:'',step1Link:'',setp2Img:'',step2Link:'',step3Img:'',step3Link:'',
+    {issue:8, luluImg:'',luluLink:'1122131259',
+              step1Img:'',step1Link:'1122131130',setp2Img:'',step2Link:'1122131226',step3Img:'',step3Link:'1122137241',
+              mStep1Img:'',mStep1Link:'1122131103',mSetp2Img:'',mStep2Link:'1122131184',mStep3Img:'',mStep3Link:'1122142901',},
+    {issue:9, luluImg:'',luluLink:'',
+              step1Img:'',step1Link:'',setp2Img:'',step2Link:'',step3Img:'',step3Link:'',
               mStep1Img:'',mStep1Link:'',mSetp2Img:'',mStep2Link:'',mStep3Img:'',mStep3Link:'',},
-    {issue:9, step1Img:'',step1Link:'',setp2Img:'',step2Link:'',step3Img:'',step3Link:'',
+    {issue:10,luluImg:'',luluLink:'',
+              step1Img:'',step1Link:'',setp2Img:'',step2Link:'',step3Img:'',step3Link:'',
               mStep1Img:'',mStep1Link:'',mSetp2Img:'',mStep2Link:'',mStep3Img:'',mStep3Link:'',},
-    {issue:10,step1Img:'',step1Link:'',setp2Img:'',step2Link:'',step3Img:'',step3Link:'',
+    {issue:11,luluImg:'',luluLink:'',
+              step1Img:'',step1Link:'',setp2Img:'',step2Link:'',step3Img:'',step3Link:'',
               mStep1Img:'',mStep1Link:'',mSetp2Img:'',mStep2Link:'',mStep3Img:'',mStep3Link:'',},
-    {issue:11,step1Img:'',step1Link:'',setp2Img:'',step2Link:'',step3Img:'',step3Link:'',
-              mStep1Img:'',mStep1Link:'',mSetp2Img:'',mStep2Link:'',mStep3Img:'',mStep3Link:'',},
-    {issue:12,step1Img:'',step1Link:'',setp2Img:'',step2Link:'',step3Img:'',step3Link:'',
+    {issue:12,luluImg:'',luluLink:'',
+              step1Img:'',step1Link:'',setp2Img:'',step2Link:'',step3Img:'',step3Link:'',
               mStep1Img:'',mStep1Link:'',mSetp2Img:'',mStep2Link:'',mStep3Img:'',mStep3Link:'',},
 
   ]
@@ -106,7 +119,7 @@ const [issue, setIssue] = useState(7)
           <div>수업TIP 영상을 활용해 보세요.</div>
         </div> */}
 
-        <div className='issueBarLesson'>
+        <div className='issueBarLesson noselect'>
           <div className={issue===1?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(1)}>1호</div>          
           <div className={issue===2?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(2)}>2호</div>          
           <div className={issue===3?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(3)}>3호</div>          
@@ -121,19 +134,25 @@ const [issue, setIssue] = useState(7)
           <div className='lessonIssueBtnNull' >12호</div>  
         </div>
           
+
+         
  
           <div className='tipListTitleLesson' style={{marginRight:15}}>
             ✏️ {issue}호 한글 수업 TIP
           </div>
        
-       {issue<8?
+        {/* {issue<8?
             <div className='tipListContentsLesson'>
               2025년 {issue + 1}월에 진행되었던 줌교육 영상입니다.<br/>2026년 {issue + 1}월에 수업 TIP영상이 새로 공개됩니다.
             </div>
             :<></>
-          }
+          } */}
+
+         
+ 
+    
           
-          <div className='tipListLesson'>
+          <div className='tipListLesson noselect'>
             <div className='tipItemLesson' onClick={()=>handleGoVimeo(lessonList[issue-1].step1Link)}>
               <div className='tipItemLessonBtn'>▶</div>
               <div className='tipItemLessonIssue'>1단계 {issue}호</div>
@@ -156,7 +175,7 @@ const [issue, setIssue] = useState(7)
             📐 {issue}호 수학 수업 TIP
           </div>
 
-          <div className='tipListLesson' style={{paddingBottom:40}}>
+          <div className='tipListLesson noselect' style={{paddingBottom:40}}>
             <div className='tipItemLesson' onClick={()=>handleGoVimeo(lessonList[issue-1].mStep1Link)}>
               <div className='tipItemLessonBtn'>▶</div>
               <div className='tipItemLessonIssue'>1단계 {issue}호</div>
@@ -173,6 +192,19 @@ const [issue, setIssue] = useState(7)
               <img src={m3} alt=''/>
             </div>
  
+          </div>
+   <div className='tipListTitleLesson' style={{marginRight:15}}>
+            ✏️ {issue}호 룰루 수업 TIP
+          </div>
+          <div className='tipListLessonLulu noselect' style={{marginBottom:70}}>
+            <div className='tipItemLesson' onClick={()=>handleGoVimeo(lessonList[issue-1].luluLink)}>
+              <div className='tipItemLessonBtn' style={{border:'1px solid #dcdcdc'}}>▶</div>
+              <div className='tipItemLessonIssue' style={{color:'#e2288a',textShadow: '0px 0px 3px #fff'}}>
+                {/* {issue}호 */}
+              </div>
+              <img src={lulu} alt='' style={{border:'1px solid #dcdcdc'}}/>
+            </div>
+            
           </div>
 
   
