@@ -21,18 +21,18 @@ function M1_8() {
   const [boxColor,setBoxColor] = useState('#1f314d')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/9VDFUarAuuU')
   const [issue,setIssue] = useState(8)
   const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 트럭 캐릭터와 짐의 수를 보며 1~10까지 같은 수끼리 찍짓고, 칸 채우기·연결하기 활동으로 같은 수 찾기와 수-양 대응 감각을 키웠어요.')
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju622vPxNZK8mGQcww-9Ls3o')
   const linkList = [
-    {page:2, link:'',img:video1},
-    {page:5, link:'',img:video2},
-    {page:5, link:'',img:video3},
-    {page:5, link:'',img:video4},
-    {page:14,link:'',img:video5},
-    {page:15,link:'',img:video6},
-    {page:15,link:'',img:video7},
+    {page:2, link:'https://youtu.be/9VDFUarAuuU',img:video1},
+    {page:5, link:'https://youtu.be/3dCufDHE0ZI',img:video2},
+    {page:5, link:'https://youtu.be/gM_fwYaB-KY',img:video3},
+    {page:5, link:'https://youtu.be/DQFrydrl5p0',img:video4},
+    {page:14,link:'https://youtu.be/UvcjRP8R1YU',img:video5},
+    {page:15,link:'https://youtu.be/XCP1J6M1niM',img:video6},
+    {page:16,link:'https://youtu.be/YihjmBFZzRc',img:video7},
    ]
    
   const handleGoLink=(link)=>{

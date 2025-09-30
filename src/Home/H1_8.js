@@ -24,20 +24,20 @@ function H1_8() {
   const [boxColor,setBoxColor] = useState('#daae72')
   const [textColor,setTextColor] = useState('#ab6432')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/ee9x2ahJ3W4')
   const [issue,setIssue] = useState(8)
   const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 '통통통' 노래를 따라 부르며 구~후 시작 낱말을 익히고, 플래시카드에서 '구멍, 구렁이, 후추' 처럼\n구~후가 들어있는 낱말을 찾았어요.`);
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju4CHP8UPcu6uARr5yjUHuGl')
   const linkList = [
-    {page:2, link:'',img:video1},
-    {page:5, link:'',img:video2},
-    {page:10,link:'',img:video3},
-    {page:10,link:'',img:video4},
-    {page:10,link:'',img:video5},
-    {page:10,link:'',img:video6},
-    {page:10,link:'',img:video7},
-    {page:10,link:'',img:video8}, 
-    {page:14,link:'',img:video9},  
+    {page:2, link:'https://youtu.be/ee9x2ahJ3W4',img:video1},
+    {page:5, link:'https://youtu.be/o7EHZ-sVmf8',img:video2},
+    {page:10,link:'https://youtu.be/WYz4tOiNfrk',img:video3},
+    {page:10,link:'https://youtu.be/yY6n0XD675Q',img:video4},
+    {page:10,link:'https://youtu.be/cZ_jbuQNdIE',img:video5},
+    {page:10,link:'https://youtu.be/ru1OjYdXJek',img:video6},
+    {page:10,link:'https://youtu.be/neKUJVZMzrg',img:video7},
+    {page:10,link:'https://youtu.be/Nl4j56Xpstw',img:video8}, 
+    {page:14,link:'https://youtu.be/0RzPf9_CVcc',img:video9},  
    ]
 
   const [zembo, setZembo] = useState({
@@ -45,7 +45,7 @@ function H1_8() {
     title2:'',
     contents:'『따라쟁이 친구들』은 친구가 하는 일을 그대로 따라 하며 생기는 갈등과 화해를 담은 이야기입니다. 이 책은 아이들이 친구 관계 속에서 서로를 이해하고 배려하는 법을 배우도록 도와줍니다.',
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/XzbxpRj930Y'
   }) 
 
   const [code,setCode] = useState('kwk159')

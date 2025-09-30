@@ -12,20 +12,22 @@ import book from './resource/step3book.png'
 import video1 from './resource/8/h3_1.png'
 import video2 from './resource/8/h3_2.png'
 import video3 from './resource/8/h3_3.png' 
+import video4 from './resource/8/h3_4.png' 
 
 function H3_8() {
   const [bgColor,setBgColor] = useState('#f7daa1')
   const [boxColor,setBoxColor] = useState('#daae72')
   const [textColor,setTextColor] = useState('#ab6432')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/Lns4qgP0TV0')
   const [issue,setIssue] = useState(8)
   const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 이미지 글자가 들어간 짧은 문장을 읽고 따라 쓰며, 두 그림 낱말을 합쳐 문장을 꾸미고 스스로 문장을 만들어 보며 문해력을 길렀어요.');
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju6IX7O6KliYNeXsE9ewEfXt')
   const linkList = [
-    {page:2, link:'',img:video1},
-    {page:6, link:'',img:video2},
-    {page:9, link:'',img:video3},
+    {page:2, link:'https://youtu.be/Lns4qgP0TV0',img:video1},
+    {page:6, link:'https://youtu.be/bNVz473Vdnw',img:video2},
+    {page:9, link:'https://youtu.be/efb7T8ZNPm4',img:video3},
+    {page:'노래', link:'https://youtu.be/Jicht8Q-vmg',img:video4},
   ]
 
   const [zembo, setZembo] = useState({
@@ -33,7 +35,7 @@ function H3_8() {
     title2:'',
     contents:'『러플스가 좋아하는 것』은 혼자 노는 것을 좋아하던 러플스가 친구들과 함께 노는 즐거움을 발견해가는 이야기입니다. 이 책은 아이들이 친구와 나누고 함께하는 즐거움을 깨달으며 사회성을 키우도록 도와줍니다.',
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/awrOBbOFvAE'
   }) 
 
   const [code,setCode] = useState('bds978')
@@ -156,10 +158,10 @@ function H3_8() {
             <div>{linkList[2].page}p</div>
           </div>  
 
-          {/* <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
             <img src={linkList[3].img} alt=''/> 
-            <div>{linkList[3].page}p</div>
-          </div>   */}
+            <div>{linkList[3].page}</div>
+          </div>  
  
         </div>
 

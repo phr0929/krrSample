@@ -20,17 +20,17 @@ function M3_8() {
   const [boxColor,setBoxColor] = useState('#1f314d')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/L06S3l1oP1k')
   const [issue,setIssue] = useState(8)
   const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 10수 막대와 1수 막대를 합쳐 큰 수를 세고, 수막대↔수백판을 대응시키며 달력의 빈칸 채우기·순서 배열·변화 기계 놀이로 규칙성을 발견했어요.')
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju58MmYpcruihpvGqU6Lr72M')
   const linkList = [
-    {page:2, link:'',img:video1},
-    {page:2, link:'',img:video2},
-    {page:4, link:'',img:video3},
-    {page:4, link:'',img:video4},
-    {page:11,link:'',img:video5}, 
-    {page:12,link:'',img:video6},
+    {page:2, link:'https://youtu.be/L06S3l1oP1k',img:video1},
+    {page:2, link:'https://youtu.be/zpxNRBQrrwI',img:video2},
+    {page:4, link:'https://youtu.be/p5_z9TNf8OY',img:video3},
+    {page:4, link:'https://youtu.be/Ah_rstaA3v4',img:video4},
+    {page:11,link:'https://youtu.be/uoJxrKuhah4',img:video5}, 
+    {page:12,link:'https://youtu.be/yqHDLq8DXE4',img:video6},
     // {page:13,link:'https://youtu.be/kDh2NaJSzRE',img:video5},
     // {page:16,link:'https://youtu.be/AjF_sRd3Q2I',img:video6},
     // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:video7},

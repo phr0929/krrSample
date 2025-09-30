@@ -20,16 +20,16 @@ function H2_8() {
   const [boxColor,setBoxColor] = useState('#daae72')
   const [textColor,setTextColor] = useState('#ab6432')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/muH_TlRqrBY')
   const [issue,setIssue] = useState(8)
   const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 자·모음 합성표로 ‘파-피, 하-히’를 이어 말하고 ‘파-패, 하-해’ 노래로 시작 낱말을 또렷이 읽은 뒤, 빈칸에 알맞은 글자를 넣어 낱말을 완성했어요.');
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju76JyaBiJu36iMACASKxUc2')
   const linkList = [
-    {page:4, link:'',img:video1},
-    {page:4, link:'',img:video2},
-    {page:9, link:'',img:video3},
-    {page:9, link:'',img:video4},
-    {page:14,link:'',img:video5}, 
+    {page:4, link:'https://youtu.be/muH_TlRqrBY',img:video1},
+    {page:4, link:'https://youtu.be/prlhaZDxqDI',img:video2},
+    {page:9, link:'https://youtu.be/-8SsUJCkWBQ',img:video3},
+    {page:9, link:'https://youtu.be/O-K1WUGZsTU',img:video4},
+    {page:14,link:'https://youtu.be/XuHjfFk6jn8',img:video5}, 
    ]
 
   const [zembo, setZembo] = useState({
@@ -37,7 +37,7 @@ function H2_8() {
     title2:'',
     contents:`『우린 같기도 하고 다르기도 해』는 주인공이 동물 친구들과 자신을 비교하며 차이점을 알아가며 자신만의 특징을 인식하는 이야기입니다. 이 책은 아이들이 비교 대신 '다름'을 이해하고, 자신을 긍정하며 자존감을 키우도록 도와줍니다.`,
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/_abKUkamsHU'
   }) 
 
   const [code,setCode] = useState('jus649')

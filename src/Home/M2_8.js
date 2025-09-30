@@ -23,20 +23,20 @@ function M2_8() {
   const [boxColor,setBoxColor] = useState('#1f314d')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/ELBbOsmKMEg')
   const [issue,setIssue] = useState(8)
   const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 역기 들어올리기(2 더하기), 블록 업히기(3 더하기), 블록 쌓기·손가락 율동(4·5 더하기)으로 놀이 속에서 덧셈의 의미를 몸으로 익혔어요.')
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju4cOPh6LLIto6xq8Cf0JoIS')
   const linkList = [
-    {page:2, link:'',img:video1},
-    {page:5, link:'',img:video2},
-    {page:5, link:'',img:video3},
-    {page:5, link:'',img:video4},
-    {page:5, link:'',img:video5},
-    {page:5, link:'',img:video6},
-    {page:9, link:'',img:video7},
-    {page:9, link:'',img:video8},
-    {page:12,link:'',img:video9},
+    {page:2, link:'https://youtu.be/ELBbOsmKMEg',img:video1},
+    {page:5, link:'https://youtu.be/Da5jVFz9kZU',img:video2},
+    {page:5, link:'https://youtu.be/OgpMUz-LGjc',img:video3},
+    {page:5, link:'https://youtu.be/OlfERasZNUw',img:video4},
+    {page:5, link:'https://youtu.be/gTRKaU7cp2o',img:video5},
+    {page:5, link:'https://youtu.be/MRgt3evQwuY',img:video6},
+    {page:9, link:'https://youtu.be/tV3r5CZIeS4',img:video7},
+    {page:9, link:'https://youtu.be/5PXb5OmRhQc',img:video8},
+    {page:12,link:'https://youtu.be/P6janGxtakk',img:video9},
     // {page:13,link:'https://youtu.be/kDh2NaJSzRE',img:video5},
     // {page:16,link:'https://youtu.be/AjF_sRd3Q2I',img:video6},
     // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:video7},
