@@ -17,7 +17,7 @@ import eliivyStepOn3 from '../resource/eliivyStep3.svg';
 function SeomkimHome() {
 
 const [issue, setIssue] = useState(() => {
-  return localStorage.getItem('nowIssue') ?? 7;
+  return localStorage.getItem('nowIssue') ?? 8;
 });
   const [hStep1,setHStep1] = useState('H15abc');
   const [hStep2,setHStep2] = useState('H25sdf');
@@ -35,11 +35,11 @@ const [issue, setIssue] = useState(() => {
      {issue:5,hStep1:'H15abc',hStep2:'H25sdf',hStep3:'H35zzz',mStep1:'M15dsd',mStep2:'M25qwe',mStep3:'M35csd'},
      {issue:6,hStep1:'H16eww',hStep2:'H26abd',hStep3:'H36esd',mStep1:'M16pwe',mStep2:'M26wws',mStep3:'M36zzv'},
      {issue:7,hStep1:'H17a',hStep2:'H27b',hStep3:'H37c',mStep1:'M17a',mStep2:'M27b',mStep3:'M37c'},
-     {issue:8,hStep1:'',hStep2:'',hStep3:'',mStep1:'',mStep2:'',mStep3:''},
-     {issue:9,hStep1:'',hStep2:'',hStep3:'',mStep1:'',mStep2:'',mStep3:''},
-     {issue:10,hStep1:'',hStep2:'',hStep3:'',mStep1:'',mStep2:'',mStep3:''},     
-     {issue:11,hStep1:'',hStep2:'',hStep3:'',mStep1:'',mStep2:'',mStep3:''},
-     {issue:12,hStep1:'',hStep2:'',hStep3:'',mStep1:'',mStep2:'',mStep3:''},
+     {issue:8,hStep1:'H1z8',hStep2:'H2a8',hStep3:'H3w8',mStep1:'M1a8',mStep2:'M2e8',mStep3:'M3t8'},
+     {issue:9,hStep1:'Hs19',hStep2:'Ha29',hStep3:'Hd39',mStep1:'Mw19',mStep2:'Mr29',mStep3:'Mt39'},
+     {issue:10,hStep1:'Hw110',hStep2:'Hs210',hStep3:'Hq310',mStep1:'Me110',mStep2:'Mq210',mStep3:'Mv310'},     
+     {issue:11,hStep1:'Hr111',hStep2:'Hc211',hStep3:'Hu311',mStep1:'My111',mStep2:'Mn211',mStep3:'Mg311'},
+     {issue:12,hStep1:'Hb112',hStep2:'Hd212',hStep3:'Hf312',mStep1:'Ms112',mStep2:'Me212',mStep3:'Mz312'},
   ]
 
  
@@ -81,7 +81,7 @@ const [issue, setIssue] = useState(() => {
         </div>
         <div style={{display:'flex',flexDirection:'row',maxWidth:480,width:'100%',alignItems:'center',justifyContent:'center', boxSizing:'border-box'}}>
           <div className={issue===7?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(7)}>7호</div>          
-          <div className='seomkimHomeBtnNull' >8호</div>          
+          <div className={issue===8?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(8)}>8호</div>    
           <div className='seomkimHomeBtnNull' >9호</div>          
           <div className='seomkimHomeBtnNull' >10호</div>          
           <div className='seomkimHomeBtnNull' >11호</div>          
@@ -90,19 +90,19 @@ const [issue, setIssue] = useState(() => {
  
 
  
-        <div style={{display:'flex',flexDirection:'row',maxWidth:480,width:'100%',alignItems:'center',justifyContent:'center', boxSizing:'border-box',marginTop:10}}>
+        <div style={{display:'flex',flexDirection:'row',maxWidth:480,width:'100%',alignItems:'center',justifyContent:'center', boxSizing:'border-box',marginTop:20,}}>
           <div style={{alignItems:'center',display:'flex',justifyContent:'center',width:150, maxWidth:'calc(30vw - 10px)',flexDirection:'column',padding:'10px 0px 10px 0px',
-            textAlign:'center',borderRadius:10,margin:4}} onClick={()=>handleGoLink(linkList[issue-1].hStep1)} >        
+            textAlign:'center',borderRadius:10,margin:4,cursor:'pointer'}} onClick={()=>handleGoLink(linkList[issue-1].hStep1)} >        
             <img src={krrStepOn1} alt='' style={{width:60,height:60,marginBottom:10}}/>     <span>한글 STPE1</span>
           </div>
 
           <div style={{alignItems:'center',display:'flex',justifyContent:'center',width:150, maxWidth:'calc(30vw - 10px)',flexDirection:'column',padding:'10px 0px 10px 0px',
-            textAlign:'center',borderRadius:10,margin:4}} onClick={()=>handleGoLink(linkList[issue-1].hStep2)}>        
+            textAlign:'center',borderRadius:10,margin:4,cursor:'pointer'}} onClick={()=>handleGoLink(linkList[issue-1].hStep2)}>        
             <img src={krrStepOn2} alt='' style={{width:60,height:60,marginBottom:10}}/>     <span>한글 STPE2</span>
           </div>
 
           <div style={{alignItems:'center',display:'flex',justifyContent:'center',width:150, maxWidth:'calc(30vw - 10px)',flexDirection:'column',padding:'10px 0px 10px 0px',
-            textAlign:'center',borderRadius:10,margin:4}} onClick={()=>handleGoLink(linkList[issue-1].hStep3)}>        
+            textAlign:'center',borderRadius:10,margin:4,cursor:'pointer'}} onClick={()=>handleGoLink(linkList[issue-1].hStep3)}>        
             <img src={krrStepOn3} alt='' style={{width:60,height:60,marginBottom:10}}/>     <span>한글 STPE3</span>
           </div>
 
@@ -112,17 +112,17 @@ const [issue, setIssue] = useState(() => {
 
          <div style={{display:'flex',flexDirection:'row',maxWidth:480,width:'100%',alignItems:'center',justifyContent:'center', boxSizing:'border-box'}}>
           <div style={{alignItems:'center',display:'flex',justifyContent:'center',width:150, maxWidth:'calc(30vw - 10px)',flexDirection:'column',padding:'10px 0px 10px 0px',
-            textAlign:'center',borderRadius:10,margin:4}} onClick={()=>handleGoLink(linkList[issue-1].mStep1)}>        
+            textAlign:'center',borderRadius:10,margin:4,cursor:'pointer'}} onClick={()=>handleGoLink(linkList[issue-1].mStep1)}>        
             <img src={krrMath1} alt='' style={{width:60,height:60,marginBottom:10}}/>     <span>수학 STPE1</span>
           </div>
 
           <div style={{alignItems:'center',display:'flex',justifyContent:'center',width:150, maxWidth:'calc(30vw - 10px)',flexDirection:'column',padding:'10px 0px 10px 0px',
-            textAlign:'center',borderRadius:10,margin:4}} onClick={()=>handleGoLink(linkList[issue-1].mStep2)}>       
+            textAlign:'center',borderRadius:10,margin:4,cursor:'pointer'}} onClick={()=>handleGoLink(linkList[issue-1].mStep2)}>       
             <img src={krrMath2} alt='' style={{width:60,height:60,marginBottom:10}}/>     <span>수학 STPE2</span>
           </div>
 
           <div style={{alignItems:'center',display:'flex',justifyContent:'center',width:150, maxWidth:'calc(30vw - 10px)',flexDirection:'column',padding:'10px 0px 10px 0px',
-            textAlign:'center',borderRadius:10,margin:4}} onClick={()=>handleGoLink(linkList[issue-1].mStep3)}>      
+            textAlign:'center',borderRadius:10,margin:4,cursor:'pointer'}} onClick={()=>handleGoLink(linkList[issue-1].mStep3)}>      
             <img src={krrMath3} alt='' style={{width:60,height:60,marginBottom:10}}/>     <span>수학 STPE3</span>
           </div>
 

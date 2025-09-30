@@ -98,7 +98,7 @@ function App() {
 
             <Route path='/Lesson' element={<Lesson/>}/> 
 
-            <Route path="/Home" element={<Home/>}/>
+            {/* <Route path="/Home" element={<Home/>}/> */}
             
             <Route path="/Home/Math6" element={<Home6/>}/>
 
@@ -126,8 +126,7 @@ function App() {
 
             <Route  path="/Home/H1z8" element={<H1_8/>} />
             <Route  path="/Home/H2a8" element={<H2_8/>} />
-            <Route  path="/Home/H3w8" element={<H3_8/>} />
-            
+            <Route  path="/Home/H3w8" element={<H3_8/>} />            
             <Route  path="/Home/M1a8" element={<M1_8/>} />
             <Route  path="/Home/M2e8" element={<M2_8/>} />
             <Route  path="/Home/M3t8" element={<M3_8/>} />
@@ -183,7 +182,7 @@ function App() {
 
             <Route  path="/Home/L7a" element={<L_7/>} />
 
-            <Route  path="/Home/seomkim" element={<SeomkimHome/>} />
+            <Route  path="/Home" element={<SeomkimHome/>} />
 
             
 

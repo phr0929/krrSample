@@ -404,6 +404,7 @@
 }
 
 .seomkimHomeBtnNull{
+    cursor:default;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -420,6 +421,7 @@
 }
 
 .seomkimHomeBtnOn{
+        cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -436,6 +438,7 @@
 }
 
 .seomkimHomeBtnOff{
+        cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
