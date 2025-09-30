@@ -132,6 +132,55 @@ function App() {
             <Route  path="/Home/M2e8" element={<M2_8/>} />
             <Route  path="/Home/M3t8" element={<M3_8/>} />
 
+
+            {/* 9호 */}
+            <Route  path="/Home/Hs19" element={<H1_8/>} />
+            <Route  path="/Home/Ha29" element={<H2_8/>} />
+            <Route  path="/Home/Hd39" element={<H3_8/>} />
+            <Route  path="/Home/Mw19" element={<M1_8/>} />
+            <Route  path="/Home/Mr29" element={<M2_8/>} />
+            <Route  path="/Home/Mt39" element={<M3_8/>} />
+
+
+
+
+
+            
+            {/* 10호 */}
+            <Route  path="/Home/Hw110" element={<H1_8/>} />
+            <Route  path="/Home/Hs210" element={<H2_8/>} />
+            <Route  path="/Home/Hq310" element={<H3_8/>} />
+            <Route  path="/Home/Me110" element={<M1_8/>} />
+            <Route  path="/Home/Mq210" element={<M2_8/>} />
+            <Route  path="/Home/Mv310" element={<M3_8/>} />
+
+
+
+
+            
+            {/* 11호 */}
+            <Route  path="/Home/Hr111" element={<H1_8/>} />
+            <Route  path="/Home/Hc211" element={<H2_8/>} />
+            <Route  path="/Home/Hu311" element={<H3_8/>} />
+            <Route  path="/Home/My111" element={<M1_8/>} />
+            <Route  path="/Home/Mn211" element={<M2_8/>} />
+            <Route  path="/Home/Mg311" element={<M3_8/>} />
+
+
+
+
+            
+            {/* 12호 */}
+            <Route  path="/Home/Hb112" element={<H1_8/>} />
+            <Route  path="/Home/Hd212" element={<H2_8/>} />
+            <Route  path="/Home/Hf312" element={<H3_8/>} />
+            <Route  path="/Home/Ms112" element={<M1_8/>} />
+            <Route  path="/Home/Me212" element={<M2_8/>} />
+            <Route  path="/Home/Mz312" element={<M3_8/>} />
+
+
+
+
             <Route  path="/Home/L7a" element={<L_7/>} />
 
             <Route  path="/Home/seomkim" element={<SeomkimHome/>} />
