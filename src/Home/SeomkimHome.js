@@ -71,7 +71,7 @@ const [issue, setIssue] = useState(() => {
           <img src={krrLogo} alt='' style={{width:200,maxWidth:'50%'}}/> 
         </div>
 
-        <div style={{display:'flex',flexDirection:'row',maxWidth:480,width:'100%',alignItems:'center',justifyContent:'center', boxSizing:'border-box' }}>
+        <div className='noselect' style={{display:'flex',flexDirection:'row',maxWidth:480,width:'100%',alignItems:'center',justifyContent:'center', boxSizing:'border-box'}}>
           <div className='seomkimHomeBtnNull' >1호</div>          
           <div className='seomkimHomeBtnNull' >2호</div>          
           <div className='seomkimHomeBtnNull' >3호</div>          
@@ -79,7 +79,7 @@ const [issue, setIssue] = useState(() => {
           <div className={issue===5?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(5)}>5호</div>          
           <div className={issue===6?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(6)}>6호</div>  
         </div>
-        <div style={{display:'flex',flexDirection:'row',maxWidth:480,width:'100%',alignItems:'center',justifyContent:'center', boxSizing:'border-box'}}>
+        <div className='noselect' style={{display:'flex',flexDirection:'row',maxWidth:480,width:'100%',alignItems:'center',justifyContent:'center', boxSizing:'border-box'}}>
           <div className={issue===7?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(7)}>7호</div>          
           <div className={issue===8?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(8)}>8호</div>    
           <div className='seomkimHomeBtnNull' >9호</div>          
@@ -90,7 +90,7 @@ const [issue, setIssue] = useState(() => {
  
 
  
-        <div style={{display:'flex',flexDirection:'row',maxWidth:480,width:'100%',alignItems:'center',justifyContent:'center', boxSizing:'border-box',marginTop:20,}}>
+        <div style={{display:'flex',flexDirection:'row',maxWidth:480,width:'100%',alignItems:'center',justifyContent:'center', boxSizing:'border-box',marginTop:20,fontSize:15}}>
           <div style={{alignItems:'center',display:'flex',justifyContent:'center',width:150, maxWidth:'calc(30vw - 10px)',flexDirection:'column',padding:'10px 0px 10px 0px',
             textAlign:'center',borderRadius:10,margin:4,cursor:'pointer'}} onClick={()=>handleGoLink(linkList[issue-1].hStep1)} >        
             <img src={krrStepOn1} alt='' style={{width:60,height:60,marginBottom:10}}/>     <span>한글 STPE1</span>
