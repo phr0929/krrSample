@@ -24,7 +24,7 @@ function Lesson() {
 //   return localStorage.getItem('nowIssue') ?? 7;
 // });
 
-const [issue, setIssue] = useState(8)
+const [issue, setIssue] = useState(9)
  
   
   const lessonList = [
@@ -52,9 +52,9 @@ const [issue, setIssue] = useState(8)
     {issue:8, luluImg:'',luluLink:'1122131259',
               step1Img:'',step1Link:'1122131130',setp2Img:'',step2Link:'1122131226',step3Img:'',step3Link:'1122137241',
               mStep1Img:'',mStep1Link:'1122131103',mSetp2Img:'',mStep2Link:'1122131184',mStep3Img:'',mStep3Link:'1122142901',},
-    {issue:9, luluImg:'',luluLink:'',
-              step1Img:'',step1Link:'',setp2Img:'',step2Link:'',step3Img:'',step3Link:'',
-              mStep1Img:'',mStep1Link:'',mSetp2Img:'',mStep2Link:'',mStep3Img:'',mStep3Link:'',},
+    {issue:9, luluImg:'',luluLink:'1131143104',
+              step1Img:'',step1Link:'1131142818',setp2Img:'',step2Link:'1131142933',step3Img:'',step3Link:'1131143036',
+              mStep1Img:'',mStep1Link:'1131142782',mSetp2Img:'',mStep2Link:'1131142882',mStep3Img:'',mStep3Link:'1131142989',},
     {issue:10,luluImg:'',luluLink:'',
               step1Img:'',step1Link:'',setp2Img:'',step2Link:'',step3Img:'',step3Link:'',
               mStep1Img:'',mStep1Link:'',mSetp2Img:'',mStep2Link:'',mStep3Img:'',mStep3Link:'',},
@@ -127,11 +127,28 @@ const [issue, setIssue] = useState(8)
           <div className={issue===5?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(5)}>5호</div>          
           <div className={issue===6?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(6)}>6호</div>
           <div className={issue===7?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(7)}>7호</div>          
-          <div className={issue===8?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(8)}>8호</div>          
-          <div className='lessonIssueBtnNull' >9호</div>          
-          <div className='lessonIssueBtnNull' >10호</div>          
-          <div className='lessonIssueBtnNull' >11호</div>          
-          <div className='lessonIssueBtnNull' >12호</div>  
+          <div className={issue===8?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(8)}>8호</div>       
+          {lessonList[8].luluLink!==''?
+            <div className={issue===9?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(9)}>9호</div>
+            :<div className='lessonIssueBtnNull' >9호</div>
+          }
+
+          {lessonList[9].luluLink!==''?
+            <div className={issue===10?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(10)}>10호</div>
+            :<div className='lessonIssueBtnNull' >10호</div>
+          }
+
+          {lessonList[10].luluLink!==''?
+            <div className={issue===11?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(11)}>11호</div>
+            :<div className='lessonIssueBtnNull' >11호</div>
+          }
+
+          {lessonList[11].luluLink!==''?
+            <div className={issue===12?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(12)}>12호</div>
+            :<div className='lessonIssueBtnNull' >12호</div>
+          }
+
+           
         </div>
           
 
