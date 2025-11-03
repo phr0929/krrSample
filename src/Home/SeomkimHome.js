@@ -82,7 +82,7 @@ const [issue, setIssue] = useState(() => {
         <div className='noselect' style={{display:'flex',flexDirection:'row',maxWidth:480,width:'100%',alignItems:'center',justifyContent:'center', boxSizing:'border-box'}}>
           <div className={issue===7?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(7)}>7호</div>          
           <div className={issue===8?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(8)}>8호</div>    
-          <div className='seomkimHomeBtnNull' >9호</div>          
+          <div className={issue===9?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(9)}>9호</div>     
           <div className='seomkimHomeBtnNull' >10호</div>          
           <div className='seomkimHomeBtnNull' >11호</div>          
           <div className='seomkimHomeBtnNull' >12호</div>  

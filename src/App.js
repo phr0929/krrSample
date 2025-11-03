@@ -47,6 +47,11 @@ import H1_8 from './Home/H1_8';
 import H2_8 from './Home/H2_8';
 import H3_8 from './Home/H3_8';
 
+import H1_9 from './Home/H1_9';
+import H2_9 from './Home/H2_9';
+import H3_9 from './Home/H3_9';
+
+
 import M1_5 from './Home/M1_5';
 import M2_5 from './Home/M2_5';
 import M3_5 from './Home/M3_5';
@@ -61,6 +66,10 @@ import M3_7 from './Home/M3_7';
 import M1_8 from './Home/M1_8';
 import M2_8 from './Home/M2_8';
 import M3_8 from './Home/M3_8';
+
+import M1_9 from './Home/M1_9';
+import M2_9 from './Home/M2_9';
+import M3_9 from './Home/M3_9';
 
 import L_7 from './Home/L_7';
 
@@ -133,12 +142,13 @@ function App() {
 
 
             {/* 9호 */}
-            <Route  path="/Home/Hs19" element={<H1_8/>} />
-            <Route  path="/Home/Ha29" element={<H2_8/>} />
-            <Route  path="/Home/Hd39" element={<H3_8/>} />
-            <Route  path="/Home/Mw19" element={<M1_8/>} />
-            <Route  path="/Home/Mr29" element={<M2_8/>} />
-            <Route  path="/Home/Mt39" element={<M3_8/>} />
+            <Route  path="/Home/Hs19" element={<H1_9/>} />
+            <Route  path="/Home/Ha29" element={<H2_9/>} />
+            <Route  path="/Home/Hd39" element={<H3_9/>} />
+            <Route  path="/Home/Mw19" element={<M1_9/>} />
+            <Route  path="/Home/Mr29" element={<M2_9/>} />
+            <Route  path="/Home/Mt39" element={<M3_9/>} />
+            
 
 
 
