@@ -11,11 +11,7 @@ import video1 from './resource/9/m2_1.png'
 import video2 from './resource/9/m2_2.png'
 import video3 from './resource/9/m2_3.png'
 import video4 from './resource/9/m2_4.png' 
-import video5 from './resource/9/m2_5.png'
-import video6 from './resource/9/m2_6.png' 
-import video7 from './resource/9/m2_7.png' 
-import video8 from './resource/9/m2_8.png' 
-import video9 from './resource/9/m2_9.png' 
+import video5 from './resource/9/m2_5.png' 
 
 function M2_9() {
  
@@ -23,20 +19,16 @@ function M2_9() {
   const [boxColor,setBoxColor] = useState('#ed9c36')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('메인영상')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/jeg0sbskMus')
   const [issue,setIssue] = useState(9)
   const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 손가락 놀이로 10의 보수 개념을 익혔어요. 연극배우 수 세기와 컵 쌓기 놀이로 덧셈 능력과 수 변별력을 키웠어요. 또 다른 그림 찾기와 변화 기계 활동으로 논리적 사고력을 길렀어요.')
-  const [playListLink,setPlayListLink] = useState('플레이리스트')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju7va7sh_rz2DPS_Ekl9Dnkj')
   const linkList = [
-    {page:2, link:'https://youtu.be/ELBbOsmKMEg',img:video1},
-    {page:5, link:'https://youtu.be/Da5jVFz9kZU',img:video2},
-    {page:5, link:'https://youtu.be/OgpMUz-LGjc',img:video3},
-    {page:5, link:'https://youtu.be/OlfERasZNUw',img:video4},
-    {page:5, link:'https://youtu.be/gTRKaU7cp2o',img:video5},
-    {page:5, link:'https://youtu.be/MRgt3evQwuY',img:video6},
-    {page:9, link:'https://youtu.be/tV3r5CZIeS4',img:video7},
-    {page:9, link:'https://youtu.be/5PXb5OmRhQc',img:video8},
-    {page:12,link:'https://youtu.be/P6janGxtakk',img:video9},
+    {page:2,  link:'https://youtu.be/jeg0sbskMus',img:video1},
+    {page:4,  link:'https://youtu.be/UG0zcjWIRfE',img:video2},
+    {page:4,  link:'https://youtu.be/Rr2azZdRxtM',img:video3},
+    {page:8,  link:'https://youtu.be/ugRrIASnDVU',img:video4},
+    {page:11, link:'https://youtu.be/VIwCJjAj0s0',img:video5}, 
     // {page:13,link:'https://youtu.be/kDh2NaJSzRE',img:video5},
     // {page:16,link:'https://youtu.be/AjF_sRd3Q2I',img:video6},
     // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:video7},
@@ -102,10 +94,6 @@ function M2_9() {
             <div>{linkList[2].page}p</div>            
           </div>  
 
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
-            <img src={linkList[3].img} alt=''/> 
-            <div>{linkList[3].page}p</div>
-          </div>   
 
           {/* <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
             <img src={linkList[3].img} alt=''/> 
@@ -113,12 +101,18 @@ function M2_9() {
           </div>    */}
         </div>
 
-        <div style={{marginTop:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+        <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+          
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
+            <img src={linkList[3].img} alt=''/> 
+            <div>{linkList[3].page}p</div>
+          </div>   
+
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
             <img src={linkList[4].img} alt=''/> 
             <div>{linkList[4].page}p</div>
           </div>  
-
+{/* 
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[5].link)}>
             <img src={linkList[5].img} alt=''/> 
             <div>{linkList[5].page}p</div>
@@ -132,16 +126,16 @@ function M2_9() {
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
             <img src={linkList[7].img} alt=''/> 
             <div>{linkList[7].page}p</div>
-          </div>   
+          </div>    */}
         </div>
 
 
         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
-  
+{/*   
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[8].link)}>
             <img src={linkList[8].img} alt=''/> 
             <div>{linkList[8].page}p</div>
-          </div>  
+          </div>   */}
  
         </div>
   

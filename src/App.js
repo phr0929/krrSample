@@ -32,9 +32,29 @@ import AppStep3Backup from './AppStep3Backup';
 
 import Home from './Home/index';
 import Home6 from './Home/Home6';
+
+
+
+import H1_1 from './Home/H1_1';
+import H2_1 from './Home/H2_1';
+import H3_1 from './Home/H3_1';
+
+import H1_2 from './Home/H1_2';
+import H2_2 from './Home/H2_2';
+import H3_2 from './Home/H3_2';
+
+import H1_3 from './Home/H1_3';
+import H2_3 from './Home/H2_3';
+import H3_3 from './Home/H3_3';
+
+import H1_4 from './Home/H1_4';
+import H2_4 from './Home/H2_4';
+import H3_4 from './Home/H3_4';
+
 import H1_5 from './Home/H1_5';
 import H2_5 from './Home/H2_5';
 import H3_5 from './Home/H3_5';
+
 import H1_6 from './Home/H1_6';
 import H2_6 from './Home/H2_6';
 import H3_6 from './Home/H3_6';
@@ -51,10 +71,38 @@ import H1_9 from './Home/H1_9';
 import H2_9 from './Home/H2_9';
 import H3_9 from './Home/H3_9';
 
+import H1_10 from './Home/H1_10';
+import H2_10 from './Home/H2_10';
+import H3_10 from './Home/H3_10';
+
+import H1_11 from './Home/H1_11';
+import H2_11 from './Home/H2_11';
+import H3_11 from './Home/H3_11';
+
+import H1_12 from './Home/H1_12';
+import H2_12 from './Home/H2_12';
+import H3_12 from './Home/H3_12';
+
+import M1_1 from './Home/M1_1';
+import M2_1 from './Home/M2_1';
+import M3_1 from './Home/M3_1';
+
+import M1_2 from './Home/M1_2';
+import M2_2 from './Home/M2_2';
+import M3_2 from './Home/M3_2';
+
+import M1_3 from './Home/M1_3';
+import M2_3 from './Home/M2_3';
+import M3_3 from './Home/M3_3';
+
+import M1_4 from './Home/M1_4';
+import M2_4 from './Home/M2_4';
+import M3_4 from './Home/M3_4';
 
 import M1_5 from './Home/M1_5';
 import M2_5 from './Home/M2_5';
 import M3_5 from './Home/M3_5';
+
 import M1_6 from './Home/M1_6';
 import M2_6 from './Home/M2_6';
 import M3_6 from './Home/M3_6';
@@ -70,6 +118,19 @@ import M3_8 from './Home/M3_8';
 import M1_9 from './Home/M1_9';
 import M2_9 from './Home/M2_9';
 import M3_9 from './Home/M3_9';
+
+import M1_10 from './Home/M1_10';
+import M2_10 from './Home/M2_10';
+import M3_10 from './Home/M3_10';
+
+import M1_11 from './Home/M1_11';
+import M2_11 from './Home/M2_11';
+import M3_11 from './Home/M3_11';
+
+import M1_12 from './Home/M1_12';
+import M2_12 from './Home/M2_12';
+import M3_12 from './Home/M3_12';
+
 
 import L_7 from './Home/L_7';
 
@@ -110,6 +171,36 @@ function App() {
             {/* <Route path="/Home" element={<Home/>}/> */}
             
             <Route path="/Home/Math6" element={<Home6/>}/>
+
+
+            <Route  path="/Home/H11asc" element={<H1_1/>} />       
+            <Route  path="/Home/H21ssf" element={<H2_1/>} />
+            <Route  path="/Home/H31zsz" element={<H3_1/>} />
+            <Route  path="/Home/M11dsd" element={<M1_1/>} />     
+            <Route  path="/Home/M21qse" element={<M2_1/>} />
+            <Route  path="/Home/M31csd" element={<M3_1/>} />
+
+            <Route  path="/Home/H12wbc" element={<H1_2/>} />         
+            <Route  path="/Home/H22wdf" element={<H2_2/>} />
+            <Route  path="/Home/H32wzz" element={<H3_2/>} />
+            <Route  path="/Home/M12wsd" element={<M1_2/>} />   
+            <Route  path="/Home/M22wwe" element={<M2_2/>} />
+            <Route  path="/Home/M32wsd" element={<M3_2/>} />
+
+            <Route  path="/Home/H13abe" element={<H1_3/>} />           
+            <Route  path="/Home/H23sde" element={<H2_3/>} />
+            <Route  path="/Home/H33zze" element={<H3_3/>} />
+            <Route  path="/Home/M13dse" element={<M1_3/>} /> 
+            <Route  path="/Home/M23qwe" element={<M2_3/>} />
+            <Route  path="/Home/M33cse" element={<M3_3/>} />
+
+            <Route  path="/Home/H14asc" element={<H1_4/>} />          
+            <Route  path="/Home/H24ssf" element={<H2_4/>} />
+            <Route  path="/Home/H34zsz" element={<H3_4/>} />
+            <Route  path="/Home/M14dsd" element={<M1_4/>} />  
+            <Route  path="/Home/M24qse" element={<M2_4/>} />
+            <Route  path="/Home/M34csd" element={<M3_4/>} />
+
 
             <Route  path="/Home/H15abc" element={<H1_5/>} />
             <Route  path="/Home/M15dsd" element={<M1_5/>} />            
@@ -156,36 +247,36 @@ function App() {
 
             
             {/* 10호 */}
-            <Route  path="/Home/Hw110" element={<H1_8/>} />
-            <Route  path="/Home/Hs210" element={<H2_8/>} />
-            <Route  path="/Home/Hq310" element={<H3_8/>} />
-            <Route  path="/Home/Me110" element={<M1_8/>} />
-            <Route  path="/Home/Mq210" element={<M2_8/>} />
-            <Route  path="/Home/Mv310" element={<M3_8/>} />
+            <Route  path="/Home/Hw110" element={<H1_10/>} />
+            <Route  path="/Home/Hs210" element={<H2_10/>} />
+            <Route  path="/Home/Hq310" element={<H3_10/>} />
+            <Route  path="/Home/Me110" element={<M1_10/>} />
+            <Route  path="/Home/Mq210" element={<M2_10/>} />
+            <Route  path="/Home/Mv310" element={<M3_10/>} />
 
 
 
 
             
             {/* 11호 */}
-            <Route  path="/Home/Hr111" element={<H1_8/>} />
-            <Route  path="/Home/Hc211" element={<H2_8/>} />
-            <Route  path="/Home/Hu311" element={<H3_8/>} />
-            <Route  path="/Home/My111" element={<M1_8/>} />
-            <Route  path="/Home/Mn211" element={<M2_8/>} />
-            <Route  path="/Home/Mg311" element={<M3_8/>} />
+            <Route  path="/Home/Hr111" element={<H1_11/>} />
+            <Route  path="/Home/Hc211" element={<H2_11/>} />
+            <Route  path="/Home/Hu311" element={<H3_11/>} />
+            <Route  path="/Home/My111" element={<M1_11/>} />
+            <Route  path="/Home/Mn211" element={<M2_11/>} />
+            <Route  path="/Home/Mg311" element={<M3_11/>} />
 
 
 
 
             
             {/* 12호 */}
-            <Route  path="/Home/Hb112" element={<H1_8/>} />
-            <Route  path="/Home/Hd212" element={<H2_8/>} />
-            <Route  path="/Home/Hf312" element={<H3_8/>} />
-            <Route  path="/Home/Ms112" element={<M1_8/>} />
-            <Route  path="/Home/Me212" element={<M2_8/>} />
-            <Route  path="/Home/Mz312" element={<M3_8/>} />
+            <Route  path="/Home/Hd212" element={<H2_12/>} />
+            <Route  path="/Home/Hb112" element={<H1_12/>} />
+            <Route  path="/Home/Hf312" element={<H3_12/>} />
+            <Route  path="/Home/Ms112" element={<M1_12/>} />
+            <Route  path="/Home/Me212" element={<M2_12/>} />
+            <Route  path="/Home/Mz312" element={<M3_12/>} />
 
 
 

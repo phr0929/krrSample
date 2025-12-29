@@ -14,22 +14,36 @@ import video2 from './resource/9/h2_2.png'
 import video3 from './resource/9/h2_3.png'
 import video4 from './resource/9/h2_4.png'
 import video5 from './resource/9/h2_5.png'
+import video6 from './resource/9/h2_6.png'
+import video7 from './resource/9/h2_7.png'
+import video8 from './resource/9/h2_8.png'
+import video9 from './resource/9/h2_9.png'
+import video10 from './resource/9/h2_10.png'
+import video11 from './resource/9/h2_11.png'
+import video12 from './resource/9/h2_12.png'
 
 function H2_9() {
   const [bgColor,setBgColor] = useState('#f9b53d')
   const [boxColor,setBoxColor] = useState('#ef7208')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('메인영상')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/T5K2XjX4QzE')
   const [issue,setIssue] = useState(9)
   const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 그림과 받침을 결합해 한 글자 받침 낱말을 만들며 어휘력을 길렀어요. 서로 다른 받침을 바꾸어 써 보며 낱말의 차이를 비교해 보았어요. 받침이 들어간 여러 낱말을 읽으며 읽기 능력을 종합적으로 평가했어요.');
-  const [playListLink,setPlayListLink] = useState('플레이리스트')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju7yI_jqNKzPLl-Dm7Tcf5o_')
   const linkList = [
-    {page:4, link:'https://youtu.be/muH_TlRqrBY',img:video1},
-    {page:4, link:'https://youtu.be/prlhaZDxqDI',img:video2},
-    {page:9, link:'https://youtu.be/-8SsUJCkWBQ',img:video3},
-    {page:9, link:'https://youtu.be/O-K1WUGZsTU',img:video4},
-    {page:14,link:'https://youtu.be/XuHjfFk6jn8',img:video5}, 
+    {page:2, link:'https://youtu.be/T5K2XjX4QzE',img:video1},
+    {page:2, link:'https://youtu.be/F3jg1Kwe9KA',img:video2},
+    {page:2, link:'https://youtu.be/-ucjv1lz9jY',img:video3},
+    {page:2, link:'https://youtu.be/uiYAnTJwQc4',img:video4}, 
+    {page:7, link:'https://youtu.be/iQ_e3J9Nvto',img:video5},
+    {page:7, link:'https://youtu.be/ky9oQ-ekd0k',img:video6},
+    {page:7, link:'https://youtu.be/BGeVPzanf5Q',img:video7},
+    {page:7, link:'https://youtu.be/DGU3SCyVGUc',img:video8}, 
+    {page:8, link:'https://youtu.be/15nS0UxQE90',img:video9},
+    {page:8, link:'https://youtu.be/9zwAwqSPQRQ',img:video10},
+    {page:8, link:'https://youtu.be/4lOUXyMBFTk',img:video11},
+    {page:8, link:'https://youtu.be/AH_ooZeU2mQ',img:video12}, 
    ]
 
   const [zembo, setZembo] = useState({
@@ -37,7 +51,7 @@ function H2_9() {
     title2:'',
     contents:`『이럴 때 꼬마 용은 어떻게 할까요?』는 유치원 생활에서 일어나는 다양한 상황에서 예의와 규칙을 자연스럽게 알려주는 이야기입니다. 이 책은 아이들이 단체 생활 속 질서, 배려, 협력의 중요성을 익히고 사회성을 기르도록 도와줍니다.`,
     img:zemboImg,
-    link:'잼보'
+    link:'https://youtu.be/JY2txvInZGw'
   }) 
 
   const [code,setCode] = useState('jus649')
@@ -154,15 +168,6 @@ function H2_9() {
             <img src={linkList[1].img} alt=''/> 
             <div>{linkList[1].page}p</div>
           </div>  
- 
- 
-        </div>
-
-        
-
-         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
-
-          
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[2].link)}>
             <img src={linkList[2].img} alt=''/> 
             <div>{linkList[2].page}p</div>
@@ -172,25 +177,58 @@ function H2_9() {
             <img src={linkList[3].img} alt=''/> 
             <div>{linkList[3].page}p</div>
           </div>  
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
-            <img src={linkList[4].img} alt=''/> 
-            <div>{linkList[4].page}p</div>
+ 
+ 
+        </div>
+
+        
+
+        <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
+
+
+        <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
+          <img src={linkList[4].img} alt=''/> 
+          <div>{linkList[4].page}p</div>
+        </div>  
+
+        <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[5].link)}>
+          <img src={linkList[5].img} alt=''/> 
+          <div>{linkList[5].page}p</div>
+        </div>  
+
+        <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
+          <img src={linkList[6].img} alt=''/> 
+          <div>{linkList[6].page}p</div>
+        </div>  
+
+        <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
+          <img src={linkList[7].img} alt=''/> 
+          <div>{linkList[7].page}p</div>
+        </div>  
+      </div>
+
+       <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+
+ 
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[8].link)}>
+            <img src={linkList[8].img} alt=''/> 
+            <div>{linkList[8].page}p</div>
           </div>  
-{/* 
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[5].link)}>
-            <img src={linkList[5].img} alt=''/> 
-            <div>{linkList[5].page}p</div>
-          </div>   */}
 
-          {/* <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
-            <img src={linkList[6].img} alt=''/> 
-            <div>{linkList[6].page}p</div>
-          </div>   */}
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[9].link)}>
+            <img src={linkList[9].img} alt=''/> 
+            <div>{linkList[9].page}p</div>
+          </div>  
 
-          {/* <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
-            <img src={linkList[7].img} alt=''/> 
-            <div>{linkList[7].page}p</div>
-          </div>   */}
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[10].link)}>
+            <img src={linkList[10].img} alt=''/> 
+            <div>{linkList[10].page}p</div>
+          </div>  
+
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[11].link)}>
+            <img src={linkList[11].img} alt=''/> 
+            <div>{linkList[11].page}p</div>
+          </div>  
         </div>
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>

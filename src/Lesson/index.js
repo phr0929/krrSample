@@ -24,7 +24,7 @@ function Lesson() {
 //   return localStorage.getItem('nowIssue') ?? 7;
 // });
 
-const [issue, setIssue] = useState(9)
+const [issue, setIssue] = useState(11)
  
   
   const lessonList = [
@@ -55,12 +55,12 @@ const [issue, setIssue] = useState(9)
     {issue:9, luluImg:'',luluLink:'1131143104',
               step1Img:'',step1Link:'1131142818',setp2Img:'',step2Link:'1131142933',step3Img:'',step3Link:'1131143036',
               mStep1Img:'',mStep1Link:'1131142782',mSetp2Img:'',mStep2Link:'1131142882',mStep3Img:'',mStep3Link:'1131142989',},
-    {issue:10,luluImg:'',luluLink:'',
-              step1Img:'',step1Link:'',setp2Img:'',step2Link:'',step3Img:'',step3Link:'',
-              mStep1Img:'',mStep1Link:'',mSetp2Img:'',mStep2Link:'',mStep3Img:'',mStep3Link:'',},
-    {issue:11,luluImg:'',luluLink:'',
-              step1Img:'',step1Link:'',setp2Img:'',step2Link:'',step3Img:'',step3Link:'',
-              mStep1Img:'',mStep1Link:'',mSetp2Img:'',mStep2Link:'',mStep3Img:'',mStep3Link:'',},
+    {issue:10,luluImg:'',luluLink:'1141330597',
+              step1Img:'',step1Link:'1141330675',setp2Img:'',step2Link:'1141332019',step3Img:'',step3Link:'1141330565',
+              mStep1Img:'',mStep1Link:'1141330635',mSetp2Img:'',mStep2Link:'1141330745',mStep3Img:'',mStep3Link:'1141330543',},
+    {issue:11,luluImg:'',luluLink:'1150020100',
+              step1Img:'',step1Link:'1150020464',setp2Img:'',step2Link:'1150020207',step3Img:'',step3Link:'1150020249',
+              mStep1Img:'',mStep1Link:'1150020123',mSetp2Img:'',mStep2Link:'1150020153',mStep3Img:'',mStep3Link:'1150020227',},
     {issue:12,luluImg:'',luluLink:'',
               step1Img:'',step1Link:'',setp2Img:'',step2Link:'',step3Img:'',step3Link:'',
               mStep1Img:'',mStep1Link:'',mSetp2Img:'',mStep2Link:'',mStep3Img:'',mStep3Link:'',},

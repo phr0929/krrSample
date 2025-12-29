@@ -13,21 +13,31 @@ import video1 from './resource/9/h3_1.png'
 import video2 from './resource/9/h3_2.png'
 import video3 from './resource/9/h3_3.png' 
 import video4 from './resource/9/h3_4.png' 
+import video5 from './resource/9/h3_5.png'
+import video6 from './resource/9/h3_6.png'
+import video7 from './resource/9/h3_7.png' 
+import video8 from './resource/9/h3_8.png' 
 
 function H3_9() {
   const [bgColor,setBgColor] = useState('#f9b53d')
   const [boxColor,setBoxColor] = useState('#ef7208')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('메인영상')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/8dh3h5-Ejpc')
   const [issue,setIssue] = useState(9)
   const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 끝소리만 다른 낱말을 비교하며 받침의 역할을 익혔어요. 틀린 자모를 바르게 고쳐 쓰며 올바른 문장을 만들어 보았어요. 그림 속 이상한 낱말을 고쳐 쓰며 받침에 집중하고 즐겁게 학습했어요.');
-  const [playListLink,setPlayListLink] = useState('플레이리스트')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5MwVUGtKQlmEDlAZWz0aoX')
   const linkList = [
-    {page:2, link:'https://youtu.be/Lns4qgP0TV0',img:video1},
-    {page:6, link:'https://youtu.be/bNVz473Vdnw',img:video2},
-    {page:9, link:'https://youtu.be/efb7T8ZNPm4',img:video3},
-    {page:'노래', link:'https://youtu.be/Jicht8Q-vmg',img:video4},
+    {page:2,     link:'https://youtu.be/8dh3h5-Ejpc',img:video1},
+    {page:6,     link:'https://youtu.be/3LcKb3LaE6o',img:video2},
+    {page:8,     link:'https://youtu.be/hFlLFsp0jHU',img:video3},
+    {page:10,    link:'https://youtu.be/_Q3x60bzOvE',img:video4},
+    {page:12,    link:'https://youtu.be/GEWNQtA3lao',img:video5},
+    {page:14,    link:'https://youtu.be/hU7S2IAKCKY',img:video6},
+    {page:15,    link:'https://youtu.be/-TP0RWVvWUk',img:video7},
+    {page:'노래', link:'https://youtu.be/8pneQAmt6aM',img:video8}, 
+    // {page:15, link:'',img:video7},
+    // {page:'노래', link:'',img:video8},
   ]
 
   const [zembo, setZembo] = useState({
@@ -35,7 +45,7 @@ function H3_9() {
     title2:'',
     contents:'『언제나 싫어요!라고 말하는 꼬마 기사 네드』는 매사에 싫어요!라고 하던 아이가 빨간 용과 친구가 되며 긍정적으로 변하는 이야기입니다. 이 책은 아이들이 감정을 조절하고, 자기 주장을 바르게 표현하는 방법을 배우도록 도와줍니다.',
     img:zemboImg,
-    link:'잼보'
+    link:'https://youtu.be/Ccttp1QHhY8'
   }) 
 
   const [code,setCode] = useState('bds978')
@@ -160,13 +170,13 @@ function H3_9() {
 
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
             <img src={linkList[3].img} alt=''/> 
-            <div>{linkList[3].page}</div>
+            <div>{linkList[3].page}p</div>
           </div>  
  
         </div>
 
          <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
-          {/* <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
             <img src={linkList[4].img} alt=''/> 
             <div>{linkList[4].page}p</div>
           </div>  
@@ -179,12 +189,12 @@ function H3_9() {
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
             <img src={linkList[6].img} alt=''/> 
             <div>{linkList[6].page}p</div>
-          </div>   */}
+          </div>
 
-          {/* <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
             <img src={linkList[7].img} alt=''/> 
-            <div>{linkList[7].page}p</div>
-          </div>   */}
+            <div>{linkList[7].page}</div>
+          </div>
         </div>
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>

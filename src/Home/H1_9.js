@@ -24,20 +24,20 @@ function H1_9() {
   const [boxColor,setBoxColor] = useState('#ef7208')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('메인영상')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/u_bYuqKAXHQ')
   const [issue,setIssue] = useState(9)
   const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 ‘그~흐’ 낱자를 결합해 써 보며 읽기와 쓰기 능력을 길렀어요. 또 ‘그~스’, ‘으~흐’ 낱자를 말놀이로 익히며 문장을 만들어 보았어요. 동영상 활동을 통해 배운 내용을 복습하며 문장 구사력을 키웠어요.`);
-  const [playListLink,setPlayListLink] = useState('플레이리스트')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju63vs3zQQLGjq_ie0yb7PZK')
   const linkList = [
-    {page:2, link:'https://youtu.be/ee9x2ahJ3W4',img:video1},
-    {page:5, link:'https://youtu.be/o7EHZ-sVmf8',img:video2},
-    {page:10,link:'https://youtu.be/WYz4tOiNfrk',img:video3},
-    {page:10,link:'https://youtu.be/yY6n0XD675Q',img:video4},
-    {page:10,link:'https://youtu.be/cZ_jbuQNdIE',img:video5},
-    {page:10,link:'https://youtu.be/ru1OjYdXJek',img:video6},
-    {page:10,link:'https://youtu.be/neKUJVZMzrg',img:video7},
-    {page:10,link:'https://youtu.be/Nl4j56Xpstw',img:video8}, 
-    {page:14,link:'https://youtu.be/0RzPf9_CVcc',img:video9},  
+    {page:2,link:'https://youtu.be/u_bYuqKAXHQ',img:video1},
+    {page:2,link:'https://youtu.be/0mNlU2kQyy4',img:video2},
+    {page:2,link:'https://youtu.be/fAVVrTn9xeg',img:video3},
+    {page:4,link:'https://youtu.be/GWKdvv5jTc8',img:video4},
+    {page:4,link:'https://youtu.be/AImCLAUeQjY',img:video5},
+    {page:7,link:'https://youtu.be/GgY6VeCtd-E',img:video6},
+    {page:7,link:'https://youtu.be/0cz1m6aCOiY',img:video7},
+    {page:9,link:'https://youtu.be/sItlaCAXdJI',img:video8}, 
+    {page:9,link:'https://youtu.be/2lPxdZpcpHE',img:video9},  
    ]
 
   const [zembo, setZembo] = useState({
@@ -45,7 +45,7 @@ function H1_9() {
     title2:'',
     contents:'『눈부신 카멜레온 레온』은 특별한 외모 때문에 힘들어하던 카멜레온이 결국 자신에게 맞는 자리를 찾는 이야기입니다. 이 책은 아이들이 자신과 다른 존재를 존중하며 자기 긍정을 배우도록 도와줍니다.',
     img:zemboImg,
-    link:'잼보'
+    link:'https://youtu.be/aZA3jQrCqZo'
   }) 
 
   const [code,setCode] = useState('kwk159')
@@ -188,7 +188,7 @@ function H1_9() {
             <div>{linkList[5].page}p</div>
           </div>   
         </div>
-        <div style={{display:'flex',flexDirection:'row',justifyItems:'center',marginBottom:10}}>
+        <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center',}}>
      
 
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>

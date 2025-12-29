@@ -27,11 +27,12 @@ const [issue, setIssue] = useState(() => {
   const [mStep2,setMStep2] = useState('M25qwe');
   const [mStep3,setMStep3] = useState('M35csd');
   
+   
   const linkList = [
-     {issue:1,hStep1:'',hStep2:'',hStep3:'',mStep1:'',mStep2:'',mStep3:''},
-     {issue:2,hStep1:'',hStep2:'',hStep3:'',mStep1:'',mStep2:'',mStep3:''},
-     {issue:3,hStep1:'',hStep2:'',hStep3:'',mStep1:'',mStep2:'',mStep3:''},
-     {issue:4,hStep1:'',hStep2:'',hStep3:'',mStep1:'',mStep2:'',mStep3:''},
+     {issue:1,hStep1:'H11asc',hStep2:'H21ssf',hStep3:'H31zsz',mStep1:'M11dsd',mStep2:'M21qse',mStep3:'M31csd'},
+     {issue:2,hStep1:'H12wbc',hStep2:'H22wdf',hStep3:'H32wzz',mStep1:'M12wsd',mStep2:'M22wwe',mStep3:'M32wsd'},
+     {issue:3,hStep1:'H13abe',hStep2:'H23sde',hStep3:'H33zze',mStep1:'M13dse',mStep2:'M23qwe',mStep3:'M33cse'},
+     {issue:4,hStep1:'H14asc',hStep2:'H24ssf',hStep3:'H34zsz',mStep1:'M14dsd',mStep2:'M24qse',mStep3:'M34csd'},
      {issue:5,hStep1:'H15abc',hStep2:'H25sdf',hStep3:'H35zzz',mStep1:'M15dsd',mStep2:'M25qwe',mStep3:'M35csd'},
      {issue:6,hStep1:'H16eww',hStep2:'H26abd',hStep3:'H36esd',mStep1:'M16pwe',mStep2:'M26wws',mStep3:'M36zzv'},
      {issue:7,hStep1:'H17a',hStep2:'H27b',hStep3:'H37c',mStep1:'M17a',mStep2:'M27b',mStep3:'M37c'},
@@ -83,7 +84,7 @@ const [issue, setIssue] = useState(() => {
           <div className={issue===7?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(7)}>7호</div>          
           <div className={issue===8?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(8)}>8호</div>    
           <div className={issue===9?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(9)}>9호</div>     
-          <div className='seomkimHomeBtnNull' >10호</div>          
+          <div className={issue===10?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(10)}>10호</div>          
           <div className='seomkimHomeBtnNull' >11호</div>          
           <div className='seomkimHomeBtnNull' >12호</div>  
         </div>
