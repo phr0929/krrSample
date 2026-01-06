@@ -17,7 +17,7 @@ import eliivyStepOn3 from '../resource/eliivyStep3.svg';
 function SeomkimHome() {
 
 const [issue, setIssue] = useState(() => {
-  return localStorage.getItem('nowIssue') ?? 8;
+  return localStorage.getItem('nowIssue') ?? 11;
 });
   const [hStep1,setHStep1] = useState('H15abc');
   const [hStep2,setHStep2] = useState('H25sdf');
@@ -84,8 +84,8 @@ const [issue, setIssue] = useState(() => {
           <div className={issue===7?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(7)}>7호</div>          
           <div className={issue===8?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(8)}>8호</div>    
           <div className={issue===9?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(9)}>9호</div>     
-          <div className={issue===10?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(10)}>10호</div>          
-          <div className='seomkimHomeBtnNull' >11호</div>          
+          <div className={issue===10?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(10)}>10호</div>  
+          <div className={issue===11?'seomkimHomeBtnOn':'seomkimHomeBtnOff'} onClick={()=>handleIssue(11)}>11호</div>     
           <div className='seomkimHomeBtnNull' >12호</div>  
         </div>
  
