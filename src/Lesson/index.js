@@ -24,7 +24,7 @@ function Lesson() {
 //   return localStorage.getItem('nowIssue') ?? 7;
 // });
 
-const [issue, setIssue] = useState(11)
+const [issue, setIssue] = useState(12)
  
   
   const lessonList = [
@@ -62,9 +62,8 @@ const [issue, setIssue] = useState(11)
               step1Img:'',step1Link:'1150020464',setp2Img:'',step2Link:'1150020207',step3Img:'',step3Link:'1150020249',
               mStep1Img:'',mStep1Link:'1150020123',mSetp2Img:'',mStep2Link:'1150020153',mStep3Img:'',mStep3Link:'1150020227',},
     {issue:12,luluImg:'',luluLink:'',
-              step1Img:'',step1Link:'',setp2Img:'',step2Link:'',step3Img:'',step3Link:'',
-              mStep1Img:'',mStep1Link:'',mSetp2Img:'',mStep2Link:'',mStep3Img:'',mStep3Link:'',},
-
+              step1Img:'',step1Link:'1159926906',setp2Img:'',step2Link:'1159927183',step3Img:'',step3Link:'1159927436',
+              mStep1Img:'',mStep1Link:'1159926778',mSetp2Img:'',mStep2Link:'1159927069',mStep3Img:'',mStep3Link:'1160069580',},
   ]
 
  
@@ -127,28 +126,11 @@ const [issue, setIssue] = useState(11)
           <div className={issue===5?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(5)}>5호</div>          
           <div className={issue===6?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(6)}>6호</div>
           <div className={issue===7?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(7)}>7호</div>          
-          <div className={issue===8?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(8)}>8호</div>       
-          {lessonList[8].luluLink!==''?
-            <div className={issue===9?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(9)}>9호</div>
-            :<div className='lessonIssueBtnNull' >9호</div>
-          }
-
-          {lessonList[9].luluLink!==''?
-            <div className={issue===10?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(10)}>10호</div>
-            :<div className='lessonIssueBtnNull' >10호</div>
-          }
-
-          {lessonList[10].luluLink!==''?
-            <div className={issue===11?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(11)}>11호</div>
-            :<div className='lessonIssueBtnNull' >11호</div>
-          }
-
-          {lessonList[11].luluLink!==''?
-            <div className={issue===12?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(12)}>12호</div>
-            :<div className='lessonIssueBtnNull' >12호</div>
-          }
-
-           
+          <div className={issue===8?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(8)}>8호</div>    
+          <div className={issue===9?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(9)}>9호</div>                  
+          <div className={issue===10?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(10)}>10호</div>                     
+          <div className={issue===11?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(11)}>11호</div>                     
+          <div className={issue===12?'lessonIssueBtnOn':'lessonIssuetnOff'} onClick={()=>setIssue(12)}>12호</div>              
         </div>
           
 
@@ -210,19 +192,23 @@ const [issue, setIssue] = useState(11)
             </div>
  
           </div>
-   <div className='tipListTitleLesson' style={{marginRight:15}}>
-            ✏️ {issue}호 룰루 수업 TIP
-          </div>
-          <div className='tipListLessonLulu noselect' style={{marginBottom:70}}>
-            <div className='tipItemLesson' onClick={()=>handleGoVimeo(lessonList[issue-1].luluLink)}>
-              <div className='tipItemLessonBtn' style={{border:'1px solid #dcdcdc'}}>▶</div>
-              <div className='tipItemLessonIssue' style={{color:'#e2288a',textShadow: '0px 0px 3px #fff'}}>
-                {/* {issue}호 */}
-              </div>
+
+          {lessonList[issue-1].luluLink!==''?
+          <div>
+            <div className='tipListTitleLesson' style={{marginRight:15}}>
+              ✏️ {issue}호 룰루 수업 TIP
+            </div>
+            <div className='tipListLessonLulu noselect' style={{marginBottom:70}}>
+              <div className='tipItemLesson' onClick={()=>handleGoVimeo(lessonList[issue-1].luluLink)}>
+                <div className='tipItemLessonBtn' style={{border:'1px solid #dcdcdc'}}>▶</div>
+                <div className='tipItemLessonIssue' style={{color:'#e2288a',textShadow: '0px 0px 3px #fff'}}>
+                  {/* {issue}호 */}
+                </div>
               <img src={lulu} alt='' style={{border:'1px solid #dcdcdc'}}/>
             </div>
             
           </div>
+          </div>:<></>}
 
   
 
