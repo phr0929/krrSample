@@ -3,55 +3,45 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import himg from './resource/9/himg.png'
+import himg from './resource/12/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
-import zemboImg from './resource/9/zembo2.png'
-import bookVideo from './resource/9/h2video.png'
+import zemboImg from './resource/12/zembo2.png'
+import bookVideo from './resource/12/h2video.png'
 import book from './resource/step2book.png'
-import video1 from './resource/9/h2_1.png'
-import video2 from './resource/9/h2_2.png'
-import video3 from './resource/9/h2_3.png'
-import video4 from './resource/9/h2_4.png'
-import video5 from './resource/9/h2_5.png'
-import video6 from './resource/9/h2_6.png'
-import video7 from './resource/9/h2_7.png'
-import video8 from './resource/9/h2_8.png'
-import video9 from './resource/9/h2_9.png'
-import video10 from './resource/9/h2_10.png'
-import video11 from './resource/9/h2_11.png'
-import video12 from './resource/9/h2_12.png'
+import video1 from './resource/12/h2_1.png'
+import video2 from './resource/12/h2_2.png'
+import video3 from './resource/12/h2_3.png'
+import video4 from './resource/12/h2_4.png'
+import video5 from './resource/12/h2_5.png'
+import video6 from './resource/12/h2_6.png'
+import video7 from './resource/12/h2_7.png' 
 
 function H2_12() {
-  const [bgColor,setBgColor] = useState('#5e3838')
-  const [boxColor,setBoxColor] = useState('#329969')
-  const [textColor,setTextColor] = useState('#fff')
+  const [bgColor,setBgColor] = useState('#dbedf7')
+  const [boxColor,setBoxColor] = useState('#acc2e2')
+  const [textColor,setTextColor] = useState('#294f5e')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/CxIuzb3TW9k')
   const [issue,setIssue] = useState(12)
-  const [studyContetns,setStudyContetns] = useState('내용');
-  const [playListLink,setPlayListLink] = useState('')
+  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 노래 가사와 동물의 소리, 이야기 그림을 활용해 다양한 의성어와 의태어를 배웠어요. 상황에 맞는 소리나 모양 흉내 말을 찾아 문장을 직접 만들어 보며 어휘력과 창의적인 표현력을 풍부하게 길렀어요.');
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju63URizrLgx-uV-k_ai6AkQ')
   const linkList = [
-    {page:2, link:'',img:video1},
-    {page:2, link:'',img:video2},
-    {page:2, link:'',img:video3},
-    {page:2, link:'',img:video4}, 
-    {page:7, link:'',img:video5},
-    {page:7, link:'',img:video6},
-    {page:7, link:'',img:video7},
-    {page:7, link:'',img:video8}, 
-    {page:8, link:'',img:video9},
-    {page:8, link:'',img:video10},
-    {page:8, link:'',img:video11},
-    {page:8, link:'',img:video12}, 
+    {page:2,  link:'https://youtu.be/uDa__Mk6t1Y',img:video1},
+    {page:2,  link:'https://youtu.be/-tLitQ_JzNQ',img:video2},
+    {page:5,  link:'https://youtu.be/uDYGnZdAeBQ',img:video3},
+    {page:5,  link:'https://youtu.be/kWjRShE_G6A',img:video4}, 
+    {page:9,  link:'https://youtu.be/CxIuzb3TW9k',img:video5},
+    {page:15, link:'https://youtu.be/bmAhHcLX4RA',img:video6},
+    {page:15, link:'https://youtu.be/lwPB4QIq_Kg',img:video7}, 
    ]
 
   const [zembo, setZembo] = useState({
-    title:'',
+    title:'나도 슈퍼 영웅이 될 수 있을까?',
     title2:'',
-    contents:``,
+    contents:`『나도 슈퍼 영웅이 될 수 있을까?』는 완벽하지 않아도 따뜻한 마음과 노력으로 누구나 영웅이 될 수 있다는 믿음을 주는 이야기입니다. 이 책은 아이들이 있는 그대로의 자신을 사랑하고, 공동체를 위한 따뜻한 행동을 실천하도록 도와줍니다.`,
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/eP8VR4o7F-M'
   }) 
 
   const [code,setCode] = useState('jus649')
@@ -183,7 +173,7 @@ function H2_12() {
 
         
 
-        <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
+        <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
 
 
         <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
@@ -200,36 +190,9 @@ function H2_12() {
           <img src={linkList[6].img} alt=''/> 
           <div>{linkList[6].page}p</div>
         </div>  
-
-        <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
-          <img src={linkList[7].img} alt=''/> 
-          <div>{linkList[7].page}p</div>
-        </div>  
-      </div>
-
-       <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
-
  
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[8].link)}>
-            <img src={linkList[8].img} alt=''/> 
-            <div>{linkList[8].page}p</div>
-          </div>  
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[9].link)}>
-            <img src={linkList[9].img} alt=''/> 
-            <div>{linkList[9].page}p</div>
-          </div>  
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[10].link)}>
-            <img src={linkList[10].img} alt=''/> 
-            <div>{linkList[10].page}p</div>
-          </div>  
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[11].link)}>
-            <img src={linkList[11].img} alt=''/> 
-            <div>{linkList[11].page}p</div>
-          </div>  
-        </div>
+      </div>
+ 
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>
 

@@ -23,7 +23,7 @@ function M2_10() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/HAGDBNSzAq4')
   const [issue,setIssue] = useState(10)
-  const [studyContetns,setStudyContetns] = useState('평면도형과 입체도형 퍼즐을 맞추며 도형 감각을 익히고, 색과 모양의 배열 규칙을 찾아 패턴 인식력을 키웠어요. 서로 다른 동물의 부분을 합쳐 새로운 동물을 만드는 활동으로 추리력과 조직력을 발달시켰어요.')
+  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 평면도형과 입체도형 퍼즐을 맞추며 도형 감각을 익히고, 색과 모양의 배열 규칙을 찾아 패턴 인식력을 키웠어요. 서로 다른 동물의 부분을 합쳐 새로운 동물을 만드는 활동으로 추리력과 조직력을 발달시켰어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju4hRRD5_D7jjm9OXZMYvMQT')
   const linkList = [
     {page:3, link:'https://youtu.be/pemovonoiiA',img:video1},

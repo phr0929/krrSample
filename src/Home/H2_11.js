@@ -28,7 +28,7 @@ function H2_11() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/_hRnWWginl0')
   const [issue,setIssue] = useState(11)
-  const [studyContetns,setStudyContetns] = useState(`'애, 에, 외, 위' 등 모양이 복잡한 이중모음을 쓰고 읽으며 자·모음 결합 원리를 배웠어요. 21개 모음이 모두 들어간 말놀이 이야기를 통해 발음을 교정하고 읽기 자신감을 높였어요.`);
+  const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 '애, 에, 외, 위' 등 모양이 복잡한 이중모음을 쓰고 읽으며 자·모음 결합 원리를 배웠어요. 21개 모음이 모두 들어간 말놀이 이야기를 통해 발음을 교정하고 읽기 자신감을 높였어요.`);
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju7VYWjtK95iVsWDDv8agb8F')
   const linkList = [
     {page:2,  link:'https://youtu.be/_hRnWWginl0',img:video1},

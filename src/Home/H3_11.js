@@ -28,7 +28,7 @@ function H3_11() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/WWlQTv2THPQ')
   const [issue,setIssue] = useState(11)
-  const [studyContetns,setStudyContetns] = useState(`시간, 장소, 대상에 맞는 인사말과 높임말, 시제(과거·현재·미래) 표현을 익혀 문장 구성력을 강화했어요. 육하원칙에 맞춘 문장 쓰기와 노랫말 바꾸기, 편지 쓰기 등 창의적인 글쓰기 활동을 했어요.`);
+  const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 시간, 장소, 대상에 맞는 인사말과 높임말, 시제(과거·현재·미래) 표현을 익혀 문장 구성력을 강화했어요. 육하원칙에 맞춘 문장 쓰기와 노랫말 바꾸기, 편지 쓰기 등 창의적인 글쓰기 활동을 했어요.`);
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5vyaaf2kl_joOpm7fTbHgG')
   const linkList = [
     {page:2,     link:'https://youtu.be/HL7eaX6XqWA',img:video1},

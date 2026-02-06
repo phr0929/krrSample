@@ -3,49 +3,55 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import himg from './resource/9/himg.png'
+import himg from './resource/12/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
-import zemboImg from './resource/9/zembo1.png'
-import bookVideo from './resource/9/h1video.png'
+import zemboImg from './resource/12/zembo1.png'
+import bookVideo from './resource/12/h1video.png'
 import book from './resource/step1book.png'
-import video1 from './resource/9/h1_1.png'
-import video2 from './resource/9/h1_2.png'
-import video3 from './resource/9/h1_3.png'
-import video4 from './resource/9/h1_4.png'
-import video5 from './resource/9/h1_5.png'
-import video6 from './resource/9/h1_6.png'
-import video7 from './resource/9/h1_7.png'
-import video8 from './resource/9/h1_8.png'
-import video9 from './resource/9/h1_9.png'
+import video1 from './resource/12/h1_1.png'
+import video2 from './resource/12/h1_2.png'
+import video3 from './resource/12/h1_3.png'
+import video4 from './resource/12/h1_4.png'
+import video5 from './resource/12/h1_5.png'
+import video6 from './resource/12/h1_6.png'
+import video7 from './resource/12/h1_7.png'
+import video8 from './resource/12/h1_8.png'
+import video9 from './resource/12/h1_9.png'
+import video10 from './resource/12/h1_10.png'
+import video11 from './resource/12/h1_11.png'
+import video12 from './resource/12/h1_12.png'
 
 function H1_12() {
-  const [bgColor,setBgColor] = useState('#5e3838')
-  const [boxColor,setBoxColor] = useState('#329969')
-  const [textColor,setTextColor] = useState('#fff')
+  const [bgColor,setBgColor] = useState('#dbedf7')
+  const [boxColor,setBoxColor] = useState('#acc2e2')
+  const [textColor,setTextColor] = useState('#294f5e')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/CWqfA0DOJfU')
   const [issue,setIssue] = useState(12)
-  const [studyContetns,setStudyContetns] = useState(``);
-  const [playListLink,setPlayListLink] = useState('')
+  const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 그림과 글자 카드를 짝짓는 활동을 통해 단어의 의미를 이미지로 연상하며 익혔어요. 받침 없는 낱자를 조합해 스스로 낱말을 만들고, 자·모음 합성표에서 이름을 찾아보며 글자 구성 원리를 배웠어요.`);
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju7WQ-RXmA1Jutr2dm4WemDz')
   const linkList = [
-    {page:2,link:'',img:video1},
-    {page:2,link:'',img:video2},
-    {page:2,link:'',img:video3},
-    {page:4,link:'',img:video4},
-    {page:4,link:'',img:video5},
-    {page:7,link:'',img:video6},
-    {page:7,link:'',img:video7},
-    {page:9,link:'',img:video8}, 
-    {page:9,link:'',img:video9},  
+    {page:2, link:'https://youtu.be/nyRb3_SDnFE',img:video1},
+    {page:2, link:'https://youtu.be/a-QqTbnK-74',img:video2},
+    {page:2, link:'https://youtu.be/Q-dAyC9fJq0',img:video3},
+    {page:6, link:'https://youtu.be/-2m7kJ46QvE',img:video4},
+    {page:6, link:'https://youtu.be/qXRPe5ohCbg',img:video5},
+    {page:6, link:'https://youtu.be/O52egIaGuG4',img:video6},
+    {page:13,link:'https://youtu.be/LSqb2CUjNog',img:video7},
+    {page:13,link:'https://youtu.be/fPvFiVHD-Mw',img:video8}, 
+    {page:13,link:'https://youtu.be/_szlw94A2ag',img:video9},  
+    {page:14,link:'https://youtu.be/3WQ0pRTb-ug',img:video10},
+    {page:14,link:'https://youtu.be/CWqfA0DOJfU',img:video11}, 
+    {page:14,link:'https://youtu.be/6gNn0eLypp8',img:video12},  
    ]
 
   const [zembo, setZembo] = useState({
-    title:'',
+    title:'다시 아기가 되고 싶어!',
     title2:'',
-    contents:'',
+    contents:'『다시 아기가 되고 싶어!』는 동생이 생긴 후 부모님의 사랑을 뺏긴 것 같아 질투와 서운함을 느끼는 주인공 토비의 이야기입니다. 엄마가 어린 동생을 돌보느라 바빠지면서 스스로 해야 할 일이 늘어난 토비가 겪는 상실감과 마음의 성장통을 다루고 있습니다. 이 책은 아이들이 분노와 슬픔 같은 감정을 다스리며 좌절감을 이겨내고, 부모님의 변함없는 사랑을 확인하며 자존감을 높이도록 도와줍니다.',
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/nHan3iS-TOU'
   }) 
 
   const [code,setCode] = useState('kwk159')
@@ -80,7 +86,7 @@ function H1_12() {
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
           <img src={book} alt='' className='bookImgHome' style={{border:0}}/>
-          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome' style={{border:0}}/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome' style={{border:'1px solid #ff7700'}}/>
         </div> 
         <div style={{whiteSpace: "pre-line"}}>
           {studyContetns}
@@ -163,6 +169,11 @@ function H1_12() {
             <div>{linkList[1].page}p</div>
           </div>  
 
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[2].link)}>
+            <img src={linkList[2].img} alt=''/> 
+            <div>{linkList[2].page}p</div>
+          </div>  
+
 
  
         </div>
@@ -170,11 +181,6 @@ function H1_12() {
          <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
     
     
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[2].link)}>
-            <img src={linkList[2].img} alt=''/> 
-            <div>{linkList[2].page}p</div>
-          </div>  
-
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
             <img src={linkList[3].img} alt=''/> 
             <div>{linkList[3].page}p</div>
@@ -188,7 +194,7 @@ function H1_12() {
             <div>{linkList[5].page}p</div>
           </div>   
         </div>
-        <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center',}}>
+        <div style={{display:'flex',flexDirection:'row',justifyItems:'center',}}>
      
 
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
@@ -205,6 +211,25 @@ function H1_12() {
             <div>{linkList[8].page}p</div>
           </div>   
         </div>
+
+          <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center',}}>
+     
+
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[9].link)}>
+            <img src={linkList[9].img} alt=''/> 
+            <div>{linkList[9].page}p</div>
+          </div>  
+
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[10].link)}>
+            <img src={linkList[10].img} alt=''/> 
+            <div>{linkList[10].page}p</div>
+          </div>  
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[11].link)}>
+            <img src={linkList[11].img} alt=''/> 
+            <div>{linkList[11].page}p</div>
+          </div>   
+        </div>
+         
          
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>

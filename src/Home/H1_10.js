@@ -25,7 +25,7 @@ function H1_10() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/K1w_0DxiLYA')
   const [issue,setIssue] = useState(10)
-  const [studyContetns,setStudyContetns] = useState(`'통통통통' 말놀이 노래와 합성 퍼즐 활동을 통해 '기~히'가 들어간 낱말과 자·모음 합성 과정을 즐겁게 익혔어요. 또한 동영상과 지면 활동으로 낱자 읽기와 문장 구사 능력을 키웠어요.`);
+  const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 '통통통통' 말놀이 노래와 합성 퍼즐 활동을 통해 '기~히'가 들어간 낱말과 자·모음 합성 과정을 즐겁게 익혔어요. 또한 동영상과 지면 활동으로 낱자 읽기와 문장 구사 능력을 키웠어요.`);
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju7taPaPlNIKnj0VvDIDmQN6')
   const linkList = [
     {page:2, link:'https://youtu.be/9ww1F8Fu3RQ',img:video1},

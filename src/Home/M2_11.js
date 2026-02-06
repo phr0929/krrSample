@@ -26,7 +26,7 @@ function M2_11() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/9p4Yn6Oqx08')
   const [issue,setIssue] = useState(11)
-  const [studyContetns,setStudyContetns] = useState(`자, 그래프, 수직선 등 다양한 도구에 수를 표시하며 수량 개념을 통합적으로 이해했어요. 사물과 숫자를 더하고 빼며 암산력을 키우고, 규칙에 따라 길을 찾는 활동으로 패턴 인식력을 발달시켰어요.`)
+  const [studyContetns,setStudyContetns] = useState(`이번 수학 시간에는 자, 그래프, 수직선 등 다양한 도구에 수를 표시하며 수량 개념을 통합적으로 이해했어요. 사물과 숫자를 더하고 빼며 암산력을 키우고, 규칙에 따라 길을 찾는 활동으로 패턴 인식력을 발달시켰어요.`)
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju55sHpcSAvhYDfJLClB8Sdr')
   const linkList = [
     {page:2,  link:'https://youtu.be/hZu36VduKik',img:video1},

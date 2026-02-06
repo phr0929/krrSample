@@ -26,7 +26,7 @@ function M1_10() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/FARtkzTtEv8')
   const [issue,setIssue] = useState(10)
-  const [studyContetns,setStudyContetns] = useState('시소 타기, 분리수거, 키 재기 활동 등을 통해 무게, 길이, 높이, 양을 비교하는 법을 배웠어요. 부등호와 등호 개념을 익히고, 두 조각 퍼즐을 맞추며 부분과 전체를 이해하는 힘을 길렀어요.')
+  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 시소 타기, 분리수거, 키 재기 활동 등을 통해 무게, 길이, 높이, 양을 비교하는 법을 배웠어요. 부등호와 등호 개념을 익히고, 두 조각 퍼즐을 맞추며 부분과 전체를 이해하는 힘을 길렀어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5sJfFX-oSEWT0_LXdY9Neg')
   const linkList = [
     {page:2,     link:'https://youtu.be/FARtkzTtEv8',img:video1},

@@ -3,49 +3,50 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import himg from './resource/9/himg.png'
+import himg from './resource/12/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
-import zemboImg from './resource/9/zembo3.png'
-import bookVideo from './resource/9/h3video.png'
+import zemboImg from './resource/12/zembo3.png'
+import bookVideo from './resource/12/h3video.png'
 import book from './resource/step3book.png'
-import video1 from './resource/9/h3_1.png'
-import video2 from './resource/9/h3_2.png'
-import video3 from './resource/9/h3_3.png' 
-import video4 from './resource/9/h3_4.png' 
-import video5 from './resource/9/h3_5.png'
-import video6 from './resource/9/h3_6.png'
-import video7 from './resource/9/h3_7.png' 
-import video8 from './resource/9/h3_8.png' 
+import video1 from './resource/12/h3_1.png'
+import video2 from './resource/12/h3_2.png'
+import video3 from './resource/12/h3_3.png' 
+import video4 from './resource/12/h3_4.png' 
+import video5 from './resource/12/h3_5.png'
+import video6 from './resource/12/h3_6.png'
+import video7 from './resource/12/h3_7.png' 
+import video8 from './resource/12/h3_8.png' 
+import video9 from './resource/12/h3_9.png' 
+
 
 function H3_12() {
-  const [bgColor,setBgColor] = useState('#5e3838')
-  const [boxColor,setBoxColor] = useState('#329969')
-  const [textColor,setTextColor] = useState('#fff')
+  const [bgColor,setBgColor] = useState('#dbedf7')
+  const [boxColor,setBoxColor] = useState('#acc2e2')
+  const [textColor,setTextColor] = useState('#294f5e')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/wtvYoeBMLUU')
   const [issue,setIssue] = useState(12)
-  const [studyContetns,setStudyContetns] = useState('내용');
-  const [playListLink,setPlayListLink] = useState('')
+  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 뒤섞인 단어를 올바른 순서로 배열해 문장을 완성하고, 틀린 받침을 찾아 바르게 고쳐 쓰는 연습을 했어요. 반대말과 대상을 설명하는 단어를 익히고, 그림을 보고 상황을 글로 표현하며 문장 구성력과 독해력을 강화했어요.');
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju6dI61QnfbnYMV1HoQBBuAd')
   const linkList = [
-    {page:2,     link:'',img:video1},
-    {page:6,     link:'',img:video2},
-    {page:8,     link:'',img:video3},
-    {page:10,    link:'',img:video4},
-    {page:12,    link:'',img:video5},
-    {page:14,    link:'',img:video6},
-    {page:15,    link:'',img:video7},
-    {page:'노래', link:'',img:video8}, 
-    // {page:15, link:'',img:video7},
-    // {page:'노래', link:'',img:video8},
+    {page:2,     link:'https://youtu.be/MDCJcLW5JME',img:video1},
+    {page:3,     link:'https://youtu.be/dCMK0oNs25M',img:video2},
+    {page:4,     link:'https://youtu.be/H44-kYCsaXU',img:video3},
+    {page:5,     link:'https://youtu.be/FtbdIwYmY5M',img:video4},
+    {page:6,     link:'https://youtu.be/t-GikQyKMmQ',img:video5},
+    {page:7,     link:'https://youtu.be/wtvYoeBMLUU',img:video6},
+    {page:8,     link:'https://youtu.be/YQJdc0c1iBg',img:video7},
+    {page:13,    link:'https://youtu.be/seBltmoi97E',img:video8},
+    {page:16,    link:'https://youtu.be/k0T4JymDdFo',img:video9},
   ]
 
   const [zembo, setZembo] = useState({
-    title:'',
+    title:'언제나 환영해',
     title2:'',
-    contents:'',
+    contents:'『언제나 환영해』는 살 곳을 잃은 북극곰들이 여러 동물들에게 거절당하다가 마침내 환영을 받게 되는 이야기입니다. 이 책은 아이들이 생명의 소중함과 약자를 배려하는 포용의 마음을 배우도록 도와줍니다.',
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/xrE0IYVNIrw'
   }) 
 
   const [code,setCode] = useState('bds978')
@@ -80,7 +81,7 @@ function H3_12() {
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
           <img src={book} alt='' className='bookImgHome' style={{border:0}}/>
-          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome' style={{border:0}}/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome'/>
         </div> 
         <div>
           {studyContetns}
@@ -168,24 +169,30 @@ function H3_12() {
             <div>{linkList[2].page}p</div>
           </div>  
 
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
-            <img src={linkList[3].img} alt=''/> 
-            <div>{linkList[3].page}p</div>
-          </div>  
  
         </div>
 
-         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+         <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
+          
+    
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
+            <img src={linkList[3].img} alt=''/> 
+            <div>{linkList[3].page}p</div>
+          </div>
+
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
             <img src={linkList[4].img} alt=''/> 
             <div>{linkList[4].page}p</div>
-          </div>  
-
+          </div>
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[5].link)}>
             <img src={linkList[5].img} alt=''/> 
             <div>{linkList[5].page}p</div>
-          </div>  
+          </div>
+        </div>
 
+         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+          
+     
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
             <img src={linkList[6].img} alt=''/> 
             <div>{linkList[6].page}p</div>
@@ -193,7 +200,12 @@ function H3_12() {
 
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
             <img src={linkList[7].img} alt=''/> 
-            <div>{linkList[7].page}</div>
+            <div>{linkList[7].page}p</div>
+          </div>
+
+             <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[8].link)}>
+            <img src={linkList[8].img} alt=''/> 
+            <div>{linkList[8].page}p</div>
           </div>
         </div>
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>

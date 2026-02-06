@@ -24,7 +24,7 @@ function H2_10() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/IfVli4sphhg')
   const [issue,setIssue] = useState(10)
-  const [studyContetns,setStudyContetns] = useState('동물, 직업, 과일, 채소, 탈것, 신체 등 우리 주변의 다양한 명사를 주제로 선 잇기와 따라 쓰기 활동을 했어요. 사물의 이름을 정확히 익히고 흉내 내기 활동을 통해 어휘력과 표현력을 풍부하게 길렀어요.');
+  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 동물, 직업, 과일, 채소, 탈것, 신체 등 우리 주변의 다양한 명사를 주제로 선 잇기와 따라 쓰기 활동을 했어요. 사물의 이름을 정확히 익히고 흉내 내기 활동을 통해 어휘력과 표현력을 풍부하게 길렀어요.');
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju60OBKocH-Cay0B-_k496JJ')
   const linkList = [
     {page:2,  link:'https://youtu.be/ywLidzzZuV0',img:video1},

@@ -24,7 +24,7 @@ function M3_10() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/_nybWqklGDU')
   const [issue,setIssue] = useState(10)
-  const [studyContetns,setStudyContetns] = useState('수 막대를 활용해 기수와 서수를 연결하며 큰 수의 개념을 잡았어요. 수 블록으로 8, 9와의 덧셈을 연습하고, 전체와 부분의 관계를 통해 뺄셈의 원리를 이해하며 스토리텔링형 수학 문제를 해결했어요.')
+  const [studyContetns,setStudyContetns] = useState('이번 수학 시간에는 수 막대를 활용해 기수와 서수를 연결하며 큰 수의 개념을 잡았어요. 수 블록으로 8, 9와의 덧셈을 연습하고, 전체와 부분의 관계를 통해 뺄셈의 원리를 이해하며 스토리텔링형 수학 문제를 해결했어요.')
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5BT5y3552vtyBYMsP8JyV4')
   const linkList = [
     {page:2, link:'https://youtu.be/_nybWqklGDU',img:video1},

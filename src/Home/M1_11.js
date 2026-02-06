@@ -23,7 +23,7 @@ function M1_11() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/CfltbfjjqoI')
   const [issue,setIssue] = useState(11)
-  const [studyContetns,setStudyContetns] = useState(`생일 초 세기와 수 기차 활동을 통해 수의 순서와 흐름을 익혔어요. '크다·작다·같다'의 개념과 부등호(>, <, =)를 사용하여 수의 크기를 비교하고, 숨은 그림 찾기로 시각적 변별력을 키웠어요.`)
+  const [studyContetns,setStudyContetns] = useState(`이번 수학 시간에는 생일 초 세기와 수 기차 활동을 통해 수의 순서와 흐름을 익혔어요. '크다·작다·같다'의 개념과 부등호(>, <, =)를 사용하여 수의 크기를 비교하고, 숨은 그림 찾기로 시각적 변별력을 키웠어요.`)
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5DeNqRqT_1WAA1Yl-BDn3C')
   const linkList = [
     {page:2,  link:'https://youtu.be/CfltbfjjqoI',img:video1},

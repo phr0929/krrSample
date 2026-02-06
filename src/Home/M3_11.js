@@ -24,7 +24,7 @@ function M3_11() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/m5s7h4T7KF8')
   const [issue,setIssue] = useState(11)
-  const [studyContetns,setStudyContetns] = useState(`길이, 넓이, 무게를 측정하고 모양이 변해도 양은 같다는 '보존 개념'을 탐구했어요. 세 수의 덧셈 연산뿐만 아니라, 진법(2·3진법) 놀이와 나누기 표상 활동을 통해 깊이 있는 수학적 사고력을 길렀어요.`)
+  const [studyContetns,setStudyContetns] = useState(`이번 수학 시간에는 길이, 넓이, 무게를 측정하고 모양이 변해도 양은 같다는 '보존 개념'을 탐구했어요. 세 수의 덧셈 연산뿐만 아니라, 진법(2·3진법) 놀이와 나누기 표상 활동을 통해 깊이 있는 수학적 사고력을 길렀어요.`)
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju44auTv4G9kXVAtEm6-5g1K')
   const linkList = [
     {page:2,     link:'https://youtu.be/m5s7h4T7KF8',img:video1},

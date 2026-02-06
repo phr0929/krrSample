@@ -25,7 +25,7 @@ function H3_10() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/6-kSs_Qla5Y')
   const [issue,setIssue] = useState(10)
-  const [studyContetns,setStudyContetns] = useState('문장의 뼈대가 되는 조사(은/는/이/가, 을/를 등)의 바른 쓰임과 문장을 이어주는 접속사를 배웠어요. 또한 물건을 세는 단위와 비슷한 말, 반대말을 익히며 문해력과 어휘력을 한층 더 높였어요.');
+  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 문장의 뼈대가 되는 조사(은/는/이/가, 을/를 등)의 바른 쓰임과 문장을 이어주는 접속사를 배웠어요. 또한 물건을 세는 단위와 비슷한 말, 반대말을 익히며 문해력과 어휘력을 한층 더 높였어요.');
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5vC8SmVmsbRdt5OdsC5Bgy')
   const linkList = [
     {page:2,  link:'https://youtu.be/SHNczQjDM3o',img:video1},

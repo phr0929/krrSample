@@ -29,7 +29,7 @@ function H1_11() {
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/ufFkhJ5dF3k')
   const [issue,setIssue] = useState(11)
-  const [studyContetns,setStudyContetns] = useState(`'가'부터 '호'까지 받침 없는 글자를 활용한 말놀이 이야기를 읽으며 읽기 유창성을 길렀어요. 빈칸에 알맞은 낱말을 골라 채우는 활동을 통해 글의 흐름을 이해하고 기초 어휘력을 다졌어요.`);
+  const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 '가'부터 '호'까지 받침 없는 글자를 활용한 말놀이 이야기를 읽으며 읽기 유창성을 길렀어요. 빈칸에 알맞은 낱말을 골라 채우는 활동을 통해 글의 흐름을 이해하고 기초 어휘력을 다졌어요.`);
   const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju4rg-M6oAzvSPVJjDRK6E4u')
   const linkList = [
     {page:2, link:'https://youtu.be/1SrddoXUjGc',img:video1},
