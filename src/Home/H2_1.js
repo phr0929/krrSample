@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import himg from './resource/9/himg.png'
+import himg from './resource/1/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
 import zemboImg from './resource/9/zembo2.png'
@@ -23,9 +23,9 @@ import video11 from './resource/9/h2_11.png'
 import video12 from './resource/9/h2_12.png'
 
 function H2_1() {
-  const [bgColor,setBgColor] = useState('#5e3838')
-  const [boxColor,setBoxColor] = useState('#329969')
-  const [textColor,setTextColor] = useState('#fff')
+  const [bgColor,setBgColor] = useState('#8ad05c')
+  const [boxColor,setBoxColor] = useState('#62ba51')
+  const [textColor,setTextColor] = useState('#fffbcf')
    
   const [bookVideoLink,setBookVideoLink] = useState('')
   const [issue,setIssue] = useState(1)

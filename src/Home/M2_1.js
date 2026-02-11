@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import mimg from './resource/9/mimg.png'
+import mimg from './resource/1/mimg.png'
 
 import bookVideo from './resource/9/m2video.png'
 import book from './resource/step2mbook.png'
@@ -15,9 +15,9 @@ import video5 from './resource/9/m2_5.png'
 
 function M2_1() {
  
-  const [bgColor,setBgColor] = useState('#e9f3ff')
-  const [boxColor,setBoxColor] = useState('#acc2e2')
-  const [textColor,setTextColor] = useState('#294f5e')
+  const [bgColor,setBgColor] = useState('#8ad05c')
+  const [boxColor,setBoxColor] = useState('#62ba51')
+  const [textColor,setTextColor] = useState('#fffbcf')
    
   const [bookVideoLink,setBookVideoLink] = useState('')
   const [issue,setIssue] = useState(1)
