@@ -6,46 +6,48 @@ import { useLocation } from 'react-router-dom';
 import himg from './resource/1/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
-import zemboImg from './resource/9/zembo3.png'
-import bookVideo from './resource/9/h3video.png'
+import zemboImg from './resource/1/zembo3.png'
+import bookVideo from './resource/1/h3video.png'
 import book from './resource/step3book.png'
-import video1 from './resource/9/h3_1.png'
-import video2 from './resource/9/h3_2.png'
-import video3 from './resource/9/h3_3.png' 
-import video4 from './resource/9/h3_4.png' 
-import video5 from './resource/9/h3_5.png'
-import video6 from './resource/9/h3_6.png'
-import video7 from './resource/9/h3_7.png' 
-import video8 from './resource/9/h3_8.png' 
+import video1 from './resource/1/h3_1.png'
+import video2 from './resource/1/h3_2.png'
+import video3 from './resource/1/h3_3.png' 
+import video4 from './resource/1/h3_4.png' 
+import video5 from './resource/1/h3_5.png'
+import video6 from './resource/1/h3_6.png'
+import video7 from './resource/1/h3_7.png' 
+import video8 from './resource/1/h3_8.png' 
+import video9 from './resource/1/h3_9.png' 
+import video10 from './resource/1/h3_10.png' 
 
 function H3_1() {
   const [bgColor,setBgColor] = useState('#8ad05c')
   const [boxColor,setBoxColor] = useState('#62ba51')
   const [textColor,setTextColor] = useState('#fffbcf')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/8qAXyqoJ7XU')
   const [issue,setIssue] = useState(1)
-  const [studyContetns,setStudyContetns] = useState('내용');
-  const [playListLink,setPlayListLink] = useState('')
+  const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 '산토끼' 노래의 가사를 바꿔 부르며 받침(ㄱ, ㄴ, ㄹ, ㅁ)의 소리 특징을 재미있게 익혔어요. 길 따라가기와 글자 쓰기 활동을 통해 받침이 있는 낱말을 정확히 읽고 쓰는 문해력을 강화했어요.`);
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju4-wO-VVR1fMMmD53_t9_CF')
   const linkList = [
-    {page:2,     link:'',img:video1},
-    {page:6,     link:'',img:video2},
-    {page:8,     link:'',img:video3},
-    {page:10,    link:'',img:video4},
-    {page:12,    link:'',img:video5},
-    {page:14,    link:'',img:video6},
-    {page:15,    link:'',img:video7},
-    {page:'노래', link:'',img:video8}, 
-    // {page:15, link:'',img:video7},
-    // {page:'노래', link:'',img:video8},
+    {page:2,  link:'https://youtu.be/8qAXyqoJ7XU',img:video1},
+    {page:2,  link:'https://youtu.be/Z7gm-Oh7vMA',img:video2},
+    {page:2,  link:'https://youtu.be/p9iaQ1j8Ebk',img:video3},
+    {page:2,  link:'https://youtu.be/_VHLS7m9oNs',img:video4},
+    {page:6,  link:'https://youtu.be/xLaMIgcywk8',img:video5},
+    {page:7,  link:'https://youtu.be/lq0kviwmwys',img:video6},
+    {page:7,  link:'https://youtu.be/1li0XwcBMR4',img:video7},
+    {page:7,  link:'https://youtu.be/ZqFMx7bV4kY',img:video8}, 
+    {page:13, link:'https://youtu.be/MlRiLOvo8lA',img:video9}, 
+    {page:13, link:'https://youtu.be/JaVAisxfKsc',img:video10},  
   ]
 
   const [zembo, setZembo] = useState({
-    title:'',
+    title:'오늘은 나도 슈퍼 영웅!',
     title2:'',
-    contents:'',
+    contents:`『오늘은 나도 슈퍼 영웅!』은 특별한 능력은 없지만, 친구의 힘든 마음을 따뜻하게 도와주는 평범한 아이 밀리의 이야기를 통해, 진짜 영웅은 착한 마음과 지혜로운 행동에 있다는 것을 보여주는 그림책입니다. 이 책은 아이들이 자기 안의 특별함을 발견하고, 더불어 살아가는 태도를 배우도록 도와줍니다.`,
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/b_Bie-Tw4To'
   }) 
 
   const [code,setCode] = useState('bds978')
@@ -175,7 +177,7 @@ function H3_1() {
  
         </div>
 
-         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+        <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
             <img src={linkList[4].img} alt=''/> 
             <div>{linkList[4].page}p</div>
@@ -193,8 +195,20 @@ function H3_1() {
 
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
             <img src={linkList[7].img} alt=''/> 
-            <div>{linkList[7].page}</div>
+            <div>{linkList[7].page}p</div>
           </div>
+        </div>
+
+        <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[8].link)}>
+            <img src={linkList[8].img} alt=''/> 
+            <div>{linkList[8].page}p</div>
+          </div>  
+
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[9].link)}>
+            <img src={linkList[9].img} alt=''/> 
+            <div>{linkList[9].page}p</div>
+          </div>   
         </div>
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>

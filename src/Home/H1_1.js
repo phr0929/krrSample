@@ -6,46 +6,53 @@ import { useLocation } from 'react-router-dom';
 import himg from './resource/1/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
-import zemboImg from './resource/9/zembo1.png'
-import bookVideo from './resource/9/h1video.png'
+import zemboImg from './resource/1/zembo1.png'
+import bookVideo from './resource/1/h1video.png'
 import book from './resource/step1book.png'
-import video1 from './resource/9/h1_1.png'
-import video2 from './resource/9/h1_2.png'
-import video3 from './resource/9/h1_3.png'
-import video4 from './resource/9/h1_4.png'
-import video5 from './resource/9/h1_5.png'
-import video6 from './resource/9/h1_6.png'
-import video7 from './resource/9/h1_7.png'
-import video8 from './resource/9/h1_8.png'
-import video9 from './resource/9/h1_9.png'
+import video1 from './resource/1/h1_1.png'
+import video2 from './resource/1/h1_2.png'
+import video3 from './resource/1/h1_3.png'
+import video4 from './resource/1/h1_4.png'
+import video5 from './resource/1/h1_5.png' 
 
 function H1_1() {
+
+   const handleGoVimeo=(link)=>{
+     
+   
+  let width = window.screen.width * 0.8;
+  let height = width * 0.5625; // 16:9 비율 유지
+  let left = (window.screen.width - width) / 2;
+  let top = (window.screen.height - height) / 2;
+
+  let option = `toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,copyhistory=no,width=${width},height=${height},left=${left},top=${top}`;
+
+
+    window.open('https://player.vimeo.com/video/'+link, '_blank', option)
+   }
+   
   const [bgColor,setBgColor] = useState('#8ad05c')
   const [boxColor,setBoxColor] = useState('#62ba51')
   const [textColor,setTextColor] = useState('#fffbcf')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/4psJSFjuzMo')
   const [issue,setIssue] = useState(1)
-  const [studyContetns,setStudyContetns] = useState(``);
-  const [playListLink,setPlayListLink] = useState('')
+  const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 입 모양을 관찰하고 팔 동작 체조를 따라 하며 'ㅏ, ㅓ, ㅗ, ㅜ' 단모음의 소리와 형태를 감각적으로 익혔어요. 블록으로 글자를 꾸미고 챈트(노래)를 부르며 낱말의 시작 소리를 찾는 연습을 했어요.`);
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju65XaQVnthbFtIgVIBu563c')
   const linkList = [
-    {page:2,link:'',img:video1},
-    {page:2,link:'',img:video2},
-    {page:2,link:'',img:video3},
-    {page:4,link:'',img:video4},
-    {page:4,link:'',img:video5},
-    {page:7,link:'',img:video6},
-    {page:7,link:'',img:video7},
-    {page:9,link:'',img:video8}, 
-    {page:9,link:'',img:video9},  
+    {page:2, link:'https://youtu.be/3BqBJk2D184',img:video1},
+    {page:5, link:'https://youtu.be/4psJSFjuzMo',img:video2},
+    {page:10,link:'https://youtu.be/EZEPl_WOz3U',img:video3},
+    {page:16,link:'https://youtu.be/2qMUmkjrNd8',img:video4},
+    {page:16,link:'https://youtu.be/dyOmQI1b7CU',img:video5},   
    ]
 
   const [zembo, setZembo] = useState({
-    title:'',
+    title:'뽀뽀를 하면',
     title2:'',
-    contents:'',
+    contents:`『뽀뽀를 하면』은 다양한 동물들이 서로 뽀뽀하는 따뜻한 장면을 통해 '사랑'이라는 감정을 배우는 이야기입니다. 상대방을 이해하고 배려하는 마음을 키우며, 서로의 다름과 차이를 존중하는 평화로운 정서를 익히게 합니다.`,
     img:zemboImg,
-    link:''
+    link:'1163870863'
   }) 
 
   const [code,setCode] = useState('kwk159')
@@ -134,7 +141,7 @@ function H1_1() {
         <div></div>
       </div>
       <div className='zemboBoxHome'> 
-        <img src={zembo.img} alt='' style={{cursor:'pointer'}} onClick={()=>handleGoLink(zembo.link)}/>
+        <img src={zembo.img} alt='' style={{cursor:'pointer'}}  onClick={()=>handleGoVimeo(zembo.link)}/>
         <div>
           <div style={{fontWeight:700,marginBottom:zembo.title2===''?10:0,marginTop:5}}>📗 {zembo.title}</div> 
           {zembo.title2===''?<></>:<div style={{fontWeight:700,marginBottom:10,marginTop:0}}>{zembo.title2}</div>}
@@ -163,18 +170,15 @@ function H1_1() {
             <div>{linkList[1].page}p</div>
           </div>  
 
-
- 
-        </div>
-
-         <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
-    
-    
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[2].link)}>
             <img src={linkList[2].img} alt=''/> 
             <div>{linkList[2].page}p</div>
-          </div>  
+          </div> 
+        </div>
 
+         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+    
+    
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
             <img src={linkList[3].img} alt=''/> 
             <div>{linkList[3].page}p</div>
@@ -182,27 +186,6 @@ function H1_1() {
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
             <img src={linkList[4].img} alt=''/> 
             <div>{linkList[4].page}p</div>
-          </div>  
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[5].link)}>
-            <img src={linkList[5].img} alt=''/> 
-            <div>{linkList[5].page}p</div>
-          </div>   
-        </div>
-        <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center',}}>
-     
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
-            <img src={linkList[6].img} alt=''/> 
-            <div>{linkList[6].page}p</div>
-          </div>  
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
-            <img src={linkList[7].img} alt=''/> 
-            <div>{linkList[7].page}p</div>
-          </div>  
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[8].link)}>
-            <img src={linkList[8].img} alt=''/> 
-            <div>{linkList[8].page}p</div>
           </div>   
         </div>
          

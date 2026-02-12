@@ -6,52 +6,46 @@ import { useLocation } from 'react-router-dom';
 import himg from './resource/1/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
-import zemboImg from './resource/9/zembo2.png'
-import bookVideo from './resource/9/h2video.png'
+import zemboImg from './resource/1/zembo2.png'
+import bookVideo from './resource/1/h2video.png'
 import book from './resource/step2book.png'
-import video1 from './resource/9/h2_1.png'
-import video2 from './resource/9/h2_2.png'
-import video3 from './resource/9/h2_3.png'
-import video4 from './resource/9/h2_4.png'
-import video5 from './resource/9/h2_5.png'
-import video6 from './resource/9/h2_6.png'
-import video7 from './resource/9/h2_7.png'
-import video8 from './resource/9/h2_8.png'
-import video9 from './resource/9/h2_9.png'
-import video10 from './resource/9/h2_10.png'
-import video11 from './resource/9/h2_11.png'
-import video12 from './resource/9/h2_12.png'
+import video1 from './resource/1/h2_1.png'
+import video2 from './resource/1/h2_2.png'
+import video3 from './resource/1/h2_3.png'
+import video4 from './resource/1/h2_4.png'
+import video5 from './resource/1/h2_5.png'
+import video6 from './resource/1/h2_6.png'
+import video7 from './resource/1/h2_7.png'
+import video8 from './resource/1/h2_8.png'
+import video9 from './resource/1/h2_9.png' 
 
 function H2_1() {
   const [bgColor,setBgColor] = useState('#8ad05c')
   const [boxColor,setBoxColor] = useState('#62ba51')
   const [textColor,setTextColor] = useState('#fffbcf')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://www.youtube.com/watch?v=zhcQ5HxzXQQ')
   const [issue,setIssue] = useState(1)
-  const [studyContetns,setStudyContetns] = useState('내용');
-  const [playListLink,setPlayListLink] = useState('')
+  const [studyContetns,setStudyContetns] = useState('이번 한글 시간에는 비눗방울 겹치기 놀이와 플래시카드를 활용해 단모음이 합쳐져 이중모음(ㅑ, ㅕ, ㅛ, ㅠ)이 되는 원리를 배웠어요. 신체 체조와 말놀이 챈트를 통해 기본 모음 11자의 모양과 소리를 비교하며 확실히 인지했어요.');
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5cRvsA7sjOUeqNBys7Lnqj')
   const linkList = [
-    {page:2, link:'',img:video1},
-    {page:2, link:'',img:video2},
-    {page:2, link:'',img:video3},
-    {page:2, link:'',img:video4}, 
-    {page:7, link:'',img:video5},
-    {page:7, link:'',img:video6},
-    {page:7, link:'',img:video7},
-    {page:7, link:'',img:video8}, 
-    {page:8, link:'',img:video9},
-    {page:8, link:'',img:video10},
-    {page:8, link:'',img:video11},
-    {page:8, link:'',img:video12}, 
+    {page:2,  link:'https://youtu.be/zhcQ5HxzXQQ',img:video1},
+    {page:2,  link:'https://youtu.be/HjaEqPjrPKY',img:video2},
+    {page:2,  link:'https://youtu.be/JdShi-P5xec',img:video3},
+    {page:2,  link:'https://youtu.be/_BKf34dVgGE',img:video4}, 
+    {page:7,  link:'https://youtu.be/-oIMO4uj7cM',img:video5},
+    {page:7,  link:'https://youtu.be/3vfjOInsVgg',img:video6},
+    {page:8,  link:'https://youtu.be/5JCUJcfXO_U',img:video7},
+    {page:13, link:'https://youtu.be/QibHQVfU_vs',img:video8}, 
+    {page:15, link:'https://youtu.be/alNSwmScudM',img:video9}, 
    ]
 
   const [zembo, setZembo] = useState({
-    title:'',
+    title:'걱정쟁이 제레미가 바람에 휩쓸려 날아간 뒤',
     title2:'',
-    contents:``,
+    contents:`『걱정쟁이 제레미가 바람에 휩쓸려 날아간 뒤』는 걱정이 많던 제레미가 예기치 못한 사건을 겪으며 모험과 도전으로 자신의 불안을 극복해 나가는 이야기입니다. 이 책은 아이들이 걱정과 두려움을 스스로 마주하고 이겨내며 자신감을 키우도록 도와줍니다.`,
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/fqqZlt0wkzI'
   }) 
 
   const [code,setCode] = useState('jus649')
@@ -86,7 +80,7 @@ function H2_1() {
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
           <img src={book} alt='' className='bookImgHome' style={{border:0}}/>
-          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome' style={{border:0}}/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome'/>
         </div> 
         <div>
           {studyContetns}
@@ -173,10 +167,6 @@ function H2_1() {
             <div>{linkList[2].page}p</div>
           </div>  
 
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
-            <img src={linkList[3].img} alt=''/> 
-            <div>{linkList[3].page}p</div>
-          </div>  
  
  
         </div>
@@ -185,50 +175,41 @@ function H2_1() {
 
         <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
 
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
+            <img src={linkList[3].img} alt=''/> 
+            <div>{linkList[3].page}p</div>
+          </div>  
 
-        <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
-          <img src={linkList[4].img} alt=''/> 
-          <div>{linkList[4].page}p</div>
-        </div>  
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
+            <img src={linkList[4].img} alt=''/> 
+            <div>{linkList[4].page}p</div>
+          </div>  
 
-        <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[5].link)}>
-          <img src={linkList[5].img} alt=''/> 
-          <div>{linkList[5].page}p</div>
-        </div>  
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[5].link)}>
+            <img src={linkList[5].img} alt=''/> 
+            <div>{linkList[5].page}p</div>
+          </div>  
 
-        <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
-          <img src={linkList[6].img} alt=''/> 
-          <div>{linkList[6].page}p</div>
-        </div>  
-
-        <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
-          <img src={linkList[7].img} alt=''/> 
-          <div>{linkList[7].page}p</div>
-        </div>  
       </div>
 
        <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
 
  
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
+            <img src={linkList[6].img} alt=''/> 
+            <div>{linkList[6].page}p</div>
+          </div>  
+
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
+            <img src={linkList[7].img} alt=''/> 
+            <div>{linkList[7].page}p</div>
+          </div>  
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[8].link)}>
             <img src={linkList[8].img} alt=''/> 
             <div>{linkList[8].page}p</div>
           </div>  
 
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[9].link)}>
-            <img src={linkList[9].img} alt=''/> 
-            <div>{linkList[9].page}p</div>
-          </div>  
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[10].link)}>
-            <img src={linkList[10].img} alt=''/> 
-            <div>{linkList[10].page}p</div>
-          </div>  
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[11].link)}>
-            <img src={linkList[11].img} alt=''/> 
-            <div>{linkList[11].page}p</div>
-          </div>  
+       
         </div>
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>

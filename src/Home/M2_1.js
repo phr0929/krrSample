@@ -5,13 +5,17 @@ import './home.css'
 import { useLocation } from 'react-router-dom';  
 import mimg from './resource/1/mimg.png'
 
-import bookVideo from './resource/9/m2video.png'
+import bookVideo from './resource/1/m2video.png'
 import book from './resource/step2mbook.png'
-import video1 from './resource/9/m2_1.png'
-import video2 from './resource/9/m2_2.png'
-import video3 from './resource/9/m2_3.png'
-import video4 from './resource/9/m2_4.png' 
-import video5 from './resource/9/m2_5.png' 
+import video1 from './resource/1/m2_1.png'
+import video2 from './resource/1/m2_2.png'
+import video3 from './resource/1/m2_3.png'
+import video4 from './resource/1/m2_4.png' 
+import video5 from './resource/1/m2_5.png' 
+import video6 from './resource/1/m2_6.png'
+import video7 from './resource/1/m2_7.png'
+import video8 from './resource/1/m2_8.png' 
+import video9 from './resource/1/m2_9.png' 
 
 function M2_1() {
  
@@ -19,20 +23,20 @@ function M2_1() {
   const [boxColor,setBoxColor] = useState('#62ba51')
   const [textColor,setTextColor] = useState('#fffbcf')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/FZQ4_ecC9bg')
   const [issue,setIssue] = useState(1)
-  const [studyContetns,setStudyContetns] = useState('내용')
-  const [playListLink,setPlayListLink] = useState('')
+  const [studyContetns,setStudyContetns] = useState(`이번 수학 시간에는 신체, 계절, 크기, 직업 등 다양한 속성에 따라 사물을 분류하고 공통점을 찾는 연습을 했어요. '크다·작다' 게임과 연상 퀴즈를 통해 사물의 속성을 논리적으로 파악하고 범주화하는 능력을 키웠어요.`)
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju6sz7ncbW-OZajPC0PvyYAN')
   const linkList = [
-    {page:2,  link:'',img:video1},
-    {page:4,  link:'',img:video2},
-    {page:4,  link:'',img:video3},
-    {page:8,  link:'',img:video4},
-    {page:11, link:'',img:video5}, 
-    // {page:13,link:'https://youtu.be/kDh2NaJSzRE',img:video5},
-    // {page:16,link:'https://youtu.be/AjF_sRd3Q2I',img:video6},
-    // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:video7},
-    // {page:16,link:'https://youtu.be/ZO7Bu_M8mFs',img:video8}, 
+    {page:2,  link:'https://youtu.be/FZQ4_ecC9bg',img:video1},
+    {page:3,  link:'https://youtu.be/YS78rISJBwQ',img:video2},
+    {page:6,  link:'https://youtu.be/gaseYCtHRYU',img:video3},
+    {page:6,  link:'https://youtu.be/xlRewkko6c4',img:video4},
+    {page:6,  link:'https://youtu.be/mbCrl-2zsXs',img:video5}, 
+    {page:6,  link:'https://youtu.be/hLl2efreicU',img:video6},
+    {page:6,  link:'https://youtu.be/IFkDcazji4c',img:video7},
+    {page:6,  link:'https://youtu.be/0tTnGOc6KC4',img:video8},
+    {page:14, link:'https://youtu.be/7S2M6iEk9jk',img:video9},  
    ]
    
   const handleGoLink=(link)=>{
@@ -93,26 +97,20 @@ function M2_1() {
             <img src={linkList[2].img} alt=''/> 
             <div>{linkList[2].page}p</div>            
           </div>  
-
-
-          {/* <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
-            <img src={linkList[3].img} alt=''/> 
-            <div>{linkList[3].page}p</div>
-          </div>    */}
-        </div>
-
-        <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
-          
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
             <img src={linkList[3].img} alt=''/> 
             <div>{linkList[3].page}p</div>
           </div>   
+        </div>
+
+        <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+          
+      
 
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
             <img src={linkList[4].img} alt=''/> 
             <div>{linkList[4].page}p</div>
           </div>  
-{/* 
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[5].link)}>
             <img src={linkList[5].img} alt=''/> 
             <div>{linkList[5].page}p</div>
@@ -120,22 +118,20 @@ function M2_1() {
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
             <img src={linkList[6].img} alt=''/> 
             <div>{linkList[6].page}p</div>
-          </div>  
-          
-
+          </div>
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
             <img src={linkList[7].img} alt=''/> 
             <div>{linkList[7].page}p</div>
-          </div>    */}
+          </div>  
         </div>
 
 
         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
-{/*   
+  
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[8].link)}>
             <img src={linkList[8].img} alt=''/> 
             <div>{linkList[8].page}p</div>
-          </div>   */}
+          </div>  
  
         </div>
   
