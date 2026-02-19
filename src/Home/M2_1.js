@@ -16,6 +16,8 @@ import video6 from './resource/1/m2_6.png'
 import video7 from './resource/1/m2_7.png'
 import video8 from './resource/1/m2_8.png' 
 import video9 from './resource/1/m2_9.png' 
+import appstore from '../resource/appstore.png'
+import playstore from '../resource/playstore.png'
 
 function M2_1() {
  
@@ -75,6 +77,40 @@ function M2_1() {
       
       
       </div>
+
+       <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
+        
+        <div></div>
+        <div>까르르한글수 APP</div>
+        <div></div>
+      </div>
+      <div className='writeHangeulHome'> 
+         
+      
+        <div className='downloadTitleHome'>⬇️ 까르르한글수 다운로드 링크</div>
+
+        <div className='downloadBarHome'>
+          <div className='downloadBtnHome'
+              onClick={()=>window.open('https://apps.apple.com/kr/app/%EC%93%B0%EB%8A%94%ED%95%9C%EA%B8%80/id6633439192')}>
+              <img src={appstore} alt=''/>
+              <div>AppStore</div>
+            </div>
+          <div className='downloadBtnHome'
+              onClick={()=>window.open('https://play.google.com/store/apps/details?id=com.seomgim.korean&pcampaignid=web_share')}>
+              <img src={playstore} alt=''/>
+              <div>PlayStore</div>
+          </div>
+        </div> 
+        <div className='admissionCodeHome'>
+          <div className='admissionCodeTitleHome'>🔑 까르르한글수 가입 코드</div>
+          <div>가입 코드는 각 원에 문의해 주세요.</div>
+         
+        </div>
+
+         
+      </div>
+
+
        <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
