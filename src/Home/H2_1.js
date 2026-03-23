@@ -186,7 +186,7 @@ function H2_1() {
 
       </div>
 
-       <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+      <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
 
  
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>

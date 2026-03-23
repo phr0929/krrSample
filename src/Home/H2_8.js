@@ -83,13 +83,13 @@ function H2_8() {
       <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
-        <div>쓰는한글 APP</div>
+        <div>까르르한글수 APP</div>
         <div></div>
       </div>
       <div className='writeHangeulHome'> 
          
       
-        <div className='downloadTitleHome'>⬇️ 쓰는한글 다운로드 링크</div>
+        <div className='downloadTitleHome'>⬇️ 까르르한글수 다운로드 링크</div>
 
         <div className='downloadBarHome'>
           <div className='downloadBtnHome'
@@ -104,15 +104,9 @@ function H2_8() {
           </div>
         </div> 
         <div className='admissionCodeHome'>
-          <div className='admissionCodeTitleHome'>🔑 쓰는한글 STEP2 입장코드</div>
-          <div className='admissionCodeTextHome'>
-            <span>{code[0]}</span>
-            <span>{code[1]}</span>            
-            <span>{code[2]}</span>
-            <span>{code[3]}</span>
-            <span>{code[4]}</span>
-            <span>{code[5]}</span>
-          </div>
+          <div className='admissionCodeTitleHome'>🔑 까르르한글수 가입 코드</div>
+          <div>가입 코드는 각 원에 문의해 주세요.</div>
+         
         </div>
 
          
@@ -160,7 +154,7 @@ function H2_8() {
 
         
 
-         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+        <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
 
           
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[2].link)}>

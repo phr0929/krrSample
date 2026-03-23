@@ -81,13 +81,13 @@ function H3_8() {
       <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
-        <div>쓰는한글 APP</div>
+        <div>까르르한글수 APP</div>
         <div></div>
       </div>
       <div className='writeHangeulHome'> 
          
       
-        <div className='downloadTitleHome'>⬇️ 쓰는한글 다운로드 링크</div>
+        <div className='downloadTitleHome'>⬇️ 까르르한글수 다운로드 링크</div>
 
         <div className='downloadBarHome'>
           <div className='downloadBtnHome'
@@ -102,20 +102,13 @@ function H3_8() {
           </div>
         </div> 
         <div className='admissionCodeHome'>
-          <div className='admissionCodeTitleHome'>🔑 쓰는한글 STEP3 입장코드</div>
-          <div className='admissionCodeTextHome'>
-            <span>{code[0]}</span>
-            <span>{code[1]}</span>            
-            <span>{code[2]}</span>
-            <span>{code[3]}</span>
-            <span>{code[4]}</span>
-            <span>{code[5]}</span>
-          </div>
+          <div className='admissionCodeTitleHome'>🔑 까르르한글수 가입 코드</div>
+          <div>가입 코드는 각 원에 문의해 주세요.</div>
+         
         </div>
 
          
       </div>
-
 
       <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
@@ -142,7 +135,7 @@ function H3_8() {
       </div>
       <div className='videoBoxHome'> 
         <div style={{fontWeight:700}}>🎥 영상으로 이어지는 즐거운 학습</div>
-        <div style={{marginTop:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+        <div style={{marginTop:15,marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[0].link)}>
             <img src={linkList[0].img} alt=''/> 
             <div>{linkList[0].page}p</div>
@@ -165,27 +158,7 @@ function H3_8() {
  
         </div>
 
-         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
-          {/* <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
-            <img src={linkList[4].img} alt=''/> 
-            <div>{linkList[4].page}p</div>
-          </div>  
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[5].link)}>
-            <img src={linkList[5].img} alt=''/> 
-            <div>{linkList[5].page}p</div>
-          </div>  
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
-            <img src={linkList[6].img} alt=''/> 
-            <div>{linkList[6].page}p</div>
-          </div>   */}
-
-          {/* <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
-            <img src={linkList[7].img} alt=''/> 
-            <div>{linkList[7].page}p</div>
-          </div>   */}
-        </div>
+          
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>
 

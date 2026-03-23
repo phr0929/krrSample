@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import himg from './resource/9/himg.png'
+import himg from './resource/4/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
 import zemboImg from './resource/9/zembo3.png'
@@ -25,7 +25,7 @@ function H3_4() {
    
   const [bookVideoLink,setBookVideoLink] = useState('')
   const [issue,setIssue] = useState(4)
-  const [studyContetns,setStudyContetns] = useState('내용');
+  const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 두 개의 그림이나 낱말을 합쳐 새로운 단어를 만드는 '복합 명사' 만들기를 연습했어요. 낱말을 다시 두 개로 나누거나 노랫말 속 언어를 탐구하며 창의적인 어휘 생산력과 문해력을 높였어요.`);
   const [playListLink,setPlayListLink] = useState('')
   const linkList = [
     {page:2,     link:'',img:video1},
@@ -41,9 +41,9 @@ function H3_4() {
   ]
 
   const [zembo, setZembo] = useState({
-    title:'',
+    title:'우리 아빠는 슈퍼맨',
     title2:'',
-    contents:'',
+    contents:`『우리 아빠는 슈퍼맨』은 아이가 아빠의 다양한 능력을 소개하며, 아빠를 세상의 모든 영웅 중 최고로 여기는 모습을 담은 유쾌한 이야기입니다. 이 책은 아이들이 아빠와의 사랑과 추억을 통해 자존감과 자신감을 키우도록 도와줍니다.`,
     img:zemboImg,
     link:''
   }) 
@@ -91,13 +91,13 @@ function H3_4() {
       <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
-        <div>쓰는한글 APP</div>
+        <div>까르르한글수 APP</div>
         <div></div>
       </div>
       <div className='writeHangeulHome'> 
          
       
-        <div className='downloadTitleHome'>⬇️ 쓰는한글 다운로드 링크</div>
+        <div className='downloadTitleHome'>⬇️ 까르르한글수 다운로드 링크</div>
 
         <div className='downloadBarHome'>
           <div className='downloadBtnHome'
@@ -112,15 +112,9 @@ function H3_4() {
           </div>
         </div> 
         <div className='admissionCodeHome'>
-          <div className='admissionCodeTitleHome'>🔑 쓰는한글 STEP3 입장코드</div>
-          <div className='admissionCodeTextHome'>
-            <span>{code[0]}</span>
-            <span>{code[1]}</span>            
-            <span>{code[2]}</span>
-            <span>{code[3]}</span>
-            <span>{code[4]}</span>
-            <span>{code[5]}</span>
-          </div>
+          <div className='admissionCodeTitleHome'>🔑 까르르한글수 가입 코드</div>
+          <div>가입 코드는 각 원에 문의해 주세요.</div>
+         
         </div>
 
          
@@ -175,7 +169,7 @@ function H3_4() {
  
         </div>
 
-         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+        <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
             <img src={linkList[4].img} alt=''/> 
             <div>{linkList[4].page}p</div>

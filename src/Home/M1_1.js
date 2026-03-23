@@ -136,7 +136,7 @@ function M1_1() {
         </div>
   
 
-        <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+        <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
             <img src={linkList[4].img} alt=''/> 
             <div>{linkList[4].page}p</div>

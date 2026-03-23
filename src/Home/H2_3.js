@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import himg from './resource/9/himg.png'
+import himg from './resource/3/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
 import zemboImg from './resource/9/zembo2.png'
@@ -29,7 +29,7 @@ function H2_3() {
    
   const [bookVideoLink,setBookVideoLink] = useState('')
   const [issue,setIssue] = useState(3)
-  const [studyContetns,setStudyContetns] = useState('내용');
+  const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 '이미지 자음 챈트'를 활용해 자음(ㅁ~ㅎ)으로 시작하는 낱말과 자음의 형태를 배웠어요. 단어와 문장을 읽고 쓰는 활동을 반복하며 문해력을 다지고, 빨라지는 챈트로 기억력을 강화했어요.`);
   const [playListLink,setPlayListLink] = useState('')
   const linkList = [
     {page:2, link:'',img:video1},
@@ -47,9 +47,9 @@ function H2_3() {
    ]
 
   const [zembo, setZembo] = useState({
-    title:'',
+    title:'생쥐야 내 집에 왜 왔니?',
     title2:'',
-    contents:``,
+    contents:`『생쥐야 내 집에 왜 왔니?』는 생쥐와 북극곰이 함께 지내며 생기는 갈등과 화해를 통해 서로 다름을 이해해 가는 이야기입니다. 이 책은 아이들이 배려와 양보를 배우며, 함께하는 공동체의 소중함을 깨닫도록 도와줍니다.`,
     img:zemboImg,
     link:''
   }) 
@@ -97,13 +97,13 @@ function H2_3() {
       <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
-        <div>쓰는한글 APP</div>
+        <div>까르르한글수 APP</div>
         <div></div>
       </div>
       <div className='writeHangeulHome'> 
          
       
-        <div className='downloadTitleHome'>⬇️ 쓰는한글 다운로드 링크</div>
+        <div className='downloadTitleHome'>⬇️ 까르르한글수 다운로드 링크</div>
 
         <div className='downloadBarHome'>
           <div className='downloadBtnHome'
@@ -118,15 +118,9 @@ function H2_3() {
           </div>
         </div> 
         <div className='admissionCodeHome'>
-          <div className='admissionCodeTitleHome'>🔑 쓰는한글 STEP2 입장코드</div>
-          <div className='admissionCodeTextHome'>
-            <span>{code[0]}</span>
-            <span>{code[1]}</span>            
-            <span>{code[2]}</span>
-            <span>{code[3]}</span>
-            <span>{code[4]}</span>
-            <span>{code[5]}</span>
-          </div>
+          <div className='admissionCodeTitleHome'>🔑 까르르한글수 가입 코드</div>
+          <div>가입 코드는 각 원에 문의해 주세요.</div>
+         
         </div>
 
          
@@ -183,7 +177,7 @@ function H2_3() {
 
         
 
-        <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
+      <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
 
 
         <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
@@ -207,7 +201,7 @@ function H2_3() {
         </div>  
       </div>
 
-       <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+      <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
 
  
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[8].link)}>

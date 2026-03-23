@@ -138,7 +138,7 @@ function M3_1() {
         </div>
 
     
-         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+        <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
   
             <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
               <img src={linkList[4].img} alt=''/> 

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import mimg from './resource/9/mimg.png'
+import mimg from './resource/4/mimg.png'
 
 import bookVideo from './resource/9/m2video.png'
 import book from './resource/step2mbook.png'
@@ -12,6 +12,8 @@ import video2 from './resource/9/m2_2.png'
 import video3 from './resource/9/m2_3.png'
 import video4 from './resource/9/m2_4.png' 
 import video5 from './resource/9/m2_5.png' 
+import appstore from '../resource/appstore.png'
+import playstore from '../resource/playstore.png'
 
 function M2_4() {
  
@@ -21,7 +23,7 @@ function M2_4() {
    
   const [bookVideoLink,setBookVideoLink] = useState('')
   const [issue,setIssue] = useState(4)
-  const [studyContetns,setStudyContetns] = useState('내용')
+  const [studyContetns,setStudyContetns] = useState(`이번 수학 시간에는 기차의 칸이나 모눈종이(그래프)에 색칠하며 수를 측정하는 방법을 배웠어요. 구멍 수가 다른 단추를 분류하거나 여러 동물이 섞인 상상의 동물 그림을 보며 복합적인 변별력과 전체를 보는 눈을 키웠어요.`)
   const [playListLink,setPlayListLink] = useState('')
   const linkList = [
     {page:2,  link:'',img:video1},
@@ -71,6 +73,41 @@ function M2_4() {
       
       
       </div>
+
+            
+      <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
+        
+        <div></div>
+        <div>까르르한글수 APP</div>
+        <div></div>
+      </div>
+      <div className='writeHangeulHome'> 
+         
+      
+      <div className='downloadTitleHome'>⬇️ 까르르한글수 다운로드 링크</div>
+
+        <div className='downloadBarHome'>
+          <div className='downloadBtnHome'
+              onClick={()=>window.open('https://apps.apple.com/kr/app/%EC%93%B0%EB%8A%94%ED%95%9C%EA%B8%80/id6633439192')}>
+              <img src={appstore} alt=''/>
+              <div>AppStore</div>
+            </div>
+          <div className='downloadBtnHome'
+              onClick={()=>window.open('https://play.google.com/store/apps/details?id=com.seomgim.korean&pcampaignid=web_share')}>
+              <img src={playstore} alt=''/>
+              <div>PlayStore</div>
+          </div>
+        </div> 
+        <div className='admissionCodeHome'>
+          <div className='admissionCodeTitleHome'>🔑 까르르한글수 가입 코드</div>
+          <div>가입 코드는 각 원에 문의해 주세요.</div>
+         
+        </div>
+
+         
+      </div>
+
+      
        <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
@@ -128,16 +165,7 @@ function M2_4() {
             <div>{linkList[7].page}p</div>
           </div>    */}
         </div>
-
-
-        <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
-{/*   
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[8].link)}>
-            <img src={linkList[8].img} alt=''/> 
-            <div>{linkList[8].page}p</div>
-          </div>   */}
  
-        </div>
   
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>

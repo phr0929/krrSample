@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import himg from './resource/9/himg.png'
+import himg from './resource/3/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
 import zemboImg from './resource/9/zembo3.png'
@@ -25,7 +25,7 @@ function H3_3() {
    
   const [bookVideoLink,setBookVideoLink] = useState('')
   const [issue,setIssue] = useState(3)
-  const [studyContetns,setStudyContetns] = useState('내용');
+  const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 과일, 동물, 탈것 등 주제별 낱말 퍼즐과 퀴즈를 풀며 어휘력을 확장했어요. '이상한 말' 게임으로 잘못된 표현을 고쳐보거나 그림을 보고 상황에 맞는 의성어·의태어를 찾아 쓰며 창의적인 언어 표현력을 길렀어요.`);
   const [playListLink,setPlayListLink] = useState('')
   const linkList = [
     {page:2,     link:'',img:video1},
@@ -41,9 +41,9 @@ function H3_3() {
   ]
 
   const [zembo, setZembo] = useState({
-    title:'',
+    title:'우리 엄마는 슈퍼우먼',
     title2:'',
-    contents:'',
+    contents:`『우리 엄마는 슈퍼우먼』은 평범한 일상 속 엄마의 모습을 아이의 시선으로 특별하게 바라보며, 엄마를 세상에서 가장 멋진 슈퍼우먼으로 그리는 이야기입니다. 이 책은 아이들이 가족에 대한 사랑과 감사한 마음을 표현하고, 엄마와 따뜻한 교감을 나누도록 도와줍니다.`,
     img:zemboImg,
     link:''
   }) 
@@ -91,13 +91,13 @@ function H3_3() {
       <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
-        <div>쓰는한글 APP</div>
+        <div>까르르한글수 APP</div>
         <div></div>
       </div>
       <div className='writeHangeulHome'> 
          
       
-        <div className='downloadTitleHome'>⬇️ 쓰는한글 다운로드 링크</div>
+        <div className='downloadTitleHome'>⬇️ 까르르한글수 다운로드 링크</div>
 
         <div className='downloadBarHome'>
           <div className='downloadBtnHome'
@@ -112,15 +112,9 @@ function H3_3() {
           </div>
         </div> 
         <div className='admissionCodeHome'>
-          <div className='admissionCodeTitleHome'>🔑 쓰는한글 STEP3 입장코드</div>
-          <div className='admissionCodeTextHome'>
-            <span>{code[0]}</span>
-            <span>{code[1]}</span>            
-            <span>{code[2]}</span>
-            <span>{code[3]}</span>
-            <span>{code[4]}</span>
-            <span>{code[5]}</span>
-          </div>
+          <div className='admissionCodeTitleHome'>🔑 까르르한글수 가입 코드</div>
+          <div>가입 코드는 각 원에 문의해 주세요.</div>
+         
         </div>
 
          
@@ -175,7 +169,7 @@ function H3_3() {
  
         </div>
 
-         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+        <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
             <img src={linkList[4].img} alt=''/> 
             <div>{linkList[4].page}p</div>

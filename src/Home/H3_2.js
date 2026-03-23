@@ -3,49 +3,47 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import himg from './resource/9/himg.png'
+import himg from './resource/2/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
-import zemboImg from './resource/9/zembo3.png'
-import bookVideo from './resource/9/h3video.png'
+import zemboImg from './resource/2/zembo3.png'
+import bookVideo from './resource/2/h3video.png'
 import book from './resource/step3book.png'
-import video1 from './resource/9/h3_1.png'
-import video2 from './resource/9/h3_2.png'
-import video3 from './resource/9/h3_3.png' 
-import video4 from './resource/9/h3_4.png' 
-import video5 from './resource/9/h3_5.png'
-import video6 from './resource/9/h3_6.png'
-import video7 from './resource/9/h3_7.png' 
-import video8 from './resource/9/h3_8.png' 
+import video1 from './resource/2/h3_1.png'
+import video2 from './resource/2/h3_2.png'
+import video3 from './resource/2/h3_3.png' 
+import video4 from './resource/2/h3_4.png' 
+import video5 from './resource/2/h3_5.png'
+import video6 from './resource/2/h3_6.png'
+import video7 from './resource/2/h3_7.png' 
+import video8 from './resource/2/h3_8.png' 
 
 function H3_2() {
-  const [bgColor,setBgColor] = useState('#5e3838')
-  const [boxColor,setBoxColor] = useState('#329969')
-  const [textColor,setTextColor] = useState('#fff')
+  const [bgColor,setBgColor] = useState('#dfe986')
+  const [boxColor,setBoxColor] = useState('#bcd365')
+  const [textColor,setTextColor] = useState('#a7bc4b')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/dZh54MtM_IA')
   const [issue,setIssue] = useState(2)
-  const [studyContetns,setStudyContetns] = useState('내용');
-  const [playListLink,setPlayListLink] = useState('')
+  const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 '합체 변신 낱말 이야기'와 3단 추리 문제를 풀며 받침이 있는 글자의 원리를 재미있게 배웠어요. 리듬에 맞춰 받침 글자를 읽고 쓰며 받침 소리의 특징을 이해하고 어휘력을 확장했어요.`);
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju4v9V-14fd-rtGIcy6mMTSz')
   const linkList = [
-    {page:2,     link:'',img:video1},
-    {page:6,     link:'',img:video2},
-    {page:8,     link:'',img:video3},
-    {page:10,    link:'',img:video4},
-    {page:12,    link:'',img:video5},
-    {page:14,    link:'',img:video6},
-    {page:15,    link:'',img:video7},
-    {page:'노래', link:'',img:video8}, 
-    // {page:15, link:'',img:video7},
-    // {page:'노래', link:'',img:video8},
+    {page:2,  link:'https://youtu.be/WjAUVL8TyTM',img:video1},
+    {page:2,  link:'https://youtu.be/dZh54MtM_IA',img:video2},
+    {page:2,  link:'https://youtu.be/6yeDkCOrp9k',img:video3},
+    {page:5,  link:'https://youtu.be/LWCGciPRUtQ',img:video4},
+    {page:5,  link:'https://youtu.be/92kE4bJ2p9I',img:video5},
+    {page:10, link:'https://youtu.be/zeIaBYxNOow',img:video6},
+    {page:12, link:'https://youtu.be/MSmoGnqB65g',img:video7},
+    {page:12, link:'https://youtu.be/Be0MQVSAAqo',img:video8},  
   ]
 
   const [zembo, setZembo] = useState({
-    title:'',
+    title:'어마어마한 문어가 하늘에서 뚝!',
     title2:'',
-    contents:'',
+    contents:`『어마어마한 문어가 하늘에서 뚝!』은 평화로운 마을에 거대한 문어가 나타나 처음엔 놀라움과 두려움으로 거부했지만, 결국 아이들과 친구가 되는 이야기를 담고 있습니다. 이 책은 아이들이 낯선 것에 대한 선입견을 내려놓고, 다름을 인정하며 함께하는 태도를 배우도록 도와줍니다.`,
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/D5agofPUXho'
   }) 
 
   const [code,setCode] = useState('bds978')
@@ -91,13 +89,13 @@ function H3_2() {
       <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
-        <div>쓰는한글 APP</div>
+        <div>까르르한글수 APP</div>
         <div></div>
       </div>
       <div className='writeHangeulHome'> 
          
       
-        <div className='downloadTitleHome'>⬇️ 쓰는한글 다운로드 링크</div>
+        <div className='downloadTitleHome'>⬇️ 까르르한글수 다운로드 링크</div>
 
         <div className='downloadBarHome'>
           <div className='downloadBtnHome'
@@ -112,15 +110,9 @@ function H3_2() {
           </div>
         </div> 
         <div className='admissionCodeHome'>
-          <div className='admissionCodeTitleHome'>🔑 쓰는한글 STEP3 입장코드</div>
-          <div className='admissionCodeTextHome'>
-            <span>{code[0]}</span>
-            <span>{code[1]}</span>            
-            <span>{code[2]}</span>
-            <span>{code[3]}</span>
-            <span>{code[4]}</span>
-            <span>{code[5]}</span>
-          </div>
+          <div className='admissionCodeTitleHome'>🔑 까르르한글수 가입 코드</div>
+          <div>가입 코드는 각 원에 문의해 주세요.</div>
+         
         </div>
 
          
@@ -175,7 +167,7 @@ function H3_2() {
  
         </div>
 
-         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+        <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
             <img src={linkList[4].img} alt=''/> 
             <div>{linkList[4].page}p</div>
@@ -193,7 +185,7 @@ function H3_2() {
 
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
             <img src={linkList[7].img} alt=''/> 
-            <div>{linkList[7].page}</div>
+            <div>{linkList[7].page}p</div>
           </div>
         </div>
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>

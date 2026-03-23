@@ -20,12 +20,12 @@ function H1_1() {
    const handleGoVimeo=(link)=>{
      
    
-  let width = window.screen.width * 0.8;
-  let height = width * 0.5625; // 16:9 비율 유지
-  let left = (window.screen.width - width) / 2;
-  let top = (window.screen.height - height) / 2;
+    let width = window.screen.width * 0.8;
+    let height = width * 0.5625; // 16:9 비율 유지
+    let left = (window.screen.width - width) / 2;
+    let top = (window.screen.height - height) / 2;
 
-  let option = `toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,copyhistory=no,width=${width},height=${height},left=${left},top=${top}`;
+    let option = `toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,copyhistory=no,width=${width},height=${height},left=${left},top=${top}`;
 
 
     window.open('https://player.vimeo.com/video/'+link, '_blank', option)
@@ -170,8 +170,7 @@ function H1_1() {
           </div> 
         </div>
 
-         <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
-    
+        <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>    
     
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
             <img src={linkList[3].img} alt=''/> 

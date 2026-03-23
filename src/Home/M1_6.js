@@ -11,6 +11,8 @@ import video1 from './resource/6/m1_1.png'
 import video2 from './resource/6/m1_2.png'
 import video3 from './resource/6/m1_3.png'
 import video4 from './resource/6/m1_4.png' 
+import appstore from '../resource/appstore.png'
+import playstore from '../resource/playstore.png'
 
 function M1_6() {
  
@@ -65,6 +67,41 @@ function M1_6() {
       
       
       </div>
+
+            
+      <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
+        
+        <div></div>
+        <div>까르르한글수 APP</div>
+        <div></div>
+      </div>
+      <div className='writeHangeulHome'> 
+         
+      
+      <div className='downloadTitleHome'>⬇️ 까르르한글수 다운로드 링크</div>
+
+        <div className='downloadBarHome'>
+          <div className='downloadBtnHome'
+              onClick={()=>window.open('https://apps.apple.com/kr/app/%EC%93%B0%EB%8A%94%ED%95%9C%EA%B8%80/id6633439192')}>
+              <img src={appstore} alt=''/>
+              <div>AppStore</div>
+            </div>
+          <div className='downloadBtnHome'
+              onClick={()=>window.open('https://play.google.com/store/apps/details?id=com.seomgim.korean&pcampaignid=web_share')}>
+              <img src={playstore} alt=''/>
+              <div>PlayStore</div>
+          </div>
+        </div> 
+        <div className='admissionCodeHome'>
+          <div className='admissionCodeTitleHome'>🔑 까르르한글수 가입 코드</div>
+          <div>가입 코드는 각 원에 문의해 주세요.</div>
+         
+        </div>
+
+         
+      </div>
+
+      
        <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
@@ -73,7 +110,7 @@ function M1_6() {
       </div>
       <div className='videoBoxHome'> 
         <div style={{fontWeight:700}}>🎥 영상으로 이어지는 즐거운 학습</div>
-        <div style={{marginTop:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+        <div style={{marginTop:15,marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[0].link)}>
             <img src={linkList[0].img} alt=''/> 
             <div>{linkList[0].page}p</div>

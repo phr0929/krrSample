@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import himg from './resource/9/himg.png'
+import himg from './resource/4/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
 import zemboImg from './resource/9/zembo2.png'
@@ -29,7 +29,7 @@ function H2_4() {
    
   const [bookVideoLink,setBookVideoLink] = useState('')
   const [issue,setIssue] = useState(4)
-  const [studyContetns,setStudyContetns] = useState('내용');
+  const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 자음과 모음이 합쳐져 글자가 되는 '합성'의 원리를 소리 내어 체험했어요. '가~기', '나~니', '다~디' 글자를 리듬 챈트와 도레미송 노래로 배우고, 빠진 글자를 채워 넣으며 어휘 구조를 익혔어요.`);
   const [playListLink,setPlayListLink] = useState('')
   const linkList = [
     {page:2, link:'',img:video1},
@@ -47,9 +47,9 @@ function H2_4() {
    ]
 
   const [zembo, setZembo] = useState({
-    title:'',
+    title:'내 친구 슈퍼 카를로',
     title2:'',
-    contents:``,
+    contents:`『내 친구 슈퍼 카를로』는 시각 장애가 있지만 밝고 긍정적인 친구 카를로와 그의 강점을 알아보는 친구와의 우정을 담은 이야기입니다. 이 책은 아이들이 약점 속에서도 자신감을 갖고, 서로의 다름을 긍정적으로 바라보도록 도와줍니다.`,
     img:zemboImg,
     link:''
   }) 
@@ -97,13 +97,13 @@ function H2_4() {
       <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
-        <div>쓰는한글 APP</div>
+        <div>까르르한글수 APP</div>
         <div></div>
       </div>
       <div className='writeHangeulHome'> 
          
       
-        <div className='downloadTitleHome'>⬇️ 쓰는한글 다운로드 링크</div>
+        <div className='downloadTitleHome'>⬇️ 까르르한글수 다운로드 링크</div>
 
         <div className='downloadBarHome'>
           <div className='downloadBtnHome'
@@ -118,15 +118,9 @@ function H2_4() {
           </div>
         </div> 
         <div className='admissionCodeHome'>
-          <div className='admissionCodeTitleHome'>🔑 쓰는한글 STEP2 입장코드</div>
-          <div className='admissionCodeTextHome'>
-            <span>{code[0]}</span>
-            <span>{code[1]}</span>            
-            <span>{code[2]}</span>
-            <span>{code[3]}</span>
-            <span>{code[4]}</span>
-            <span>{code[5]}</span>
-          </div>
+          <div className='admissionCodeTitleHome'>🔑 까르르한글수 가입 코드</div>
+          <div>가입 코드는 각 원에 문의해 주세요.</div>
+         
         </div>
 
          
@@ -207,7 +201,7 @@ function H2_4() {
         </div>  
       </div>
 
-       <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+      <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
 
  
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[8].link)}>

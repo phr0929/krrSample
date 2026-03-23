@@ -3,38 +3,40 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import mimg from './resource/9/mimg.png'
+import mimg from './resource/2/mimg.png'
 
-import bookVideo from './resource/9/m3video.png'
+import bookVideo from './resource/2/m3video.png'
 import book from './resource/step3mbook.png'
-import video1 from './resource/9/m3_1.png'
-import video2 from './resource/9/m3_2.png'
-import video3 from './resource/9/m3_3.png'
-import video4 from './resource/9/m3_4.png' 
-import video5 from './resource/9/m3_5.png' 
-import video6 from './resource/9/m3_6.png'
-import video7 from './resource/9/m3_7.png' 
-import video8 from './resource/9/m3_8.png'
+import video1 from './resource/2/m3_1.png'
+import video2 from './resource/2/m3_2.png'
+import video3 from './resource/2/m3_3.png'
+import video4 from './resource/2/m3_4.png' 
+import video5 from './resource/2/m3_5.png' 
+import video6 from './resource/2/m3_6.png'
+import video7 from './resource/2/m3_7.png' 
+import video8 from './resource/2/m3_8.png'
+import appstore from '../resource/appstore.png'
+import playstore from '../resource/playstore.png'
 
 function M3_10() {
  
-  const [bgColor,setBgColor] = useState('#e9f3ff')
-  const [boxColor,setBoxColor] = useState('#acc2e2')
-  const [textColor,setTextColor] = useState('#294f5e')
-   
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bgColor,setBgColor] = useState('#ffeaef')
+  const [boxColor,setBoxColor] = useState('#fcb1c3')
+  const [textColor,setTextColor] = useState('#f47196')
+
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/Ng414-PQfw4')
   const [issue,setIssue] = useState(10)
-  const [studyContetns,setStudyContetns] = useState('내용')
-  const [playListLink,setPlayListLink] = useState('')
+  const [studyContetns,setStudyContetns] = useState(`이번 수학 시간에는 세모, 네모, 동그라미 등 다양한 도형을 활용해 수를 표현하고, 챈트와 신체 활동으로 기수(순서)와 양수(양)의 개념을 통합적으로 익혔어요. 같은 개수의 도형을 짝짓거나 거꾸로 수 세기를 하며 유연한 수학적 사고력을 길렀어요.`)
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju539u-11UQTWNMRgwvxBqxD')
   const linkList = [
-    {page:2,     link:'',img:video1},
-    {page:2,     link:'',img:video2},
-    {page:2,     link:'',img:video3},
-    {page:6,     link:'',img:video4},
-    {page:6,     link:'',img:video5}, 
-    {page:6,     link:'',img:video6},
-    {page:13,    link:'',img:video7}, 
-    {page:'노래',link:'',img:video8},
+    {page:2,link:'https://youtu.be/Ng414-PQfw4',img:video1},
+    {page:2,link:'https://youtu.be/dtMBU2bCHDM',img:video2},
+    {page:2,link:'https://youtu.be/VZt-Sr5acug',img:video3},
+    {page:2,link:'https://youtu.be/ro3-txHqROw',img:video4},
+    {page:2,link:'https://youtu.be/MS8FDGDtsq8',img:video5}, 
+    {page:12,link:'https://youtu.be/uq7pw30AsgI',img:video6},
+    {page:13,link:'https://youtu.be/wHhvzlThujk',img:video7}, 
+    {page:14,link:'https://youtu.be/P2nsXxE4aoE',img:video8},
    ]
    
   const handleGoLink=(link)=>{
@@ -48,7 +50,7 @@ function M3_10() {
       {/* <div className='stepInfoHome' style={{border:'3px solid #7DCBF5'}}>한글 1단계 5호</div> */}
       <div className='contentsLinkBtnHome' style={{right:0}} onClick={()=>handleGoLink(playListLink)}>
         <div className='contentsLinkHome' style={{right:0}}>▶</div>
-        <div className='contentsLinkTextHome' style={{color:'#fff'}}>영상 시청</div>
+        <div className='contentsLinkTextHome' style={{color:'#000'}}>영상 시청</div>
       </div>
       <img src={mimg} alt='' className='mainImgHome'/>
     </div>
@@ -73,6 +75,41 @@ function M3_10() {
       
       
       </div>
+
+            
+      <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
+        
+        <div></div>
+        <div>까르르한글수 APP</div>
+        <div></div>
+      </div>
+      <div className='writeHangeulHome'> 
+         
+      
+      <div className='downloadTitleHome'>⬇️ 까르르한글수 다운로드 링크</div>
+
+        <div className='downloadBarHome'>
+          <div className='downloadBtnHome'
+              onClick={()=>window.open('https://apps.apple.com/kr/app/%EC%93%B0%EB%8A%94%ED%95%9C%EA%B8%80/id6633439192')}>
+              <img src={appstore} alt=''/>
+              <div>AppStore</div>
+            </div>
+          <div className='downloadBtnHome'
+              onClick={()=>window.open('https://play.google.com/store/apps/details?id=com.seomgim.korean&pcampaignid=web_share')}>
+              <img src={playstore} alt=''/>
+              <div>PlayStore</div>
+          </div>
+        </div> 
+        <div className='admissionCodeHome'>
+          <div className='admissionCodeTitleHome'>🔑 까르르한글수 가입 코드</div>
+          <div>가입 코드는 각 원에 문의해 주세요.</div>
+         
+        </div>
+
+         
+      </div>
+
+      
        <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
@@ -95,17 +132,13 @@ function M3_10() {
             <img src={linkList[2].img} alt=''/> 
             <div>{linkList[2].page}p</div>            
           </div>  
-
-           
-        </div>
-
-    
-         <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
-  
-            <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
             <img src={linkList[3].img} alt=''/> 
             <div>{linkList[3].page}p</div>
           </div>  
+        </div>    
+
+        <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
             <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
               <img src={linkList[4].img} alt=''/> 
               <div>{linkList[4].page}p</div>
@@ -115,21 +148,16 @@ function M3_10() {
               <img src={linkList[5].img} alt=''/> 
               <div>{linkList[5].page}p</div>
             </div>    
+            <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
+              <img src={linkList[6].img} alt=''/> 
+              <div>{linkList[6].page}p</div>
+            </div>  
+            <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
+              <img src={linkList[7].img} alt=''/> 
+              <div>{linkList[7].page}p</div>
+            </div>  
         </div>
-
-        <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
-  
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
-            <img src={linkList[6].img} alt=''/> 
-            <div>{linkList[6].page}p</div>
-          </div>  
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
-            <img src={linkList[7].img} alt=''/> 
-            <div>{linkList[7].page}</div>
-          </div>  
  
-        </div>
-  
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>
 

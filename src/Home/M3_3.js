@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import mimg from './resource/9/mimg.png'
+import mimg from './resource/3/mimg.png'
 
 import bookVideo from './resource/9/m3video.png'
 import book from './resource/step3mbook.png'
@@ -15,6 +15,8 @@ import video5 from './resource/9/m3_5.png'
 import video6 from './resource/9/m3_6.png'
 import video7 from './resource/9/m3_7.png' 
 import video8 from './resource/9/m3_8.png'
+import appstore from '../resource/appstore.png'
+import playstore from '../resource/playstore.png'
 
 function M3_3() {
  
@@ -24,7 +26,7 @@ function M3_3() {
    
   const [bookVideoLink,setBookVideoLink] = useState('')
   const [issue,setIssue] = useState(10)
-  const [studyContetns,setStudyContetns] = useState('내용')
+  const [studyContetns,setStudyContetns] = useState(`이번 수학 시간에는 1부터 10까지의 수를 나타내는 색깔 블록의 특징을 설명하며 수의 순서와 양을 깊이 있게 이해했어요. '쿵쿵따' 리듬 게임을 통해 숫자, 사물 개수, 손가락, 산가지 등을 동시에 떠올리는 통합적 수 연산 훈련을 했어요.`)
   const [playListLink,setPlayListLink] = useState('')
   const linkList = [
     {page:2,     link:'',img:video1},
@@ -73,6 +75,41 @@ function M3_3() {
       
       
       </div>
+
+            
+      <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
+        
+        <div></div>
+        <div>까르르한글수 APP</div>
+        <div></div>
+      </div>
+      <div className='writeHangeulHome'> 
+         
+      
+      <div className='downloadTitleHome'>⬇️ 까르르한글수 다운로드 링크</div>
+
+        <div className='downloadBarHome'>
+          <div className='downloadBtnHome'
+              onClick={()=>window.open('https://apps.apple.com/kr/app/%EC%93%B0%EB%8A%94%ED%95%9C%EA%B8%80/id6633439192')}>
+              <img src={appstore} alt=''/>
+              <div>AppStore</div>
+            </div>
+          <div className='downloadBtnHome'
+              onClick={()=>window.open('https://play.google.com/store/apps/details?id=com.seomgim.korean&pcampaignid=web_share')}>
+              <img src={playstore} alt=''/>
+              <div>PlayStore</div>
+          </div>
+        </div> 
+        <div className='admissionCodeHome'>
+          <div className='admissionCodeTitleHome'>🔑 까르르한글수 가입 코드</div>
+          <div>가입 코드는 각 원에 문의해 주세요.</div>
+         
+        </div>
+
+         
+      </div>
+
+      
        <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
@@ -117,7 +154,7 @@ function M3_3() {
             </div>    
         </div>
 
-        <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+        <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
   
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
             <img src={linkList[6].img} alt=''/> 

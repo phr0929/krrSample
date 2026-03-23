@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import himg from './resource/9/himg.png'
+import himg from './resource/3/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
 import zemboImg from './resource/9/zembo1.png'
@@ -24,7 +24,7 @@ function H1_3() {
   const [boxColor,setBoxColor] = useState('#329969')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState(`이번 한글 시간에는 자음 이야기와 농장 노래, 챈트를 통해 자음(ㄱ, ㄴ, ㄷ)의 이름과 소리를 재미있게 익혔어요. 낱말의 시작 소리를 듣고 글자를 찾는 활동과 몸으로 표현하는 챈트로 자음 학습에 흥미를 더했어요.`)
   const [issue,setIssue] = useState(3)
   const [studyContetns,setStudyContetns] = useState(``);
   const [playListLink,setPlayListLink] = useState('')
@@ -41,9 +41,9 @@ function H1_3() {
    ]
 
   const [zembo, setZembo] = useState({
-    title:'',
+    title:'나도 타고 싶어!',
     title2:'',
-    contents:'',
+    contents:`『나도 타고 싶어!』는 친구의 킥보드를 뺏어 타다 다친 '포시'와 그를 치료해 주는 '피피'의 이야기를 통해 안전과 우정의 중요성을 전합니다. 놀이 규칙을 지키고 서로를 배려하며, 잘못을 인정하고 사과하는 건강한 관계 맺기를 배우게 합니다.`,
     img:zemboImg,
     link:''
   }) 
@@ -91,13 +91,13 @@ function H1_3() {
       <div className='boxTitleHome' style={{backgroundColor:boxColor}}>
         
         <div></div>
-        <div>쓰는한글 APP</div>
+        <div>까르르한글수 APP</div>
         <div></div>
       </div>
       <div className='writeHangeulHome'> 
          
       
-        <div className='downloadTitleHome'>⬇️ 쓰는한글 다운로드 링크</div>
+        <div className='downloadTitleHome'>⬇️ 까르르한글수 다운로드 링크</div>
 
         <div className='downloadBarHome'>
           <div className='downloadBtnHome'
@@ -112,15 +112,9 @@ function H1_3() {
           </div>
         </div> 
         <div className='admissionCodeHome'>
-          <div className='admissionCodeTitleHome'>🔑 쓰는한글 STEP1 입장코드</div>
-          <div className='admissionCodeTextHome'>
-            <span>{code[0]}</span>
-            <span>{code[1]}</span>            
-            <span>{code[2]}</span>
-            <span>{code[3]}</span>
-            <span>{code[4]}</span>
-            <span>{code[5]}</span>
-          </div>
+          <div className='admissionCodeTitleHome'>🔑 까르르한글수 가입 코드</div>
+          <div>가입 코드는 각 원에 문의해 주세요.</div>
+         
         </div>
 
          
@@ -188,9 +182,7 @@ function H1_3() {
             <div>{linkList[5].page}p</div>
           </div>   
         </div>
-        <div style={{marginBottom:10,display:'flex',flexDirection:'row',justifyItems:'center',}}>
-     
-
+        <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>    
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
             <img src={linkList[6].img} alt=''/> 
             <div>{linkList[6].page}p</div>
