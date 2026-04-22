@@ -3,47 +3,43 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import himg from './resource/3/himg.png'
+import himg from './resource/3/himg_2.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
-import zemboImg from './resource/9/zembo2.png'
-import bookVideo from './resource/9/h2video.png'
+import zemboImg from './resource/3/zembo2.png'
+import bookVideo from './resource/3/h2video.png'
 import book from './resource/step2book.png'
-import video1 from './resource/9/h2_1.png'
-import video2 from './resource/9/h2_2.png'
-import video3 from './resource/9/h2_3.png'
-import video4 from './resource/9/h2_4.png'
-import video5 from './resource/9/h2_5.png'
-import video6 from './resource/9/h2_6.png'
-import video7 from './resource/9/h2_7.png'
-import video8 from './resource/9/h2_8.png'
-import video9 from './resource/9/h2_9.png'
-import video10 from './resource/9/h2_10.png'
-import video11 from './resource/9/h2_11.png'
-import video12 from './resource/9/h2_12.png'
+import video1 from './resource/3/h2_1.png'
+import video2 from './resource/3/h2_2.png'
+import video3 from './resource/3/h2_3.png'
+import video4 from './resource/3/h2_4.png'
+import video5 from './resource/3/h2_5.png'
+import video6 from './resource/3/h2_6.png'
+import video7 from './resource/3/h2_7.png'
+import video8 from './resource/3/h2_8.png'
+import video9 from './resource/3/h2_9.png'
+import video10 from './resource/3/h2_10.png' 
 
 function H2_3() {
-  const [bgColor,setBgColor] = useState('#5e3838')
+  const [bgColor,setBgColor] = useState('#8acc62')
   const [boxColor,setBoxColor] = useState('#329969')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/W_j8yZBtO-U')
   const [issue,setIssue] = useState(3)
   const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 '이미지 자음 챈트'를 활용해 자음(ㅁ~ㅎ)으로 시작하는 낱말과 자음의 형태를 배웠어요. 단어와 문장을 읽고 쓰는 활동을 반복하며 문해력을 다지고, 빨라지는 챈트로 기억력을 강화했어요.`);
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju4pjx4z-3eCT7eXsm7-UNUf')
   const linkList = [
-    {page:2, link:'',img:video1},
-    {page:2, link:'',img:video2},
-    {page:2, link:'',img:video3},
-    {page:2, link:'',img:video4}, 
-    {page:7, link:'',img:video5},
-    {page:7, link:'',img:video6},
-    {page:7, link:'',img:video7},
-    {page:7, link:'',img:video8}, 
-    {page:8, link:'',img:video9},
-    {page:8, link:'',img:video10},
-    {page:8, link:'',img:video11},
-    {page:8, link:'',img:video12}, 
+    {page:2, link:'https://youtu.be/ozViBIwiZNc',img:video1},
+    {page:2, link:'https://youtu.be/W_j8yZBtO-U',img:video2},
+    {page:4, link:'https://youtu.be/sPC0l4onSsM',img:video3},
+    {page:4, link:'https://youtu.be/jENYnCNqx4s',img:video4}, 
+    {page:6, link:'https://youtu.be/yfHf8DXr2mo',img:video5},
+    {page:6, link:'https://youtu.be/FjiEt_jxWNg',img:video6},
+    {page:8, link:'https://youtu.be/jL7NxkcWAeM',img:video7},
+    {page:8, link:'https://youtu.be/ZsfY_O8p_ZQ',img:video8}, 
+    {page:10, link:'https://youtu.be/6j4Nt2gR8dA',img:video9},
+    {page:10, link:'https://youtu.be/r_Wl6USK17c',img:video10}, 
    ]
 
   const [zembo, setZembo] = useState({
@@ -51,7 +47,7 @@ function H2_3() {
     title2:'',
     contents:`『생쥐야 내 집에 왜 왔니?』는 생쥐와 북극곰이 함께 지내며 생기는 갈등과 화해를 통해 서로 다름을 이해해 가는 이야기입니다. 이 책은 아이들이 배려와 양보를 배우며, 함께하는 공동체의 소중함을 깨닫도록 도와줍니다.`,
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/q6gCP3B3Ms8'
   }) 
 
   const [code,setCode] = useState('jus649')
@@ -67,13 +63,13 @@ function H2_3() {
   <div className='mainCenterLayoutHome'>
     <div className='imgBoxHome'>
       {/* <div className='stepInfoHome' style={{border:'3px solid #7DCBF5'}}>한글 1단계 5호</div> */}
-      <div className='contentsLinkBtnHome' style={{right:0}} onClick={()=>handleGoLink(playListLink)}>
+     <div className='contentsLinkBtnHome' style={{right:0}} onClick={()=>handleGoLink(playListLink)}>
         <div className='contentsLinkHome' style={{right:0}}>▶</div>
         <div className='contentsLinkTextHome'>영상 시청</div>
       </div>
-      <img src={himg} alt='' className='mainImgHome'/>
+      <img src={himg} alt='' className='mainImgHome2'/>
     </div>
-    <div className='contentsBoxHome'style={{backgroundColor:bgColor}}>
+    <div className='contentsBoxHome2'style={{backgroundColor:bgColor}}>
       <div className='titleHome' style={{color:textColor}}>
         까르르한글 가정안내문<br/>
         2단계 {issue}호
@@ -86,7 +82,7 @@ function H2_3() {
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
           <img src={book} alt='' className='bookImgHome' style={{border:0}}/>
-          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome' style={{border:0}}/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome'/>
         </div> 
         <div>
           {studyContetns}
@@ -213,17 +209,8 @@ function H2_3() {
             <img src={linkList[9].img} alt=''/> 
             <div>{linkList[9].page}p</div>
           </div>  
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[10].link)}>
-            <img src={linkList[10].img} alt=''/> 
-            <div>{linkList[10].page}p</div>
-          </div>  
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[11].link)}>
-            <img src={linkList[11].img} alt=''/> 
-            <div>{linkList[11].page}p</div>
-          </div>  
         </div>
+ 
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>
 

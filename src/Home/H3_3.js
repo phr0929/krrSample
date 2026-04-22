@@ -3,41 +3,35 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import himg from './resource/3/himg.png'
+import himg from './resource/3/himg_2.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
-import zemboImg from './resource/9/zembo3.png'
-import bookVideo from './resource/9/h3video.png'
+import zemboImg from './resource/3/zembo3.png'
+import bookVideo from './resource/3/h3video.png'
 import book from './resource/step3book.png'
-import video1 from './resource/9/h3_1.png'
-import video2 from './resource/9/h3_2.png'
-import video3 from './resource/9/h3_3.png' 
-import video4 from './resource/9/h3_4.png' 
-import video5 from './resource/9/h3_5.png'
-import video6 from './resource/9/h3_6.png'
-import video7 from './resource/9/h3_7.png' 
-import video8 from './resource/9/h3_8.png' 
+import video1 from './resource/3/h3_1.png'
+import video2 from './resource/3/h3_2.png'
+import video3 from './resource/3/h3_3.png' 
+import video4 from './resource/3/h3_4.png' 
+import video5 from './resource/3/h3_5.png'
+import video6 from './resource/3/h3_6.png'
 
 function H3_3() {
-  const [bgColor,setBgColor] = useState('#5e3838')
+  const [bgColor,setBgColor] = useState('#8acc62')
   const [boxColor,setBoxColor] = useState('#329969')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/_zlo8VPdmXs')
   const [issue,setIssue] = useState(3)
   const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 과일, 동물, 탈것 등 주제별 낱말 퍼즐과 퀴즈를 풀며 어휘력을 확장했어요. '이상한 말' 게임으로 잘못된 표현을 고쳐보거나 그림을 보고 상황에 맞는 의성어·의태어를 찾아 쓰며 창의적인 언어 표현력을 길렀어요.`);
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju7n5EaKh_2NL6mQFHhqRZ0A')
   const linkList = [
-    {page:2,     link:'',img:video1},
-    {page:6,     link:'',img:video2},
-    {page:8,     link:'',img:video3},
-    {page:10,    link:'',img:video4},
-    {page:12,    link:'',img:video5},
-    {page:14,    link:'',img:video6},
-    {page:15,    link:'',img:video7},
-    {page:'노래', link:'',img:video8}, 
-    // {page:15, link:'',img:video7},
-    // {page:'노래', link:'',img:video8},
+    {page:2,     link:'https://youtu.be/njXDxrje8N0',img:video1},
+    {page:2,     link:'https://youtu.be/vY3YHlicqMo',img:video2},
+    {page:5,     link:'https://youtu.be/_zlo8VPdmXs',img:video3},
+    {page:10,    link:'https://youtu.be/Grq_gtyJws8',img:video4},
+    {page:10,    link:'https://youtu.be/l5iBjBRrwgE',img:video5},
+    {page:15,    link:'https://youtu.be/a4vZy6cyDKo',img:video6},
   ]
 
   const [zembo, setZembo] = useState({
@@ -45,7 +39,7 @@ function H3_3() {
     title2:'',
     contents:`『우리 엄마는 슈퍼우먼』은 평범한 일상 속 엄마의 모습을 아이의 시선으로 특별하게 바라보며, 엄마를 세상에서 가장 멋진 슈퍼우먼으로 그리는 이야기입니다. 이 책은 아이들이 가족에 대한 사랑과 감사한 마음을 표현하고, 엄마와 따뜻한 교감을 나누도록 도와줍니다.`,
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/HN_wWrZrmts'
   }) 
 
   const [code,setCode] = useState('bds978')
@@ -61,13 +55,13 @@ function H3_3() {
   <div className='mainCenterLayoutHome'>
     <div className='imgBoxHome'>
       {/* <div className='stepInfoHome' style={{border:'3px solid #7DCBF5'}}>한글 1단계 5호</div> */}
-      <div className='contentsLinkBtnHome' style={{right:0}} onClick={()=>handleGoLink(playListLink)}>
+     <div className='contentsLinkBtnHome' style={{right:0}} onClick={()=>handleGoLink(playListLink)}>
         <div className='contentsLinkHome' style={{right:0}}>▶</div>
         <div className='contentsLinkTextHome'>영상 시청</div>
       </div>
-      <img src={himg} alt='' className='mainImgHome'/>
+      <img src={himg} alt='' className='mainImgHome2'/>
     </div>
-    <div className='contentsBoxHome'style={{backgroundColor:bgColor}}>
+    <div className='contentsBoxHome2'style={{backgroundColor:bgColor}}>
       <div className='titleHome' style={{color:textColor}}>
         까르르한글 가정안내문<br/>
         3단계 {issue}호
@@ -162,14 +156,15 @@ function H3_3() {
             <div>{linkList[2].page}p</div>
           </div>  
 
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
-            <img src={linkList[3].img} alt=''/> 
-            <div>{linkList[3].page}p</div>
-          </div>  
  
         </div>
 
         <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+          
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
+            <img src={linkList[3].img} alt=''/> 
+            <div>{linkList[3].page}p</div>
+          </div>  
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
             <img src={linkList[4].img} alt=''/> 
             <div>{linkList[4].page}p</div>
@@ -180,15 +175,6 @@ function H3_3() {
             <div>{linkList[5].page}p</div>
           </div>  
 
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
-            <img src={linkList[6].img} alt=''/> 
-            <div>{linkList[6].page}p</div>
-          </div>
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
-            <img src={linkList[7].img} alt=''/> 
-            <div>{linkList[7].page}</div>
-          </div>
         </div>
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>

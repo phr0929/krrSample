@@ -3,36 +3,36 @@ import { useNavigate } from 'react-router-dom'
 import { useEffect, useRef, useState } from 'react'; 
 import './home.css'
 import { useLocation } from 'react-router-dom';  
-import mimg from './resource/3/mimg.png'
+import mimg from './resource/3/mimgBig.png'
 
-import bookVideo from './resource/9/m1video.png'
+import bookVideo from './resource/3/m1video.png'
 import book from './resource/step1mbook.png'
-import video1 from './resource/9/m1_1.png'
-import video2 from './resource/9/m1_2.png'
-import video3 from './resource/9/m1_3.png'
-import video4 from './resource/9/m1_4.png' 
-import video5 from './resource/9/m1_5.png'
-import video6 from './resource/9/m1_6.png'  
+import video1 from './resource/3/m1_1.png'
+import video2 from './resource/3/m1_2.png'
+import video3 from './resource/3/m1_3.png'
+import video4 from './resource/3/m1_4.png' 
+import video5 from './resource/3/m1_5.png'
+import video6 from './resource/3/m1_6.png'  
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
 
 function M1_3() {
  
-  const [bgColor,setBgColor] = useState('#e9f3ff')
-  const [boxColor,setBoxColor] = useState('#acc2e2')
-  const [textColor,setTextColor] = useState('#294f5e')
+  const [bgColor,setBgColor] = useState('#a3e18c')
+  const [boxColor,setBoxColor] = useState('#429357')
+  const [textColor,setTextColor] = useState('#429357')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/XblY51_6c68')
   const [issue,setIssue] = useState(3)
   const [studyContetns,setStudyContetns] = useState(`이번 수학 시간에는 '잘잘잘' 노래와 손가락 유희를 통해 1부터 10까지 수와 사물을 연결하며 수량 개념을 익혔어요. 동화 속 사물을 찾아보는 역할 놀이와 그림 속 다른 곳 찾기 활동으로 수 세기 능력과 시각적 변별력을 길렀어요.`)
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5pDeDcHrg02DZPIg8vLuMn')
   const linkList = [
-    {page:2,  link:'',img:video1},
-    {page:5,  link:'',img:video2},
-    {page:7,  link:'',img:video3},
-    {page:10, link:'',img:video4},
-    {page:'노래',link:'',img:video5},
-    {page:'노래',link:'',img:video6},
+    {page:2, link:'https://youtu.be/XblY51_6c68',img:video1},
+    {page:7, link:'https://youtu.be/7lAtsZU9Yc8',img:video2},
+    {page:10,link:'https://youtu.be/oHnyO7SFXT4',img:video3},
+    {page:14,link:'https://youtu.be/5nGPfk6jN_4',img:video4},
+    {page:14,link:'https://youtu.be/ZTvGCOA-n0U',img:video5},
+    {page:14,link:'https://youtu.be/jd1ESGfsxDU',img:video6},
    ]
    
   const handleGoLink=(link)=>{
@@ -46,7 +46,7 @@ function M1_3() {
       {/* <div className='stepInfoHome' style={{border:'3px solid #7DCBF5'}}>한글 1단계 5호</div> */}
       <div className='contentsLinkBtnHome' style={{right:0}} onClick={()=>handleGoLink(playListLink)}>
         <div className='contentsLinkHome' style={{right:0}}>▶</div>
-        <div className='contentsLinkTextHome' style={{color:'#fff'}}>영상 시청</div>
+        <div className='contentsLinkTextHome'>영상 시청</div>
       </div>
       <img src={mimg} alt='' className='mainImgHome'/>
     </div>
@@ -63,7 +63,7 @@ function M1_3() {
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
           <img src={book} alt=''className='bookImgHome' style={{border:0}}/>
-          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome'/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome' style={{border:0}}/>
         </div> 
         <div>
             {studyContetns}
@@ -129,21 +129,22 @@ function M1_3() {
             <div>{linkList[2].page}p</div>
           </div>  
 
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
-            <img src={linkList[3].img} alt=''/> 
-            <div>{linkList[3].page}p</div>
-          </div>   
         </div>
   
 
         <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+          
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
+            <img src={linkList[3].img} alt=''/> 
+            <div>{linkList[3].page}p</div>
+          </div>   
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
             <img src={linkList[4].img} alt=''/> 
-            <div>{linkList[4].page}</div>
+            <div>{linkList[4].page}p</div>
           </div>   
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[5].link)}>
             <img src={linkList[5].img} alt=''/> 
-            <div>{linkList[5].page}</div>
+            <div>{linkList[5].page}p</div>
           </div>   
           {/* <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
             <img src={linkList[6].img} alt=''/> 
