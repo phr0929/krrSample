@@ -17,7 +17,7 @@ import eliivyStepOn3 from '../resource/eliivyStep3.svg';
 function SeomkimHome() {
 
 const [issue, setIssue] = useState(() => {
-  return localStorage.getItem('nowIssue') ?? 2;
+  return localStorage.getItem('nowIssue') ?? 4;
 });
   const [hStep1,setHStep1] = useState('H15abc');
   const [hStep2,setHStep2] = useState('H25sdf');

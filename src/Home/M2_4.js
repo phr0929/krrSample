@@ -67,7 +67,7 @@ function M2_4() {
       <div className='noteHome'>  
         <div style={{display:'flex',flexDirection:'row',alignItems:'flex-end',marginBottom:20,marginTop:10}}>        
           <img src={book} alt=''className='bookImgHome'/>
-          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome'/>
+          <img src={bookVideo}  onClick={()=>handleGoLink(bookVideoLink)} alt='' className='bookVideoImgHome' style={{border:0}}/>
         </div> 
         <div>
             {studyContetns}
