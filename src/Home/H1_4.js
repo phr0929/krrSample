@@ -6,38 +6,48 @@ import { useLocation } from 'react-router-dom';
 import himg from './resource/4/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
-import zemboImg from './resource/9/zembo1.png'
-import bookVideo from './resource/9/h1video.png'
+import zemboImg from './resource/4/zembo1.png'
+import bookVideo from './resource/4/h1video.png'
 import book from './resource/step1book.png'
-import video1 from './resource/9/h1_1.png'
-import video2 from './resource/9/h1_2.png'
-import video3 from './resource/9/h1_3.png'
-import video4 from './resource/9/h1_4.png'
-import video5 from './resource/9/h1_5.png'
-import video6 from './resource/9/h1_6.png'
-import video7 from './resource/9/h1_7.png'
-import video8 from './resource/9/h1_8.png'
-import video9 from './resource/9/h1_9.png'
+import video1 from './resource/4/h1_1.png'
+import video2 from './resource/4/h1_2.png'
+import video3 from './resource/4/h1_3.png'
+import video4 from './resource/4/h1_4.png'
+import video5 from './resource/4/h1_5.png'
+import video6 from './resource/4/h1_6.png'
+import video7 from './resource/4/h1_7.png'
+import video8 from './resource/4/h1_8.png'
+import video9 from './resource/4/h1_9.png'
+import video10 from './resource/4/h1_10.png'
+import video11 from './resource/4/h1_11.png'
+import video12 from './resource/4/h1_12.png'
+import video13 from './resource/4/h1_13.png'
+import video14 from './resource/4/h1_14.png'
 
 function H1_4() {
-  const [bgColor,setBgColor] = useState('#5e3838')
-  const [boxColor,setBoxColor] = useState('#329969')
+  const [bgColor,setBgColor] = useState('#ead0b0')
+  const [boxColor,setBoxColor] = useState('#f1ad5d')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://www.youtube.com/watch?v=gfbbr89J9ro')
   const [issue,setIssue] = useState(4)
   const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 'ㄱ 농장' 노래와 '변해라 얍!' 챈트를 통해 자음(ㅇ, ㅈ, ㅊ, ㅋ, ㅌ, ㅍ, ㅎ)의 이름과 형태를 배웠어요. 점점 빨라지는 이미지 자음 챈트를 따라 하며 낱말의 시작 소리를 익히고 기억력을 강화했어요.`);
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju5YjiiRDh8H6P1ueBUXarcV')
   const linkList = [
-    {page:2,link:'',img:video1},
-    {page:2,link:'',img:video2},
-    {page:2,link:'',img:video3},
-    {page:4,link:'',img:video4},
-    {page:4,link:'',img:video5},
-    {page:7,link:'',img:video6},
-    {page:7,link:'',img:video7},
-    {page:9,link:'',img:video8}, 
-    {page:9,link:'',img:video9},  
+    {page:2,link:'https://youtu.be/gfbbr89J9ro', img:video1},
+    {page:2,link:'https://youtu.be/NRop9p5O1qs', img:video2},
+    {page:4,link:'https://youtu.be/btS2zITVSGc', img:video3},
+    {page:4,link:'https://youtu.be/A7khg1dcybg', img:video4},
+    {page:6,link:'https://youtu.be/UjonCI38Qmo', img:video5},
+    {page:6,link:'https://youtu.be/QYBGEOaKXP4', img:video6},
+    {page:8,link:'https://youtu.be/7LWn23hPv8c', img:video7},
+    {page:8,link:'https://youtu.be/KXBnAhSgZW4', img:video8}, 
+    {page:10,link:'https://youtu.be/HSh7hyE1VAo',img:video9},  
+    {page:10,link:'https://youtu.be/22evesYSi-8',img:video10},
+    {page:12,link:'https://youtu.be/kPsi0NoGD8w',img:video11},
+    {page:12,link:'https://youtu.be/tqWpYdxl3JE',img:video12}, 
+    {page:14,link:'https://youtu.be/YdT_RQ-porY',img:video13},  
+    {page:14,link:'https://youtu.be/C0ftlRlmAOE',img:video14},  
    ]
 
   const [zembo, setZembo] = useState({
@@ -45,7 +55,7 @@ function H1_4() {
     title2:'',
     contents:`『빨간 풍선이 높이높이!』는 소중한 빨간 풍선을 잃어버린 ‘피피’가 슬픔을 느끼고, 친구 ‘포시’의 위로로 다시 마음을 회복하는 과정을 담은 이야기입니다. 잃어버림에서 오는 자연스러운 감정을 이해하고, 친구의 공감과 위로를 통해 마음을 다독이는 경험을 하며 정서적 안정과 공감 능력을 기르도록 돕습니다.`,
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/ReSNCF5EGfs'
   }) 
 
   const [code,setCode] = useState('kwk159')
@@ -156,14 +166,6 @@ function H1_4() {
             <img src={linkList[1].img} alt=''/> 
             <div>{linkList[1].page}p</div>
           </div>  
-
-
- 
-        </div>
-
-         <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
-    
-    
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[2].link)}>
             <img src={linkList[2].img} alt=''/> 
             <div>{linkList[2].page}p</div>
@@ -173,6 +175,14 @@ function H1_4() {
             <img src={linkList[3].img} alt=''/> 
             <div>{linkList[3].page}p</div>
           </div>  
+
+ 
+        </div>
+
+         <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
+    
+    
+      
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
             <img src={linkList[4].img} alt=''/> 
             <div>{linkList[4].page}p</div>
@@ -181,9 +191,6 @@ function H1_4() {
             <img src={linkList[5].img} alt=''/> 
             <div>{linkList[5].page}p</div>
           </div>   
-        </div>
-        
-        <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
             <img src={linkList[6].img} alt=''/> 
             <div>{linkList[6].page}p</div>
@@ -193,11 +200,39 @@ function H1_4() {
             <img src={linkList[7].img} alt=''/> 
             <div>{linkList[7].page}p</div>
           </div>  
+        </div>
+        
+        <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
+          
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[8].link)}>
             <img src={linkList[8].img} alt=''/> 
             <div>{linkList[8].page}p</div>
           </div>   
+               <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[9].link)}>
+            <img src={linkList[9].img} alt=''/> 
+            <div>{linkList[9].page}p</div>
+          </div>   
+               <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[10].link)}>
+            <img src={linkList[10].img} alt=''/> 
+            <div>{linkList[10].page}p</div>
+          </div>   
+               <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[11].link)}>
+            <img src={linkList[11].img} alt=''/> 
+            <div>{linkList[11].page}p</div>
+          </div>   
         </div>
+
+        <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[12].link)}>
+            <img src={linkList[12].img} alt=''/> 
+            <div>{linkList[12].page}p</div>
+          </div>   
+               <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[13].link)}>
+            <img src={linkList[13].img} alt=''/> 
+            <div>{linkList[13].page}p</div>
+          </div>   
+        </div>
+        
          
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>

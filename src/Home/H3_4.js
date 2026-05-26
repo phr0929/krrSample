@@ -6,38 +6,30 @@ import { useLocation } from 'react-router-dom';
 import himg from './resource/4/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
-import zemboImg from './resource/9/zembo3.png'
-import bookVideo from './resource/9/h3video.png'
+import zemboImg from './resource/4/zembo3.png'
+import bookVideo from './resource/4/h3video.png'
 import book from './resource/step3book.png'
-import video1 from './resource/9/h3_1.png'
-import video2 from './resource/9/h3_2.png'
-import video3 from './resource/9/h3_3.png' 
-import video4 from './resource/9/h3_4.png' 
-import video5 from './resource/9/h3_5.png'
-import video6 from './resource/9/h3_6.png'
-import video7 from './resource/9/h3_7.png' 
-import video8 from './resource/9/h3_8.png' 
+import video1 from './resource/4/h3_1.png'
+import video2 from './resource/4/h3_2.png'
+import video3 from './resource/4/h3_3.png' 
+import video4 from './resource/4/h3_4.png' 
+import video5 from './resource/4/h3_5.png' 
 
 function H3_4() {
-  const [bgColor,setBgColor] = useState('#5e3838')
-  const [boxColor,setBoxColor] = useState('#329969')
+  const [bgColor,setBgColor] = useState('#ead0b0')
+  const [boxColor,setBoxColor] = useState('#f1ad5d')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://www.youtube.com/watch?v=i1bu5PAJxzw')
   const [issue,setIssue] = useState(4)
   const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 두 개의 그림이나 낱말을 합쳐 새로운 단어를 만드는 '복합 명사' 만들기를 연습했어요. 낱말을 다시 두 개로 나누거나 노랫말 속 언어를 탐구하며 창의적인 어휘 생산력과 문해력을 높였어요.`);
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju4OsYO_3sicEdqK1_zJAf_P')
   const linkList = [
-    {page:2,     link:'',img:video1},
-    {page:6,     link:'',img:video2},
-    {page:8,     link:'',img:video3},
-    {page:10,    link:'',img:video4},
-    {page:12,    link:'',img:video5},
-    {page:14,    link:'',img:video6},
-    {page:15,    link:'',img:video7},
-    {page:'노래', link:'',img:video8}, 
-    // {page:15, link:'',img:video7},
-    // {page:'노래', link:'',img:video8},
+    {page:2,     link:'https://youtu.be/i1bu5PAJxzw',img:video1},
+    {page:3,     link:'https://youtu.be/0HR8v2cZCQM',img:video2},
+    {page:12,    link:'https://youtu.be/ez5GP7SqamY',img:video3},
+    {page:14,    link:'https://youtu.be/-dWcQZO4aHw',img:video4},
+    {page:14,    link:'https://youtu.be/4oUvWqFMbBY',img:video5}, 
   ]
 
   const [zembo, setZembo] = useState({
@@ -45,7 +37,7 @@ function H3_4() {
     title2:'',
     contents:`『우리 아빠는 슈퍼맨』은 아이가 아빠의 다양한 능력을 소개하며, 아빠를 세상의 모든 영웅 중 최고로 여기는 모습을 담은 유쾌한 이야기입니다. 이 책은 아이들이 아빠와의 사랑과 추억을 통해 자존감과 자신감을 키우도록 도와줍니다.`,
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/NHST67wkQrg'
   }) 
 
   const [code,setCode] = useState('bds978')
@@ -162,33 +154,20 @@ function H3_4() {
             <div>{linkList[2].page}p</div>
           </div>  
 
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
-            <img src={linkList[3].img} alt=''/> 
-            <div>{linkList[3].page}p</div>
-          </div>  
  
         </div>
 
         <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
+          
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
+            <img src={linkList[3].img} alt=''/> 
+            <div>{linkList[3].page}p</div>
+          </div>  
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
             <img src={linkList[4].img} alt=''/> 
             <div>{linkList[4].page}p</div>
           </div>  
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[5].link)}>
-            <img src={linkList[5].img} alt=''/> 
-            <div>{linkList[5].page}p</div>
-          </div>  
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
-            <img src={linkList[6].img} alt=''/> 
-            <div>{linkList[6].page}p</div>
-          </div>
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
-            <img src={linkList[7].img} alt=''/> 
-            <div>{linkList[7].page}</div>
-          </div>
+ 
         </div>
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>

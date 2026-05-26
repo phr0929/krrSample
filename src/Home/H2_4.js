@@ -6,44 +6,38 @@ import { useLocation } from 'react-router-dom';
 import himg from './resource/4/himg.png'
 import appstore from '../resource/appstore.png'
 import playstore from '../resource/playstore.png'
-import zemboImg from './resource/9/zembo2.png'
-import bookVideo from './resource/9/h2video.png'
+import zemboImg from './resource/4/zembo2.png'
+import bookVideo from './resource/4/h2video.png'
 import book from './resource/step2book.png'
-import video1 from './resource/9/h2_1.png'
-import video2 from './resource/9/h2_2.png'
-import video3 from './resource/9/h2_3.png'
-import video4 from './resource/9/h2_4.png'
-import video5 from './resource/9/h2_5.png'
-import video6 from './resource/9/h2_6.png'
-import video7 from './resource/9/h2_7.png'
-import video8 from './resource/9/h2_8.png'
-import video9 from './resource/9/h2_9.png'
-import video10 from './resource/9/h2_10.png'
-import video11 from './resource/9/h2_11.png'
-import video12 from './resource/9/h2_12.png'
+import video1 from './resource/4/h2_1.png'
+import video2 from './resource/4/h2_2.png'
+import video3 from './resource/4/h2_3.png'
+import video4 from './resource/4/h2_4.png'
+import video5 from './resource/4/h2_5.png'
+import video6 from './resource/4/h2_6.png'
+import video7 from './resource/4/h2_7.png'
+import video8 from './resource/4/h2_8.png'
+import video9 from './resource/4/h2_9.png' 
 
 function H2_4() {
-  const [bgColor,setBgColor] = useState('#5e3838')
-  const [boxColor,setBoxColor] = useState('#329969')
+  const [bgColor,setBgColor] = useState('#ead0b0')
+  const [boxColor,setBoxColor] = useState('#f1ad5d')
   const [textColor,setTextColor] = useState('#fff')
    
-  const [bookVideoLink,setBookVideoLink] = useState('')
+  const [bookVideoLink,setBookVideoLink] = useState('https://www.youtube.com/watch?v=-lzc6AyscgE')
   const [issue,setIssue] = useState(4)
   const [studyContetns,setStudyContetns] = useState(`이번 한글 시간에는 자음과 모음이 합쳐져 글자가 되는 '합성'의 원리를 소리 내어 체험했어요. '가~기', '나~니', '다~디' 글자를 리듬 챈트와 도레미송 노래로 배우고, 빠진 글자를 채워 넣으며 어휘 구조를 익혔어요.`);
-  const [playListLink,setPlayListLink] = useState('')
+  const [playListLink,setPlayListLink] = useState('https://www.youtube.com/playlist?list=PLanHTJ4pYju4Oi8K5SyHJi7PI897TLoGW')
   const linkList = [
-    {page:2, link:'',img:video1},
-    {page:2, link:'',img:video2},
-    {page:2, link:'',img:video3},
-    {page:2, link:'',img:video4}, 
-    {page:7, link:'',img:video5},
-    {page:7, link:'',img:video6},
-    {page:7, link:'',img:video7},
-    {page:7, link:'',img:video8}, 
-    {page:8, link:'',img:video9},
-    {page:8, link:'',img:video10},
-    {page:8, link:'',img:video11},
-    {page:8, link:'',img:video12}, 
+    {page:4, link:'https://youtu.be/-lzc6AyscgE',img:video1},
+    {page:4, link:'https://youtu.be/_hq8AKIaliM',img:video2},
+    {page:6, link:'https://youtu.be/GpLDwVcIFsE',img:video3},
+    {page:9, link:'https://youtu.be/djGcEDHRmAw',img:video4}, 
+    {page:9, link:'https://youtu.be/SyN8uYGS9Tk',img:video5},
+    {page:11, link:'https://youtu.be/EIk0YzscTDs',img:video6},
+    {page:14, link:'https://youtu.be/676AXr97UqM',img:video7},
+    {page:14, link:'https://youtu.be/-medEWJPoVI',img:video8}, 
+    {page:16, link:'https://youtu.be/9dLeAkyuHws',img:video9}, 
    ]
 
   const [zembo, setZembo] = useState({
@@ -51,7 +45,7 @@ function H2_4() {
     title2:'',
     contents:`『내 친구 슈퍼 카를로』는 시각 장애가 있지만 밝고 긍정적인 친구 카를로와 그의 강점을 알아보는 친구와의 우정을 담은 이야기입니다. 이 책은 아이들이 약점 속에서도 자신감을 갖고, 서로의 다름을 긍정적으로 바라보도록 도와줍니다.`,
     img:zemboImg,
-    link:''
+    link:'https://youtu.be/djHAD4NUEdY'
   }) 
 
   const [code,setCode] = useState('jus649')
@@ -167,10 +161,6 @@ function H2_4() {
             <div>{linkList[2].page}p</div>
           </div>  
 
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
-            <img src={linkList[3].img} alt=''/> 
-            <div>{linkList[3].page}p</div>
-          </div>  
  
  
         </div>
@@ -179,50 +169,39 @@ function H2_4() {
 
         <div style={{display:'flex',flexDirection:'row',justifyItems:'center'}}>
 
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[3].link)}>
+            <img src={linkList[3].img} alt=''/> 
+            <div>{linkList[3].page}p</div>
+          </div>  
 
-        <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
-          <img src={linkList[4].img} alt=''/> 
-          <div>{linkList[4].page}p</div>
-        </div>  
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[4].link)}>
+            <img src={linkList[4].img} alt=''/> 
+            <div>{linkList[4].page}p</div>
+          </div>  
 
-        <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[5].link)}>
-          <img src={linkList[5].img} alt=''/> 
-          <div>{linkList[5].page}p</div>
-        </div>  
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[5].link)}>
+            <img src={linkList[5].img} alt=''/> 
+            <div>{linkList[5].page}p</div>
+          </div>  
 
-        <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
-          <img src={linkList[6].img} alt=''/> 
-          <div>{linkList[6].page}p</div>
-        </div>  
-
-        <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
-          <img src={linkList[7].img} alt=''/> 
-          <div>{linkList[7].page}p</div>
-        </div>  
       </div>
 
       <div style={{marginBottom:15,display:'flex',flexDirection:'row',justifyItems:'center'}}>
 
- 
+      
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[6].link)}>
+            <img src={linkList[6].img} alt=''/> 
+            <div>{linkList[6].page}p</div>
+          </div>  
+
+          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[7].link)}>
+            <img src={linkList[7].img} alt=''/> 
+            <div>{linkList[7].page}p</div>
+          </div>  
           <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[8].link)}>
             <img src={linkList[8].img} alt=''/> 
             <div>{linkList[8].page}p</div>
-          </div>  
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[9].link)}>
-            <img src={linkList[9].img} alt=''/> 
-            <div>{linkList[9].page}p</div>
-          </div>  
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[10].link)}>
-            <img src={linkList[10].img} alt=''/> 
-            <div>{linkList[10].page}p</div>
-          </div>  
-
-          <div className='videoBoxImgHome' onClick={()=>handleGoLink(linkList[11].link)}>
-            <img src={linkList[11].img} alt=''/> 
-            <div>{linkList[11].page}p</div>
-          </div>  
+          </div>   
         </div>
         <div style={{textAlign:'center',margin:5}}>가정에서도 아이와 함께 영상을 시청해보며 학습을 이어가보세요!</div>
       </div>
