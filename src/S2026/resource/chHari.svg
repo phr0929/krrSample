@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 220 290">
+  <!-- Generator: Adobe Illustrator 29.8.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 2)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #b9d872;
+        stroke: #b9d872;
+      }
+
+      .st0, .st1, .st2, .st3 {
+        stroke-miterlimit: 10;
+      }
+
+      .st1 {
+        fill: #dabee6;
+        stroke: #c29dd9;
+        stroke-width: 4px;
+      }
+
+      .st4 {
+        fill: #c29dd9;
+      }
+
+      .st5 {
+        fill: #f9a88d;
+      }
+
+      .st2 {
+        fill: #cabfdc;
+        stroke: #cabfdc;
+      }
+
+      .st3 {
+        fill: #ffdc4f;
+        stroke: #ffdc4f;
+      }
+
+      .st6 {
+        fill: #423c34;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="st1" d="M57.3,203.5s-24.4,15.1-17.5,33.4c6.5,16.9,21,7.1,21,7.1,0,0-5.2,33.7,17.9,38.8,23.1,5,25.1-20,25.1-20h12.3s2.1,25,25.1,20c23.1-5,17.9-38.8,17.9-38.8,0,0,14.5,9.9,21-7.1,7-18.3-17.5-33.4-17.5-33.4,0,0-15.4-10.8-52.7-10.8s-52.7,10.8-52.7,10.8Z"/>
+    <path class="st1" d="M137.9,87s21.2-16.4,31.9-11.6c10.7,4.8,5.1,35.7,5.1,35.7,0,0,18.6,19.1,13.5,55.6s-42.5,43.1-77.8,43.1h-1.2c-30.9,0-72.7-6.6-77.8-43.1-5.1-36.5,13.5-55.6,13.5-55.6,0,0-5.6-30.9,5.1-35.7,10.7-4.8,31.9,11.6,31.9,11.6,0,0,26.8-10,55.8,0Z"/>
+    <path class="st4" d="M70,94.1s-9.3-10.5-13.6-7,1,16.7,1,16.7l12.6-9.7Z"/>
+    <path class="st4" d="M149.5,94.1s9.3-10.5,13.6-7c4.3,3.5-1,16.7-1,16.7l-12.6-9.7Z"/>
+    <g>
+      <circle class="st6" cx="88.1" cy="151.9" r="6.6"/>
+      <circle class="st6" cx="132" cy="151.9" r="6.6"/>
+    </g>
+    <g>
+      <ellipse class="st5" cx="74.7" cy="166.4" rx="10.1" ry="8.4"/>
+      <ellipse class="st5" cx="145.3" cy="166.4" rx="10.1" ry="8.4"/>
+    </g>
+    <path class="st6" d="M114.7,155.4c0,1.7-2.1,5-4.7,5s-4.7-3.3-4.7-5,2.1-1.6,4.7-1.6,4.7-.1,4.7,1.6Z"/>
+    <path class="st6" d="M96.4,164.9c-3.2,4.6,6.5,9.4,14,9.4s16.4-6.8,13-9.5c-4.4-3.5-4.7,3.9-13.2,3.9s-10.6-4.6-10.6-4.6c0,0-1.8-1.3-3.2.7Z"/>
+  </g>
+  <rect class="st3" x="36.1" y="36.4" width="34.4" height="7.4" rx="3.7" ry="3.7" transform="translate(-9.2 16.9) rotate(-16.6)"/>
+  <rect class="st0" x="101" y="20.1" width="24.8" height="7.4" rx="3.7" ry="3.7" transform="translate(1.5 -6.2) rotate(3.2)"/>
+  <rect class="st0" x="95.5" y="31.8" width="34.4" height="7.4" rx="3.7" ry="3.7" transform="translate(2.1 -6.2) rotate(3.2)"/>
+  <rect class="st2" x="158.7" y="37.6" width="24.8" height="7.4" rx="3.7" ry="3.7" transform="translate(16.2 -42.3) rotate(14.8)"/>
+  <rect class="st2" x="150.8" y="48.9" width="34.4" height="7.4" rx="3.7" ry="3.7" transform="translate(19 -41.1) rotate(14.8)"/>
+  <rect class="st2" x="158.6" y="25.9" width="31.1" height="7.4" rx="3.7" ry="3.7" transform="translate(13.3 -43.5) rotate(14.8)"/>
+</svg>

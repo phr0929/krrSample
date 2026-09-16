@@ -28,6 +28,10 @@
   background-color: #f3f3f3; /* 연한 회색 */ 
   transition: background-color 0.3s ease-in-out;
 }
+.contentName26Hanja:hover {
+  background-color: #f3f3f3;
+  transition: background-color 0.3s ease-in-out;
+}
 }
 
 @media only screen and (min-height: 701px){
@@ -428,6 +432,12 @@
     align-items: center;
 }
 
+@media only screen and (min-width: 1250px){
+    .mainMenu26{
+        width:min(300px, calc(20vw - (var(--menuMargin26) * 2)));
+    }
+}
+
 .mainMenu26:hover {
   transform: translateY(-10px);
   transition: all 0.3s ease;
@@ -501,36 +511,28 @@
     color:#666;
 }
 
-.bgMotion26{
-    width: 100vw;
-    height: 100%;
+.bgIconAnchor26{
     position: absolute;
-    z-index: 500;
-    left:0px;
     display: var(--bgMotionDisplay26);
-    top:100px;
-    flex-direction: row;
-    z-index: 400;
+    top:calc(50% + 100px);
+    z-index: -1;
     align-items: center;
-    justify-content: center;
+    pointer-events: none;
 }
 
-.bgMotion26 div:nth-child(1){
-    display: flex;
-    flex:1;
-    box-sizing: border-box;
+.bgIconAnchorLeft26{
+    left:var(--menuMargin26);
+    transform:translate(-60%, -50%);
 }
 
-.bgMotion26 div:nth-child(2){
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-    box-sizing: border-box;
+.bgIconAnchorRight26{
+    right:var(--menuMargin26);
+    gap:30px;
+    transform:translate(60%, -50%);
 }
 
 .bgIcon1{
   animation: spin 15s linear infinite;
-  margin-left:calc(var(--bgIconMargin) * 3);
   width: 100px;
   height: 100px;
 }
@@ -539,14 +541,14 @@
   animation: breathe 3s ease-in-out infinite;
   width: 60px;
   height: 60px;
-  margin:100px 30px 0px 0px;
+  position:relative;
+  top:50px;
 }
 
 .bgIcon3{
   animation: spin2 15s linear infinite;
   width: 100px;
   height: 100px;
-  margin-right:calc(var(--bgIconMargin) * 3);
 }
 
 
@@ -629,7 +631,7 @@
 
 .ctgrOn26{
     width: 120px;
-    max-width: calc(100% / 4);
+    max-width: calc(100% / 5);
     background-color: #323232;
     border-radius: calc(var(--mainMenuRadius26) * 2);
     text-align: center;
@@ -641,7 +643,7 @@
 
 .ctgrOff26{
     width: 120px;
-    max-width: calc(100% / 4);
+    max-width: calc(100% / 5);
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
@@ -777,6 +779,37 @@
     cursor: pointer;
 } 
 
+.hanjaContentGrid26{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+}
+
+.contentName26Hanja{
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: var(--weekTitleSize26);
+    padding: 10px;
+    color: #969696;
+    background-color: #fff;
+    border: 3px solid #dcdcdc;
+    border-radius: 10px;
+    font: inherit;
+    line-height: 1.25;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+}
+
+.hanjaCharacter26{
+    color: #5d5d5d;
+    font-size: 1.2em;
+}
+
 .weekBarTitle26{
     box-sizing: border-box;
     width: var(--weekTitleSize26);
@@ -867,19 +900,21 @@
 .contentPageBg26Ch{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: min(500px, calc(100vw - 30px));
     align-items: flex-end;
     justify-content: center;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 202;
     padding-bottom: calc(var(--weekTitleSize26) - 10px);
 }
 
 .contentPageBg26Ch img{
-    width: 130px;
+    width: 20%;
     height: auto;
     margin-bottom:10px;
-    max-width: 20vw;
+    max-width: 100px;
 }
 
 .contentPageBg26Park{
@@ -963,4 +998,3 @@
   transform: translateY(0);
 } 
 
- 

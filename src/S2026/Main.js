@@ -36,6 +36,7 @@ import chLulu from './resource/chLulu.svg';
 import chHan from './resource/chHan.svg';
 import chMath from './resource/chMath.svg';
 import chEn from './resource/chEn.svg';
+import chHari from './resource/chHari.svg';
 import arrowBtn from './resource/arrowBtn.svg';
 
 import parkBg from './resource/parkBg.svg'
@@ -76,6 +77,10 @@ function Main() {
             
             <div className='mainContentsMenuLayout26'> 
               <div className='mainMenuLayout26'>
+                <div className='bgIconAnchor26 bgIconAnchorLeft26'>
+                  <img className='bgIcon1' src={bgic1} alt=''/>
+                </div>
+
                 <div className='mainMenu26' onClick={()=>navigate('./Contents', {state:{idx:0}})}>
                   <div className='mainMenuImgBar26'>
               
@@ -122,7 +127,7 @@ function Main() {
                 </div>
               </div>
 
-              <div className='mainMenuLayout26 mainMenuPaddingBottom26'>
+              <div className='mainMenuLayout26'>
                 <div className='mainMenu26'  style={{backgroundColor:'#e8f9e4'}} onClick={()=>navigate('./Contents', {state:{idx:2}})}>
                   <div className='mainMenuImgBar26'>
               
@@ -166,14 +171,28 @@ function Main() {
                 </div>
               </div>
 
-              <div className='bgMotion26'>
-                <div>
-                  <img className='bgIcon1' src={bgic1} alt=''/>  
+              <div className='mainMenuLayout26 mainMenuPaddingBottom26'>
+                <div className='bgIconAnchor26 bgIconAnchorRight26'>
+                  <img className='bgIcon2' src={bgic2} alt=''/>
+                  <img className='bgIcon3' src={bgic3} alt=''/>
                 </div>
-                
-                <div>
-                  <img className='bgIcon2' src={bgic2} alt=''/>  
-                  <img className='bgIcon3' src={bgic3} alt=''/> 
+
+                <div className='mainMenu26' style={{backgroundColor:'#f4effa'}} onClick={()=>navigate('./Contents', {state:{idx:4}})}>
+                  <div className='mainMenuImgBar26'>
+                    <div className='chImgLayout26'>
+                      <img className='chImg26' src={chHari} alt=''/>
+                    </div>
+                  </div>
+
+                  <div className='menuTextLayout26'>
+                    <div>
+                      까르르 한자
+                    </div>
+                    <div>
+                      만 4,5세 한자공부
+                    </div>
+                  </div>
+                  <img className='menuArrow26' src={arrowBtn} alt=''/>
                 </div>
               </div>
                
@@ -206,7 +225,7 @@ function Main() {
             <div>©2023 by (주)섬김 All Rights Reserved.</div>
           </div>
           <div className='bottomBtn'>
-            <img src={instaLogo} alt='' onClick={()=>window.open('https://www.instagram.com/krrhangeul_official/')}/>
+            <img src={instaLogo} alt='' onClick={()=>window.open('https://www.instagram.com/krr_edu_official/')}/>
             <img src={youtubeLogo} alt='' onClick={()=>window.open('https://www.youtube.com/@edujusk')} /> 
           </div>
         </div>

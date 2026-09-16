@@ -93,7 +93,7 @@ function PromotionalVideo() {
             <div>©2023 by (주)섬김 All Rights Reserved.</div>
           </div>
           <div className='bottomBtn'>
-            <img src={instaLogo} alt='' onClick={()=>window.open('https://www.instagram.com/krrhangeul_official/')}/>
+            <img src={instaLogo} alt='' onClick={()=>window.open('https://www.instagram.com/krr_edu_official/')}/>
             <img src={youtubeLogo} alt='' onClick={()=>window.open('https://www.youtube.com/@edujusk')} /> 
           </div>
         </div>

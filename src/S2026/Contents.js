@@ -38,6 +38,7 @@ import chLulu3 from './resource/chLulu3.svg';
 import chHan3 from './resource/chHan3.svg';
 import chMath3 from './resource/chMath3.svg';
 import chEn3 from './resource/chEn3.svg';
+import chHari3 from './resource/chHari3.svg';
 
 import chLulu2 from './resource/chLulu2.svg';
 import chHan2 from './resource/chHan2.svg';
@@ -158,6 +159,40 @@ function Contents() {
     {subject:2,idx:7,step:3,vimeo:'863487043',}, 
   ]
 
+  const HanjaContentsList = [
+    // 요일
+    {subject:4,idx:0,step:0,name:'요일 이야기',vimeo:'1227238972'},
+    {subject:4,idx:1,step:0,name:'개와 달 이야기',vimeo:'1227238996'},
+    {subject:4,idx:2,step:0,name:'요일 흥얼대기',vimeo:'1227238998'},
+    {subject:4,idx:3,step:0,name:'기억력 이야기1',vimeo:'1227238988'},
+    {subject:4,idx:4,step:0,name:'기억력 이야기2',vimeo:'1227239001'},
+    {subject:4,idx:5,step:0,name:'질문대답 요일챈트',vimeo:'1227239004'},
+
+    // 가족
+    {subject:4,idx:0,step:1,name:'부부 이야기',vimeo:'1227238971'},
+    {subject:4,idx:1,step:1,name:'부, 자 이야기',vimeo:'1227238969'},
+    {subject:4,idx:2,step:1,name:'모, 자 이야기',vimeo:'1227238970'},
+
+    // 변신 영상
+    {subject:4,idx:0,step:2,hanja:'火',meaning:'불 화',vimeo:'1227239058'},
+    {subject:4,idx:1,step:2,hanja:'水',meaning:'물 수',vimeo:'1227239057',hidden:true},
+    {subject:4,idx:2,step:2,hanja:'木',meaning:'나무 목',vimeo:'1227239055'},
+    {subject:4,idx:3,step:2,hanja:'金',meaning:'쇠 금',vimeo:'1227239056'},
+    {subject:4,idx:4,step:2,hanja:'土',meaning:'흙 토',vimeo:'1227239071'},
+    {subject:4,idx:5,step:2,hanja:'日',meaning:'날 일',vimeo:'1227239073'},
+    {subject:4,idx:6,step:2,hanja:'月',meaning:'달 월',vimeo:'1227239077'},
+    {subject:4,idx:7,step:2,hanja:'山',meaning:'뫼 산',vimeo:'1227239076'},
+    {subject:4,idx:8,step:2,hanja:'白',meaning:'흰 백',vimeo:'1227239097'},
+    {subject:4,idx:9,step:2,hanja:'靑',meaning:'푸를 청',vimeo:'1227239095'},
+    {subject:4,idx:10,step:2,hanja:'生',meaning:'날 생',vimeo:'1227239094'},
+  ]
+
+  const hanjaSections = [
+    {title:'요일',step:0},
+    {title:'가족',step:1},
+    {title:'변신 영상',step:2},
+  ]
+
    
   const EnglishContentsList = [
     // Littles -> 1호
@@ -250,11 +285,13 @@ function Contents() {
    ]
 
    const handleGoVimeo=(subject,step,idx)=>{
-    const getList = subject===0?luluContentsList:subject===1?hangeulContentsList:subject===2?MathContentsList:EnglishContentsList
+    const getList = subject===0?luluContentsList:subject===1?hangeulContentsList:subject===2?MathContentsList:subject===3?EnglishContentsList:HanjaContentsList
 
     const vimeo = getList.find(
       item => item.idx === idx && item.step === step
     );
+
+    if (!vimeo?.vimeo) return;
  
     let width = window.screen.width * 0.8;
     let height = (window.screen.width * 0.8) *  0.5625;
@@ -274,7 +311,7 @@ function Contents() {
         <div className='logoLayout26'>
           <img className='logoImg26' src={sk} alt='' onClick={()=>navigate('../')}/>
           <div className='logoBtnBar26'>
-            <img src={instaLogo} className='social-icon' alt='' onClick={()=>window.open('https://www.instagram.com/juseom_kim/')}/>
+            <img src={instaLogo} className='social-icon' alt='' onClick={()=>window.open('https://www.instagram.com/krr_edu_official/')}/>
             <img src={youtubeLogo} className='social-icon' alt='' onClick={()=>window.open('https://www.youtube.com/@edujusk')} />
             <img src={blogLogo} className='social-icon' style={{marginRight:0}}  alt='' onClick={()=>window.open('https://blog.naver.com/juseomkim')}/>
           </div>
@@ -288,6 +325,7 @@ function Contents() {
               <div className={subject===1?'ctgrOn26':'ctgrOff26'} onClick={()=>handleSubject(1)}>한글</div>
               <div className={subject===2?'ctgrOn26':'ctgrOff26'} onClick={()=>handleSubject(2)}>수학</div>
               <div className={subject===3?'ctgrOn26':'ctgrOff26'} onClick={()=>handleSubject(3)}>영어</div>
+              <div className={subject===4?'ctgrOn26':'ctgrOff26'} onClick={()=>handleSubject(4)}>한자</div>
             </div> 
           </div>
 
@@ -527,7 +565,7 @@ function Contents() {
             </div>
           </div> 
         </div>
-        :
+        :subject===3?
         <div className='subjectContents26'>
           <div className='contentBox26' style={{padding:'30px 15px 30px 15px'}}>
             <div className='contentTitle26' style={{paddingLeft:10}}>LITTLES-1</div>
@@ -705,6 +743,35 @@ function Contents() {
             </div>
           </div> 
         </div>
+        :subject===4?
+        <div className='subjectContents26'>
+          {hanjaSections.map(section => (
+            <div className='contentBox26' key={section.step}>
+              <div className='contentTitle26'>{section.title}</div>
+              <div className='hanjaContentGrid26'>
+                {HanjaContentsList
+                  .filter(item => item.step === section.step && !item.hidden)
+                  .map(item => (
+                    <button
+                      type='button'
+                      className='contentName26Hanja'
+                      key={`${item.step}-${item.idx}`}
+                      aria-disabled={!item.vimeo}
+                      onClick={()=>handleGoVimeo(4,item.step,item.idx)}
+                    >
+                      {item.hanja?
+                        <><strong className='hanjaCharacter26'>{item.hanja}</strong>&nbsp;({item.meaning})</>
+                        :item.name
+                      }
+                    </button>
+                  ))
+                }
+              </div>
+            </div>
+          ))}
+        </div>
+        :
+        <div className='subjectContents26'/>
         }
 
         <div className='nullDiv2'/>
@@ -736,6 +803,7 @@ function Contents() {
           <img src={chHan3} alt='' />
           <img src={chMath3} alt=''/>
           <img src={chEn3} alt=''  />
+          <img src={chHari3} alt='' />
        </div>
 
        <div className='contentPageBg26Park' style={{backgroundColor:'#CCEDFF',}}>

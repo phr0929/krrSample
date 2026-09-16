@@ -70,7 +70,7 @@ function Hangeul() {
         <div className='logoLayout26'>
           <img className='logoImg26' src={sk} alt='' onClick={()=>navigate('../2026sample')}/>
           <div className='logoBtnBar26'>
-            <img src={instaLogo}  alt='' onClick={()=>window.open('https://www.instagram.com/juseom_kim/')}/>
+            <img src={instaLogo}  alt='' onClick={()=>window.open('https://www.instagram.com/krr_edu_official/')}/>
             <img src={youtubeLogo}  alt='' onClick={()=>window.open('https://www.youtube.com/@edujusk')} />
             <img src={blogLogo} style={{marginRight:0}}  alt='' onClick={()=>window.open('https://blog.naver.com/juseomkim')}/>
           </div>
