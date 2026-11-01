@@ -18,7 +18,7 @@ import video5 from './resource/8/h2_5.png'
 function H2_8() {
   const [bgColor,setBgColor] = useState('#f9c65e')
   const [boxColor,setBoxColor] = useState('#ab6432')
-  const [textColor,setTextColor] = useState('#ab6432')
+  const [textColor,setTextColor] = useState('#ab6432') 
    
   const [bookVideoLink,setBookVideoLink] = useState('https://youtu.be/muH_TlRqrBY')
   const [issue,setIssue] = useState(8)
